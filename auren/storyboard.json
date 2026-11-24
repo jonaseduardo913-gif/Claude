@@ -1,0 +1,672 @@
+{
+ "_doc": "Each shot starts at word index `at` of build/words.json (cut lands 2 frames before the word). src: 'ss:NNN' = input/media/ss/NNN.jpg, 'map' = Leonida map, 'tr:SECONDS' = official launch trailer from that second. cam: cx/cy = centre (0-1 of the source), z = zoom (1 = full height). Overlay targets use the same 0-1 source coordinates.",
+ "headline": {
+  "lines": [
+   "WHY VICE CITY FEELS",
+   "SO DIFFERENT IN GTA 6"
+  ],
+  "until_word": 12
+ },
+ "stamp": {
+  "t": 0.55
+ },
+ "shots": [
+  {
+   "at": 0,
+   "src": "ss:111",
+   "cam": {
+    "from": {
+     "cx": 0.22,
+     "cy": 0.55,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.78,
+     "cy": 0.55,
+     "z": 1.05
+    }
+   }
+  },
+  {
+   "at": 4,
+   "src": "tr:18.2",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.52,
+     "cy": 0.5,
+     "z": 1.1
+    }
+   }
+  },
+  {
+   "at": 10,
+   "src": "ss:120",
+   "cam": {
+    "from": {
+     "cx": 0.38,
+     "cy": 0.5,
+     "z": 1.35
+    },
+    "to": {
+     "cx": 0.38,
+     "cy": 0.5,
+     "z": 1.0
+    }
+   },
+   "overlays": [
+    {
+     "type": "loc",
+     "text": "VICE CITY"
+    }
+   ]
+  },
+  {
+   "at": 13,
+   "src": "ss:125",
+   "cam": {
+    "from": {
+     "cx": 0.3,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.62,
+     "cy": 0.5,
+     "z": 1.0
+    }
+   }
+  },
+  {
+   "at": 20,
+   "src": "ss:113",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.6,
+     "cy": 0.48,
+     "z": 1.15
+    }
+   }
+  },
+  {
+   "at": 24,
+   "src": "tr:47.1",
+   "trans": "zoomblur",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.15
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.05
+    }
+   }
+  },
+  {
+   "at": 27,
+   "src": "ss:119",
+   "cam": {
+    "from": {
+     "cx": 0.66,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.74,
+     "cy": 0.5,
+     "z": 1.08
+    }
+   }
+  },
+  {
+   "at": 29,
+   "src": "ss:115",
+   "cam": {
+    "from": {
+     "cx": 0.66,
+     "cy": 0.46,
+     "z": 1.12
+    },
+    "to": {
+     "cx": 0.72,
+     "cy": 0.44,
+     "z": 1.05
+    }
+   }
+  },
+  {
+   "at": 31,
+   "src": "ss:109",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.52,
+     "cy": 0.5,
+     "z": 1.12
+    }
+   }
+  },
+  {
+   "at": 34,
+   "src": "ss:092",
+   "cam": {
+    "from": {
+     "cx": 0.33,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.3,
+     "cy": 0.55,
+     "z": 1.1
+    }
+   },
+   "overlays": [
+    {
+     "type": "arrow",
+     "x": 0.2,
+     "y": 0.78,
+     "from": "up-right",
+     "at": 0.35
+    },
+    {
+     "type": "loc",
+     "text": "LEONIDA KEYS"
+    }
+   ]
+  },
+  {
+   "at": 42,
+   "src": "tr:3.0",
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.05
+    },
+    "to": {
+     "cx": 0.47,
+     "cy": 0.5,
+     "z": 1.0
+    }
+   }
+  },
+  {
+   "at": 48,
+   "src": "ss:091",
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.1
+    }
+   }
+  },
+  {
+   "at": 49,
+   "src": "map",
+   "cam": {
+    "from": {
+     "cx": 0.672,
+     "cy": 0.523,
+     "z": 4.2
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "ease": "inOutCubic",
+    "dur": 2.6
+   },
+   "overlays": [
+    {
+     "type": "ring",
+     "x": 0.672,
+     "y": 0.522,
+     "r": 0.07,
+     "at": 0.1
+    },
+    {
+     "type": "maplabel",
+     "text": "VICE CITY",
+     "x": 0.672,
+     "y": 0.47,
+     "at": 0.2
+    },
+    {
+     "type": "bigtag",
+     "text": "LEONIDA",
+     "word": 61
+    }
+   ]
+  },
+  {
+   "at": 62,
+   "src": "tr:26.4",
+   "trans": "glitch",
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.06
+    }
+   }
+  },
+  {
+   "at": 68,
+   "src": "tr:21.2",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.08
+    }
+   },
+   "speed": 0.75
+  },
+  {
+   "at": 70,
+   "src": "ss:121",
+   "cam": {
+    "from": {
+     "cx": 0.25,
+     "cy": 0.66,
+     "z": 1.3
+    },
+    "to": {
+     "cx": 0.25,
+     "cy": 0.4,
+     "z": 1.3
+    }
+   }
+  },
+  {
+   "at": 75,
+   "src": "tr:22.0",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.08
+    }
+   }
+  },
+  {
+   "at": 77,
+   "src": "ss:104",
+   "cam": {
+    "from": {
+     "cx": 0.25,
+     "cy": 0.45,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.24,
+     "cy": 0.3,
+     "z": 1.3
+    }
+   }
+  },
+  {
+   "at": 80,
+   "src": "tr:55.2",
+   "cam": {
+    "from": {
+     "cx": 0.4,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.05
+    }
+   },
+   "overlays": [
+    {
+     "type": "loc",
+     "text": "VICE BEACH"
+    }
+   ]
+  },
+  {
+   "at": 84,
+   "src": "ss:086",
+   "cam": {
+    "from": {
+     "cx": 0.62,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.66,
+     "cy": 0.56,
+     "z": 1.12
+    }
+   },
+   "overlays": [
+    {
+     "type": "arrow",
+     "x": 0.735,
+     "y": 0.72,
+     "from": "up-left",
+     "at": 0.15
+    },
+    {
+     "type": "loc",
+     "text": "GRASSRIVERS"
+    }
+   ]
+  },
+  {
+   "at": 86,
+   "src": "ss:084",
+   "cam": {
+    "from": {
+     "cx": 0.4,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    }
+   },
+   "overlays": [
+    {
+     "type": "loc",
+     "text": "PORT GELLHORN"
+    }
+   ]
+  },
+  {
+   "at": 88,
+   "src": "ss:095",
+   "cam": {
+    "from": {
+     "cx": 0.6,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.62,
+     "cy": 0.5,
+     "z": 1.14
+    }
+   }
+  },
+  {
+   "at": 94,
+   "src": "ss:096",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.62,
+     "cy": 0.32,
+     "z": 1.6
+    }
+   },
+   "overlays": [
+    {
+     "type": "ring",
+     "x": 0.656,
+     "y": 0.125,
+     "r": 0.045,
+     "at": 0.45
+    }
+   ]
+  },
+  {
+   "at": 98,
+   "src": "ss:093",
+   "cam": {
+    "from": {
+     "cx": 0.52,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.55,
+     "z": 1.1
+    }
+   },
+   "overlays": [
+    {
+     "type": "arrow",
+     "x": 0.62,
+     "y": 0.8,
+     "from": "up-left",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "at": 106,
+   "src": "tr:7.0",
+   "cam": {
+    "from": {
+     "cx": 0.55,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.55,
+     "cy": 0.5,
+     "z": 1.06
+    }
+   }
+  },
+  {
+   "at": 112,
+   "src": "tr:48.7",
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.05
+    }
+   }
+  },
+  {
+   "at": 118,
+   "src": "ss:127",
+   "cam": {
+    "from": {
+     "cx": 0.4,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.06
+    }
+   }
+  },
+  {
+   "at": 120,
+   "src": "ss:123",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.12
+    }
+   }
+  },
+  {
+   "at": 123,
+   "src": "ss:118",
+   "trans": "dip",
+   "cam": {
+    "from": {
+     "cx": 0.38,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.4,
+     "cy": 0.48,
+     "z": 1.14
+    }
+   }
+  },
+  {
+   "at": 129,
+   "src": "map",
+   "cam": {
+    "from": {
+     "cx": 0.66,
+     "cy": 0.52,
+     "z": 2.4
+    },
+    "to": {
+     "cx": 0.67,
+     "cy": 0.52,
+     "z": 3.4
+    }
+   },
+   "overlays": [
+    {
+     "type": "maplabel",
+     "text": "VICE CITY",
+     "x": 0.672,
+     "y": 0.47,
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 135,
+   "src": "ss:136",
+   "trans": "xfade",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.25
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    }
+   }
+  },
+  {
+   "at": 143,
+   "src": "tr:14.21",
+   "speed": 0.42,
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.06
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.0
+    }
+   },
+   "overlays": [
+    {
+     "type": "pause",
+     "word": 146
+    }
+   ]
+  }
+ ],
+ "end": {
+  "hold": 2.8,
+  "trans": "flash"
+ },
+ "keywords": {
+  "cyan": [
+   "VICE CITY",
+   "STREET",
+   "STREETS",
+   "BEACH",
+   "BEACHES",
+   "NEIGHBORHOOD",
+   "NEIGHBORHOODS",
+   "FLORIDA",
+   "LEONIDA",
+   "WORLD",
+   "MAP",
+   "SWAMPS",
+   "CITY"
+  ],
+  "gold": [
+   "LUXURY",
+   "ROCKSTAR'S",
+   "BIGGEST",
+   "ACHIEVEMENT",
+   "NEON",
+   "SKYSCRAPERS"
+  ],
+  "pink": [
+   "DIFFERENT",
+   "CLOSER",
+   "DANGEROUS",
+   "ALIVE",
+   "REAL",
+   "UNEXPECTED",
+   "BACK",
+   "STORY"
+  ]
+ }
+}
