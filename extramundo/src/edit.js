@@ -401,7 +401,7 @@ async function drawCompare(ctx, shot, t) {
 }
 
 // ---------------- end card ----------------
-let MARK = null;
+let MARK = null, COVER = null;
 const GOLD = { hi: '#FFF1B8', mid: '#FFC21A', deep: '#C77700', glow: 'rgba(255,190,40,' };
 function eclipse(ctx, cx, cy, r, on, t) {
   // dark planet with a lit golden rim and a flare breaking over the top
@@ -480,7 +480,8 @@ async function renderFrame(f) {
   const b = buf.getContext('2d');
   b.setTransform(1, 0, 0, 1, 0, 0); b.globalAlpha = 1; b.filter = 'none'; b.globalCompositeOperation = 'source-over';
   let shakeAmt = 0;
-  if (t < TL.shots[0].t0) { b.fillStyle = '#000'; b.fillRect(0, 0, W, H); }
+  if (f === 0 && COVER) { b.drawImage(COVER, 0, 0, W, H); }   // first frame = thumbnail cover
+  else if (t < TL.shots[0].t0) { b.fillStyle = '#000'; b.fillRect(0, 0, W, H); }
   else if (t >= TL.end.t0) {
     drawEnd(b, t);
     const fl = 1 - prog(t, TL.end.t0, TL.end.t0 + 6 / FPS);
@@ -532,6 +533,7 @@ async function renderFrame(f) {
 window.__ready = (async () => {
   await Promise.all([document.fonts.load('900 100px "Montserrat"'), document.fonts.load('italic 900 100px "Montserrat"'), document.fonts.load('800 100px "Montserrat"')]);
   TL = await (await fetch('build/timeline.json')).json(); FPS = TL.fps;
+  try { COVER = await loadImg('output/capa-shorts-1080x1920.jpg'); } catch (err) { COVER = null; }
   window.FRAMES = Math.round(TL.duration * FPS);
   window.renderFrame = async (f, q = 0.93) => { await renderFrame(f); return out.toDataURL('image/jpeg', q); };
   return true;
