@@ -1,0 +1,103 @@
+<title>Dino Contos Batch 01</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* Layout: sticky episode switcher on top, one readable column of production notes below */
+:root {
+  --bg: #f6f8ef; --surface: #ffffff; --ink: #24301f; --muted: #5d6b55; --line: #dfe6d2;
+  --leaf: #3f8f45; --frill: #e8703a; --code: #eef3e6; --chip: #e5f1d9;
+  --display: "Fredoka", "Nunito", system-ui, sans-serif; --body: "Nunito", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141a12; --surface: #1c2418; --ink: #e6eedc; --muted: #a3b199; --line: #2f3a2a; --leaf: #7fcf72; --frill: #ff9a5c; --code: #222c1d; --chip: #263421; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #141a12; --surface: #1c2418; --ink: #e6eedc; --muted: #a3b199; --line: #2f3a2a; --leaf: #7fcf72; --frill: #ff9a5c; --code: #222c1d; --chip: #263421; color-scheme: dark; }
+body { background: var(--bg); color: var(--ink); font: 16px/1.65 var(--body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+.bar-in { max-width: 980px; margin: 0 auto; padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.brand { font: 600 18px var(--display); color: var(--leaf); margin-right: 8px; }
+.tab { font: 600 14px var(--body); border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+.tab[aria-current="true"] { background: var(--leaf); border-color: var(--leaf); color: var(--surface); }
+.tab:focus-visible, button:focus-visible { outline: 3px solid var(--frill); outline-offset: 2px; }
+main { max-width: 980px; margin: 0 auto; padding-block: 24px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.tools { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 18px; }
+.btn { font: 700 14px var(--body); background: var(--frill); color: #fff; border: 0; border-radius: 10px; padding: 9px 14px; cursor: pointer; }
+.btn.ghost { background: var(--chip); color: var(--ink); }
+#doc { min-width: 0; }
+#doc h1 { font: 600 clamp(28px, 5vw, 40px)/1.15 var(--display); text-wrap: balance; margin: 8px 0 2px; }
+#doc h1 + p em { color: var(--muted); font-size: 18px; }
+#doc h2 { font: 600 24px var(--display); color: var(--leaf); margin: 40px 0 12px; padding-top: 12px; border-top: 2px solid var(--line); }
+#doc h3 { font: 600 18px var(--display); margin: 28px 0 8px; }
+#doc p, #doc li { max-width: 72ch; }
+#doc blockquote { margin: 8px 0; padding: 8px 14px; border-left: 4px solid var(--frill); background: var(--surface); border-radius: 0 10px 10px 0; font-style: italic; }
+#doc table { border-collapse: collapse; font-size: 14px; }
+#doc .tw { overflow-x: auto; margin: 12px 0; }
+#doc th, #doc td { border: 1px solid var(--line); padding: 6px 8px; vertical-align: top; text-align: left; }
+#doc th { background: var(--chip); }
+.code { position: relative; margin: 10px 0 18px; }
+.code pre { background: var(--code); border: 1px solid var(--line); border-radius: 12px; padding: 14px; padding-top: 40px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; font: 13px/1.55 var(--mono); margin: 0; }
+.copy { position: absolute; top: 8px; right: 8px; font: 700 12px var(--body); background: var(--leaf); color: var(--surface); border: 0; border-radius: 8px; padding: 5px 10px; cursor: pointer; }
+.note { color: var(--muted); font-size: 14px; }
+#doc a { color: var(--leaf); }
+@media (prefers-reduced-motion: no-preference) { .tab, .btn, .copy { transition: filter .15s; } .tab:hover, .btn:hover, .copy:hover { filter: brightness(1.08); } }
+</style>
+
+<div class="bar"><div class="bar-in" id="tabs"><span class="brand">Dino Contos</span></div></div>
+<main>
+  <div class="tools" id="tools"></div>
+  <article id="doc"><p class="note">Loading…</p></article>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script>
+const PAGES = [
+  { id: 'overview', label: 'Overview', md: 'README.md' },
+  { id: 'characters', label: 'Characters', md: '00-character-sheet.md' },
+  { id: 'ep1', label: '1 · Moonflower', md: '01-the-moonflower-seed.md', txt: 'narration/01-the-moonflower-seed.txt' },
+  { id: 'ep2', label: '2 · First Snow', md: '02-pipocas-first-snow.md', txt: 'narration/02-pipocas-first-snow.txt' },
+  { id: 'ep3', label: '3 · Waterfall', md: '03-the-secret-behind-the-waterfall.md', txt: 'narration/03-the-secret-behind-the-waterfall.txt' },
+  { id: 'ep4', label: '4 · Big Sky', md: '04-bicos-big-sky.md', txt: 'narration/04-bicos-big-sky.txt' },
+  { id: 'ep5', label: '5 · Gift', md: '05-a-gift-for-mama-tete.md', txt: 'narration/05-a-gift-for-mama-tete.txt' },
+];
+const tabs = document.getElementById('tabs'), doc = document.getElementById('doc'), tools = document.getElementById('tools');
+const cache = {};
+const get = async (u) => (cache[u] ??= await (await fetch(u)).text());
+
+async function copyText(text, btn) {
+  const old = btn.textContent;
+  try { await navigator.clipboard.writeText(text); btn.textContent = 'Copied'; }
+  catch { const r = document.createRange(); r.selectNodeContents(btn.parentElement.querySelector('pre') || doc); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected — press copy'; }
+  setTimeout(() => (btn.textContent = old), 1600);
+}
+
+PAGES.forEach((p) => { const b = document.createElement('button'); b.className = 'tab'; b.id = 'tab-' + p.id; b.textContent = p.label; b.onclick = () => { location.hash = p.id; }; tabs.appendChild(b); });
+
+async function show() {
+  const id = location.hash.slice(1) || 'overview';
+  const page = PAGES.find((p) => p.id === id) || PAGES[0];
+  document.querySelectorAll('.tab').forEach((b) => b.setAttribute('aria-current', b.id === 'tab-' + page.id));
+  tools.innerHTML = '';
+  try {
+    let md = await get(page.md);
+    md = md.replace(/\]\(([0-9a-z-]+)\.md\)/g, (m, f) => { const t = PAGES.find((p) => p.md === f + '.md'); return t ? `](#${t.id})` : m; });
+    doc.innerHTML = marked.parse(md);
+  } catch { doc.innerHTML = '<p class="note">This section could not load. Reload the page to try again.</p>'; return; }
+  doc.querySelectorAll('table').forEach((t) => { const w = document.createElement('div'); w.className = 'tw'; t.replaceWith(w); w.appendChild(t); });
+  doc.querySelectorAll('pre').forEach((pre) => {
+    const wrap = document.createElement('div'); wrap.className = 'code'; pre.replaceWith(wrap); wrap.appendChild(pre);
+    const b = document.createElement('button'); b.className = 'copy'; b.textContent = 'Copy prompt'; b.onclick = () => copyText(pre.innerText.trim(), b); wrap.appendChild(b);
+  });
+  if (page.txt) {
+    const b = document.createElement('button'); b.className = 'btn'; b.textContent = 'Copy full narration'; b.onclick = async () => copyText(await get(page.txt), b); tools.appendChild(b);
+    for (const [label, hd] of [['Prompts for images', 'd-image-generation-prompts'], ['Prompts for video', 'e-video-animation-prompts'], ['YouTube package', 'g-youtube-publishing-package']]) {
+      const a = document.createElement('button'); a.className = 'btn ghost'; a.textContent = label;
+      a.onclick = () => { const h = [...doc.querySelectorAll('h2')].find((x) => x.textContent.toLowerCase().replace(/[^a-z]+/g, '-').includes(hd.slice(2))); h?.scrollIntoView({ behavior: 'smooth' }); };
+      tools.appendChild(a);
+    }
+  }
+  scrollTo(0, 0);
+}
+addEventListener('hashchange', show);
+show();
+</script>
