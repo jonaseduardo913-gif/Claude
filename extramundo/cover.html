@@ -7,7 +7,7 @@
 <canvas id="h" width="1280" height="720"></canvas>
 <script>
 // Thumbnail generator: vertical (Shorts) + horizontal covers.
-const CFG = { bg: 'input/media/doortohell.jpg', top: 'A PORTA DO', big: 'INFERNO', q: 'ESTÁ SE APAGANDO?' };
+let CFG = {};
 const font = (s, w = 900) => `${w} ${s}px "Montserrat"`;
 const load = (src) => new Promise((r) => { const i = new Image(); i.onload = () => r(i); i.src = src; });
 
@@ -15,7 +15,7 @@ function cover(ctx, img, W, H, { cx, cy, z }) {
   const ar = W / H; let sh = img.height / z, sw = sh * ar;
   if (sw > img.width) { sw = img.width / z; sh = sw / ar; }
   const sx = Math.min(Math.max(cx * img.width - sw / 2, 0), img.width - sw), sy = Math.min(Math.max(cy * img.height - sh / 2, 0), img.height - sh);
-  ctx.filter = 'saturate(1.35) contrast(1.18) brightness(1.05)'; ctx.drawImage(img, sx, sy, sw, sh, 0, 0, W, H); ctx.filter = 'none';
+  ctx.filter = CFG.filter || 'saturate(1.35) contrast(1.18) brightness(1.05)'; ctx.drawImage(img, sx, sy, sw, sh, 0, 0, W, H); ctx.filter = 'none';
   return (nx, ny) => ({ x: (nx * img.width - sx) / sw * W, y: (ny * img.height - sy) / sh * H, k: W / sw });
 }
 function outlined(ctx, text, x, y, size, fill, stroke, align = 'center', glow) {
@@ -59,28 +59,31 @@ function questionBar(ctx, text, cx, cy, size, rot = -0.03) {
 
 async function vertical(img) {
   const c = document.getElementById('v'), ctx = c.getContext('2d'), W = 1080, H = 1920;
-  const map = cover(ctx, img, W, H, { cx: 0.54, cy: 0.62, z: 1.0 });
+  const map = cover(ctx, img, W, H, CFG.cropV || { cx: 0.5, cy: 0.5, z: 1 });
   const top = ctx.createLinearGradient(0, 0, 0, H * 0.5); top.addColorStop(0, 'rgba(0,0,0,.85)'); top.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = top; ctx.fillRect(0, 0, W, H * 0.5);
   const bot = ctx.createLinearGradient(0, H * 0.78, 0, H); bot.addColorStop(0, 'rgba(0,0,0,0)'); bot.addColorStop(1, 'rgba(0,0,0,.85)'); ctx.fillStyle = bot; ctx.fillRect(0, H * 0.78, W, H * 0.22);
   const v = ctx.createRadialGradient(W / 2, H * 0.55, H * 0.3, W / 2, H * 0.55, H * 0.75); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
-  const p = map(0.535, 0.875); handCircle(ctx, p.x, p.y, 200, 130);
-  outlined(ctx, CFG.top, W / 2, 250, fit(ctx, CFG.top, 120, 960), '#FFFFFF', 12);
-  const bs = fit(ctx, CFG.big, 260, 1000); outlined(ctx, CFG.big, W / 2, 440, bs, fireGradient(ctx, 440, bs), 18, 'center', 'rgba(255,90,31,.9)');
-  questionBar(ctx, CFG.q, W / 2, 640, fit(ctx, CFG.q, 78, 860));
-  brand(ctx, W / 2, 790, 54);
+  if (CFG.circle) { const p = map(...CFG.circle); handCircle(ctx, p.x, p.y, 200, 130); }
+  const tl = CFG.top.split('|'); const ts = Math.min(...tl.map((l) => fit(ctx, l, 112, 960)));
+  tl.forEach((l, i) => outlined(ctx, l, W / 2, 210 + i * ts * 1.08, ts, '#FFFFFF', 12));
+  const by = 210 + tl.length * ts * 1.08 + 110;
+  const bs = fit(ctx, CFG.big, 260, 1000); outlined(ctx, CFG.big, W / 2, by, bs, fireGradient(ctx, by, bs), 18, 'center', 'rgba(255,90,31,.9)');
+  questionBar(ctx, CFG.q, W / 2, by + 200, fit(ctx, CFG.q, 78, 860));
+  brand(ctx, W / 2, by + 350, 54);
 }
 async function horizontal(img) {
   const c = document.getElementById('h'), ctx = c.getContext('2d'), W = 1280, H = 720;
-  const map = cover(ctx, img, W, H, { cx: 0.5, cy: 0.62, z: 1.0 });
+  const map = cover(ctx, img, W, H, CFG.cropH || { cx: 0.5, cy: 0.5, z: 1 });
   const l = ctx.createLinearGradient(0, 0, W * 0.75, 0); l.addColorStop(0, 'rgba(0,0,0,.88)'); l.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = l; ctx.fillRect(0, 0, W, H);
-  const p = map(0.535, 0.875); handCircle(ctx, p.x, p.y, 130, 80);
-  outlined(ctx, CFG.top, 60, 150, 72, '#FFFFFF', 9, 'left');
+  if (CFG.circle) { const p = map(...CFG.circle); handCircle(ctx, p.x, p.y, 130, 80); }
+  const ht = CFG.top.replace('|', ' '); outlined(ctx, ht, 60, 150, fit(ctx, ht, 72, 1160), '#FFFFFF', 9, 'left');
   const bs = 168; outlined(ctx, CFG.big, 52, 285, bs, fireGradient(ctx, 285, bs), 13, 'left', 'rgba(255,90,31,.9)');
   ctx.save(); ctx.translate(60, 0); questionBar(ctx, CFG.q, 300, 450, 50); ctx.restore();
   brand(ctx, 62, H - 70, 40, 'left');
 }
 window.__ready = (async () => {
   await document.fonts.load('900 100px "Montserrat"');
+  CFG = await (await fetch('cover.json')).json();
   const img = await load(CFG.bg); await vertical(img); await horizontal(img);
   window.out = { v: document.getElementById('v').toDataURL('image/jpeg', 0.95), h: document.getElementById('h').toDataURL('image/jpeg', 0.95) };
   return true;

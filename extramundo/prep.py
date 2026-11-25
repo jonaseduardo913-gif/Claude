@@ -40,15 +40,23 @@ os.makedirs('build/plates', exist_ok=True)
 for k, s in enumerate(shots):
     t0 = (snap(LEAD) if LEAD else 0.0) if k == 0 else wstart(s['at'])
     t1 = wstart(shots[k + 1]['at']) if k + 1 < len(shots) else END_T0
-    sh = {'t0': t0, 't1': t1, 'cam': s.get('cam', {'from': {'cx': .5, 'cy': .5, 'z': 1}, 'to': {'cx': .5, 'cy': .5, 'z': 1}}), 'trans': s.get('trans', 'cut'), 'overlays': [], 'fx': s.get('fx', []), 'filter': s.get('filter')}
+    sh = {'t0': t0, 't1': t1, 'cam': s.get('cam', {'from': {'cx': .5, 'cy': .5, 'z': 1}, 'to': {'cx': .5, 'cy': .5, 'z': 1}}), 'trans': s.get('trans', 'cut'), 'overlays': [], 'fx': s.get('fx', []), 'filter': s.get('filter'), 'fit': s.get('fit'), 'bandY': s.get('bandY')}
     src = s['src']
+    if src.startswith('img:') and '|' in src:      # alternatives: first one that exists
+        for alt in src[4:].split('|'):
+            sb_, k_ = (alt.rsplit('/', 1) if '/' in alt else ('', alt)); bdir = f'{MEDIA}/{sb_}'.rstrip('/')
+            if any(os.path.splitext(f)[0] == k_ for f in os.listdir(bdir)): src = 'img:' + alt; break
+        if src.startswith('img:') and src.endswith('|') is False and alt != src[4:]: pass
+        if 'ov/' in src: s.setdefault('fit', 'blurfill'); sh['fit'] = s['fit']
     if src.startswith('img:'):
-        path = next((f'{MEDIA}/{f}' for f in sorted(os.listdir(MEDIA)) if os.path.splitext(f)[0] == src[4:]), None)
-        if not path: print('MISSING', src, '-> placeholder'); path = f'{MEDIA}/night.jpg'
+        sub, key = (src[4:].rsplit('/', 1) + [''])[:2] if '/' in src[4:] else ('', src[4:]); base = f'{MEDIA}/{sub}'.rstrip('/')
+        path = next((f'{base}/{f}' for f in sorted(os.listdir(base)) if os.path.splitext(f)[0] == key), None)
+        if not path: print('MISSING', src); raise SystemExit(1)
         w, h = img_size(path)
         sh['src'] = {'type': 'still', 'path': path, 'w': w, 'h': h}
     elif src.startswith('anim:'):
         sh['src'] = {'type': 'anim', 'name': src[5:], 'w': 1080, 'h': 1920}
+        if 'map' in s: sh['src']['map'] = s['map']
         if 'collapse_word' in s: sh['collapseAt'] = wstart(s['collapse_word'])
     elif src.startswith('compare:'):
         a, b = src[8:].split(','); pa, pb = [next((f'{MEDIA}/{f}' for f in sorted(os.listdir(MEDIA)) if os.path.splitext(f)[0] == k), f'{MEDIA}/night.jpg') for k in (a, b)]
@@ -97,7 +105,8 @@ if SB.get('stamp'): timeline['sfx'].append({'t': SB['stamp']['t'], 'kind': 'stam
 timeline['lead'] = LEAD
 timeline['music'] = [{'t': (wstart(m['word']) if 'word' in m else m['t']), 'level': m['level']} for m in SB.get('music', [])]
 for e in SB.get('sfx', []): timeline['sfx'].append({'t': wstart(e['word']) if 'word' in e else e['t'], 'kind': e['kind'], **({'dur': e['dur']} if 'dur' in e else {})})
-timeline['end'] = {'t0': END_T0, 'trans': SB['end']['trans']}
+timeline['end'] = {'t0': END_T0, 'trans': SB['end']['trans'], 'fade': SB['end'].get('fade', 0)}
+timeline['epic'] = wstart(SB['epic_word']) if 'epic_word' in SB else None
 timeline['sfx'].append({'t': END_T0 - 0.05, 'kind': 'endhit'})
 
 # ---------------- caption cards ----------------

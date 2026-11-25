@@ -52,6 +52,24 @@ for b in range(nb):
         if k % 2 == 0:
             tq = tt(0.6); put(perc, np.sin(2 * np.pi * np.cumsum(55 + 70 * np.exp(-tq * 22)) / SR) * np.exp(-tq * 6) * 1.0, tk)
         put(perc, hp(rng.standard_normal(int(0.05 * SR)), 5000) * env(0.05, 0.001, 70) * 0.25, tk + beat / 2)
+# epic layer (major, brighter, fuller) crossfaded in at the 'epic' moment
+EPIC = TL.get('epic')
+if EPIC is not None:
+    edrone = np.zeros(N); epulse = np.zeros(N); eperc = np.zeros(N)
+    echords = [[29, 53, 57, 60, 65, 69], [24, 48, 55, 60, 64, 67], [26, 50, 57, 62, 65, 69], [34, 46, 53, 58, 62, 65]]   # F C Dm Bb
+    b0 = int(EPIC // bar)
+    for b in range(b0, nb):
+        t0 = b * bar; ch = echords[(b - b0) % 4]; d = bar + 0.6
+        pad = sum(saw(NOTE(m) * (1 + dt), d, 8) for m in ch[1:] for dt in (-0.005, 0.005)) / 10
+        pad = lp(pad, 2600) * np.minimum(1, tt(d) / 0.4) * np.minimum(1, (d - tt(d)) / 0.5)
+        put(edrone, pad + lp(saw(NOTE(ch[0]), d, 6), 220) * 0.8 * np.minimum(1, tt(d) / 0.2) * np.minimum(1, (d - tt(d)) / 0.4), t0)
+        for k in range(8):
+            put(epulse, lp(saw(NOTE(ch[0] + 12), beat / 2 * 0.8, 8), 900) * env(beat / 2 * 0.8, 0.003, 8), t0 + k * beat / 2, 0.5)
+        for k in range(8):
+            tk = t0 + k * beat / 2; tq = tt(0.5)
+            if k % 2 == 0 or k == 7: put(eperc, np.sin(2 * np.pi * np.cumsum(60 + 80 * np.exp(-tq * 20)) / SR) * np.exp(-tq * 7) * (1.0 if k % 4 == 0 else 0.6), tk)
+    xf = np.clip((np.arange(N) / SR - EPIC) / 1.0, 0, 1)
+    drone = drone * (1 - xf) + edrone * xf; pulse = pulse * (1 - xf) + epulse * xf; perc = perc * (1 - xf) + eperc * xf
 # level automation from storyboard keyframes (0..1): drone always, pulse/perc scale with level
 keys = sorted(TL['music'], key=lambda m: m['t']) or [{'t': 0, 'level': 0.6}]
 tl = np.arange(N) / SR

@@ -60,6 +60,9 @@ function camRect(shot, t) {
 const toScreen = (r, nx, ny) => ({ x: (nx * r.srcW - r.x0) / r.vw * W, y: (ny * r.srcH - r.y0) / r.vh * H, k: H / r.vh });
 
 async function drawPlate(ctx, shot, t, opt = {}) {
+  if (shot.src.type === 'anim' && shot.src.name === 'map') { await drawGeoMap(ctx, shot, t); return null; }
+  if (shot.src.type === 'still' && shot.fit === 'blurfill') { await drawBlurFill(ctx, shot, t); return null; }
+  if (shot.src.type === 'anim' && shot.src.name === 'calcify') { drawCalcify(ctx, t - shot.t0, shot.t1 - shot.t0); return null; }
   if (shot.src.type === 'anim') { const cs = (shot.collapseAt || shot.t0) - shot.t0; drawCollapse(ctx, t - shot.t0, shot.t1 - shot.t0, cs); if (shot.filter === 'oldfilm' && t - shot.t0 < cs) oldFilm(ctx, t); return null; }
   if (shot.src.type === 'compare') { await drawCompare(ctx, shot, t); return null; }
   const r = await drawPlateImg(ctx, shot, t, opt);
@@ -384,6 +387,126 @@ function drawCollapse(ctx, lt, dur, cStart = 0) {
     ctx.beginPath(); ctx.moveTo(x0, yy); ctx.lineTo(x1, yy); ctx.moveTo(x0, yy - 22); ctx.lineTo(x0, yy + 22); ctx.moveTo(x1, yy - 22); ctx.lineTo(x1, yy + 22); ctx.stroke();
     outlinedText(ctx, '≈ 70 M', W / 2, yy - 52, { size: 58, color: C.gold, stroke: 8 }); ctx.globalAlpha = 1; } }
 }
+// low-res photo: sharp full-width band over a blurred enlarged copy
+async function drawBlurFill(ctx, shot, t) {
+  const img = await loadImg(shot.src.path); const cam = shot.cam;
+  const p = (E[cam.ease] || E.inOutSine)(prog(t, shot.t0, shot.t1));
+  const z = lerp(cam.from.z, cam.to.z, p), cx = lerp(cam.from.cx, cam.to.cx, p);
+  const bs = Math.max(W / img.width, H / img.height) * 1.15;
+  ctx.save(); ctx.filter = 'blur(38px) brightness(0.5) saturate(1.3)';
+  ctx.drawImage(img, W / 2 - img.width * bs / 2, H / 2 - img.height * bs / 2, img.width * bs, img.height * bs); ctx.restore();
+  const fw = W * z, fh = fw * img.height / img.width, fy = H * (shot.bandY ?? 0.45) - fh / 2;
+  const fx = W / 2 - fw * clamp(cx, 0.5 / z, 1 - 0.5 / z);
+  ctx.save(); ctx.beginPath(); ctx.rect(0, fy, W, fh); ctx.clip();
+  ctx.filter = 'saturate(1.18) contrast(1.08)'; ctx.drawImage(img, fx, fy, fw, fh); ctx.restore();
+  ctx.fillStyle = 'rgba(0,0,0,0.35)'; ctx.fillRect(0, fy - 3, W, 3); ctx.fillRect(0, fy + fh, W, 3);
+}
+// Natural Earth map: zoom from a wide view to a country, gold highlight + pin
+let GEO = null;
+async function drawGeoMap(ctx, shot, t) {
+  if (!GEO) GEO = await (await fetch('input/ne_countries.geojson')).json();
+  const m = shot.src.map; const p = E.inOutCubic(prog(t, shot.t0, shot.t0 + (m.dur || (shot.t1 - shot.t0) * 0.8)));
+  const lon0 = lerp(m.from.lon, m.to.lon, p), lat0 = lerp(m.from.lat, m.to.lat, p), span = Math.exp(lerp(Math.log(m.from.span), Math.log(m.to.span), p));
+  const k = W / span; const X = (lon) => W / 2 + (lon - lon0) * k, Y = (lat) => H * 0.45 - (lat - lat0) * k * 1.04;
+  ctx.fillStyle = '#071018'; ctx.fillRect(0, 0, W, H);
+  const glow = ctx.createRadialGradient(W / 2, H * 0.45, 50, W / 2, H * 0.45, H * 0.8); glow.addColorStop(0, 'rgba(30,60,90,0.5)'); glow.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = glow; ctx.fillRect(0, 0, W, H);
+  const poly = (rings) => { for (const ring of rings) { ring.forEach(([lo, la], i) => (i ? ctx.lineTo(X(lo), Y(la)) : ctx.moveTo(X(lo), Y(la)))); ctx.closePath(); } };
+  let target = null;
+  for (const f of GEO.features) {
+    const g = f.geometry; if (!g) continue; const name = f.properties.ADMIN || f.properties.NAME;
+    ctx.beginPath(); (g.type === 'Polygon' ? [g.coordinates] : g.coordinates).forEach(poly);
+    if (name === m.country) { target = f; continue; }
+    ctx.fillStyle = '#1C2630'; ctx.fill(); ctx.strokeStyle = 'rgba(160,190,210,0.35)'; ctx.lineWidth = 1.5; ctx.stroke();
+  }
+  if (target) {
+    const g = target.geometry; ctx.beginPath(); (g.type === 'Polygon' ? [g.coordinates] : g.coordinates).forEach(poly);
+    const hl = prog(t, shot.t0 + 0.3, shot.t0 + 1.0);
+    ctx.save(); ctx.shadowColor = 'rgba(255,194,26,0.8)'; ctx.shadowBlur = 40 * hl; ctx.fillStyle = `rgba(255,194,26,${0.25 + 0.6 * hl})`; ctx.fill(); ctx.restore();
+    ctx.strokeStyle = '#FFE28A'; ctx.lineWidth = 4; ctx.stroke();
+  }
+  if (m.label) { ctx.globalAlpha = prog(t, shot.t0 + 0.6, shot.t0 + 1.0); outlinedText(ctx, m.label, W / 2, H * 0.2, { size: 110, color: '#FFC21A', stroke: 11 }); ctx.globalAlpha = 1; }
+  if (m.pin) {
+    const lt = t - shot.t0 - (m.pinAt ?? 1.2); if (lt > 0) {
+      const px = X(m.pin[0]), py = Y(m.pin[1]);
+      for (let q = 0; q < 3; q++) { const ph = ((lt * 1.2 + q / 3) % 1); ctx.beginPath(); ctx.arc(px, py, 18 + ph * 140, 0, Math.PI * 2); ctx.strokeStyle = `rgba(232,32,42,${(1 - ph) * 0.9})`; ctx.lineWidth = 8 * (1 - ph) + 2; ctx.stroke(); }
+      const s = E.outBack(prog(lt, 0, 6 / FPS), 2.5); ctx.save(); ctx.translate(px, py); ctx.scale(s, s);
+      ctx.fillStyle = C.red; ctx.strokeStyle = '#fff'; ctx.lineWidth = 7; ctx.beginPath(); ctx.arc(0, -70, 34, Math.PI * 0.85, Math.PI * 0.15); ctx.lineTo(0, -6); ctx.closePath(); ctx.fill(); ctx.stroke();
+      ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(0, -72, 12, 0, Math.PI * 2); ctx.fill();
+      if (m.pinLabel) { ctx.globalAlpha = prog(lt, 0.25, 0.45); outlinedText(ctx, m.pinLabel, 0, -150, { size: 58, color: '#fff', stroke: 8 }); }
+      ctx.restore();
+    }
+  }
+}
+// illustration: a flamingo on the soda crust gets covered by mineral crystals until it looks like stone
+const CAL = {};
+function flamingoPath(ctx) {
+  // side view, standing; coordinates in a 1080x1920 frame
+  ctx.beginPath();
+  ctx.moveTo(380, 1060);                                   // tail
+  ctx.bezierCurveTo(420, 960, 600, 930, 700, 990);         // back
+  ctx.bezierCurveTo(735, 1010, 740, 1060, 700, 1090);      // chest
+  ctx.bezierCurveTo(620, 1150, 470, 1140, 380, 1060);      // belly
+  ctx.closePath();
+  ctx.moveTo(690, 1000);                                   // neck (S-curve) as a thick band
+  ctx.bezierCurveTo(800, 900, 560, 800, 600, 690);
+  ctx.bezierCurveTo(612, 655, 660, 640, 690, 662);
+  ctx.bezierCurveTo(665, 670, 640, 690, 640, 720);
+  ctx.bezierCurveTo(630, 800, 860, 900, 722, 1030);
+  ctx.closePath();
+}
+function drawCalcify(ctx, lt, dur) {
+  const p = clamp(lt / dur);
+  if (!CAL.crust) {      // crust texture: polygon plates
+    const c = document.createElement('canvas'); c.width = W; c.height = H; const g = c.getContext('2d');
+    const sky = g.createLinearGradient(0, 0, 0, H * 0.45); sky.addColorStop(0, '#1A0E14'); sky.addColorStop(1, '#5A2A2A'); g.fillStyle = sky; g.fillRect(0, 0, W, H * 0.45);
+    const water = g.createLinearGradient(0, H * 0.38, 0, H * 0.5); water.addColorStop(0, '#7A1E1E'); water.addColorStop(1, '#B4473A'); g.fillStyle = water; g.fillRect(0, H * 0.38, W, H * 0.14);
+    g.fillStyle = '#D9C9BE'; g.fillRect(0, H * 0.5, W, H * 0.5);
+    for (let i = 0; i < 260; i++) { const x = hash(i) * W, y = H * 0.5 + hash(i * 3) ** 0.8 * H * 0.5, r = 30 + hash(i * 7) * 90 * (y / H);
+      const wv = 222 + hash(i * 5) * 26; g.fillStyle = hash(i * 13) > 0.9 ? `rgba(${150 + hash(i) * 40},${55 + hash(i * 2) * 25},${45 + hash(i * 4) * 20},0.85)` : `rgba(${wv},${wv - 12 - hash(i * 9) * 14},${wv - 22 - hash(i * 11) * 16},0.95)`; g.beginPath();
+      for (let k = 0; k < 6; k++) { const a = k / 6 * Math.PI * 2 + hash(i + k); g.lineTo(x + Math.cos(a) * r, y + Math.sin(a) * r * 0.45); } g.closePath(); g.fill();
+      g.strokeStyle = 'rgba(90,60,50,0.45)'; g.lineWidth = 3; g.stroke(); }
+    for (let i = 0; i < 4000; i++) { g.fillStyle = `rgba(80,60,50,${0.08 * hash(i * 3)})`; g.fillRect(hash(i) * W, H * 0.5 + hash(i * 7) * H * 0.5, 2, 2); }
+    const vg = g.createRadialGradient(W / 2, H * 0.55, H * 0.2, W / 2, H * 0.55, H * 0.7); vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(20,8,6,0.65)'); g.fillStyle = vg; g.fillRect(0, 0, W, H);
+    CAL.crust = c;
+  }
+  // slow push-in toward the head in the last third
+  const z = 1 + 0.9 * E.inOutCubic(prog(p, 0.6, 1));
+  ctx.save(); ctx.translate(W / 2, H / 2); ctx.scale(z, z); ctx.translate(-W / 2 - (630 - W / 2) * (z - 1) / 0.9 * 0.9, -H / 2 - (760 - H / 2) * (z - 1) / 0.9 * 0.9);
+  ctx.drawImage(CAL.crust, 0, 0);
+  // legs
+  const legCol = `rgb(${lerp(232, 205, p)},${lerp(110, 198, p)},${lerp(140, 190, p)})`;
+  ctx.strokeStyle = legCol; ctx.lineWidth = 12; ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(560, 1120); ctx.lineTo(575, 1300); ctx.lineTo(560, 1480); ctx.moveTo(520, 1115); ctx.lineTo(500, 1290); ctx.lineTo(530, 1470); ctx.stroke();
+  // body: pink -> stone
+  const calc = E.inOutSine(prog(p, 0.12, 0.7));
+  flamingoPath(ctx);
+  const body = ctx.createLinearGradient(380, 650, 740, 1150);
+  body.addColorStop(0, `rgb(${lerp(250, 222, calc)},${lerp(150, 214, calc)},${lerp(170, 204, calc)})`); body.addColorStop(1, `rgb(${lerp(226, 176, calc)},${lerp(92, 168, calc)},${lerp(122, 160, calc)})`);
+  ctx.fillStyle = body; ctx.fill();
+  // wing
+  ctx.beginPath(); ctx.moveTo(450, 1010); ctx.bezierCurveTo(540, 960, 650, 970, 690, 1020); ctx.bezierCurveTo(600, 1060, 520, 1070, 450, 1010);
+  ctx.fillStyle = `rgba(${lerp(200, 150, calc)},${lerp(60, 140, calc)},${lerp(90, 132, calc)},0.55)`; ctx.fill();
+  // beak
+  ctx.beginPath(); ctx.moveTo(686, 660); ctx.quadraticCurveTo(735, 670, 720, 735); ctx.quadraticCurveTo(705, 700, 672, 690); ctx.closePath();
+  ctx.fillStyle = calc > 0.6 ? '#9C928A' : '#1A1012'; ctx.fill();
+  ctx.fillStyle = '#111'; ctx.beginPath(); ctx.arc(652, 676, 5, 0, Math.PI * 2); ctx.fill();
+  // crystals grow over the body (clipped to the silhouette)
+  ctx.save(); flamingoPath(ctx); ctx.clip();
+  const n = Math.floor(900 * prog(p, 0.08, 0.75));
+  for (let i = 0; i < n; i++) {
+    const x = 370 + hash(i * 1.3) * 400, y = 640 + hash(i * 2.7) * 520, r = 3 + hash(i * 4.1) * 12;
+    const sv = hash(i * 9) > 0.55 ? 205 + hash(i) * 40 : 120 + hash(i) * 50; ctx.fillStyle = `rgba(${sv},${sv - 6},${sv - 12},${0.45 + 0.45 * hash(i * 7)})`;
+    ctx.beginPath(); for (let k = 0; k < 5; k++) { const a = k / 5 * Math.PI * 2 + hash(i + k); ctx.lineTo(x + Math.cos(a) * r, y + Math.sin(a) * r); } ctx.closePath(); ctx.fill();
+  }
+  ctx.restore();
+  // crust creeping up the legs
+  ctx.strokeStyle = `rgba(236,230,222,${calc})`; ctx.lineWidth = 16; ctx.beginPath(); ctx.moveTo(560, 1480); ctx.lineTo(575, 1480 - 360 * calc); ctx.moveTo(530, 1470); ctx.lineTo(505, 1470 - 350 * calc); ctx.stroke();
+  ctx.restore();
+  // honesty label
+  ctx.save(); ctx.font = font(30, 800); ctx.letterSpacing = '4px'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  const lw = ctx.measureText('ILUSTRAÇÃO').width + 48; ctx.fillStyle = 'rgba(0,0,0,0.55)'; roundRect(ctx, W / 2 - lw / 2, H * 0.085 - 26, lw, 52, 26); ctx.fill();
+  ctx.fillStyle = '#F5DC9A'; ctx.fillText('ILUSTRAÇÃO', W / 2, H * 0.085 + 2); ctx.restore();
+}
 async function drawCompare(ctx, shot, t) {
   const s = shot.src, lt = t - shot.t0;
   const half = async (path, y0, label, k) => {
@@ -521,6 +644,7 @@ async function renderFrame(f) {
     drawStamp(b, t);
     for (const c of TL.cards) drawCard(b, c, t);
   }
+  if (TL.end.fade && t > TL.duration - TL.end.fade) { b.fillStyle = `rgba(0,0,0,${clamp((t - (TL.duration - TL.end.fade)) / TL.end.fade)})`; b.fillRect(0, 0, W, H); }
   // post: vignette + light grain
   octx.setTransform(1, 0, 0, 1, 0, 0);
   if (shakeAmt > 0.5) { const sx = shakeAmt * Math.sin(t * 91.7), sy = shakeAmt * Math.sin(t * 77.3 + 1); octx.fillStyle = '#000'; octx.fillRect(0, 0, W, H); octx.drawImage(buf, -20 + sx, -36 + sy, W + 40, H + 72); }

@@ -1,0 +1,20 @@
+{
+ "bg": "input/media/doortohell.jpg",
+ "top": "A PORTA DO",
+ "big": "INFERNO",
+ "q": "ESTÁ SE APAGANDO?",
+ "cropV": {
+  "cx": 0.54,
+  "cy": 0.62,
+  "z": 1
+ },
+ "cropH": {
+  "cx": 0.5,
+  "cy": 0.62,
+  "z": 1
+ },
+ "circle": [
+  0.535,
+  0.875
+ ]
+}

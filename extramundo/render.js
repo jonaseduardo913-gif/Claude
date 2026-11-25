@@ -4,12 +4,13 @@ const http = require('http'), fs = require('fs'), path = require('path');
 const { chromium } = require('playwright');
 const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf(k); return i < 0 ? d : args[i + 1]; };
-const ROOT = __dirname, OUT = path.resolve(opt('--out', path.join(ROOT, 'build/frames'))), WORKERS = +opt('--workers', 4);
+const ROOT = process.cwd(), ENGINE = __dirname, OUT = path.resolve(opt('--out', path.join(ROOT, 'build/frames'))), WORKERS = +opt('--workers', 4);
 fs.mkdirSync(OUT, { recursive: true });
 const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.woff2': 'font/woff2', '.jpg': 'image/jpeg' };
 const server = http.createServer((req, res) => {
-  const p = path.join(ROOT, decodeURIComponent(req.url.split('?')[0]));
-  if (!p.startsWith(ROOT) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { res.writeHead(404); return res.end(); }
+  const rel = decodeURIComponent(req.url.split('?')[0]); let p = path.join(ROOT, rel);
+  if (!fs.existsSync(p)) p = path.join(ENGINE, rel);
+  if (!(p.startsWith(ROOT) || p.startsWith(ENGINE)) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { res.writeHead(404); return res.end(); }
   res.writeHead(200, { 'Content-Type': MIME[path.extname(p)] || 'application/octet-stream' }); fs.createReadStream(p).pipe(res);
 });
 (async () => {
