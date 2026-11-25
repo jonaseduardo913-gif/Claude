@@ -6,19 +6,20 @@ window.__ready = (async () => {
   const id = new URLSearchParams(location.search).get('s') || '1';
   const mod = await import(`./story${id}.js`);
   const glc = E.init();
-  const story = mod.build();
+  const story = await mod.build();
+  const FPS = story.fps || E.FPS; window.FPS = FPS;
   const out = document.getElementById('out'); const ctx = out.getContext('2d');
-  window.FRAMES = Math.round(story.duration * E.FPS);
+  window.FRAMES = Math.round(story.duration * FPS);
   window.CUES = story.cues;
   const draw = (f) => {
-    const t = f / E.FPS;
+    const t = f / FPS;
     story.frame(t);
     E.renderer.render(E.scene, E.camera);
     ctx.globalAlpha = 1; ctx.drawImage(glc, 0, 0);
     E.vignette(ctx, 0.32);
     if (story.overlay) story.overlay(ctx, t);
     if (story.title) E.drawTitle(ctx, t, story.title);
-    const cap = story.caps.find((c) => t >= c.t0 && t < c.t1);
+    const cap = (story.caps || []).find((c) => t >= c.t0 && t < c.t1);
     E.drawCaption(ctx, cap, t);
     if (story.endAt) E.drawEnd(ctx, t, story.endAt);
     // fades to/from black

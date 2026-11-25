@@ -1,0 +1,559 @@
+{
+ "voice": "am_michael",
+ "duration": 379.333,
+ "lines": [
+  {
+   "id": 0,
+   "scene": "forest",
+   "text": "Deep in a magical forest, where colorful flowers danced in the breeze, and sunlight sparkled through the trees, lived a curious little boy named Tuca.",
+   "t": 6.3,
+   "d": 11.631,
+   "file": "narration/lines/00.wav"
+  },
+  {
+   "id": 1,
+   "scene": "forest",
+   "text": "Tuca loved exploring. Every day, he discovered something new.",
+   "t": 19.361,
+   "d": 4.56,
+   "file": "narration/lines/01.wav"
+  },
+  {
+   "id": 2,
+   "scene": "forest",
+   "text": "But one beautiful morning, he was about to experience an adventure unlike any other.",
+   "t": 25.091,
+   "d": 6.25,
+   "file": "narration/lines/02.wav"
+  },
+  {
+   "id": 3,
+   "scene": "sound",
+   "text": "As he walked through the forest, something strange caught his attention.",
+   "t": 35.601,
+   "d": 4.599,
+   "file": "narration/lines/03.wav"
+  },
+  {
+   "id": 4,
+   "scene": "sound",
+   "text": "A soft sound came from behind a bush.",
+   "t": 41.759,
+   "d": 2.886,
+   "file": "narration/lines/04.wav"
+  },
+  {
+   "id": 5,
+   "scene": "sound",
+   "text": "Curious, Tuca slowly approached.",
+   "t": 46.726,
+   "d": 2.516,
+   "file": "narration/lines/05.wav"
+  },
+  {
+   "id": 6,
+   "scene": "sound",
+   "text": "He moved a few leaves aside... and couldn't believe his eyes.",
+   "t": 50.541,
+   "d": 4.184,
+   "file": "narration/lines/06.wav"
+  },
+  {
+   "id": 7,
+   "scene": "egg",
+   "text": "There, resting on the soft grass, was a little dinosaur egg.",
+   "t": 57.665,
+   "d": 4.425,
+   "file": "narration/lines/07.wav"
+  },
+  {
+   "id": 8,
+   "scene": "egg",
+   "text": "It was beautiful, with tiny spots, and a warm golden glow.",
+   "t": 63.52,
+   "d": 4.229,
+   "file": "narration/lines/08.wav"
+  },
+  {
+   "id": 9,
+   "scene": "egg",
+   "text": "But something was wrong.",
+   "t": 68.919,
+   "d": 1.811,
+   "file": "narration/lines/09.wav"
+  },
+  {
+   "id": 10,
+   "scene": "egg",
+   "text": "The egg was all alone.",
+   "t": 71.899,
+   "d": 2.015,
+   "file": "narration/lines/10.wav"
+  },
+  {
+   "id": 11,
+   "scene": "egg",
+   "text": "Tuca looked around, searching for its mother.",
+   "t": 75.734,
+   "d": 2.961,
+   "file": "narration/lines/11.wav"
+  },
+  {
+   "id": 12,
+   "scene": "egg",
+   "text": "He checked behind the trees, looked beneath the bushes, and even listened carefully for any nearby sounds.",
+   "t": 79.346,
+   "d": 7.404,
+   "file": "narration/lines/12.wav"
+  },
+  {
+   "id": 13,
+   "scene": "egg",
+   "text": "But the forest was silent.",
+   "t": 88.44,
+   "d": 2.099,
+   "file": "narration/lines/13.wav"
+  },
+  {
+   "id": 14,
+   "scene": "egg",
+   "text": "He gently picked up the egg, and held it close.",
+   "t": 92.619,
+   "d": 3.21,
+   "file": "narration/lines/14.wav"
+  },
+  {
+   "id": 15,
+   "scene": "egg",
+   "text": "He knew he couldn't just leave it there.",
+   "t": 96.609,
+   "d": 2.265,
+   "file": "narration/lines/15.wav"
+  },
+  {
+   "id": 16,
+   "scene": "egg",
+   "text": "So, Tuca decided to find out where it belonged.",
+   "t": 100.044,
+   "d": 3.359,
+   "file": "narration/lines/16.wav"
+  },
+  {
+   "id": 17,
+   "scene": "footprints",
+   "text": "He followed a trail of enormous footprints, leading deeper into the forest.",
+   "t": 106.883,
+   "d": 5.292,
+   "file": "narration/lines/17.wav"
+  },
+  {
+   "id": 18,
+   "scene": "footprints",
+   "text": "Along the way, he crossed a small wooden bridge,",
+   "t": 114.775,
+   "d": 3.079,
+   "file": "narration/lines/18.wav"
+  },
+  {
+   "id": 19,
+   "scene": "footprints",
+   "text": "passed a sparkling waterfall,",
+   "t": 122.014,
+   "d": 1.832,
+   "file": "narration/lines/19.wav"
+  },
+  {
+   "id": 20,
+   "scene": "footprints",
+   "text": "and walked through a field filled with colorful flowers.",
+   "t": 128.267,
+   "d": 3.149,
+   "file": "narration/lines/20.wav"
+  },
+  {
+   "id": 21,
+   "scene": "surprise",
+   "text": "Suddenly, he heard a loud rustling sound.",
+   "t": 136.806,
+   "d": 2.947,
+   "file": "narration/lines/21.wav"
+  },
+  {
+   "id": 22,
+   "scene": "surprise",
+   "text": "Tuca stopped.",
+   "t": 140.793,
+   "d": 1.307,
+   "file": "narration/lines/22.wav"
+  },
+  {
+   "id": 23,
+   "scene": "surprise",
+   "text": "Something was moving in the bushes!",
+   "t": 143.27,
+   "d": 2.137,
+   "file": "narration/lines/23.wav"
+  },
+  {
+   "id": 24,
+   "scene": "surprise",
+   "text": "He took a small step backward.",
+   "t": 146.837,
+   "d": 1.93,
+   "file": "narration/lines/24.wav"
+  },
+  {
+   "id": 25,
+   "scene": "surprise",
+   "text": "But then... a tiny creature appeared.",
+   "t": 149.417,
+   "d": 2.612,
+   "file": "narration/lines/25.wav"
+  },
+  {
+   "id": 26,
+   "scene": "surprise",
+   "text": "It was a little dinosaur!",
+   "t": 153.199,
+   "d": 1.696,
+   "file": "narration/lines/26.wav"
+  },
+  {
+   "id": 27,
+   "scene": "surprise",
+   "text": "The baby dinosaur looked around with curious eyes.",
+   "t": 156.585,
+   "d": 3.441,
+   "file": "narration/lines/27.wav"
+  },
+  {
+   "id": 28,
+   "scene": "surprise",
+   "text": "Then, it noticed the egg in Tuca's arms.",
+   "t": 160.806,
+   "d": 2.798,
+   "file": "narration/lines/28.wav"
+  },
+  {
+   "id": 29,
+   "scene": "hatch",
+   "text": "The little dinosaur quickly approached, gently touching the egg with its nose.",
+   "t": 165.584,
+   "d": 5.332,
+   "file": "narration/lines/29.wav"
+  },
+  {
+   "id": 30,
+   "scene": "hatch",
+   "text": "And suddenly...",
+   "t": 172.346,
+   "d": 1.329,
+   "file": "narration/lines/30.wav"
+  },
+  {
+   "id": 31,
+   "scene": "hatch",
+   "text": "Crack!",
+   "t": 174.844,
+   "d": 0.732,
+   "file": "narration/lines/31.wav"
+  },
+  {
+   "id": 32,
+   "scene": "hatch",
+   "text": "A tiny piece of the eggshell fell to the ground.",
+   "t": 177.006,
+   "d": 3.011,
+   "file": "narration/lines/32.wav"
+  },
+  {
+   "id": 33,
+   "scene": "hatch",
+   "text": "The egg began to shake.",
+   "t": 181.187,
+   "d": 1.618,
+   "file": "narration/lines/33.wav"
+  },
+  {
+   "id": 34,
+   "scene": "hatch",
+   "text": "Tuca watched in amazement, as a tiny dinosaur head slowly appeared from inside.",
+   "t": 185.015,
+   "d": 6.641,
+   "file": "narration/lines/34.wav"
+  },
+  {
+   "id": 35,
+   "scene": "hatch",
+   "text": "It was a baby dinosaur!",
+   "t": 193.086,
+   "d": 1.806,
+   "file": "narration/lines/35.wav"
+  },
+  {
+   "id": 36,
+   "scene": "hatch",
+   "text": "The little creature blinked, looked at Tuca, and let out a tiny, happy squeak.",
+   "t": 196.452,
+   "d": 5.243,
+   "file": "narration/lines/36.wav"
+  },
+  {
+   "id": 37,
+   "scene": "hatch",
+   "text": "Tuca smiled. He had found the little dinosaur's family!",
+   "t": 203.645,
+   "d": 4.096,
+   "file": "narration/lines/37.wav"
+  },
+  {
+   "id": 38,
+   "scene": "hatch",
+   "text": "But there was still one important thing to do.",
+   "t": 209.431,
+   "d": 2.861,
+   "file": "narration/lines/38.wav"
+  },
+  {
+   "id": 39,
+   "scene": "hatch",
+   "text": "They needed to find its mother.",
+   "t": 213.071,
+   "d": 1.929,
+   "file": "narration/lines/39.wav"
+  },
+  {
+   "id": 40,
+   "scene": "journey",
+   "text": "Following the giant footprints again, Tuca and the baby dinosaur continued their journey.",
+   "t": 219.021,
+   "d": 6.364,
+   "file": "narration/lines/40.wav"
+  },
+  {
+   "id": 41,
+   "scene": "journey",
+   "text": "The path became narrower, and the trees grew taller.",
+   "t": 227.074,
+   "d": 3.732,
+   "file": "narration/lines/41.wav"
+  },
+  {
+   "id": 42,
+   "scene": "journey",
+   "text": "The little dinosaur stayed close to Tuca, taking tiny steps along the way.",
+   "t": 231.717,
+   "d": 5.325,
+   "file": "narration/lines/42.wav"
+  },
+  {
+   "id": 43,
+   "scene": "roar",
+   "text": "Then, from far away, they heard a deep and gentle roar.",
+   "t": 241.022,
+   "d": 4.059,
+   "file": "narration/lines/43.wav"
+  },
+  {
+   "id": 44,
+   "scene": "roar",
+   "text": "The baby dinosaur immediately lifted its head.",
+   "t": 248.2,
+   "d": 3.459,
+   "file": "narration/lines/44.wav"
+  },
+  {
+   "id": 45,
+   "scene": "roar",
+   "text": "It recognized that sound!",
+   "t": 252.439,
+   "d": 1.848,
+   "file": "narration/lines/45.wav"
+  },
+  {
+   "id": 46,
+   "scene": "roar",
+   "text": "They hurried toward the noise, and finally reached a beautiful clearing.",
+   "t": 255.716,
+   "d": 4.776,
+   "file": "narration/lines/46.wav"
+  },
+  {
+   "id": 47,
+   "scene": "reunion",
+   "text": "And there she was.",
+   "t": 264.512,
+   "d": 1.498,
+   "file": "narration/lines/47.wav"
+  },
+  {
+   "id": 48,
+   "scene": "reunion",
+   "text": "A giant mother dinosaur stood near a large tree, looking worried, and searching everywhere.",
+   "t": 267.7,
+   "d": 6.284,
+   "file": "narration/lines/48.wav"
+  },
+  {
+   "id": 49,
+   "scene": "reunion",
+   "text": "When she saw the little dinosaur, her eyes filled with happiness.",
+   "t": 275.674,
+   "d": 4.488,
+   "file": "narration/lines/49.wav"
+  },
+  {
+   "id": 50,
+   "scene": "reunion",
+   "text": "The baby dinosaur ran toward her, as fast as its little legs could carry it.",
+   "t": 281.592,
+   "d": 5.304,
+   "file": "narration/lines/50.wav"
+  },
+  {
+   "id": 51,
+   "scene": "reunion",
+   "text": "The mother lowered her enormous head, and gently nuzzled her baby.",
+   "t": 288.326,
+   "d": 4.938,
+   "file": "narration/lines/51.wav"
+  },
+  {
+   "id": 52,
+   "scene": "reunion",
+   "text": "They were finally together again.",
+   "t": 294.954,
+   "d": 2.477,
+   "file": "narration/lines/52.wav"
+  },
+  {
+   "id": 53,
+   "scene": "goodbye",
+   "text": "Tuca watched the beautiful reunion with a big smile.",
+   "t": 301.911,
+   "d": 3.733,
+   "file": "narration/lines/53.wav"
+  },
+  {
+   "id": 54,
+   "scene": "goodbye",
+   "text": "The mother dinosaur turned toward him, and gently lowered her head, as if saying thank you.",
+   "t": 307.074,
+   "d": 6.452,
+   "file": "narration/lines/54.wav"
+  },
+  {
+   "id": 55,
+   "scene": "goodbye",
+   "text": "Tuca waved goodbye, as the little dinosaur looked back one last time.",
+   "t": 315.216,
+   "d": 5.375,
+   "file": "narration/lines/55.wav"
+  },
+  {
+   "id": 56,
+   "scene": "goodbye",
+   "text": "And then, together, they disappeared into the magical forest.",
+   "t": 322.021,
+   "d": 4.586,
+   "file": "narration/lines/56.wav"
+  },
+  {
+   "id": 57,
+   "scene": "lesson",
+   "text": "That day, Tuca learned something important.",
+   "t": 332.767,
+   "d": 2.886,
+   "file": "narration/lines/57.wav"
+  },
+  {
+   "id": 58,
+   "scene": "lesson",
+   "text": "Sometimes, the greatest adventures aren't about discovering new places, or finding hidden treasures.",
+   "t": 337.343,
+   "d": 7.598,
+   "file": "narration/lines/58.wav"
+  },
+  {
+   "id": 59,
+   "scene": "lesson",
+   "text": "They're about helping someone, showing kindness, and making a difference.",
+   "t": 346.37,
+   "d": 5.038,
+   "file": "narration/lines/59.wav"
+  },
+  {
+   "id": 60,
+   "scene": "lesson",
+   "text": "And as the sun slowly set over the forest, Tuca knew that this was an adventure he would never forget.",
+   "t": 353.488,
+   "d": 7.339,
+   "file": "narration/lines/60.wav"
+  },
+  {
+   "id": 61,
+   "scene": "lesson",
+   "text": "Because every little act of kindness can lead to something truly magical.",
+   "t": 363.037,
+   "d": 5.896,
+   "file": "narration/lines/61.wav"
+  }
+ ],
+ "scenes": [
+  {
+   "name": "forest",
+   "t0": 0.0,
+   "t1": 34.201
+  },
+  {
+   "name": "sound",
+   "t0": 34.201,
+   "t1": 56.545
+  },
+  {
+   "name": "egg",
+   "t0": 56.545,
+   "t1": 105.483
+  },
+  {
+   "name": "footprints",
+   "t0": 105.483,
+   "t1": 135.966
+  },
+  {
+   "name": "surprise",
+   "t0": 135.966,
+   "t1": 165.164
+  },
+  {
+   "name": "hatch",
+   "t0": 165.164,
+   "t1": 217.341
+  },
+  {
+   "name": "journey",
+   "t0": 217.341,
+   "t1": 239.902
+  },
+  {
+   "name": "roar",
+   "t0": 239.902,
+   "t1": 262.832
+  },
+  {
+   "name": "reunion",
+   "t0": 262.832,
+   "t1": 301.071
+  },
+  {
+   "name": "goodbye",
+   "t0": 301.071,
+   "t1": 330.247
+  },
+  {
+   "name": "lesson",
+   "t0": 330.247,
+   "t1": 379.333
+  }
+ ]
+}

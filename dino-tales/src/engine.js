@@ -315,7 +315,7 @@ export function rrect(ctx, x, y, w, h, r) {
   ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
 }
 export function outlined(ctx, text, x, y, size, fill, { stroke = '#2b1606', lw = 0.11, font = '"Luckiest Guy"', shadow = true } = {}) {
-  ctx.font = `${size}px ${font}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+  const fm = font.match(/^(\d+)\s+(.*)$/); ctx.font = fm ? `${fm[1]} ${size}px ${fm[2]}` : `${size}px ${font}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
   if (shadow) { ctx.fillStyle = 'rgba(0,0,0,0.35)'; ctx.lineWidth = size * lw; ctx.strokeStyle = 'rgba(0,0,0,0.35)'; ctx.strokeText(text, x + size * 0.04, y + size * 0.07); }
   ctx.lineWidth = size * lw; ctx.strokeStyle = stroke; ctx.strokeText(text, x, y);
   ctx.fillStyle = fill; ctx.fillText(text, x, y);

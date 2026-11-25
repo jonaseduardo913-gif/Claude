@@ -40,7 +40,8 @@ const server = http.createServer((req, res) => {
   const probe = await launch(); const pp = await open(probe);
   const total = await pp.evaluate(() => window.FRAMES);
   const cues = await pp.evaluate(() => window.CUES);
-  fs.writeFileSync(path.join(OUT, 'cues.json'), JSON.stringify({ duration: total / 30, cues }));
+  const fps = await pp.evaluate(() => window.FPS);
+  fs.writeFileSync(path.join(OUT, 'cues.json'), JSON.stringify({ duration: total / fps, fps, cues }));
   await probe.close();
 
   let frames = has('--only') ? opt('--only').split(',').map(Number) : [...Array(total).keys()];

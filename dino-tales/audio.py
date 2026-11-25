@@ -121,6 +121,10 @@ STYLES = {
     'warm':    dict(bpm=96, root=65, scale=[0, 2, 4, 7, 9], prog=[[0, 4, 7], [-3, 0, 4], [-7, -3, 0], [-5, -1, 2]], lead=bell, comp='strum', comp_inst=pluck, perc='shaker', bass=True, oct=12, padon=True),
     'beach':   dict(bpm=100, root=64, scale=[0, 2, 4, 7, 9], prog=[[0, 4, 7], [5, 9, 12], [-3, 0, 4], [7, 11, 14]], lead=marimba, comp='strum', comp_inst=pluck, perc='shaker+bongo', bass=True, oct=12),
     'chase':   dict(bpm=140, root=57, scale=[0, 2, 3, 5, 7, 8], prog=[[0, 3, 7], [-2, 2, 5], [-4, 0, 3], [-5, -1, 2]], lead=pizz, comp='pulse', comp_inst=pizz, perc='timp+shaker', bass=True, oct=12),
+    'magic':   dict(bpm=70, root=65, scale=[0, 2, 4, 7, 9], prog=[[0, 4, 7], [-3, 0, 4], [5, 9, 12], [-5, -1, 2]], lead=bell, comp='harp', comp_inst=pluck, perc='', bass=True, oct=12, padon=True, sparse=True),
+    'tender':  dict(bpm=62, root=60, scale=[0, 2, 4, 7, 9], prog=[[0, 4, 7], [-7, -3, 0], [-3, 0, 4], [-5, -1, 2]], lead=musicbox, comp='slowarp', comp_inst=pluck, perc='', bass=True, oct=12, padon=True, sparse=True),
+    'adventure': dict(bpm=104, root=62, scale=[0, 2, 4, 7, 9], prog=[[0, 4, 7], [5, 9, 12], [-3, 0, 4], [7, 11, 14]], lead=marimba, comp='strum', comp_inst=pluck, perc='shaker', bass=True, oct=12),
+    'curious': dict(bpm=84, root=57, scale=[0, 2, 3, 7, 8], prog=[[0, 3, 7], [-4, 0, 3], [0, 3, 7], [-5, -1, 2]], lead=pizz, comp='pulse', comp_inst=pizz, perc='', bass=True, oct=12, sparse=True),
     'sunset':  dict(bpm=84, root=62, scale=[0, 2, 4, 7, 9], prog=[[0, 4, 7], [-3, 0, 4], [5, 9, 12], [7, 11, 14]], lead=bell, comp='strum', comp_inst=pluck, perc='', bass=True, oct=12, padon=True),
 }
 
@@ -154,6 +158,8 @@ def music(style, t0, t1, gain):
                 if k % 2 == 0: out.append((ci(NOTE(root - 12 + ch[0]), 0.3), tb + k * beat, 0.7, 0, 0.1))
                 else:
                     for n in ch: out.append((ci(NOTE(root + n), 0.25), tb + k * beat, 0.3, 0.2, 0.1))
+        elif cm == 'harp':
+            for k in range(8): out.append((ci(NOTE(root + ch[k % 3] + 12 * ((k // 3) % 2)), 1.4, 1.4), tb + k * beat / 2, 0.2, (-0.4, 0.4)[k % 2], 0.35))
         elif cm == 'strum':
             for k, pos in enumerate([0, 1.5, 2, 3, 3.5]):
                 for j, n in enumerate(ch + [ch[0] + 12]):
@@ -191,6 +197,16 @@ def sting(t, gain=1.0):
 # ------------------------------------------------------------ ambience
 def amb(kind, t0, t1, gain):
     d = t1 - t0; n = int(d * SR)
+    if kind == 'forest': kind = 'jungle'; gain *= 0.8
+    if kind == 'stream':
+        x = filt(rng.standard_normal(n), 400, 3500); m = filt(np.abs(rng.standard_normal(n)), None, 18)
+        place(x * (0.02 + 0.05 * m / (m.max() + 1e-9)), t0, gain, -0.2, 0.15)
+        for _ in range(int(d * 6)): place(sweep(500 + rng.random() * 900, 900 + rng.random() * 1400, 0.04) * env(0.04, 0.002, 60) * 0.05, t0 + rng.random() * d, gain, rng.uniform(-0.6, 0.6), 0.3)
+        return
+    if kind == 'falls':
+        x = filt(rng.standard_normal(n), 60, 4000) * 0.09 + filt(rng.standard_normal(n), 30, 200) * 0.06
+        e = np.minimum(1, np.arange(n) / SR / 1.0) * np.minimum(1, (d - np.arange(n) / SR) / 1.0)
+        place(x * e, t0, gain, 0, 0.1); return
     if kind == 'jungle':
         base = filt(rng.standard_normal(n), 300, 1800) * 0.012
         ins = filt(rng.standard_normal(n), 5500, 8000) * (0.5 + 0.5 * np.sin(2 * np.pi * 14 * np.arange(n) / SR)) * 0.006
@@ -277,7 +293,9 @@ def sfx(c):
         for h in range(1, 14): s += np.sin(2 * np.pi * np.cumsum(f0 * h) / SR) / h ** 0.8
         s = filt(s, 60, 1600) * 0.3 + filt(noise(d), 200, 1400) * 0.35
         e = np.minimum(1, tt_ / 0.12) * np.minimum(1, (d - tt_) / 0.4)
-        place(np.tanh(s * e * 2.2) * 0.8, t, g, 0, 0.45)
+        out_ = np.tanh(s * e * 2.2) * 0.8
+        if c.get('soft'): out_ = filt(out_, None, 700) * 1.4
+        place(out_, t, g, 0, 0.6 if c.get('soft') else 0.45)
     elif k == 'gasp':
         place(sweep(400, 900, 0.18) * env(0.18, 0.01, 8) * 0.12, t, g, pan, 0.2)
     elif k == 'sneeze':
@@ -328,6 +346,20 @@ def sfx(c):
         place(filt(noise(0.06), 300, 3000) * env(0.06, 0.001, 50) * 0.5, t, g, pan, 0.1)
     elif k == 'twinkle':
         for j, m in enumerate([88, 91, 95, 100]): place(bell(NOTE(m), 0.7), t + j * 0.05, 0.15 * g, (-0.4, 0.4)[j % 2], 0.6)
+    elif k == 'rustle':
+        d = c.get('d', 1.0); tt_ = tt(d); m = np.abs(np.sin(2 * np.pi * 11 * tt_)) * (0.6 + 0.4 * np.sin(2 * np.pi * 3 * tt_))
+        place(filt(noise(d), 1200, 7000) * m * np.sin(np.pi * tt_ / d) * 0.35, t, g, pan, 0.2)
+    elif k == 'shimmer':
+        for j, m in enumerate([79, 83, 86, 91, 95, 98]): place(bell(NOTE(m), 1.4), t + j * 0.07, 0.14 * g, (-0.5, 0.5)[j % 2], 0.6)
+    elif k == 'plank':
+        d = 0.14; tt_ = tt(d); place((np.sin(2 * np.pi * 180 * tt_) * np.exp(-tt_ * 35) + filt(noise(d), 200, 1500) * np.exp(-tt_ * 50) * 0.5) * 0.4, t, g, pan, 0.1)
+    elif k == 'boop':
+        place(sweep(400, 900, 0.12) * env(0.12, 0.005, 18) * 0.25, t, g, pan, 0.3)
+        for j, m in enumerate([84, 88, 91]): place(bell(NOTE(m), 0.9), t + 0.05 + j * 0.06, 0.15 * g, 0, 0.5)
+    elif k == 'squeak':
+        for j in range(2):
+            d = 0.16; tt_ = tt(d); f = (1300 + 700 * tt_ / d) * (1 + 0.03 * np.sin(2 * np.pi * 30 * tt_)) * (1.15 if j else 1)
+            place(np.sin(2 * np.pi * np.cumsum(f) / SR) * env(d, 0.01, 10) * 0.18, t + j * 0.2, g, pan, 0.3)
     elif k == 'drop':
         place(sweep(1200, 300, 0.5) * env(0.5, 0.01, 3) * 0.12, t, g, pan, 0.2)
 
@@ -352,11 +384,26 @@ def blip(c):
     v = 'aeiou'[int(c['pitch'] * 7) % 5]
     place(voice(c['pitch'], max(0.05, c['d']), v, c.get('wave', 'sq')), c['t'], 0.85 * c.get('gain', 1), c.get('pan', 0), 0.12)
 
+# ---------------------------------------------------------------- narration
+VOX = np.zeros(N)
+def narr(c):
+    import os
+    path = os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), '..', '..', c['file'])
+    with wave.open(path) as w:
+        sr = w.getframerate(); a = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(float) / 32768
+        if w.getnchannels() == 2: a = a.reshape(-1, 2).mean(1)
+    a = np.interp(np.arange(int(len(a) * SR / sr)) * sr / SR, np.arange(len(a)), a)
+    a = a + 0.35 * filt(a, None, 260)            # warmth
+    i = int(c['t'] * SR); n = min(len(a), N - i)
+    VOX[i:i + n] += a[:n] * c.get('gain', 1.0)
+    FX[i:i + n] += a[:n] * 0.06
+
 # ---------------------------------------------------------------- render
-speech = [c for c in CUES if c['type'] == 'blip']
+speech = [c for c in CUES if c['type'] == 'blip'] + [dict(t=c['t'], d=c.get('d', 0) or 0) for c in CUES if c['type'] == 'voice']
 for c in CUES:
     k = c['type']
     if k == 'blip': blip(c)
+    elif k == 'voice': narr(c); c['d'] = 0
     elif k == 'music': music(c['style'], c['t'], c['t1'], c.get('gain', 0.5))
     elif k == 'amb': amb(c['kind'], c['t'], c['t1'], c.get('gain', 0.5))
     elif k == 'sting': sting(c['t'], c.get('gain', 1))
@@ -368,7 +415,13 @@ for c in speech:
     a, b = int((c['t'] - 0.15) * SR), int((c['t'] + c['d'] + 0.3) * SR)
     duck[max(0, a):min(N, b)] = 0.55
 k = int(0.12 * SR); ker = np.ones(k) / k; duck = np.convolve(duck, ker, mode='same')
-L += MUS_L * duck; R += MUS_R * duck
+if VOX.any():
+    env_ = np.convolve(np.abs(VOX), np.ones(int(0.25 * SR)) / int(0.25 * SR), mode='same')
+    duck = np.minimum(duck, 1 - 0.5 * np.clip(env_ / (env_.max() * 0.25 + 1e-9), 0, 1))
+    duck = np.convolve(duck, ker, mode='same')
+    vr = np.sqrt(np.mean(VOX[VOX != 0] ** 2)); VOX *= 0.16 / (vr + 1e-9)
+    L += VOX; R += VOX
+L += MUS_L * duck * 1.3; R += MUS_R * duck * 1.3
 FX += (MUS_L + MUS_R) * 0.5 * duck * 0.25
 
 # reverb (FFT convolution with decaying filtered noise)
