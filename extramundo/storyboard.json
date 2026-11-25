@@ -1,0 +1,749 @@
+{
+ "lead": 0.3,
+ "headline": {
+  "lines": [
+   "UM BURACO QUE NUNCA",
+   "PARA DE QUEIMAR?"
+  ],
+  "until_word": 14
+ },
+ "stamp": null,
+ "music": [
+  {
+   "t": 0,
+   "level": 0.25
+  },
+  {
+   "word": 15,
+   "level": 0.45
+  },
+  {
+   "word": 46,
+   "level": 0.35
+  },
+  {
+   "word": 56,
+   "level": 0.5
+  },
+  {
+   "word": 67,
+   "level": 0.55
+  },
+  {
+   "word": 95,
+   "level": 1.0
+  },
+  {
+   "word": 97,
+   "level": 0.4
+  },
+  {
+   "word": 113,
+   "level": 0.3
+  },
+  {
+   "word": 129,
+   "level": 0.25
+  },
+  {
+   "word": 145,
+   "level": 0.1
+  },
+  {
+   "word": 160,
+   "level": 0.2
+  },
+  {
+   "word": 175,
+   "level": 0.35
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.0,
+   "kind": "wind",
+   "dur": 4.0
+  },
+  {
+   "t": 0.3,
+   "kind": "impact"
+  },
+  {
+   "t": 1.25,
+   "kind": "whooshlong"
+  },
+  {
+   "word": 8,
+   "kind": "fire",
+   "dur": 2.6
+  },
+  {
+   "word": 25,
+   "kind": "fire",
+   "dur": 3.0
+  },
+  {
+   "word": 40,
+   "kind": "fire",
+   "dur": 2.6
+  },
+  {
+   "word": 56,
+   "kind": "rumble",
+   "dur": 3.6
+  },
+  {
+   "word": 67,
+   "kind": "fire",
+   "dur": 7.5
+  },
+  {
+   "word": 89,
+   "kind": "fire",
+   "dur": 2.5
+  },
+  {
+   "word": 113,
+   "kind": "wind",
+   "dur": 6.0
+  },
+  {
+   "word": 113,
+   "kind": "fire",
+   "dur": 6.0
+  },
+  {
+   "word": 175,
+   "kind": "wind",
+   "dur": 3.5
+  }
+ ],
+ "shots": [
+  {
+   "at": 0,
+   "src": "img:night",
+   "fx": [
+    "embers"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.55,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.72,
+     "z": 2.6
+    },
+    "ease": "inOutCubic",
+    "dur": 2.9
+   }
+  },
+  {
+   "at": 8,
+   "src": "img:inside",
+   "fx": [
+    "embers",
+    "heat"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.52,
+     "cy": 0.52,
+     "z": 1.18
+    }
+   }
+  },
+  {
+   "at": 15,
+   "src": "img:pav_day",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.55,
+     "z": 1.7
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.05
+    }
+   }
+  },
+  {
+   "at": 18,
+   "src": "img:globe",
+   "trans": "zoomblur",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.47,
+     "cy": 0.5,
+     "z": 2.2
+    }
+   }
+  },
+  {
+   "at": 21,
+   "src": "img:tkm_map",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.43,
+     "cy": 0.37,
+     "z": 1.9
+    }
+   },
+   "overlays": [
+    {
+     "type": "pin",
+     "x": 0.424,
+     "y": 0.355,
+     "label": "DARVAZA",
+     "at": 0.25
+    },
+    {
+     "type": "bigtext",
+     "text": "TURCOMENISTÃO",
+     "color": "cyan",
+     "size": 130,
+     "y": 0.2,
+     "word": 21
+    }
+   ]
+  },
+  {
+   "at": 25,
+   "src": "img:doortohell",
+   "fx": [
+    "embers"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.15
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "PORTA DO|INFERNO",
+     "color": "pink",
+     "size": 160,
+     "y": 0.24,
+     "word": 25
+    }
+   ]
+  },
+  {
+   "at": 28,
+   "src": "img:pav4",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.62,
+     "z": 1.25
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.64,
+     "z": 1.5
+    }
+   },
+   "overlays": [
+    {
+     "type": "loc",
+     "text": "CRATERA DE DARVAZA"
+    },
+    {
+     "type": "arrow",
+     "x": 0.585,
+     "y": 0.655,
+     "from": "up-left",
+     "at": 0.35
+    }
+   ]
+  },
+  {
+   "at": 33,
+   "src": "img:panorama",
+   "fx": [
+    "embers"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.3,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.7,
+     "cy": 0.5,
+     "z": 1.0
+    }
+   }
+  },
+  {
+   "at": 36,
+   "src": "img:goetz_dawn",
+   "cam": {
+    "from": {
+     "cx": 0.66,
+     "cy": 0.55,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.7,
+     "cy": 0.6,
+     "z": 1.2
+    }
+   },
+   "overlays": [
+    {
+     "type": "loc",
+     "text": "DESERTO DE KARAKUM"
+    }
+   ]
+  },
+  {
+   "at": 40,
+   "src": "img:pav1",
+   "fx": [
+    "embers",
+    "heat"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.55,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.55,
+     "cy": 0.55,
+     "z": 1.2
+    }
+   }
+  },
+  {
+   "at": 46,
+   "src": "anim:collapse",
+   "filter": "oldfilm",
+   "collapse_word": 56
+  },
+  {
+   "at": 67,
+   "src": "img:goetz_day",
+   "fx": [
+    "embers",
+    "heat"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.72,
+     "z": 1.3
+    },
+    "to": {
+     "cx": 0.55,
+     "cy": 0.72,
+     "z": 1.5
+    }
+   }
+  },
+  {
+   "at": 74,
+   "src": "img:pav5",
+   "fx": [
+    "embers",
+    "heat",
+    "flicker"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.48,
+     "cy": 0.5,
+     "z": 1.22
+    }
+   }
+  },
+  {
+   "at": 78,
+   "src": "img:glow",
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.6,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.45,
+     "cy": 0.64,
+     "z": 1.2
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "APENAS ALGUNS|DIAS…",
+     "color": "gold",
+     "size": 140,
+     "y": 0.25,
+     "word": 83
+    }
+   ]
+  },
+  {
+   "at": 86,
+   "src": "img:pav2",
+   "trans": "glitch",
+   "fx": [
+    "flicker"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.72,
+     "cy": 0.55,
+     "z": 1.4
+    },
+    "to": {
+     "cx": 0.75,
+     "cy": 0.55,
+     "z": 1.7
+    }
+   }
+  },
+  {
+   "at": 89,
+   "src": "img:doortohell",
+   "fx": [
+    "embers",
+    "heat",
+    "flicker"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.6,
+     "cy": 0.78,
+     "z": 1.5
+    },
+    "to": {
+     "cx": 0.6,
+     "cy": 0.78,
+     "z": 1.9
+    }
+   }
+  },
+  {
+   "at": 93,
+   "src": "img:night",
+   "fx": [
+    "flicker"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.72,
+     "z": 1.6
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.72,
+     "z": 2.0
+    }
+   }
+  },
+  {
+   "at": 95,
+   "src": "img:pav_dawn",
+   "fx": [
+    "embers"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.7,
+     "z": 1.6
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.6,
+     "z": 1.0
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "DÉCADAS!",
+     "color": "pink",
+     "size": 260,
+     "y": 0.3,
+     "style": "slam",
+     "word": 96
+    }
+   ]
+  },
+  {
+   "at": 97,
+   "src": "img:pav3",
+   "fx": [
+    "embers"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.3,
+     "cy": 0.6,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.35,
+     "cy": 0.6,
+     "z": 1.08
+    }
+   }
+  },
+  {
+   "at": 104,
+   "src": "img:panorama",
+   "cam": {
+    "from": {
+     "cx": 0.2,
+     "cy": 0.55,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.3,
+     "cy": 0.55,
+     "z": 1.05
+    }
+   }
+  },
+  {
+   "at": 109,
+   "src": "img:pav5",
+   "fx": [
+    "embers"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.15,
+     "cy": 0.45,
+     "z": 1.3
+    },
+    "to": {
+     "cx": 0.2,
+     "cy": 0.45,
+     "z": 1.45
+    }
+   }
+  },
+  {
+   "at": 113,
+   "src": "img:pav2",
+   "trans": "dip",
+   "cam": {
+    "from": {
+     "cx": 0.2,
+     "cy": 0.55,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.32,
+     "cy": 0.55,
+     "z": 1.05
+    },
+    "ease": "linear"
+   }
+  },
+  {
+   "at": 120,
+   "src": "img:pav1",
+   "fx": [
+    "embers",
+    "heat"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.8,
+     "cy": 0.55,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.78,
+     "cy": 0.52,
+     "z": 1.1
+    },
+    "ease": "linear"
+   }
+  },
+  {
+   "at": 129,
+   "src": "img:inside",
+   "fx": [
+    "heat"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.6,
+     "cy": 0.45,
+     "z": 1.4
+    },
+    "to": {
+     "cx": 0.6,
+     "cy": 0.45,
+     "z": 1.2
+    }
+   }
+  },
+  {
+   "at": 136,
+   "src": "compare:doortohell,pav1",
+   "labels": [
+    "2010",
+    "2018"
+   ]
+  },
+  {
+   "at": 139,
+   "src": "cira:3.6",
+   "overlays": [
+    {
+     "type": "loc",
+     "text": "IMAGEM DE SATÉLITE"
+    }
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.08
+    }
+   }
+  },
+  {
+   "at": 150,
+   "src": "img:night",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.72,
+     "z": 2.2
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.65,
+     "z": 1.0
+    },
+    "ease": "inOutCubic"
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "O FOGO ESTÁ|DIMINUINDO?",
+     "color": "gold",
+     "size": 130,
+     "y": 0.24,
+     "word": 151
+    }
+   ]
+  },
+  {
+   "at": 160,
+   "src": "img:glow",
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.62,
+     "z": 1.25
+    },
+    "to": {
+     "cx": 0.45,
+     "cy": 0.6,
+     "z": 1.0
+    }
+   }
+  },
+  {
+   "at": 175,
+   "src": "img:goetz_dawn",
+   "cam": {
+    "from": {
+     "cx": 0.72,
+     "cy": 0.68,
+     "z": 2.4
+    },
+    "to": {
+     "cx": 0.6,
+     "cy": 0.55,
+     "z": 1.0
+    },
+    "ease": "inOutCubic"
+   }
+  }
+ ],
+ "end": {
+  "hold": 3.6,
+  "trans": "flash"
+ },
+ "keywords": {
+  "cyan": [
+   "TURCOMENISTÃO",
+   "DESERTO",
+   "KARAKUM",
+   "DARVAZA",
+   "CRATERA",
+   "PLANETA",
+   "MUNDO",
+   "TERRA",
+   "LUGAR",
+   "LUGARES"
+  ],
+  "pink": [
+   "FOGO",
+   "CHAMAS",
+   "INFERNO",
+   "QUEIMANDO",
+   "TÓXICOS",
+   "ASSUSTADORES",
+   "BURACO",
+   "MISTERIOSOS"
+  ],
+  "gold": [
+   "DÉCADAS",
+   "ANOS",
+   "DIAS",
+   "INTENSIDADE",
+   "CORAGEM"
+  ]
+ }
+}
