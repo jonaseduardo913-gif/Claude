@@ -1,0 +1,89 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>EXTRAMUNDO cover</title>
+<link rel="stylesheet" href="fonts.css">
+<style>body{margin:0;background:#000}</style></head>
+<body>
+<canvas id="v" width="1080" height="1920"></canvas>
+<canvas id="h" width="1280" height="720"></canvas>
+<script>
+// Thumbnail generator: vertical (Shorts) + horizontal covers.
+const CFG = { bg: 'input/media/doortohell.jpg', top: 'A PORTA DO', big: 'INFERNO', q: 'ESTÁ SE APAGANDO?' };
+const font = (s, w = 900) => `${w} ${s}px "Montserrat"`;
+const load = (src) => new Promise((r) => { const i = new Image(); i.onload = () => r(i); i.src = src; });
+
+function cover(ctx, img, W, H, { cx, cy, z }) {
+  const ar = W / H; let sh = img.height / z, sw = sh * ar;
+  if (sw > img.width) { sw = img.width / z; sh = sw / ar; }
+  const sx = Math.min(Math.max(cx * img.width - sw / 2, 0), img.width - sw), sy = Math.min(Math.max(cy * img.height - sh / 2, 0), img.height - sh);
+  ctx.filter = 'saturate(1.35) contrast(1.18) brightness(1.05)'; ctx.drawImage(img, sx, sy, sw, sh, 0, 0, W, H); ctx.filter = 'none';
+  return (nx, ny) => ({ x: (nx * img.width - sx) / sw * W, y: (ny * img.height - sy) / sh * H, k: W / sw });
+}
+function outlined(ctx, text, x, y, size, fill, stroke, align = 'center', glow) {
+  ctx.save(); ctx.font = font(size); ctx.textAlign = align; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+  if (glow) { ctx.shadowColor = glow; ctx.shadowBlur = size * 0.45; }
+  ctx.strokeStyle = '#000'; ctx.lineWidth = stroke * 2; ctx.strokeText(text, x, y); ctx.shadowBlur = 0;
+  ctx.fillStyle = fill; ctx.fillText(text, x, y); ctx.restore();
+}
+function fireGradient(ctx, y, size) {
+  const g = ctx.createLinearGradient(0, y - size * 0.45, 0, y + size * 0.45);
+  g.addColorStop(0, '#FFF1B8'); g.addColorStop(0.35, '#FFC21A'); g.addColorStop(0.75, '#FF5A1F'); g.addColorStop(1, '#C81E14'); return g;
+}
+function fit(ctx, text, size, maxW) { ctx.font = font(size); const w = ctx.measureText(text).width; return w > maxW ? Math.floor(size * maxW / w) : size; }
+function handCircle(ctx, x, y, rx, ry) {
+  const path = () => { ctx.beginPath(); for (let i = 0; i <= 80; i++) { const a = -2.3 + i / 80 * Math.PI * 2.12; const k = 1 + 0.05 * Math.sin(i * 0.4); i ? ctx.lineTo(x + Math.cos(a) * rx * k, y + Math.sin(a) * ry * k) : ctx.moveTo(x + Math.cos(a) * rx * k, y + Math.sin(a) * ry * k); } };
+  ctx.save(); ctx.lineCap = 'round'; path(); ctx.strokeStyle = '#000'; ctx.lineWidth = 26; ctx.stroke(); path(); ctx.strokeStyle = '#FFC21A'; ctx.lineWidth = 13; ctx.stroke(); ctx.restore();
+}
+function eclipse(ctx, cx, cy, r) {
+  ctx.save();
+  const halo = ctx.createRadialGradient(cx, cy, r * 0.9, cx, cy, r * 1.8); halo.addColorStop(0, 'rgba(255,190,40,.5)'); halo.addColorStop(1, 'rgba(255,190,40,0)');
+  ctx.fillStyle = halo; ctx.fillRect(cx - r * 2, cy - r * 2, r * 4, r * 4);
+  ctx.fillStyle = '#000'; ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fill();
+  ctx.shadowColor = '#FFC21A'; ctx.shadowBlur = r * 0.4; ctx.strokeStyle = '#FFD76A'; ctx.lineWidth = r * 0.12; ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.stroke();
+  ctx.globalCompositeOperation = 'lighter'; const f = ctx.createRadialGradient(cx, cy - r, 0, cx, cy - r, r * 0.8); f.addColorStop(0, 'rgba(255,248,220,1)'); f.addColorStop(0.3, 'rgba(255,200,60,.6)'); f.addColorStop(1, 'rgba(255,180,30,0)');
+  ctx.fillStyle = f; ctx.fillRect(cx - r, cy - r * 1.8, r * 2, r * 1.6); ctx.restore();
+}
+function brand(ctx, x, y, s, align = 'center') {
+  ctx.save(); ctx.font = font(s); const w = ctx.measureText('EXTRAMUNDO').width; const r = s * 0.42; const total = r * 2.6 + w;
+  const x0 = align === 'center' ? x - total / 2 : x;
+  eclipse(ctx, x0 + r, y, r);
+  const g = ctx.createLinearGradient(0, y - s / 2, 0, y + s / 2); g.addColorStop(0, '#FFF1B8'); g.addColorStop(0.5, '#FFC21A'); g.addColorStop(1, '#C77700');
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left'; ctx.lineJoin = 'round'; ctx.strokeStyle = '#000'; ctx.lineWidth = s * 0.16; ctx.strokeText('EXTRAMUNDO', x0 + r * 2.6, y + 2);
+  ctx.fillStyle = g; ctx.fillText('EXTRAMUNDO', x0 + r * 2.6, y + 2); ctx.restore();
+}
+function questionBar(ctx, text, cx, cy, size, rot = -0.03) {
+  ctx.save(); ctx.translate(cx, cy); ctx.rotate(rot); ctx.font = font(size); const w = ctx.measureText(text).width + size * 1.1, h = size * 1.5;
+  ctx.fillStyle = '#000'; ctx.fillRect(-w / 2 + 10, -h / 2 + 12, w, h);
+  ctx.fillStyle = '#FFC21A'; ctx.fillRect(-w / 2, -h / 2, w, h);
+  ctx.fillStyle = '#0A0703'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(text, 0, 4); ctx.restore();
+}
+
+async function vertical(img) {
+  const c = document.getElementById('v'), ctx = c.getContext('2d'), W = 1080, H = 1920;
+  const map = cover(ctx, img, W, H, { cx: 0.54, cy: 0.62, z: 1.0 });
+  const top = ctx.createLinearGradient(0, 0, 0, H * 0.5); top.addColorStop(0, 'rgba(0,0,0,.85)'); top.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = top; ctx.fillRect(0, 0, W, H * 0.5);
+  const bot = ctx.createLinearGradient(0, H * 0.78, 0, H); bot.addColorStop(0, 'rgba(0,0,0,0)'); bot.addColorStop(1, 'rgba(0,0,0,.85)'); ctx.fillStyle = bot; ctx.fillRect(0, H * 0.78, W, H * 0.22);
+  const v = ctx.createRadialGradient(W / 2, H * 0.55, H * 0.3, W / 2, H * 0.55, H * 0.75); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
+  const p = map(0.535, 0.875); handCircle(ctx, p.x, p.y, 200, 130);
+  outlined(ctx, CFG.top, W / 2, 250, fit(ctx, CFG.top, 120, 960), '#FFFFFF', 12);
+  const bs = fit(ctx, CFG.big, 260, 1000); outlined(ctx, CFG.big, W / 2, 440, bs, fireGradient(ctx, 440, bs), 18, 'center', 'rgba(255,90,31,.9)');
+  questionBar(ctx, CFG.q, W / 2, 640, fit(ctx, CFG.q, 78, 860));
+  brand(ctx, W / 2, 790, 54);
+}
+async function horizontal(img) {
+  const c = document.getElementById('h'), ctx = c.getContext('2d'), W = 1280, H = 720;
+  const map = cover(ctx, img, W, H, { cx: 0.5, cy: 0.62, z: 1.0 });
+  const l = ctx.createLinearGradient(0, 0, W * 0.75, 0); l.addColorStop(0, 'rgba(0,0,0,.88)'); l.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = l; ctx.fillRect(0, 0, W, H);
+  const p = map(0.535, 0.875); handCircle(ctx, p.x, p.y, 130, 80);
+  outlined(ctx, CFG.top, 60, 150, 72, '#FFFFFF', 9, 'left');
+  const bs = 168; outlined(ctx, CFG.big, 52, 285, bs, fireGradient(ctx, 285, bs), 13, 'left', 'rgba(255,90,31,.9)');
+  ctx.save(); ctx.translate(60, 0); questionBar(ctx, CFG.q, 300, 450, 50); ctx.restore();
+  brand(ctx, 62, H - 70, 40, 'left');
+}
+window.__ready = (async () => {
+  await document.fonts.load('900 100px "Montserrat"');
+  const img = await load(CFG.bg); await vertical(img); await horizontal(img);
+  window.out = { v: document.getElementById('v').toDataURL('image/jpeg', 0.95), h: document.getElementById('h').toDataURL('image/jpeg', 0.95) };
+  return true;
+})();
+</script>
+</body></html>

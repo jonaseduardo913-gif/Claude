@@ -101,7 +101,7 @@ function drawCard(ctx, card, t) {
   const maxW = 880;
   if (total > maxW) { size = Math.floor(size * maxW / total); ctx.font = font(size); ws = widths(); total = ws.reduce((a, b) => a + b, 0) + size * 0.28 * (ws.length - 1); }
   const pop = card.pop ? 1 + 0.06 * (1 - prog(t, card.t0, card.t0 + 3 / FPS)) : 1;
-  const cx = W * 0.47, cy = H * 0.535;
+  const cx = W / 2, cy = H * 0.70;
   ctx.save(); ctx.translate(cx, cy); ctx.scale(pop, pop);
   let x = -total / 2;
   card.words.forEach((w, i) => {
@@ -131,7 +131,7 @@ function drawStamp(ctx, t) {
   if (lt < 0 || lt > dur) return;
   const s = lt < 2 / FPS ? lerp(2.4, 1, lt * FPS / 2) : 1 - E.inExpo(prog(lt, dur - 0.12, dur));
   const sh = lt < 0.2 ? (hash(Math.floor(t * FPS)) - 0.5) * 18 * (1 - lt / 0.2) : 0;
-  ctx.save(); ctx.translate(W * 0.47 + sh, H * 0.3); ctx.rotate(-0.07); ctx.scale(s, s);
+  ctx.save(); ctx.translate(W / 2 + sh, H * 0.3); ctx.rotate(-0.07); ctx.scale(s, s);
   ctx.fillStyle = 'rgba(11,10,16,0.88)'; roundRect(ctx, -250, -78, 500, 156, 30); ctx.fill();
   ctx.strokeStyle = C.orange; ctx.lineWidth = 6; roundRect(ctx, -250, -78, 500, 156, 30); ctx.stroke();
   drawSun(ctx, -150, 0, 52);
@@ -180,14 +180,14 @@ function drawRing(ctx, o, r, t) {
 function drawLoc(ctx, o, t, shot) {
   const lt = t - o.t; if (lt < 0) return;
   const sx = lerp(-520, 0, E.outExpo(prog(lt, 0, 7 / FPS)));
-  ctx.save(); ctx.translate(56 + sx, H * 0.205);
-  ctx.font = font(40, 800); ctx.letterSpacing = '3px';
+  ctx.save(); ctx.font = font(40, 800); ctx.letterSpacing = '3px';
   const w = ctx.measureText(o.text).width + 112;
+  ctx.translate((W - w) / 2 + sx, H * 0.205);
   ctx.shadowColor = 'rgba(0,0,0,0.45)'; ctx.shadowBlur = 16; ctx.shadowOffsetY = 6;
-  ctx.fillStyle = C.cyan; roundRect(ctx, 0, -36, w, 72, 36); ctx.fill(); ctx.shadowColor = 'transparent';
+  ctx.fillStyle = '#FFC21A'; roundRect(ctx, 0, -36, w, 72, 36); ctx.fill(); ctx.shadowColor = 'transparent';
   // pin
   ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(44, -6, 15, Math.PI, 0); ctx.lineTo(44, 22); ctx.closePath(); ctx.fill();
-  ctx.fillStyle = C.cyan; ctx.beginPath(); ctx.arc(44, -6, 6, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#FFC21A'; ctx.beginPath(); ctx.arc(44, -6, 6, 0, Math.PI * 2); ctx.fill();
   ctx.fillStyle = C.ink; ctx.textBaseline = 'middle'; ctx.fillText(o.text, 76, 2);
   ctx.restore();
 }
@@ -201,14 +201,14 @@ function drawMapLabel(ctx, o, r, t) {
 function drawBigTag(ctx, o, t) {
   const lt = t - o.t; if (lt < 0) return;
   const s = lt < 3 / FPS ? lerp(1.5, 1, E.outCubic(lt * FPS / 3)) : 1;
-  ctx.save(); ctx.translate(W * 0.47, H * 0.3); ctx.scale(s, s);
+  ctx.save(); ctx.translate(W / 2, H * 0.3); ctx.scale(s, s);
   outlinedText(ctx, o.text, 0, 0, { size: 168, color: C.cyan, stroke: 16, track: 10 });
   ctx.restore();
 }
 function drawPause(ctx, o, t) {
   const lt = t - o.t; if (lt < 0) return;
   const s = E.outBack(prog(lt, 0, 6 / FPS), 2.4);
-  ctx.save(); ctx.translate(W * 0.47, H * 0.33); ctx.scale(s, s);
+  ctx.save(); ctx.translate(W / 2, H * 0.33); ctx.scale(s, s);
   ctx.fillStyle = 'rgba(11,10,16,0.78)'; roundRect(ctx, -190, -70, 380, 140, 36); ctx.fill();
   ctx.strokeStyle = 'rgba(255,255,255,0.85)'; ctx.lineWidth = 4; roundRect(ctx, -190, -70, 380, 140, 36); ctx.stroke();
   ctx.fillStyle = C.white; ctx.fillRect(-140, -32, 20, 64); ctx.fillRect(-106, -32, 20, 64);
@@ -222,7 +222,7 @@ function drawBigText(ctx, o, t) {
   if (o.style === 'slam') { s = lt < 3 / FPS ? lerp(2.6, 1, E.outCubic(lt * FPS / 3)) : 1 + 0.03 * Math.sin(lt * 6); rot = -0.04; }
   else s = lerp(1.25, 1, E.outCubic(prog(lt, 0, 4 / FPS)));
   const lines = o.text.split('|');
-  ctx.save(); ctx.translate(W * 0.47, y); ctx.rotate(rot); ctx.scale(s, s);
+  ctx.save(); ctx.translate(W / 2, y); ctx.rotate(rot); ctx.scale(s, s);
   ctx.font = font(size); const maxW = Math.max(...lines.map((l) => ctx.measureText(l).width)); const k = Math.min(1, 940 / maxW);
   ctx.scale(k, k);
   if (o.style === 'slam') { ctx.shadowColor = 'rgba(255,90,31,0.9)'; ctx.shadowBlur = 60; }
@@ -266,7 +266,7 @@ function drawHeadline(ctx, t) {
     const lt = t - i * 0.12; if (lt < 0) return;
     let size = 112; ctx.font = font(size, 900, true); const w = ctx.measureText(line).width; if (w > 950) size = Math.floor(size * 950 / w);
     const s = lerp(1.18, 1, E.outCubic(prog(lt, 0, 3 / FPS)));
-    ctx.save(); ctx.translate(W * 0.47, H * 0.105 + i * size * 1.08 - out * 260); ctx.scale(s, s);
+    ctx.save(); ctx.translate(W / 2, H * 0.105 + i * size * 1.08 - out * 260); ctx.scale(s, s);
     outlinedText(ctx, line, 0, 0, { size, color: i ? C.pink : C.white, stroke: 12, italic: true });
     ctx.restore();
   });
@@ -359,7 +359,7 @@ function drawCollapse(ctx, lt, dur, cStart = 0) {
     ctx.fillStyle = '#C9C9D0'; ctx.beginPath(); ctx.moveTo(rx - 16, gy + depth); ctx.lineTo(rx + 16, gy + depth); ctx.lineTo(rx, gy + depth + 34); ctx.closePath(); ctx.fill();
     for (let i = 0; i < 14; i++) { const ph = (lt * 1.5 + hash(i)) % 1; ctx.fillStyle = `rgba(216,177,122,${0.5 * (1 - ph)})`; ctx.beginPath(); ctx.arc(rx + (hash(i * 3) - 0.5) * 220 * ph, gy - 10 - ph * 120, 10 + ph * 40, 0, Math.PI * 2); ctx.fill(); }
     ctx.restore();
-    ctx.globalAlpha = 1 - prog(p, 0.0, 0.08); outlinedText(ctx, 'PERFURAÇÃO SOVIÉTICA', W * 0.47, H * 0.18, { size: 70, color: '#F2E2C2', stroke: 9 }); ctx.globalAlpha = 1;
+    ctx.globalAlpha = 1 - prog(p, 0.0, 0.08); outlinedText(ctx, 'PERFURAÇÃO SOVIÉTICA', W / 2, H * 0.18, { size: 70, color: '#F2E2C2', stroke: 9 }); ctx.globalAlpha = 1;
   }
   const vib = cStart > 0 && p <= 0 ? Math.sin(lt * 60) * 3 : 0;
   ctx.save(); ctx.translate(rx + vib, gy + fall * 380); ctx.rotate(fall * 0.9); ctx.globalAlpha = 1 - prog(p, 0.55, 0.62);
@@ -377,7 +377,7 @@ function drawCollapse(ctx, lt, dur, cStart = 0) {
       const rr = 60 + ph * 160; const gg = ctx.createRadialGradient(x, y, 0, x, y, rr); gg.addColorStop(0, `rgba(170,220,150,${0.35 * (1 - ph) * gas})`); gg.addColorStop(1, 'rgba(170,220,150,0)');
       ctx.fillStyle = gg; ctx.fillRect(x - rr, y - rr, rr * 2, rr * 2); }
     ctx.restore();
-    ctx.globalAlpha = prog(p, 0.62, 0.72); outlinedText(ctx, 'GÁS NATURAL', W * 0.47, gy - 420, { size: 76, color: '#B8F0A0', stroke: 9 }); ctx.globalAlpha = 1; }
+    ctx.globalAlpha = prog(p, 0.62, 0.72); outlinedText(ctx, 'GÁS NATURAL', W / 2, gy - 420, { size: 76, color: '#B8F0A0', stroke: 9 }); ctx.globalAlpha = 1; }
   // labels
   ctx.globalAlpha = 1 - prog(p, 0.25, 0.32); outlinedText(ctx, 'SOLO', W * 0.16, gy + 170, { size: 50, color: '#FFF', stroke: 7 }); ctx.globalAlpha = 1;
   { const a = prog(p, 0.5, 0.6); if (a > 0) { ctx.globalAlpha = a; ctx.strokeStyle = C.gold; ctx.lineWidth = 6; const x0 = W / 2 - 330, x1 = W / 2 + 330, yy = gy - 40;
@@ -402,34 +402,74 @@ async function drawCompare(ctx, shot, t) {
 
 // ---------------- end card ----------------
 let MARK = null;
+const GOLD = { hi: '#FFF1B8', mid: '#FFC21A', deep: '#C77700', glow: 'rgba(255,190,40,' };
+function eclipse(ctx, cx, cy, r, on, t) {
+  // dark planet with a lit golden rim and a flare breaking over the top
+  ctx.save();
+  const halo = ctx.createRadialGradient(cx, cy, r * 0.9, cx, cy, r * 1.9);
+  halo.addColorStop(0, GOLD.glow + (0.55 * on) + ')'); halo.addColorStop(0.35, GOLD.glow + (0.18 * on) + ')'); halo.addColorStop(1, 'rgba(255,190,40,0)');
+  ctx.fillStyle = halo; ctx.fillRect(cx - r * 2, cy - r * 2, r * 4, r * 4);
+  ctx.fillStyle = '#000'; ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fill();
+  // light leaking inward from the rim, strongest at the top (like the channel avatar)
+  ctx.save(); ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.clip();
+  const inner = ctx.createRadialGradient(cx, cy, r * 0.72, cx, cy, r);
+  inner.addColorStop(0, 'rgba(255,190,40,0)'); inner.addColorStop(1, GOLD.glow + (0.55 * on) + ')');
+  ctx.fillStyle = inner; ctx.fillRect(cx - r, cy - r, 2 * r, 2 * r);
+  const top = ctx.createLinearGradient(0, cy - r, 0, cy - r * 0.25);
+  top.addColorStop(0, GOLD.glow + (0.45 * on) + ')'); top.addColorStop(1, 'rgba(255,190,40,0)');
+  ctx.fillStyle = top; ctx.fillRect(cx - r, cy - r, 2 * r, r);
+  // faint surface texture
+  for (let i = 0; i < 40; i++) { ctx.fillStyle = `rgba(255,200,80,${0.05 * on * hash(i * 3)})`; ctx.beginPath(); ctx.arc(cx + (hash(i) - 0.5) * 1.8 * r, cy + (hash(i * 7) - 0.8) * r, 10 + hash(i * 5) * 40, 0, Math.PI * 2); ctx.fill(); }
+  ctx.restore();
+  // rim lights up sweeping from the top both ways
+  const sweep = Math.PI * E.outCubic(clamp(on * 1.15));
+  ctx.lineCap = 'round';
+  for (const [w, a, blur] of [[26, 0.35, 40], [12, 0.8, 18], [5, 1, 0]]) {
+    ctx.shadowColor = GOLD.mid; ctx.shadowBlur = blur; ctx.strokeStyle = `rgba(255,${200 + (w < 8 ? 40 : 0)},${w < 8 ? 150 : 40},${a})`; ctx.lineWidth = w;
+    ctx.beginPath(); ctx.arc(cx, cy, r, -Math.PI / 2 - sweep, -Math.PI / 2 + sweep); ctx.stroke();
+  }
+  ctx.shadowBlur = 0;
+  // flare at the top
+  const fl = on * (0.88 + 0.12 * Math.sin(t * 5));
+  ctx.globalCompositeOperation = 'lighter';
+  for (const [rad, a] of [[r * 0.9, 0.35], [r * 0.45, 0.7], [r * 0.18, 1]]) {
+    const fg = ctx.createRadialGradient(cx, cy - r + 6, 0, cx, cy - r + 6, rad);
+    fg.addColorStop(0, `rgba(255,248,220,${a * fl})`); fg.addColorStop(0.4, `rgba(255,200,60,${a * 0.6 * fl})`); fg.addColorStop(1, 'rgba(255,180,30,0)');
+    ctx.fillStyle = fg; ctx.fillRect(cx - rad, cy - r + 6 - rad, rad * 2, rad * 2);
+  }
+  ctx.restore();
+}
 function drawEnd(ctx, t) {
   const lt = t - TL.end.t0;
-  const g = ctx.createRadialGradient(W / 2, H * 0.42, 40, W / 2, H * 0.42, H * 0.8);
-  g.addColorStop(0, '#3A1208'); g.addColorStop(0.45, '#140B12'); g.addColorStop(1, '#07060B');
-  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-  // stars
-  for (let i = 0; i < 90; i++) { ctx.globalAlpha = 0.2 + 0.5 * hash(i * 3) * (0.6 + 0.4 * Math.sin(t * 2 + i)); ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(hash(i) * W, hash(i * 7) * H, 1 + hash(i * 5) * 2, 0, Math.PI * 2); ctx.fill(); }
-  ctx.globalAlpha = 1;
-  embers(ctx, t, 0.6);
-  // mark: scale-in with spin settle
-  const s = spring(lt - 0.05, 1.4, 5);
-  if (MARK && s > 0) { const sz = 560 * s; ctx.save(); ctx.translate(W / 2, H * 0.4); ctx.rotate((1 - Math.min(1, s)) * -0.8); ctx.shadowColor = 'rgba(255,90,31,0.6)'; ctx.shadowBlur = 70; ctx.drawImage(MARK, -sz / 2, -sz / 2, sz, sz); ctx.restore(); }
-  // wordmark letters
+  ctx.fillStyle = '#030201'; ctx.fillRect(0, 0, W, H);
+  // golden star dust drifting
+  ctx.save(); ctx.globalCompositeOperation = 'lighter';
+  for (let i = 0; i < 220; i++) {
+    const x = (hash(i) * W + lt * (6 + hash(i * 3) * 14)) % W, y = hash(i * 7) * H;
+    ctx.globalAlpha = (0.15 + 0.6 * hash(i * 5)) * (0.7 + 0.3 * Math.sin(t * 3 + i));
+    ctx.fillStyle = i % 4 ? '#FFC94A' : '#FFF2C8'; ctx.beginPath(); ctx.arc(x, y, 0.8 + hash(i * 11) * 2.4, 0, Math.PI * 2); ctx.fill();
+  }
+  for (let k = 0; k < 5; k++) { const nx = W * (0.15 + 0.7 * hash(k * 13)), ny = H * (0.12 + 0.75 * hash(k * 17)); const ng = ctx.createRadialGradient(nx, ny, 0, nx, ny, 320);
+    ng.addColorStop(0, 'rgba(200,140,20,0.10)'); ng.addColorStop(1, 'rgba(200,140,20,0)'); ctx.globalAlpha = 1; ctx.fillStyle = ng; ctx.fillRect(nx - 320, ny - 320, 640, 640); }
+  ctx.restore();
+  const on = prog(lt, 0.05, 1.0);
+  const r = 250 * (1 + 0.03 * Math.sin(lt * 1.2));
+  eclipse(ctx, W / 2, H * 0.4, r, on, t);
+  // wordmark in gold
   const word = 'EXTRAMUNDO'; const size = 112; ctx.font = font(size);
   const ws = [...word].map((c) => ctx.measureText(c).width); const tr = 4; const tot = ws.reduce((a, b) => a + b, 0) + tr * (ws.length - 1);
-  let x = W / 2 - tot / 2; const y = H * 0.62;
-  const grad = ctx.createLinearGradient(0, y - size * 0.5, 0, y + size * 0.4); grad.addColorStop(0, C.gold); grad.addColorStop(0.55, C.orange); grad.addColorStop(1, C.red);
+  let x = W / 2 - tot / 2; const y = H * 0.66;
+  const grad = ctx.createLinearGradient(0, y - size * 0.5, 0, y + size * 0.45); grad.addColorStop(0, GOLD.hi); grad.addColorStop(0.5, GOLD.mid); grad.addColorStop(1, GOLD.deep);
   [...word].forEach((c, i) => {
-    const p = spring(lt - 0.35 - i * 0.04, 2.2, 6);
-    if (p > 0) { ctx.save(); ctx.translate(x + ws[i] / 2, y + 90 * (1 - p)); ctx.globalAlpha = clamp(p * 2);
+    const p = spring(lt - 0.6 - i * 0.04, 2.2, 6);
+    if (p > 0) { ctx.save(); ctx.translate(x + ws[i] / 2, y + 80 * (1 - p)); ctx.globalAlpha = clamp(p * 2);
       ctx.font = font(size); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
-      ctx.strokeStyle = '#000'; ctx.lineWidth = 14; ctx.strokeText(c, 0, 0); ctx.fillStyle = i < 5 ? grad : '#fff';
-      if (i < 5) { ctx.translate(0, 0); } ctx.fillText(c, 0, 0); ctx.restore(); }
+      ctx.shadowColor = 'rgba(255,190,40,0.55)'; ctx.shadowBlur = 30; ctx.fillStyle = grad; ctx.fillText(c, 0, 0); ctx.restore(); }
     x += ws[i] + tr;
   });
-  const tg = prog(lt, 0.9, 1.4);
-  ctx.save(); ctx.globalAlpha = tg; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = C.cyan; ctx.font = font(40, 800); ctx.letterSpacing = '6px';
-  ctx.fillText('O EXTRAORDINÁRIO ESTÁ MAIS PERTO', W / 2, y + 140); ctx.fillText('DO QUE VOCÊ IMAGINA', W / 2, y + 196);
+  const tg = prog(lt, 1.2, 1.7);
+  ctx.save(); ctx.globalAlpha = tg; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = '#F5DC9A'; ctx.font = font(38, 800); ctx.letterSpacing = '6px';
+  ctx.fillText('O EXTRAORDINÁRIO ESTÁ MAIS PERTO', W / 2, y + 130); ctx.fillText('DO QUE VOCÊ IMAGINA', W / 2, y + 184);
   ctx.restore();
 }
 
@@ -492,7 +532,6 @@ async function renderFrame(f) {
 window.__ready = (async () => {
   await Promise.all([document.fonts.load('900 100px "Montserrat"'), document.fonts.load('italic 900 100px "Montserrat"'), document.fonts.load('800 100px "Montserrat"')]);
   TL = await (await fetch('build/timeline.json')).json(); FPS = TL.fps;
-  MARK = await loadImg('brand/out/png/extramundo-mark-1024.png');
   window.FRAMES = Math.round(TL.duration * FPS);
   window.renderFrame = async (f, q = 0.93) => { await renderFrame(f); return out.toDataURL('image/jpeg', q); };
   return true;

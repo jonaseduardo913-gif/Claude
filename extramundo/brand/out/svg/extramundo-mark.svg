@@ -1,15 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><defs>
-    <radialGradient id="kp" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#2A1424"/><stop offset=".7" stop-color="#140B12"/><stop offset="1" stop-color="#07060B"/></radialGradient>
-    <linearGradient id="ko" x1="20" y1="0" x2="492" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E8202A"/><stop offset=".5" stop-color="#FF5A1F"/><stop offset="1" stop-color="#FFC23D"/></linearGradient>
-    <linearGradient id="kr" x1="0" y1="112" x2="0" y2="412" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FF5A1F"/></linearGradient>
-    <clipPath id="kc"><circle cx="256" cy="262" r="150"/></clipPath>
+    <radialGradient id="kh" cx="256" cy="292" r="244.9" gradientUnits="userSpaceOnUse"><stop offset=".6" stop-color="#FFBE28" stop-opacity=".45"/><stop offset=".75" stop-color="#FFBE28" stop-opacity=".12"/><stop offset="1" stop-color="#FFBE28" stop-opacity="0"/></radialGradient>
+    <radialGradient id="ki" cx="256" cy="292" r="158" gradientUnits="userSpaceOnUse"><stop offset=".74" stop-color="#FFBE28" stop-opacity="0"/><stop offset="1" stop-color="#FFBE28" stop-opacity=".6"/></radialGradient>
+    <linearGradient id="kt" x1="0" y1="134" x2="0" y2="244.6" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFBE28" stop-opacity=".5"/><stop offset="1" stop-color="#FFBE28" stop-opacity="0"/></linearGradient>
+    <radialGradient id="kf" cx="256" cy="140" r="118.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF8DC"/><stop offset=".22" stop-color="#FFD24A" stop-opacity=".85"/><stop offset="1" stop-color="#FFB41E" stop-opacity="0"/></radialGradient>
+    <filter id="kb" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+    <clipPath id="kc"><circle cx="256" cy="292" r="158"/></clipPath>
   </defs>
-  <path d="M20.0 262.0 L20.3 258.5 L21.3 255.1 L22.9 251.7 L25.2 248.3 L28.0 244.9 L31.6 241.6 L35.7 238.3 L40.4 235.2 L45.7 232.0 L51.6 229.0 L58.1 226.1 L65.1 223.2 L72.6 220.5 L80.6 217.8 L89.1 215.3 L98.1 213.0 L107.5 210.7 L117.3 208.6 L127.5 206.6 L138.0 204.8 L148.9 203.2 L160.0 201.7 L171.4 200.4 L183.1 199.2 L194.9 198.2 L206.9 197.4 L219.1 196.8 L231.3 196.4 L243.6 196.1 L256.0 196.0 L268.4 196.1 L280.7 196.4 L292.9 196.8 L305.1 197.4 L317.1 198.2 L328.9 199.2 L340.6 200.4 L352.0 201.7 L363.1 203.2 L374.0 204.8 L384.5 206.6 L394.7 208.6 L404.5 210.7 L413.9 213.0 L422.9 215.3 L431.4 217.8 L439.4 220.5 L446.9 223.2 L453.9 226.1 L460.4 229.0 L466.3 232.0 L471.6 235.2 L476.3 238.3 L480.4 241.6 L484.0 244.9 L486.8 248.3 L489.1 251.7 L490.7 255.1 L491.7 258.5 L492.0 262.0 " fill="none" stroke="url(#ko)" stroke-width="16" stroke-linecap="round" transform="rotate(-18 256 262)" opacity="0.55"/>
-  <circle cx="256" cy="262" r="150" fill="url(#kp)"/>
-  <g clip-path="url(#kc)" fill="none" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="7">
-    <ellipse cx="256" cy="262" rx="63" ry="150"/><ellipse cx="256" cy="262" rx="120" ry="150"/>
-    <line x1="106" y1="262" x2="406" y2="262"/>
-  </g>
-  <circle cx="256" cy="262" r="144" fill="none" stroke="url(#kr)" stroke-width="12"/>
-  <path d="M492.0 262.0 L491.7 265.5 L490.7 268.9 L489.1 272.3 L486.8 275.7 L484.0 279.1 L480.4 282.4 L476.3 285.7 L471.6 288.8 L466.3 292.0 L460.4 295.0 L453.9 297.9 L446.9 300.8 L439.4 303.5 L431.4 306.2 L422.9 308.7 L413.9 311.0 L404.5 313.3 L394.7 315.4 L384.5 317.4 L374.0 319.2 L363.1 320.8 L352.0 322.3 L340.6 323.6 L328.9 324.8 L317.1 325.8 L305.1 326.6 L292.9 327.2 L280.7 327.6 L268.4 327.9 L256.0 328.0 L243.6 327.9 L231.3 327.6 L219.1 327.2 L206.9 326.6 L194.9 325.8 L183.1 324.8 L171.4 323.6 L160.0 322.3 L148.9 320.8 L138.0 319.2 L127.5 317.4 L117.3 315.4 L107.5 313.3 L98.1 311.0 L89.1 308.7 L80.6 306.2 L72.6 303.5 L65.1 300.8 L58.1 297.9 L51.6 295.0 L45.7 292.0 L40.4 288.8 L35.7 285.7 L31.6 282.4 L28.0 279.1 L25.2 275.7 L22.9 272.3 L21.3 268.9 L20.3 265.5 L20.0 262.0 " fill="none" stroke="url(#ko)" stroke-width="24" stroke-linecap="round" transform="rotate(-18 256 262)" />
-  <path d="M398 120 L408 146 L434 156 L408 166 L398 192 L388 166 L362 156 L388 146 Z" fill="#FFC23D"/></svg>
+  <circle cx="256" cy="292" r="244.9" fill="url(#kh)"/>
+  <circle cx="256" cy="292" r="158" fill="#000"/>
+  <g clip-path="url(#kc)"><rect x="0" y="0" width="512" height="512" fill="url(#ki)"/><rect x="0" y="0" width="512" height="512" fill="url(#kt)"/></g>
+  <circle cx="256" cy="292" r="158" fill="none" stroke="#FFC21A" stroke-width="22" filter="url(#kb)"/>
+  <circle cx="256" cy="292" r="158" fill="none" stroke="#FFE28A" stroke-width="6"/>
+  <circle cx="256" cy="140" r="118.5" fill="url(#kf)"/></svg>
