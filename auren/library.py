@@ -40,7 +40,7 @@ def scan(name, thresh=0.28, min_len=0.7):
             lbl = s['id'].replace(':', '\\:')
             fl.append(f"[{k}]drawtext=text='{lbl}  {s['dur']:.1f}s':x=6:y=6:fontsize=18:fontcolor=yellow:box=1:boxcolor=black@0.75[v{k}]")
         lay = '|'.join(f'{(k % 6) * 384}_{(k // 6) * 216}' for k in range(len(chunk)))
-        fc = ';'.join(fl) + ';' + ''.join(f'[v{k}]' for k in range(len(chunk))) + f'xstack=inputs={len(chunk)}:layout={lay}:fill=black'
+        fc = ';'.join(fl) + ';' + ''.join(f'[v{k}]' for k in range(len(chunk))) + (f'xstack=inputs={len(chunk)}:layout={lay}:fill=black' if len(chunk) > 1 else 'null')
         subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', *args, '-filter_complex', fc, '-frames:v', '1', f'{d}/sheet_{p // per:02d}.jpg'], check=True)
     print(f'{name}: {len(scenes)} scenes, {(len(scenes) + per - 1) // per} sheets in {d}/')
 
