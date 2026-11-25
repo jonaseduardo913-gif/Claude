@@ -1,57 +1,728 @@
 {
  "lead": 0.1,
- "headline": { "lines": ["O LAGO QUE TRANSFORMA", "ANIMAIS EM ESTÁTUAS"], "until_word": 9 },
+ "headline": {
+  "lines": [
+   "O LAGO QUE TRANSFORMA",
+   "ANIMAIS EM ESTÁTUAS"
+  ],
+  "until_word": 9
+ },
  "stamp": null,
  "epic_word": 89,
  "music": [
-  {"t": 0, "level": 0.3}, {"word": 10, "level": 0.45}, {"word": 28, "level": 0.5}, {"word": 46, "level": 0.6},
-  {"word": 54, "level": 0.2}, {"word": 65, "level": 0.45}, {"word": 84, "level": 0.55}, {"word": 89, "level": 1.0},
-  {"word": 99, "level": 0.8}, {"word": 117, "level": 0.7}, {"word": 126, "level": 0.5}, {"word": 135, "level": 0.35}
+  {
+   "t": 0,
+   "level": 0.3
+  },
+  {
+   "word": 10,
+   "level": 0.45
+  },
+  {
+   "word": 28,
+   "level": 0.5
+  },
+  {
+   "word": 46,
+   "level": 0.6
+  },
+  {
+   "word": 54,
+   "level": 0.2
+  },
+  {
+   "word": 65,
+   "level": 0.45
+  },
+  {
+   "word": 84,
+   "level": 0.55
+  },
+  {
+   "word": 89,
+   "level": 1.0
+  },
+  {
+   "word": 99,
+   "level": 0.8
+  },
+  {
+   "word": 117,
+   "level": 0.7
+  },
+  {
+   "word": 126,
+   "level": 0.5
+  },
+  {
+   "word": 135,
+   "level": 0.35
+  }
  ],
  "sfx": [
-  {"t": 0.0, "kind": "wind", "dur": 4.5}, {"t": 0.1, "kind": "impact"}, {"word": 10, "kind": "whooshlong"},
-  {"word": 40, "kind": "hit"}, {"word": 54, "kind": "sub"}, {"word": 65, "kind": "rumble", "dur": 4.0},
-  {"word": 84, "kind": "swell"}, {"word": 89, "kind": "impact"}, {"word": 89, "kind": "wind", "dur": 4.0},
-  {"word": 126, "kind": "wind", "dur": 5.0}
+  {
+   "t": 0.0,
+   "kind": "wind",
+   "dur": 4.5
+  },
+  {
+   "t": 0.1,
+   "kind": "impact"
+  },
+  {
+   "word": 10,
+   "kind": "whooshlong"
+  },
+  {
+   "word": 40,
+   "kind": "hit"
+  },
+  {
+   "word": 54,
+   "kind": "sub"
+  },
+  {
+   "word": 65,
+   "kind": "rumble",
+   "dur": 3.0
+  },
+  {
+   "word": 84,
+   "kind": "swell"
+  },
+  {
+   "word": 89,
+   "kind": "impact"
+  },
+  {
+   "word": 89,
+   "kind": "wind",
+   "dur": 4.0
+  },
+  {
+   "word": 126,
+   "kind": "wind",
+   "dur": 5.0
+  },
+  {
+   "word": 83,
+   "kind": "impact"
+  }
  ],
  "shots": [
-  { "at": 0,   "src": "img:redwater", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.5,"cy":0.5,"z":1.7}, "ease": "inOutCubic" } },
-  { "at": 5,   "src": "img:ov/ov02", "fit": "blurfill", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.25}, "to": {"cx":0.55,"cy":0.5,"z":1.45} } },
-  { "at": 8,   "src": "img:space|redwater", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.5,"cy":0.5,"z":1.25} } },
-  { "at": 10,  "src": "anim:map", "map": { "country": "United Republic of Tanzania", "label": "TANZÂNIA", "pin": [36.05, -2.42], "pinLabel": "LAGO NATRON", "pinAt": 1.0,
-      "from": {"lon": 22, "lat": 2, "span": 78}, "to": {"lon": 35.4, "lat": -5.6, "span": 17}, "dur": 1.6 } },
-  { "at": 14,  "src": "img:ov/ov13", "fit": "blurfill", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.5,"cy":0.5,"z":1.15} } },
-  { "at": 21,  "src": "img:ov/ov04", "fit": "blurfill", "fx": ["flicker"], "cam": { "from": {"cx":0.4,"cy":0.5,"z":1.3}, "to": {"cx":0.45,"cy":0.5,"z":1.5} } },
-  { "at": 26,  "src": "img:strassler|ov/ov05", "cam": { "from": {"cx":0.35,"cy":0.5,"z":1.0}, "to": {"cx":0.65,"cy":0.5,"z":1.0} },
-    "overlays": [ {"type":"bigtext","text":"LAGO NATRON","color":"gold","size":150,"y":0.2,"word":26} ] },
-  { "at": 28,  "src": "img:redwater", "cam": { "from": {"cx":0.45,"cy":0.55,"z":2.6}, "to": {"cx":0.5,"cy":0.5,"z":2.1} } },
-  { "at": 32,  "src": "img:south|ov/ov17", "fit": "blurfill", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.55,"cy":0.5,"z":1.2} } },
-  { "at": 38,  "src": "img:aster|redwater", "cam": { "from": {"cx":0.5,"cy":0.45,"z":1.1}, "to": {"cx":0.5,"cy":0.5,"z":1.35} }, "overlays": [ {"type":"loc","text":"IMAGEM DE SATÉLITE"} ] },
-  { "at": 40,  "src": "img:ov/ov03", "fit": "blurfill", "fx": ["shake"], "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.4}, "to": {"cx":0.5,"cy":0.5,"z":1.7} },
-    "overlays": [ {"type":"bigtext","text":"QUEIMADURAS|QUÍMICAS","color":"pink","size":130,"y":0.22,"word":43} ] },
-  { "at": 46,  "src": "img:ov/ov21", "fit": "blurfill", "cam": { "from": {"cx":0.45,"cy":0.5,"z":1.1}, "to": {"cx":0.55,"cy":0.5,"z":1.25} } },
-  { "at": 54,  "src": "img:ov/ov28", "fit": "blurfill", "trans": "dip", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.5,"cy":0.5,"z":1.12} } },
-  { "at": 60,  "src": "img:ov/ov17", "fit": "blurfill", "cam": { "from": {"cx":0.4,"cy":0.5,"z":1.2}, "to": {"cx":0.5,"cy":0.5,"z":1.35} } },
-  { "at": 65,  "src": "anim:calcify" },
-  { "at": 84,  "src": "img:ov/ov48", "fit": "blurfill", "trans": "zoomblur", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.45,"cy":0.5,"z":1.15} } },
-  { "at": 89,  "src": "img:flyover|ov/ov49", "cam": { "from": {"cx":0.4,"cy":0.5,"z":1.0}, "to": {"cx":0.6,"cy":0.5,"z":1.05} },
-    "overlays": [ {"type":"bigtext","text":"MILHARES","color":"gold","size":180,"y":0.22,"style":"slam","word":89} ] },
-  { "at": 92,  "src": "img:ov/ov01", "fit": "blurfill", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.5,"cy":0.5,"z":1.18} } },
-  { "at": 96,  "src": "img:fl_str1|ov/ov00", "cam": { "from": {"cx":0.4,"cy":0.55,"z":1.1}, "to": {"cx":0.5,"cy":0.55,"z":1.2} } },
-  { "at": 99,  "src": "img:ov/ov00", "fit": "blurfill", "cam": { "from": {"cx":0.4,"cy":0.5,"z":1.2}, "to": {"cx":0.55,"cy":0.5,"z":1.35}, "ease": "linear" } },
-  { "at": 103, "src": "img:ov/ov11", "fit": "blurfill", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.5,"cy":0.5,"z":1.1}, "ease": "linear" } },
-  { "at": 107, "src": "img:lesser|ov/ov49", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.52,"cy":0.5,"z":1.12}, "ease": "linear" },
-    "overlays": [ {"type":"bigtext","text":"REFÚGIO","color":"gold","size":170,"y":0.22,"word":111} ] },
-  { "at": 112, "src": "img:ov/ov12", "fit": "blurfill", "cam": { "from": {"cx":0.4,"cy":0.5,"z":1.15}, "to": {"cx":0.5,"cy":0.5,"z":1.25}, "ease": "linear" } },
-  { "at": 117, "src": "img:ov/ov50", "fit": "blurfill", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.2}, "to": {"cx":0.45,"cy":0.5,"z":1.35}, "ease": "linear" } },
-  { "at": 122, "src": "img:ov/ov10", "fit": "blurfill", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.5,"cy":0.5,"z":1.12}, "ease": "linear" } },
-  { "at": 126, "src": "img:ov/ov35", "fit": "blurfill", "trans": "dip", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.0}, "to": {"cx":0.5,"cy":0.5,"z":1.1}, "ease": "linear" } },
-  { "at": 131, "src": "img:ov/ov33", "fit": "blurfill", "cam": { "from": {"cx":0.5,"cy":0.5,"z":1.1}, "to": {"cx":0.5,"cy":0.5,"z":1.0}, "ease": "linear" } }
+  {
+   "at": 0,
+   "src": "img:redwater",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.7
+    },
+    "ease": "inOutCubic"
+   }
+  },
+  {
+   "at": 5,
+   "src": "img:ov/ov02",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.25
+    },
+    "to": {
+     "cx": 0.55,
+     "cy": 0.5,
+     "z": 1.45
+    }
+   }
+  },
+  {
+   "at": 8,
+   "src": "img:space|nasa_iss2006",
+   "cam": {
+    "from": {
+     "cx": 0.55,
+     "cy": 0.42,
+     "z": 1.15
+    },
+    "to": {
+     "cx": 0.55,
+     "cy": 0.42,
+     "z": 1.35
+    }
+   }
+  },
+  {
+   "at": 10,
+   "src": "anim:map",
+   "map": {
+    "country": "United Republic of Tanzania",
+    "label": "TANZÂNIA",
+    "pin": [
+     36.05,
+     -2.42
+    ],
+    "pinLabel": "LAGO NATRON",
+    "pinAt": 1.0,
+    "from": {
+     "lon": 22,
+     "lat": 2,
+     "span": 78
+    },
+    "to": {
+     "lon": 35.4,
+     "lat": -5.6,
+     "span": 17
+    },
+    "dur": 1.6
+   }
+  },
+  {
+   "at": 14,
+   "src": "img:ov/ov13",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.15
+    }
+   }
+  },
+  {
+   "at": 21,
+   "src": "img:ov/ov04",
+   "fit": "blurfill",
+   "fx": [
+    "flicker"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.4,
+     "cy": 0.5,
+     "z": 1.3
+    },
+    "to": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.5
+    }
+   }
+  },
+  {
+   "at": 26,
+   "src": "img:strassler",
+   "cam": {
+    "from": {
+     "cx": 0.3,
+     "cy": 0.55,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.62,
+     "cy": 0.55,
+     "z": 1.0
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "LAGO NATRON",
+     "color": "gold",
+     "size": 150,
+     "y": 0.2,
+     "word": 26
+    }
+   ]
+  },
+  {
+   "at": 28,
+   "src": "img:nasa_iss_pink",
+   "cam": {
+    "from": {
+     "cx": 0.72,
+     "cy": 0.28,
+     "z": 2.2
+    },
+    "to": {
+     "cx": 0.7,
+     "cy": 0.32,
+     "z": 1.8
+    }
+   }
+  },
+  {
+   "at": 32,
+   "src": "img:south|ov/ov17",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.55,
+     "cy": 0.5,
+     "z": 1.2
+    }
+   }
+  },
+  {
+   "at": 38,
+   "src": "img:aster|nasa_iss2006",
+   "cam": {
+    "from": {
+     "cx": 0.62,
+     "cy": 0.55,
+     "z": 1.6
+    },
+    "to": {
+     "cx": 0.6,
+     "cy": 0.5,
+     "z": 1.3
+    }
+   },
+   "overlays": [
+    {
+     "type": "loc",
+     "text": "IMAGEM DE SATÉLITE"
+    }
+   ]
+  },
+  {
+   "at": 40,
+   "src": "img:ov/ov03",
+   "fit": "blurfill",
+   "fx": [
+    "shake"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.4
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.7
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "QUEIMADURAS|QUÍMICAS",
+     "color": "pink",
+     "size": 130,
+     "y": 0.22,
+     "word": 43
+    }
+   ]
+  },
+  {
+   "at": 46,
+   "src": "img:ov/ov21",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.1
+    },
+    "to": {
+     "cx": 0.55,
+     "cy": 0.5,
+     "z": 1.25
+    }
+   }
+  },
+  {
+   "at": 54,
+   "src": "img:ov/ov28",
+   "fit": "blurfill",
+   "trans": "dip",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.12
+    }
+   }
+  },
+  {
+   "at": 60,
+   "src": "img:ov/ov17",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.4,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.35
+    }
+   }
+  },
+  {
+   "at": 65,
+   "src": "img:ov/ov02",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.5
+    },
+    "to": {
+     "cx": 0.55,
+     "cy": 0.5,
+     "z": 1.8
+    }
+   }
+  },
+  {
+   "at": 73,
+   "src": "img:ov/petrified_nest",
+   "fit": "blurfill",
+   "bandY": 0.42,
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "linear"
+   },
+   "overlays": [
+    {
+     "type": "loc",
+     "text": "MESMO FENÔMENO · INGLATERRA"
+    }
+   ]
+  },
+  {
+   "at": 81,
+   "src": "img:ov/ov12",
+   "fit": "blurfill",
+   "fx": [
+    "flicker"
+   ],
+   "cam": {
+    "from": {
+     "cx": 0.3,
+     "cy": 0.5,
+     "z": 1.4
+    },
+    "to": {
+     "cx": 0.3,
+     "cy": 0.5,
+     "z": 1.7
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "ESTÁTUAS",
+     "color": "pink",
+     "size": 180,
+     "y": 0.22,
+     "style": "slam",
+     "word": 83
+    }
+   ]
+  },
+  {
+   "at": 84,
+   "src": "img:ov/ov48",
+   "fit": "blurfill",
+   "trans": "zoomblur",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.15
+    }
+   }
+  },
+  {
+   "at": 89,
+   "src": "img:flyover",
+   "cam": {
+    "from": {
+     "cx": 0.25,
+     "cy": 0.5,
+     "z": 2.3
+    },
+    "to": {
+     "cx": 0.7,
+     "cy": 0.5,
+     "z": 2.5
+    },
+    "ease": "linear"
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "MILHARES",
+     "color": "gold",
+     "size": 180,
+     "y": 0.22,
+     "style": "slam",
+     "word": 89
+    }
+   ]
+  },
+  {
+   "at": 92,
+   "src": "img:ov/ov01",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.18
+    }
+   }
+  },
+  {
+   "at": 96,
+   "src": "img:fl_str1|ov/ov00",
+   "cam": {
+    "from": {
+     "cx": 0.4,
+     "cy": 0.55,
+     "z": 1.1
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.55,
+     "z": 1.2
+    }
+   }
+  },
+  {
+   "at": 99,
+   "src": "courtship:2.0",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.15
+    },
+    "ease": "linear"
+   }
+  },
+  {
+   "at": 103,
+   "src": "img:ov/ov11",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.1
+    },
+    "ease": "linear"
+   }
+  },
+  {
+   "at": 107,
+   "src": "vocal:2.0",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.44,
+     "cy": 0.5,
+     "z": 1.06
+    },
+    "ease": "linear"
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "REFÚGIO",
+     "color": "gold",
+     "size": 170,
+     "y": 0.22,
+     "word": 111
+    }
+   ]
+  },
+  {
+   "at": 112,
+   "src": "courtship:12.5",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.06
+    },
+    "ease": "linear"
+   }
+  },
+  {
+   "at": 117,
+   "src": "img:ov/ov50",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "to": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.35
+    },
+    "ease": "linear"
+   }
+  },
+  {
+   "at": 122,
+   "src": "img:ov/ov10",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.12
+    },
+    "ease": "linear"
+   }
+  },
+  {
+   "at": 126,
+   "src": "img:ov/ov35",
+   "fit": "blurfill",
+   "trans": "dip",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.1
+    },
+    "ease": "linear"
+   }
+  },
+  {
+   "at": 131,
+   "src": "img:ov/ov33",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.1
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "ease": "linear"
+   }
+  }
  ],
- "end": { "hold": 3.4, "trans": "flash", "fade": 0.8 },
+ "end": {
+  "hold": 3.4,
+  "trans": "flash",
+  "fade": 0.8
+ },
  "keywords": {
-  "cyan": ["TANZÂNIA", "LAGO", "NATRON", "AMBIENTE", "LUGAR", "NATUREZA"],
-  "pink": ["TERROR", "QUEIMADURAS", "QUÍMICAS", "MORREM", "ASSUSTADORA", "ESTÁTUAS", "MORTAL", "HOSTIL", "ALCALINAS"],
-  "gold": ["MILHARES", "FLAMINGOS", "REFÚGIO", "SOBREVIVER", "SURPREENDER", "IMPRESSIONANTE"]
+  "cyan": [
+   "TANZÂNIA",
+   "LAGO",
+   "NATRON",
+   "AMBIENTE",
+   "LUGAR",
+   "NATUREZA"
+  ],
+  "pink": [
+   "TERROR",
+   "QUEIMADURAS",
+   "QUÍMICAS",
+   "MORREM",
+   "ASSUSTADORA",
+   "ESTÁTUAS",
+   "MORTAL",
+   "HOSTIL",
+   "ALCALINAS"
+  ],
+  "gold": [
+   "MILHARES",
+   "FLAMINGOS",
+   "REFÚGIO",
+   "SOBREVIVER",
+   "SURPREENDER",
+   "IMPRESSIONANTE"
+  ]
  }
 }

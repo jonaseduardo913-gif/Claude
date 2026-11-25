@@ -61,7 +61,7 @@ const toScreen = (r, nx, ny) => ({ x: (nx * r.srcW - r.x0) / r.vw * W, y: (ny * 
 
 async function drawPlate(ctx, shot, t, opt = {}) {
   if (shot.src.type === 'anim' && shot.src.name === 'map') { await drawGeoMap(ctx, shot, t); return null; }
-  if (shot.src.type === 'still' && shot.fit === 'blurfill') { await drawBlurFill(ctx, shot, t); return null; }
+  if ((shot.src.type === 'still' || shot.src.type === 'clip') && shot.fit === 'blurfill') { await drawBlurFill(ctx, shot, t); return null; }
   if (shot.src.type === 'anim' && shot.src.name === 'calcify') { drawCalcify(ctx, t - shot.t0, shot.t1 - shot.t0); return null; }
   if (shot.src.type === 'anim') { const cs = (shot.collapseAt || shot.t0) - shot.t0; drawCollapse(ctx, t - shot.t0, shot.t1 - shot.t0, cs); if (shot.filter === 'oldfilm' && t - shot.t0 < cs) oldFilm(ctx, t); return null; }
   if (shot.src.type === 'compare') { await drawCompare(ctx, shot, t); return null; }
@@ -389,7 +389,7 @@ function drawCollapse(ctx, lt, dur, cStart = 0) {
 }
 // low-res photo: sharp full-width band over a blurred enlarged copy
 async function drawBlurFill(ctx, shot, t) {
-  const img = await loadImg(shot.src.path); const cam = shot.cam;
+  const img = await loadImg(shot.src.type === 'clip' ? plateURL(shot, t) : shot.src.path); const cam = shot.cam;
   const p = (E[cam.ease] || E.inOutSine)(prog(t, shot.t0, shot.t1));
   const z = lerp(cam.from.z, cam.to.z, p), cx = lerp(cam.from.cx, cam.to.cx, p);
   const bs = Math.max(W / img.width, H / img.height) * 1.15;

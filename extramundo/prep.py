@@ -17,7 +17,7 @@ VIDEOS = {'cira': f'{MEDIA}/cira_portrait.webm'}   # short names; others: input/
 BAND_FRAC = 1700 / 2160               # vertical band kept from each frame (relative to height)
 _probe = {}
 def video_info(name):
-    path = VIDEOS.get(name, f'{MEDIA}/videos/{name}.mp4')
+    path = VIDEOS.get(name) or next((f'{MEDIA}/videos/{f}' for f in sorted(os.listdir(f'{MEDIA}/videos')) if os.path.splitext(f)[0] == name), f'{MEDIA}/videos/{name}.mp4')
     if path not in _probe:
         out = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', path], capture_output=True, text=True, check=True).stdout
         w, h = map(int, out.strip().split(',')[:2]); _probe[path] = (path, w, h)
@@ -63,7 +63,7 @@ for k, s in enumerate(shots):
         sh['src'] = {'type': 'compare', 'a': pa, 'b': pb, 'la': s.get('labels', ['', ''])[0], 'lb': s.get('labels', ['', ''])[1], 'w': 1080, 'h': 1920}
     else:  # video clip "name:seconds" -> vertical band of frames
         name, start = src.rsplit(':', 1); start = float(start); speed = s.get('speed', 1.0)
-        vpath, SRC_W, SRC_H = video_info(name); BAND_W = min(SRC_W, int(SRC_H * BAND_FRAC) // 2 * 2)
+        vpath, SRC_W, SRC_H = video_info(name); BAND_W = SRC_W if s.get('fit') == 'blurfill' else min(SRC_W, int(SRC_H * BAND_FRAC) // 2 * 2)
         dur = (t1 - t0 + 0.25) * speed
         cxs = [s['cam']['from']['cx'], s['cam']['to']['cx']]
         bx0 = int(min(max(sum(cxs) / 2 * SRC_W - BAND_W / 2, 0), SRC_W - BAND_W)) // 2 * 2
