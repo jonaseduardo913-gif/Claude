@@ -32,3 +32,12 @@ tudo gerado 100% por código (three.js + Chromium headless + Python/numpy + ffmp
 ```bash
 ./build.sh 1 2 3      # requer node, python3 + numpy, ffmpeg e o Chromium do Playwright
 ```
+
+## Especial: THE LOST EGG (narrado, 6:20)
+`output/04-the-lost-egg.mp4` — curta cinematográfico narrado em inglês americano (somente narrador,
+voz sintetizada com Kokoro TTS, voz `am_michael`), 1920×1080 a 24 fps, 11 cenas sincronizadas com a narração:
+floresta mágica ao amanhecer, o arbusto e o ovo dourado, pegadas gigantes, ponte de madeira, cachoeira com
+arco-íris, campo de flores, o filhote no arbusto, o nascimento, a trilha de árvores altas, o rugido,
+o reencontro na clareira, a despedida e a lição ao pôr do sol.
+- Narração: `narration/tts.py` gera `narration/lines/*.wav` e `src/narr4.json` (tempos de cada frase).
+- Cena: `src/story4.js`. Gerar: `./build.sh 4`.
