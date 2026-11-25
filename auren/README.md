@@ -25,3 +25,20 @@ Rodar tudo: `./build.sh`
 ## Mídia
 Os arquivos de `input/media` vêm da página oficial de downloads do GTA VI
 (rockstargames.com/VI/downloads) e não são versionados. Créditos: Rockstar Games.
+
+## Biblioteca de cenas
+Fontes de vídeo usadas no `storyboard.json` como `nome:segundos`:
+
+| Nome | Arquivo | Conteúdo |
+|---|---|---|
+| `tr` | `input/media/trailer.mp4` | Launch Trailer oficial (89 s, 4K) |
+| `ext` | `input/media/extended.mp4` | "GTA VI – An Extended Look" oficial (26,8 min, 4K) |
+| `cover` | `input/media/videos/cover.mp4` | Arte de capa animada (33 s) |
+| outros | `input/media/videos/<nome>.mp4` | qualquer vídeo seu (gameplay capturada etc.) |
+
+```bash
+python3 library.py scan ext          # detecta as cenas, gera library/ext/sheet_*.jpg
+python3 library.py find beach day    # busca nas tags (library/tags.json)
+```
+Cada miniatura das folhas traz o código da cena (ex.: `ext:612.4`), que vai direto no campo `src` do storyboard.
+Tags em MAIÚSCULAS marcam restrições: `TEXT-OVERLAY`, `LOGO-ONLY`, `SUGGESTIVE` (evitar).

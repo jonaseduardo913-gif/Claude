@@ -1,4 +1,4 @@
-"""storyboard.json + build/words.json  ->  build/timeline.json (+ trailer frame plates)
+"""storyboard.json + build/words.json  ->  build/timeline.json (+ video frame plates)
 
 Resolves every shot to frame-exact times anchored on narration words, extracts the
 needed trailer ranges as vertical 4K bands, builds caption cards with the colour code,
@@ -12,8 +12,15 @@ WD = json.load(open('build/words.json'))
 words = WD['words']
 VO_DUR = WD['duration']
 MEDIA = 'input/media'
-SRC_W, SRC_H = 3840, 2160            # trailer resolution
-BAND_W = 1700                        # vertical band kept from each trailer frame
+VIDEOS = {'tr': f'{MEDIA}/trailer.mp4', 'ext': f'{MEDIA}/extended.mp4'}   # short names; others: input/media/videos/<name>.mp4
+BAND_FRAC = 1700 / 2160               # vertical band kept from each frame (relative to height)
+_probe = {}
+def video_info(name):
+    path = VIDEOS.get(name, f'{MEDIA}/videos/{name}.mp4')
+    if path not in _probe:
+        out = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', path], capture_output=True, text=True, check=True).stdout
+        w, h = map(int, out.strip().split(',')[:2]); _probe[path] = (path, w, h)
+    return _probe[path]
 
 def snap(t): return round(t * FPS) / FPS
 def wstart(i): return snap(max(0.0, words[i]['s'] - 2 / FPS))
@@ -38,16 +45,17 @@ for k, s in enumerate(shots):
         path = f"{MEDIA}/ss/{src[3:]}.jpg" if src != 'map' else f"{MEDIA}/map.jpg"
         w, h = img_size(path)
         sh['src'] = {'type': 'still', 'path': path, 'w': w, 'h': h}
-    else:  # trailer clip -> vertical band of frames
-        start = float(src[3:]); speed = s.get('speed', 1.0)
+    else:  # video clip "name:seconds" -> vertical band of frames
+        name, start = src.rsplit(':', 1); start = float(start); speed = s.get('speed', 1.0)
+        vpath, SRC_W, SRC_H = video_info(name); BAND_W = min(SRC_W, int(SRC_H * BAND_FRAC) // 2 * 2)
         dur = (t1 - t0 + 0.25) * speed
         cxs = [s['cam']['from']['cx'], s['cam']['to']['cx']]
         bx0 = int(min(max(sum(cxs) / 2 * SRC_W - BAND_W / 2, 0), SRC_W - BAND_W)) // 2 * 2
         d = f'build/plates/shot{k:02d}'
-        stamp = f'v2|{start}|{dur:.3f}|{bx0}|{speed}'
+        stamp = f'v3|{vpath}|{start}|{dur:.3f}|{bx0}|{speed}'
         if not (os.path.exists(d + '/.stamp') and open(d + '/.stamp').read() == stamp):
             shutil.rmtree(d, ignore_errors=True); os.makedirs(d)
-            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', f'{start}', '-t', f'{dur:.3f}', '-i', f'{MEDIA}/trailer.mp4',
+            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', f'{start}', '-t', f'{dur:.3f}', '-i', vpath,
                             '-vf', f'crop={BAND_W}:{SRC_H}:{bx0}:0' + (f',setpts=PTS/{speed},framerate=fps={FPS}' if speed < 1 else ''),
                             '-q:v', '3', '-start_number', '0', f'{d}/%04d.jpg'], check=True)
             open(d + '/.stamp', 'w').write(stamp)

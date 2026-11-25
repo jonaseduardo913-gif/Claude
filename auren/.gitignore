@@ -2,3 +2,5 @@ node_modules/
 input/
 build/
 output/
+library/*/thumbs/
+library/*/sheet_*.jpg
