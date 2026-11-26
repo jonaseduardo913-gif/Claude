@@ -1,0 +1,153 @@
+{
+  "id": "fechadura",
+  "title": "Como funciona uma fechadura com chave",
+  "language": "pt-BR",
+  "format": { "width": 1080, "height": 1920, "fps": 30 },
+  "voice": { "model": "pt_BR-faber-medium", "length_scale": 0.96 },
+  "music": { "bpm": 96, "key": "D", "mood": "tensão documental, pulsante, clara" },
+  "research": {
+    "summary": "Fechadura de pinos (pin tumbler): um tambor (plug) gira dentro do corpo (housing). Colunas de pinos atravessam os dois: pinos inferiores de comprimentos diferentes tocam a chave; pinos superiores, empurrados por molas, ficam acima. Sem chave, os pinos atravessam a linha de cisalhamento (fronteira tambor/corpo) e travam o giro. A chave correta levanta cada pino inferior até que a divisão entre os pinos coincida com a linha de cisalhamento; o tambor então gira e o came/lingueta é acionado. Chave errada deixa ao menos uma coluna cruzando a linha.",
+    "facts_checked": [
+      "Componentes: corpo, tambor, molas, pinos superiores (drivers) e pinos inferiores (key pins).",
+      "Sem chave, os pinos atravessam a linha de cisalhamento e impedem o giro do tambor.",
+      "Chave correta alinha as divisões dos pinos exatamente na linha de cisalhamento.",
+      "Chave incorreta deixa um ou mais pinos atravessando a linha.",
+      "Linus Yale Sr. inventou a fechadura de pinos moderna em 1848; Linus Yale Jr. desenvolveu o cilindro compacto com chave plana na década de 1860 (datas exatas de patentes variam entre as fontes, por isso o roteiro diz apenas 'século dezenove').",
+      "O princípio de pinos é milenar (exemplo de ~4.000 anos citado pela Britannica).",
+      "Combinações: 5 pinos com até 10 profundidades = 10^5 = 100.000 combinações teóricas (fabricantes usam de 7 a 10 profundidades; regras de fabricação reduzem o número real), por isso a narração diz 'em teoria'."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pin_tumbler_lock",
+      "https://www.britannica.com/biography/Linus-Yale",
+      "https://www.britannica.com/technology/lock-security/Introduction",
+      "https://en.wikipedia.org/wiki/Linus_Yale_Jr."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "narration": "Você gira uma chave todo dia. Mas o que acontece aqui dentro?",
+      "min_seconds": 4.2,
+      "storyboard": "GANCHO. Close cinematográfico da fechadura inteira em aço; a chave desliza para dentro do tambor. No meio da cena, um plano de corte luminoso atravessa a fechadura e remove a metade da frente, revelando os pinos subindo e descendo enquanto a chave entra.",
+      "camera": "3/4 frontal baixo, dolly-in lento com leve arco para a direita",
+      "transition": "zoomin",
+      "music": 1,
+      "sfx": [
+        { "u": 0.0, "type": "whoosh_in" },
+        { "u": 0.12, "type": "key_slide" },
+        { "u": 0.48, "type": "cut_reveal" },
+        { "u": 0.62, "type": "pin_clicks", "count": 4, "spread": 0.3 }
+      ]
+    },
+    {
+      "id": "S02",
+      "narration": "Esta é uma fechadura de pinos. Por fora, o corpo. Dentro, um cilindro que gira: o tambor.",
+      "min_seconds": 4.5,
+      "storyboard": "Vista em corte, sem chave. A câmera gira suavemente para a vista frontal do corte. Etiqueta CORPO aponta para a carcaça de aço; depois TAMBOR aponta para o cilindro de latão, que pulsa levemente.",
+      "camera": "orbit de 35° até vista frontal do corte",
+      "transition": "smoothup",
+      "music": 1,
+      "sfx": [ { "u": 0.3, "type": "ui_tick" }, { "u": 0.62, "type": "ui_tick" } ]
+    },
+    {
+      "id": "S03",
+      "narration": "Atravessando os dois, colunas de pinos de tamanhos diferentes, empurrados por molas.",
+      "min_seconds": 4.2,
+      "storyboard": "A câmera sobe pela torre de pinos. Os pinos inferiores (latão) acendem em sequência, depois os superiores (aço), depois as molas comprimem e esticam levemente. Etiquetas PINOS INFERIORES, PINOS SUPERIORES e MOLAS.",
+      "camera": "tilt up ao longo da torre",
+      "transition": "fade",
+      "music": 2,
+      "sfx": [ { "u": 0.15, "type": "ui_tick" }, { "u": 0.45, "type": "ui_tick" }, { "u": 0.72, "type": "spring" } ]
+    },
+    {
+      "id": "S04",
+      "narration": "Sem a chave, as molas empurram os pinos para baixo. Eles cruzam a fronteira entre as peças, e o tambor não gira.",
+      "min_seconds": 5.5,
+      "storyboard": "As molas empurram as colunas para baixo. Os pinos superiores que atravessam a fronteira ficam vermelhos. O tambor tenta girar, avança um grau e trava, com tremor. A alavanca traseira (came) mal se mexe.",
+      "camera": "vista frontal do corte, push-in para a fronteira",
+      "transition": "fade",
+      "music": 2,
+      "sfx": [ { "u": 0.12, "type": "spring" }, { "u": 0.62, "type": "blocked" }, { "u": 0.78, "type": "blocked" } ]
+    },
+    {
+      "id": "S05",
+      "narration": "Essa fronteira é a linha de cisalhamento. Tudo depende dela.",
+      "min_seconds": 4.0,
+      "storyboard": "Uma linha ciano luminosa se desenha da esquerda para a direita exatamente na fronteira entre o tambor e o corpo. Etiqueta LINHA DE CISALHAMENTO. Câmera trava lateralmente ao longo da linha.",
+      "camera": "travelling lateral rente à linha",
+      "transition": "wipeleft",
+      "music": 2,
+      "sfx": [ { "u": 0.05, "type": "laser_draw" }, { "u": 0.4, "type": "ui_tick" } ]
+    },
+    {
+      "id": "S06",
+      "narration": "A chave certa empurra cada pino até uma altura exata.",
+      "min_seconds": 4.8,
+      "storyboard": "CENA PRINCIPAL. A chave entra pela esquerda; cada dente levanta e solta os pinos conforme passa (cinemática real do perfil da chave). Ao final, cada pino inferior está apoiado no seu corte.",
+      "camera": "vista frontal do corte, leve dolly acompanhando a chave",
+      "transition": "fade",
+      "music": 3,
+      "sfx": [ { "u": 0.05, "type": "key_slide" }, { "u": 0.12, "type": "pin_clicks", "count": 9, "spread": 0.62 }, { "u": 0.8, "type": "key_seat" } ]
+    },
+    {
+      "id": "S07",
+      "narration": "E todas as divisões se alinham com a linha.",
+      "min_seconds": 3.4,
+      "storyboard": "Close na linha de cisalhamento: as cinco divisões entre os pinos acendem em verde, uma a uma, exatamente sobre a linha.",
+      "camera": "push-in macro na linha",
+      "transition": "fade",
+      "music": 3,
+      "sfx": [ { "u": 0.15, "type": "align_chime", "count": 5, "spread": 0.5 } ]
+    },
+    {
+      "id": "S08",
+      "narration": "Nada mais bloqueia. O tambor gira e aciona o mecanismo que recolhe a lingueta.",
+      "min_seconds": 5.2,
+      "storyboard": "O tambor gira 90° levando a chave e os pinos inferiores; os superiores ficam no corpo. A câmera orbita para trás mostrando a alavanca (came) girando, que é o que move a lingueta da porta.",
+      "camera": "orbit de frontal para 3/4 traseira",
+      "transition": "zoomin",
+      "music": 3,
+      "sfx": [ { "u": 0.18, "type": "turn" }, { "u": 0.55, "type": "clunk" } ]
+    },
+    {
+      "id": "S09",
+      "narration": "Com a chave errada, basta um pino fora do lugar para tudo continuar travado.",
+      "min_seconds": 4.8,
+      "storyboard": "Vista em corte com uma chave diferente (segundo corte mais fundo). Ao inserir, o segundo pino fica baixo demais; seu pino superior cruza a linha e fica vermelho. O tambor tenta girar e trava.",
+      "camera": "frontal do corte, push-in no pino errado",
+      "transition": "fadeblack",
+      "music": 2,
+      "sfx": [ { "u": 0.05, "type": "key_slide" }, { "u": 0.1, "type": "pin_clicks", "count": 7, "spread": 0.45 }, { "u": 0.7, "type": "blocked" }, { "u": 0.82, "type": "error" } ]
+    },
+    {
+      "id": "S10",
+      "narration": "Cinco pinos, até dez alturas cada: em teoria, cem mil combinações.",
+      "min_seconds": 4.5,
+      "storyboard": "Dezenas de chaves com cortes diferentes surgem em uma grade 3D que se expande enquanto a câmera recua. Etiquetas 5 PINOS × 10 ALTURAS e 100.000.",
+      "camera": "pull-back amplo",
+      "transition": "smoothup",
+      "music": 2,
+      "sfx": [ { "u": 0.05, "type": "swarm" }, { "u": 0.7, "type": "impact" } ]
+    },
+    {
+      "id": "S11",
+      "narration": "A ideia tem milhares de anos, mas a versão moderna surgiu com a família Yale, no século dezenove.",
+      "min_seconds": 5.5,
+      "storyboard": "Vista explodida: todas as peças da fechadura se separam no ar e giram lentamente, como em um catálogo técnico. Etiqueta 1848 · LINUS YALE SR.",
+      "camera": "orbit lento 360° parcial",
+      "transition": "fade",
+      "music": 1,
+      "sfx": [ { "u": 0.05, "type": "explode" }, { "u": 0.55, "type": "ui_tick" } ]
+    },
+    {
+      "id": "S12",
+      "narration": "E provavelmente é ela que tranca a sua porta hoje.",
+      "min_seconds": 4.0,
+      "storyboard": "As peças se remontam em um movimento único; a chave entra e gira. Plano heroico final com a fechadura inteira e fade para preto.",
+      "camera": "pull-back para plano heroico",
+      "transition": "none",
+      "music": 1,
+      "sfx": [ { "u": 0.0, "type": "assemble" }, { "u": 0.55, "type": "turn" }, { "u": 0.72, "type": "clunk" }, { "u": 0.86, "type": "outro" } ]
+    }
+  ]
+}

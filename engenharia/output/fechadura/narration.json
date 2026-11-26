@@ -1,0 +1,869 @@
+{
+ "S01": {
+  "file": "output/fechadura/narration/S01.wav",
+  "seconds": 3.066,
+  "words": [
+   {
+    "w": "Você",
+    "start": 0.0,
+    "end": 0.237
+   },
+   {
+    "w": "gira",
+    "start": 0.237,
+    "end": 0.474
+   },
+   {
+    "w": "uma",
+    "start": 0.474,
+    "end": 0.663
+   },
+   {
+    "w": "chave",
+    "start": 0.663,
+    "end": 0.9
+   },
+   {
+    "w": "todo",
+    "start": 0.9,
+    "end": 1.137
+   },
+   {
+    "w": "dia.",
+    "start": 1.137,
+    "end": 1.469
+   },
+   {
+    "w": "Mas",
+    "start": 1.629,
+    "end": 1.766
+   },
+   {
+    "w": "o",
+    "start": 1.766,
+    "end": 1.834
+   },
+   {
+    "w": "que",
+    "start": 1.834,
+    "end": 1.971
+   },
+   {
+    "w": "acontece",
+    "start": 1.971,
+    "end": 2.473
+   },
+   {
+    "w": "aqui",
+    "start": 2.473,
+    "end": 2.655
+   },
+   {
+    "w": "dentro?",
+    "start": 2.655,
+    "end": 3.066
+   }
+  ]
+ },
+ "S02": {
+  "file": "output/fechadura/narration/S02.wav",
+  "seconds": 5.217,
+  "words": [
+   {
+    "w": "Esta",
+    "start": 0.0,
+    "end": 0.269
+   },
+   {
+    "w": "é",
+    "start": 0.269,
+    "end": 0.35
+   },
+   {
+    "w": "uma",
+    "start": 0.35,
+    "end": 0.565
+   },
+   {
+    "w": "fechadura",
+    "start": 0.565,
+    "end": 1.103
+   },
+   {
+    "w": "de",
+    "start": 1.103,
+    "end": 1.264
+   },
+   {
+    "w": "pinos.",
+    "start": 1.264,
+    "end": 1.64
+   },
+   {
+    "w": "Por",
+    "start": 1.64,
+    "end": 1.802
+   },
+   {
+    "w": "fora,",
+    "start": 1.802,
+    "end": 2.259
+   },
+   {
+    "w": "o",
+    "start": 2.259,
+    "end": 2.339
+   },
+   {
+    "w": "corpo.",
+    "start": 2.339,
+    "end": 2.716
+   },
+   {
+    "w": "Dentro,",
+    "start": 2.716,
+    "end": 3.334
+   },
+   {
+    "w": "um",
+    "start": 3.334,
+    "end": 3.496
+   },
+   {
+    "w": "cilindro",
+    "start": 3.496,
+    "end": 4.087
+   },
+   {
+    "w": "que",
+    "start": 4.087,
+    "end": 4.195
+   },
+   {
+    "w": "gira:",
+    "start": 4.195,
+    "end": 4.652
+   },
+   {
+    "w": "o",
+    "start": 4.652,
+    "end": 4.733
+   },
+   {
+    "w": "tambor.",
+    "start": 4.733,
+    "end": 5.217
+   }
+  ]
+ },
+ "S03": {
+  "file": "output/fechadura/narration/S03.wav",
+  "seconds": 4.427,
+  "words": [
+   {
+    "w": "Atravessando",
+    "start": 0.0,
+    "end": 0.646
+   },
+   {
+    "w": "os",
+    "start": 0.646,
+    "end": 0.738
+   },
+   {
+    "w": "dois,",
+    "start": 0.738,
+    "end": 1.13
+   },
+   {
+    "w": "colunas",
+    "start": 1.13,
+    "end": 1.545
+   },
+   {
+    "w": "de",
+    "start": 1.545,
+    "end": 1.683
+   },
+   {
+    "w": "pinos",
+    "start": 1.683,
+    "end": 1.96
+   },
+   {
+    "w": "de",
+    "start": 1.96,
+    "end": 2.098
+   },
+   {
+    "w": "tamanhos",
+    "start": 2.098,
+    "end": 2.559
+   },
+   {
+    "w": "diferentes,",
+    "start": 2.559,
+    "end": 3.412
+   },
+   {
+    "w": "empurrados",
+    "start": 3.412,
+    "end": 3.966
+   },
+   {
+    "w": "por",
+    "start": 3.966,
+    "end": 4.104
+   },
+   {
+    "w": "molas.",
+    "start": 4.104,
+    "end": 4.427
+   }
+  ]
+ },
+ "S04": {
+  "file": "output/fechadura/narration/S04.wav",
+  "seconds": 5.708,
+  "words": [
+   {
+    "w": "Sem",
+    "start": 0.0,
+    "end": 0.193
+   },
+   {
+    "w": "a",
+    "start": 0.193,
+    "end": 0.266
+   },
+   {
+    "w": "chave,",
+    "start": 0.266,
+    "end": 0.676
+   },
+   {
+    "w": "as",
+    "start": 0.676,
+    "end": 0.773
+   },
+   {
+    "w": "molas",
+    "start": 0.773,
+    "end": 1.062
+   },
+   {
+    "w": "empurram",
+    "start": 1.062,
+    "end": 1.642
+   },
+   {
+    "w": "os",
+    "start": 1.642,
+    "end": 1.738
+   },
+   {
+    "w": "pinos",
+    "start": 1.738,
+    "end": 2.028
+   },
+   {
+    "w": "para",
+    "start": 2.028,
+    "end": 2.269
+   },
+   {
+    "w": "baixo.",
+    "start": 2.269,
+    "end": 2.607
+   },
+   {
+    "w": "Eles",
+    "start": 2.767,
+    "end": 2.979
+   },
+   {
+    "w": "cruzam",
+    "start": 2.979,
+    "end": 3.36
+   },
+   {
+    "w": "a",
+    "start": 3.36,
+    "end": 3.423
+   },
+   {
+    "w": "fronteira",
+    "start": 3.423,
+    "end": 3.931
+   },
+   {
+    "w": "entre",
+    "start": 3.931,
+    "end": 4.269
+   },
+   {
+    "w": "as",
+    "start": 4.269,
+    "end": 4.354
+   },
+   {
+    "w": "peças,",
+    "start": 4.354,
+    "end": 4.756
+   },
+   {
+    "w": "e",
+    "start": 4.756,
+    "end": 4.84
+   },
+   {
+    "w": "o",
+    "start": 4.84,
+    "end": 4.904
+   },
+   {
+    "w": "tambor",
+    "start": 4.904,
+    "end": 5.242
+   },
+   {
+    "w": "não",
+    "start": 5.242,
+    "end": 5.454
+   },
+   {
+    "w": "gira.",
+    "start": 5.454,
+    "end": 5.708
+   }
+  ]
+ },
+ "S05": {
+  "file": "output/fechadura/narration/S05.wav",
+  "seconds": 3.303,
+  "words": [
+   {
+    "w": "Essa",
+    "start": 0.0,
+    "end": 0.205
+   },
+   {
+    "w": "fronteira",
+    "start": 0.205,
+    "end": 0.821
+   },
+   {
+    "w": "é",
+    "start": 0.821,
+    "end": 0.898
+   },
+   {
+    "w": "a",
+    "start": 0.898,
+    "end": 0.975
+   },
+   {
+    "w": "linha",
+    "start": 0.975,
+    "end": 1.231
+   },
+   {
+    "w": "de",
+    "start": 1.231,
+    "end": 1.385
+   },
+   {
+    "w": "cisalhamento.",
+    "start": 1.385,
+    "end": 2.155
+   },
+   {
+    "w": "Tudo",
+    "start": 2.315,
+    "end": 2.539
+   },
+   {
+    "w": "depende",
+    "start": 2.539,
+    "end": 3.033
+   },
+   {
+    "w": "dela.",
+    "start": 3.033,
+    "end": 3.303
+   }
+  ]
+ },
+ "S06": {
+  "file": "output/fechadura/narration/S06.wav",
+  "seconds": 2.838,
+  "words": [
+   {
+    "w": "A",
+    "start": 0.0,
+    "end": 0.077
+   },
+   {
+    "w": "chave",
+    "start": 0.077,
+    "end": 0.332
+   },
+   {
+    "w": "certa",
+    "start": 0.332,
+    "end": 0.639
+   },
+   {
+    "w": "empurra",
+    "start": 0.639,
+    "end": 1.099
+   },
+   {
+    "w": "cada",
+    "start": 1.099,
+    "end": 1.355
+   },
+   {
+    "w": "pino",
+    "start": 1.355,
+    "end": 1.611
+   },
+   {
+    "w": "até",
+    "start": 1.611,
+    "end": 1.815
+   },
+   {
+    "w": "uma",
+    "start": 1.815,
+    "end": 2.02
+   },
+   {
+    "w": "altura",
+    "start": 2.02,
+    "end": 2.429
+   },
+   {
+    "w": "exata.",
+    "start": 2.429,
+    "end": 2.838
+   }
+  ]
+ },
+ "S07": {
+  "file": "output/fechadura/narration/S07.wav",
+  "seconds": 1.905,
+  "words": [
+   {
+    "w": "E",
+    "start": 0.0,
+    "end": 0.062
+   },
+   {
+    "w": "todas",
+    "start": 0.062,
+    "end": 0.311
+   },
+   {
+    "w": "as",
+    "start": 0.311,
+    "end": 0.394
+   },
+   {
+    "w": "divisões",
+    "start": 0.394,
+    "end": 0.932
+   },
+   {
+    "w": "se",
+    "start": 0.932,
+    "end": 1.015
+   },
+   {
+    "w": "alinham",
+    "start": 1.015,
+    "end": 1.429
+   },
+   {
+    "w": "com",
+    "start": 1.429,
+    "end": 1.595
+   },
+   {
+    "w": "a",
+    "start": 1.595,
+    "end": 1.657
+   },
+   {
+    "w": "linha.",
+    "start": 1.657,
+    "end": 1.905
+   }
+  ]
+ },
+ "S08": {
+  "file": "output/fechadura/narration/S08.wav",
+  "seconds": 4.189,
+  "words": [
+   {
+    "w": "Nada",
+    "start": 0.0,
+    "end": 0.262
+   },
+   {
+    "w": "mais",
+    "start": 0.262,
+    "end": 0.525
+   },
+   {
+    "w": "bloqueia.",
+    "start": 0.525,
+    "end": 1.102
+   },
+   {
+    "w": "O",
+    "start": 1.262,
+    "end": 1.333
+   },
+   {
+    "w": "tambor",
+    "start": 1.333,
+    "end": 1.714
+   },
+   {
+    "w": "gira",
+    "start": 1.714,
+    "end": 1.952
+   },
+   {
+    "w": "e",
+    "start": 1.952,
+    "end": 2.047
+   },
+   {
+    "w": "aciona",
+    "start": 2.047,
+    "end": 2.476
+   },
+   {
+    "w": "o",
+    "start": 2.476,
+    "end": 2.547
+   },
+   {
+    "w": "mecanismo",
+    "start": 2.547,
+    "end": 3.07
+   },
+   {
+    "w": "que",
+    "start": 3.07,
+    "end": 3.166
+   },
+   {
+    "w": "recolhe",
+    "start": 3.166,
+    "end": 3.546
+   },
+   {
+    "w": "a",
+    "start": 3.546,
+    "end": 3.618
+   },
+   {
+    "w": "lingueta.",
+    "start": 3.618,
+    "end": 4.189
+   }
+  ]
+ },
+ "S09": {
+  "file": "output/fechadura/narration/S09.wav",
+  "seconds": 3.743,
+  "words": [
+   {
+    "w": "Com",
+    "start": 0.0,
+    "end": 0.185
+   },
+   {
+    "w": "a",
+    "start": 0.185,
+    "end": 0.254
+   },
+   {
+    "w": "chave",
+    "start": 0.254,
+    "end": 0.485
+   },
+   {
+    "w": "errada,",
+    "start": 0.485,
+    "end": 0.97
+   },
+   {
+    "w": "basta",
+    "start": 0.97,
+    "end": 1.248
+   },
+   {
+    "w": "um",
+    "start": 1.248,
+    "end": 1.386
+   },
+   {
+    "w": "pino",
+    "start": 1.386,
+    "end": 1.617
+   },
+   {
+    "w": "fora",
+    "start": 1.617,
+    "end": 1.848
+   },
+   {
+    "w": "do",
+    "start": 1.848,
+    "end": 1.941
+   },
+   {
+    "w": "lugar",
+    "start": 1.941,
+    "end": 2.218
+   },
+   {
+    "w": "para",
+    "start": 2.218,
+    "end": 2.449
+   },
+   {
+    "w": "tudo",
+    "start": 2.449,
+    "end": 2.68
+   },
+   {
+    "w": "continuar",
+    "start": 2.68,
+    "end": 3.281
+   },
+   {
+    "w": "travado.",
+    "start": 3.281,
+    "end": 3.743
+   }
+  ]
+ },
+ "S10": {
+  "file": "output/fechadura/narration/S10.wav",
+  "seconds": 4.0,
+  "words": [
+   {
+    "w": "Cinco",
+    "start": 0.0,
+    "end": 0.335
+   },
+   {
+    "w": "pinos,",
+    "start": 0.335,
+    "end": 0.79
+   },
+   {
+    "w": "até",
+    "start": 0.79,
+    "end": 0.982
+   },
+   {
+    "w": "dez",
+    "start": 0.982,
+    "end": 1.174
+   },
+   {
+    "w": "alturas",
+    "start": 1.174,
+    "end": 1.605
+   },
+   {
+    "w": "cada:",
+    "start": 1.605,
+    "end": 2.012
+   },
+   {
+    "w": "em",
+    "start": 2.012,
+    "end": 2.156
+   },
+   {
+    "w": "teoria,",
+    "start": 2.156,
+    "end": 2.754
+   },
+   {
+    "w": "cem",
+    "start": 2.754,
+    "end": 2.994
+   },
+   {
+    "w": "mil",
+    "start": 2.994,
+    "end": 3.186
+   },
+   {
+    "w": "combinações.",
+    "start": 3.186,
+    "end": 4.0
+   }
+  ]
+ },
+ "S11": {
+  "file": "output/fechadura/narration/S11.wav",
+  "seconds": 5.513,
+  "words": [
+   {
+    "w": "A",
+    "start": 0.0,
+    "end": 0.077
+   },
+   {
+    "w": "ideia",
+    "start": 0.077,
+    "end": 0.436
+   },
+   {
+    "w": "tem",
+    "start": 0.436,
+    "end": 0.641
+   },
+   {
+    "w": "milhares",
+    "start": 0.641,
+    "end": 1.103
+   },
+   {
+    "w": "de",
+    "start": 1.103,
+    "end": 1.256
+   },
+   {
+    "w": "anos,",
+    "start": 1.256,
+    "end": 1.744
+   },
+   {
+    "w": "mas",
+    "start": 1.744,
+    "end": 1.898
+   },
+   {
+    "w": "a",
+    "start": 1.898,
+    "end": 1.974
+   },
+   {
+    "w": "versão",
+    "start": 1.974,
+    "end": 2.436
+   },
+   {
+    "w": "moderna",
+    "start": 2.436,
+    "end": 2.898
+   },
+   {
+    "w": "surgiu",
+    "start": 2.898,
+    "end": 3.257
+   },
+   {
+    "w": "com",
+    "start": 3.257,
+    "end": 3.462
+   },
+   {
+    "w": "a",
+    "start": 3.462,
+    "end": 3.539
+   },
+   {
+    "w": "família",
+    "start": 3.539,
+    "end": 4.0
+   },
+   {
+    "w": "Yale,",
+    "start": 4.0,
+    "end": 4.487
+   },
+   {
+    "w": "no",
+    "start": 4.487,
+    "end": 4.59
+   },
+   {
+    "w": "século",
+    "start": 4.59,
+    "end": 4.949
+   },
+   {
+    "w": "dezenove.",
+    "start": 4.949,
+    "end": 5.513
+   }
+  ]
+ },
+ "S12": {
+  "file": "output/fechadura/narration/S12.wav",
+  "seconds": 2.385,
+  "words": [
+   {
+    "w": "E",
+    "start": 0.0,
+    "end": 0.069
+   },
+   {
+    "w": "provavelmente",
+    "start": 0.069,
+    "end": 0.903
+   },
+   {
+    "w": "é",
+    "start": 0.903,
+    "end": 0.972
+   },
+   {
+    "w": "ela",
+    "start": 0.972,
+    "end": 1.158
+   },
+   {
+    "w": "que",
+    "start": 1.158,
+    "end": 1.25
+   },
+   {
+    "w": "tranca",
+    "start": 1.25,
+    "end": 1.621
+   },
+   {
+    "w": "a",
+    "start": 1.621,
+    "end": 1.69
+   },
+   {
+    "w": "sua",
+    "start": 1.69,
+    "end": 1.875
+   },
+   {
+    "w": "porta",
+    "start": 1.875,
+    "end": 2.153
+   },
+   {
+    "w": "hoje.",
+    "start": 2.153,
+    "end": 2.385
+   }
+  ]
+ }
+}

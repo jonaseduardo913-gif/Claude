@@ -1,0 +1,7 @@
+node_modules/
+output/*/clips/
+output/*/narration/
+output/*/stills/
+output/*/video_raw.mp4
+output/*/mix.wav
+output/*/render.log

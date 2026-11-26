@@ -1,0 +1,118 @@
+{
+ "episode": "fechadura",
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "total_seconds": 58.267,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "duration": 4.2,
+   "tail": 0.45,
+   "clip_seconds": 4.65,
+   "frame_offset": 0,
+   "transition": "zoomin"
+  },
+  {
+   "id": "S02",
+   "start": 4.2,
+   "duration": 5.833333333333333,
+   "tail": 0.45,
+   "clip_seconds": 6.283,
+   "frame_offset": 140,
+   "transition": "smoothup"
+  },
+  {
+   "id": "S03",
+   "start": 10.033,
+   "duration": 5.033333333333333,
+   "tail": 0.45,
+   "clip_seconds": 5.483,
+   "frame_offset": 328,
+   "transition": "fade"
+  },
+  {
+   "id": "S04",
+   "start": 15.067,
+   "duration": 6.3,
+   "tail": 0.45,
+   "clip_seconds": 6.75,
+   "frame_offset": 492,
+   "transition": "fade"
+  },
+  {
+   "id": "S05",
+   "start": 21.367,
+   "duration": 4.0,
+   "tail": 0.45,
+   "clip_seconds": 4.45,
+   "frame_offset": 694,
+   "transition": "wipeleft"
+  },
+  {
+   "id": "S06",
+   "start": 25.367,
+   "duration": 4.8,
+   "tail": 0.45,
+   "clip_seconds": 5.25,
+   "frame_offset": 828,
+   "transition": "fade"
+  },
+  {
+   "id": "S07",
+   "start": 30.167,
+   "duration": 3.4,
+   "tail": 0.45,
+   "clip_seconds": 3.85,
+   "frame_offset": 986,
+   "transition": "fade"
+  },
+  {
+   "id": "S08",
+   "start": 33.567,
+   "duration": 5.2,
+   "tail": 0.45,
+   "clip_seconds": 5.65,
+   "frame_offset": 1102,
+   "transition": "zoomin"
+  },
+  {
+   "id": "S09",
+   "start": 38.767,
+   "duration": 4.8,
+   "tail": 0.45,
+   "clip_seconds": 5.25,
+   "frame_offset": 1272,
+   "transition": "fadeblack"
+  },
+  {
+   "id": "S10",
+   "start": 43.567,
+   "duration": 4.6,
+   "tail": 0.45,
+   "clip_seconds": 5.05,
+   "frame_offset": 1430,
+   "transition": "smoothup"
+  },
+  {
+   "id": "S11",
+   "start": 48.167,
+   "duration": 6.1,
+   "tail": 0.45,
+   "clip_seconds": 6.55,
+   "frame_offset": 1582,
+   "transition": "fade"
+  },
+  {
+   "id": "S12",
+   "start": 54.267,
+   "duration": 4.0,
+   "tail": 0,
+   "clip_seconds": 4.0,
+   "frame_offset": 1778,
+   "transition": "none"
+  }
+ ],
+ "warnings": []
+}

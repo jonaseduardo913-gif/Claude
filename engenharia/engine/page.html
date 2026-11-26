@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>html,body{margin:0;background:#000;overflow:hidden}</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "/node_modules/three/build/three.module.js",
+    "three/addons/": "/node_modules/three/examples/jsm/",
+    "three-mesh-bvh": "/node_modules/three-mesh-bvh/src/index.js",
+    "three-bvh-csg": "/node_modules/three-bvh-csg/src/index.js",
+    "engine/": "/engine/"
+  }
+}
+</script>
+</head>
+<body>
+<script type="module">
+  import { boot } from '/engine/runtime.js';
+  const q = new URLSearchParams(location.search);
+  boot(q.get('ep'), { width: +q.get('w') || 1080, height: +q.get('h') || 1920 })
+    .then(() => { window.READY = true; })
+    .catch(e => { window.BOOT_ERROR = String(e && e.stack || e); console.error(window.BOOT_ERROR); });
+</script>
+</body>
+</html>
