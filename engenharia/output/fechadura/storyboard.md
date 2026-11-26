@@ -114,7 +114,7 @@ Duração total: 58.3s · 12 cenas
 
 **Efeitos sonoros:** turn @ 0.9s, clunk @ 2.9s
 
-**Transição:** zoomin
+**Transição:** fade
 
 ## S09 — 38.8s → 43.6s (4.8s)
 

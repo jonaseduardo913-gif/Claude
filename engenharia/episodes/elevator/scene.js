@@ -448,7 +448,7 @@ export async function build(ctx) {
     S04(t, d) {
       st.yCar = 30 - 1.0 * t; st.flyOut = 0.12 + 0.05 * Math.sin(t * 3);
       st.ottoPose = { head: [0.25, -0.5, 0], mouth: 'flat', brows: -0.5 };
-      otto.position.set(-0.4, ROOF + 0.25, 1.2); otto.rotation.y = -0.9;
+      otto.visible = false;   // keep the governor close-up clean
       solve(t);
       aimSun(ctx.studio, [GOV.x, GOV.y, 0], 6);
       if (t < 0.28 * d) set(path([[0, P([1.4, st.yCar + 1.6, 5.2], [0.3, st.yCar + 1.4, 0])], [0.28 * d, P([1.0, st.yCar + 1.7, 4.4], [0.3, st.yCar + 1.4, 0])]], t));
