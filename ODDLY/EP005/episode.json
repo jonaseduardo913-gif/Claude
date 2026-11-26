@@ -1,0 +1,46 @@
+{
+  "id": "EP005",
+  "concept": "CON005",
+  "title": "The Moon's Missing Button",
+  "format": "SHORT",
+  "category": "Fantasy adventures",
+  "logline": "When a silver button pops off the night sky, a tiny frog must climb all the way up to sew it back on before daylight spills through.",
+  "palette": {
+    "dominant": "velvet indigo #1B1F4B and moon silver #D8DDE6",
+    "accent": "frog green #6DBE45"
+  },
+  "runtime_seconds": 50.5,
+  "scene_count": 11,
+  "characters": [
+    "CHR_024",
+    "CHR_025",
+    "CHR_026"
+  ],
+  "backgrounds": [
+    "BG_007",
+    "BG_008"
+  ],
+  "files": [
+    "ANIMATION/animation_jobs.json",
+    "AUDIO/music_brief.json",
+    "AUDIO/sfx_cue_sheet.json",
+    "BACKGROUNDS/backgrounds.json",
+    "CHARACTERS/characters.json",
+    "EDIT/edit_decision_list.json",
+    "PUBLISHING/metadata.json",
+    "QC/qc_report.json",
+    "SCENES/EP005_SC01.json",
+    "SCENES/EP005_SC02.json",
+    "SCENES/EP005_SC03.json",
+    "SCENES/EP005_SC04.json",
+    "SCENES/EP005_SC05.json",
+    "SCENES/EP005_SC06.json",
+    "SCENES/EP005_SC07.json",
+    "SCENES/EP005_SC08.json",
+    "SCENES/EP005_SC09.json",
+    "SCENES/EP005_SC10.json",
+    "SCENES/EP005_SC11.json",
+    "THUMBNAIL/thumbnail.json"
+  ],
+  "qc_status": "APPROVED_FOR_PRODUCTION"
+}

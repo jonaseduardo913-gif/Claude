@@ -1,0 +1,347 @@
+{
+  "episode_id": "EP001",
+  "cues": [
+    {
+      "scene_id": "EP001_SC01",
+      "at_scene": 0.0,
+      "at_episode": 0.0,
+      "timecode": "00:00:00:00",
+      "sound": "crisp skate-blade swish left"
+    },
+    {
+      "scene_id": "EP001_SC01",
+      "at_scene": 0.8,
+      "at_episode": 0.8,
+      "timecode": "00:00:00:19",
+      "sound": "skate-blade swish right"
+    },
+    {
+      "scene_id": "EP001_SC01",
+      "at_scene": 1.6,
+      "at_episode": 1.6,
+      "timecode": "00:00:01:14",
+      "sound": "rubbery 'boing-oing' wobble of the surface"
+    },
+    {
+      "scene_id": "EP001_SC01",
+      "at_scene": 2.4,
+      "at_episode": 2.4,
+      "timecode": "00:00:02:10",
+      "sound": "tiny glass sparkle chime"
+    },
+    {
+      "scene_id": "EP001_SC02",
+      "at_scene": 0.0,
+      "at_episode": 3.0,
+      "timecode": "00:00:03:00",
+      "sound": "chorus of skate swishes"
+    },
+    {
+      "scene_id": "EP001_SC02",
+      "at_scene": 1.2,
+      "at_episode": 4.2,
+      "timecode": "00:00:04:05",
+      "sound": "two hollow glassy 'tink tink' cane taps"
+    },
+    {
+      "scene_id": "EP001_SC02",
+      "at_scene": 2.0,
+      "at_episode": 5.0,
+      "timecode": "00:00:05:00",
+      "sound": "comic slide whistle down as old man wobbles"
+    },
+    {
+      "scene_id": "EP001_SC02",
+      "at_scene": 3.2,
+      "at_episode": 6.2,
+      "timecode": "00:00:06:05",
+      "sound": "graceful harp gliss on the pirouette"
+    },
+    {
+      "scene_id": "EP001_SC03",
+      "at_scene": 0.0,
+      "at_episode": 7.5,
+      "timecode": "00:00:07:12",
+      "sound": "soft squeak of cheek on glass"
+    },
+    {
+      "scene_id": "EP001_SC03",
+      "at_scene": 1.0,
+      "at_episode": 8.5,
+      "timecode": "00:00:08:12",
+      "sound": "tiny clicky ladybug footsteps magnified"
+    },
+    {
+      "scene_id": "EP001_SC03",
+      "at_scene": 2.4,
+      "at_episode": 9.9,
+      "timecode": "00:00:09:22",
+      "sound": "breath 'hhhaaa' fogging"
+    },
+    {
+      "scene_id": "EP001_SC03",
+      "at_scene": 3.0,
+      "at_episode": 10.5,
+      "timecode": "00:00:10:12",
+      "sound": "finger squeak drawing on glass"
+    },
+    {
+      "scene_id": "EP001_SC04",
+      "at_scene": 0.0,
+      "at_episode": 11.5,
+      "timecode": "00:00:11:12",
+      "sound": "deep distant THOOM"
+    },
+    {
+      "scene_id": "EP001_SC04",
+      "at_scene": 1.4,
+      "at_episode": 12.9,
+      "timecode": "00:00:12:22",
+      "sound": "closer THOOM with pebble rattle"
+    },
+    {
+      "scene_id": "EP001_SC04",
+      "at_scene": 2.8,
+      "at_episode": 14.3,
+      "timecode": "00:00:14:07",
+      "sound": "huge THOOM, skate blades rattling"
+    },
+    {
+      "scene_id": "EP001_SC04",
+      "at_scene": 3.2,
+      "at_episode": 14.7,
+      "timecode": "00:00:14:17",
+      "sound": "flock of birds flapping away"
+    },
+    {
+      "scene_id": "EP001_SC05",
+      "at_scene": 0.0,
+      "at_episode": 16.0,
+      "timecode": "00:00:16:00",
+      "sound": "tuba + bass drum step"
+    },
+    {
+      "scene_id": "EP001_SC05",
+      "at_scene": 1.2,
+      "at_episode": 17.2,
+      "timecode": "00:00:17:05",
+      "sound": "giant hand pat 'fwump fwump'"
+    },
+    {
+      "scene_id": "EP001_SC05",
+      "at_scene": 2.0,
+      "at_episode": 18.0,
+      "timecode": "00:00:18:00",
+      "sound": "bewildered cow 'moo'"
+    },
+    {
+      "scene_id": "EP001_SC05",
+      "at_scene": 3.2,
+      "at_episode": 19.2,
+      "timecode": "00:00:19:05",
+      "sound": "wooden fence crunch and spring 'boing'"
+    },
+    {
+      "scene_id": "EP001_SC05",
+      "at_scene": 4.2,
+      "at_episode": 20.2,
+      "timecode": "00:00:20:05",
+      "sound": "giant's long confused 'hmmmm' hum, low cello (no words)"
+    },
+    {
+      "scene_id": "EP001_SC06",
+      "at_scene": 0.0,
+      "at_episode": 21.0,
+      "timecode": "00:00:21:00",
+      "sound": "huge whoosh of air"
+    },
+    {
+      "scene_id": "EP001_SC06",
+      "at_scene": 0.6,
+      "at_episode": 21.6,
+      "timecode": "00:00:21:14",
+      "sound": "comic panic scramble footsteps"
+    },
+    {
+      "scene_id": "EP001_SC06",
+      "at_scene": 1.5,
+      "at_episode": 22.5,
+      "timecode": "00:00:22:12",
+      "sound": "hat flutter whirl"
+    },
+    {
+      "scene_id": "EP001_SC06",
+      "at_scene": 2.8,
+      "at_episode": 23.8,
+      "timecode": "00:00:23:19",
+      "sound": "fingers swish away overhead"
+    },
+    {
+      "scene_id": "EP001_SC07",
+      "at_scene": 0.0,
+      "at_episode": 25.0,
+      "timecode": "00:00:25:00",
+      "sound": "woodblock tick (look up)"
+    },
+    {
+      "scene_id": "EP001_SC07",
+      "at_scene": 0.8,
+      "at_episode": 25.8,
+      "timecode": "00:00:25:19",
+      "sound": "woodblock tock (look down)"
+    },
+    {
+      "scene_id": "EP001_SC07",
+      "at_scene": 1.6,
+      "at_episode": 26.6,
+      "timecode": "00:00:26:14",
+      "sound": "woodblock tick (look up)"
+    },
+    {
+      "scene_id": "EP001_SC07",
+      "at_scene": 2.4,
+      "at_episode": 27.4,
+      "timecode": "00:00:27:10",
+      "sound": "bright glass 'ting' + sparkle sweep"
+    },
+    {
+      "scene_id": "EP001_SC08",
+      "at_scene": 0.0,
+      "at_episode": 29.5,
+      "timecode": "00:00:29:12",
+      "sound": "group effort grunts (non-verbal)"
+    },
+    {
+      "scene_id": "EP001_SC08",
+      "at_scene": 1.0,
+      "at_episode": 30.5,
+      "timecode": "00:00:30:12",
+      "sound": "wobbling glass 'wub-wub'"
+    },
+    {
+      "scene_id": "EP001_SC08",
+      "at_scene": 2.6,
+      "at_episode": 32.1,
+      "timecode": "00:00:32:02",
+      "sound": "near-drop slide whistle down"
+    },
+    {
+      "scene_id": "EP001_SC08",
+      "at_scene": 3.2,
+      "at_episode": 32.7,
+      "timecode": "00:00:32:17",
+      "sound": "recovery slide whistle up"
+    },
+    {
+      "scene_id": "EP001_SC08",
+      "at_scene": 4.4,
+      "at_episode": 33.9,
+      "timecode": "00:00:33:22",
+      "sound": "marching footsteps in rhythm"
+    },
+    {
+      "scene_id": "EP001_SC09",
+      "at_scene": 0.0,
+      "at_episode": 35.0,
+      "timecode": "00:00:35:00",
+      "sound": "soft effort squeak"
+    },
+    {
+      "scene_id": "EP001_SC09",
+      "at_scene": 1.6,
+      "at_episode": 36.6,
+      "timecode": "00:00:36:14",
+      "sound": "wet gentle 'thwup' as lens lands"
+    },
+    {
+      "scene_id": "EP001_SC09",
+      "at_scene": 2.6,
+      "at_episode": 37.6,
+      "timecode": "00:00:37:14",
+      "sound": "enormous slow eyelid 'whoosh-blink'"
+    },
+    {
+      "scene_id": "EP001_SC09",
+      "at_scene": 3.6,
+      "at_episode": 38.6,
+      "timecode": "00:00:38:14",
+      "sound": "villagers' tiny gasp"
+    },
+    {
+      "scene_id": "EP001_SC10",
+      "at_scene": 0.0,
+      "at_episode": 39.5,
+      "timecode": "00:00:39:12",
+      "sound": "underwater muffled ambience"
+    },
+    {
+      "scene_id": "EP001_SC10",
+      "at_scene": 1.0,
+      "at_episode": 40.5,
+      "timecode": "00:00:40:12",
+      "sound": "sharp 'focus' shimmer zip, ambience snaps clear"
+    },
+    {
+      "scene_id": "EP001_SC10",
+      "at_scene": 2.0,
+      "at_episode": 41.5,
+      "timecode": "00:00:41:12",
+      "sound": "tiny distant cheers"
+    },
+    {
+      "scene_id": "EP001_SC10",
+      "at_scene": 3.0,
+      "at_episode": 42.5,
+      "timecode": "00:00:42:12",
+      "sound": "giant's soft astonished intake of breath, low and airy"
+    },
+    {
+      "scene_id": "EP001_SC11",
+      "at_scene": 0.0,
+      "at_episode": 43.5,
+      "timecode": "00:00:43:12",
+      "sound": "glasses unfold 'click-clack'"
+    },
+    {
+      "scene_id": "EP001_SC11",
+      "at_scene": 1.0,
+      "at_episode": 44.5,
+      "timecode": "00:00:44:12",
+      "sound": "nose-push 'boop'"
+    },
+    {
+      "scene_id": "EP001_SC11",
+      "at_scene": 1.8,
+      "at_episode": 45.3,
+      "timecode": "00:00:45:07",
+      "sound": "two magnified blinks 'bloink bloink'"
+    },
+    {
+      "scene_id": "EP001_SC11",
+      "at_scene": 2.6,
+      "at_episode": 46.1,
+      "timecode": "00:00:46:02",
+      "sound": "baby birds chirp"
+    },
+    {
+      "scene_id": "EP001_SC11",
+      "at_scene": 3.4,
+      "at_episode": 46.9,
+      "timecode": "00:00:46:22",
+      "sound": "crowd cheer and hats whoosh"
+    },
+    {
+      "scene_id": "EP001_SC11",
+      "at_scene": 4.4,
+      "at_episode": 47.9,
+      "timecode": "00:00:47:22",
+      "sound": "double sparkle glint"
+    },
+    {
+      "scene_id": "ENDCARD",
+      "at_episode": 48.5,
+      "timecode": "00:00:48:12",
+      "sound": "Two-note celesta \"ding-ding\" rising, soft whoosh, tiny sparkle on the star blink. Same sting on every episode."
+    }
+  ]
+}

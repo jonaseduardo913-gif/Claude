@@ -1,0 +1,91 @@
+{
+  "id": "MUS_EP002",
+  "title": "Statues",
+  "style": "A sneaky tiptoe theme played like a game of musical statues - every time Hazel turns around, the music cuts dead; it restarts when she turns away. Opens into a warm, wide orchestral sunrise.",
+  "bpm": 112,
+  "key": "E minor (sneaky) -> E major (sunrise)",
+  "instrumentation": [
+    "pizzicato strings",
+    "bassoon",
+    "muted trumpet",
+    "woodblock",
+    "marimba",
+    "low choir pad (wordless 'ooh'",
+    "no lyrics)",
+    "french horns",
+    "strings"
+  ],
+  "rules": "Original instrumental only. No vocals, no lyrics, no spoken word.",
+  "hit_points": [
+    {
+      "scene_id": "EP002_SC01",
+      "timecode": "00:00:00:00",
+      "at_episode": 0,
+      "cue": "Sneaky pizzicato and bassoon theme starts on the first hop."
+    },
+    {
+      "scene_id": "EP002_SC02",
+      "timecode": "00:00:03:00",
+      "at_episode": 3.0,
+      "cue": "Music stops dead on the double-take."
+    },
+    {
+      "scene_id": "EP002_SC03",
+      "timecode": "00:00:07:12",
+      "at_episode": 7.5,
+      "cue": "Pizzicato tiptoe theme restarts quietly, muted trumpet on each peek."
+    },
+    {
+      "scene_id": "EP002_SC04",
+      "timecode": "00:00:11:12",
+      "at_episode": 11.5,
+      "cue": "Silence from the needle scratch until the thud; a single low bassoon note after."
+    },
+    {
+      "scene_id": "EP002_SC05",
+      "timecode": "00:00:16:00",
+      "at_episode": 16.0,
+      "cue": "Theme stops on the fall; restarts with a cheeky muted-trumpet 'wah' on the reveal."
+    },
+    {
+      "scene_id": "EP002_SC06",
+      "timecode": "00:00:21:00",
+      "at_episode": 21.0,
+      "cue": "Music stops on the skid; a single comic oboe 'boop' when eyes close."
+    },
+    {
+      "scene_id": "EP002_SC07",
+      "timecode": "00:00:25:12",
+      "at_episode": 25.5,
+      "cue": "Theme in rapid bursts that stop on each glance, getting faster each time."
+    },
+    {
+      "scene_id": "EP002_SC08",
+      "timecode": "00:00:30:00",
+      "at_episode": 30.0,
+      "cue": "Low wordless choir pad swells softly, the sneaky theme is gone."
+    },
+    {
+      "scene_id": "EP002_SC09",
+      "timecode": "00:00:35:00",
+      "at_episode": 35.0,
+      "cue": "Marimba twinkle pattern, rising."
+    },
+    {
+      "scene_id": "EP002_SC10",
+      "timecode": "00:00:39:12",
+      "at_episode": 39.5,
+      "cue": "Full orchestral sunrise in E major, horns and strings, choir pad blooms."
+    },
+    {
+      "scene_id": "EP002_SC11",
+      "timecode": "00:00:44:12",
+      "at_episode": 44.5,
+      "cue": "One reprise bar of the sneaky theme played slowly and tenderly on bassoon, ending on a soft E major chord at the cut."
+    }
+  ],
+  "end_card": {
+    "timecode": "00:00:49:00",
+    "cue": "Music resolves on the final chord exactly at the cut; ODDLY sting plays over 2.0s end card."
+  }
+}

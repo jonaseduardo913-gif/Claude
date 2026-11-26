@@ -1,0 +1,249 @@
+id: EP004
+concept: CON003
+title: The Night Baker
+format: SHORT
+category: Magical worlds
+logline: Every night Rosa's dough rises so much that her whole bakery floats into the sky — and she has to bake her way back down by dawn.
+palette: {dominant: "night indigo #1B1F4B and oven amber #F2A541", accent: "bread gold #E8A84A"}
+
+music:
+  id: MUS_EP004
+  title: Midnight Rise
+  style: A gentle music-box waltz with a ticking-clock motif; soaring strings for the flight; a tense see-saw ostinato for the balancing act; a tender celesta ending.
+  bpm: 96
+  key: B-flat major
+  instrumentation: [music box, celesta, bassoon, harp, strings, french horn, woodblock clock tick, glass harmonica]
+  rules: The woodblock clock tick runs under the balancing scenes and speeds up as dawn approaches.
+
+scenes:
+  - n: 1
+    beat: HOOK
+    dur: 3.0
+    action: At night, a little round bakery lifts off its foundation on a cushion of glowing golden dough oozing from its door and windows, its chimney puffing flour clouds.
+    chars: []
+    bg: BG_017@NIGHT
+    props: [PRP_004]
+    fx: [FX_006, FX_004]
+    shot: Low wide shot of the bakery from the village square, the building rising out of frame top
+    key: The round stone bakery a meter above its foundation, glowing dough bulging from the door and porthole window, flour clouds puffing from the chimney, stars overhead.
+    lighting: Deep-indigo night, warm golden glow from the dough lighting the cobblestones
+    motion: The bakery wobbles, then rises smoothly as glowing dough swells underneath it like a cloud; flour puffs from the chimney in rhythm.
+    camera: Tilt up following the bakery as it lifts
+    expressions: {}
+    sfx: [[0.0, "creaking stone foundation"], [0.6, "soft rising dough 'whoomf' like a big breath"], [1.6, "flour puff 'pff'"], [2.4, "flour puff 'pff'"]]
+    music: Music box waltz begins instantly.
+    transition: CUT
+
+  - n: 2
+    beat: ROUTINE
+    dur: 4.5
+    action: Inside, Rosa calmly kneads dough at her table while the floor gently tilts. A rolling pin rolls past; she stops it with her foot without looking. She's done this every night.
+    chars: [CHR_004]
+    bg: BG_006@SKY
+    props: [PRP_005]
+    fx: [FX_006]
+    shot: Medium-wide interior shot, Rosa at the kneading table, the round window behind her showing clouds drifting past
+    key: Rosa kneading with flour puffing, completely relaxed; a rolling pin rolling across the slightly tilted floor toward her foot; clouds in the window.
+    lighting: Warm amber oven light, cool blue light from the window
+    motion: Rosa kneads rhythmically; the room tilts 5 degrees; a rolling pin rolls across and she stops it with her slipper without looking, then nudges it back.
+    camera: Gentle sway with the room tilt
+    expressions: {CHR_004: content and calm, humming silently}
+    sfx: [[0.0, "dough slap and knead"], [1.0, "wooden creak of the tilting floor"], [1.6, "rolling pin rolling"], [2.8, "slipper stop 'tup'"], [3.6, "dough slap"]]
+    music: Music box and bassoon, cozy.
+    transition: CUT
+
+  - n: 3
+    beat: TOO HIGH
+    dur: 4.0
+    action: Frost creeps over the porthole window. A goose flies past outside, looking in, very surprised. Rosa glances up and realizes the bakery is rising too high.
+    chars: [CHR_004]
+    bg: BG_006@SKY
+    shot: Close-up on the round window from inside with Rosa's face reflected, a goose outside
+    key: Frost patterns spreading on the porthole glass; a startled goose outside looking in mid-flight; Rosa's spectacles reflecting the frost.
+    lighting: Cold blue window light, warm amber rim on Rosa
+    motion: Frost spreads in crystal patterns; the goose flies past, does a double take, and flaps away; Rosa's eyebrows rise above her spectacles.
+    camera: Slow push-in to the window
+    expressions: {CHR_004: alarmed}
+    sfx: [[0.0, "crackling frost"], [1.2, "goose wing flaps"], [1.8, "surprised goose honk"], [3.0, "Rosa's sharp inhale (non-verbal)"]]
+    music: Glass harmonica shimmer, tension.
+    transition: CUT
+
+  - n: 4
+    beat: ADD WEIGHT
+    dur: 4.5
+    action: Rosa rushes to the oven and shoves in trays of big heavy loaves. She pulls them out golden and stacks them on the shelf - the bakery lurches down.
+    chars: [CHR_004]
+    bg: BG_006@SKY
+    props: [PRP_005]
+    fx: [FX_006, FX_011]
+    shot: Medium shot at the brick oven, Rosa sliding a long wooden peel of loaves into the glowing mouth
+    key: Rosa mid-push with a long wooden baker's peel loaded with fat round loaves; oven glowing; flour cloud around her.
+    lighting: Bright orange oven glow on her face
+    motion: Rosa slides the peel in, pulls out finished golden loaves in one swift motion (time-skip shimmer), stacks them on the shelf; the shelf bends and the whole room drops with a jolt.
+    camera: Quick push-in, camera jolts downward on the drop
+    expressions: {CHR_004: focused, then startled by the jolt}
+    sfx: [[0.0, "wooden peel scrape on brick"], [1.2, "oven roar"], [2.0, "time-skip shimmer 'zwip'"], [2.8, "heavy loaves 'thud thud thud'"], [3.6, "building drop lurch 'VWOOM'"]]
+    music: Strings jump an octave down with the lurch.
+    transition: CUT
+
+  - n: 5
+    beat: TOO HEAVY
+    dur: 5.0
+    action: Outside, the bakery drops too fast toward the sleeping rooftops of Thistledown. Its stone base skims past a chimney, knocking off a weathervane.
+    chars: []
+    bg: BG_007@NIGHT
+    props: [PRP_004]
+    fx: [FX_006, FX_005]
+    shot: Wide exterior shot over the rooftops, the bakery falling diagonally toward a cottage chimney
+    key: The round bakery falling at an angle, dough cushion squashed flat, flour streaming upward; a chimney and a rooster weathervane just below it.
+    lighting: Moonlit night, warm glow from the dough
+    motion: The bakery drops fast, the dough squashes like a cushion, the base skims a chimney and sends the weathervane spinning off; the bakery bounces slightly back up.
+    camera: Tracking down with the fall, quick shake on the near miss
+    expressions: {}
+    sfx: [[0.0, "falling whistle"], [2.4, "stone scrape on brick chimney"], [2.8, "metal weathervane spinning 'ting-ting-ting'"], [3.6, "springy dough bounce 'boing'"]]
+    music: Strings plunge, horn blast on the near miss.
+    transition: CUT
+
+  - n: 6
+    beat: BALLAST
+    dur: 5.0
+    action: Rosa throws open the window and tosses bread rolls out one by one like ballast. With each roll, the bakery rises a little. She counts them out like weights on a scale.
+    chars: [CHR_004]
+    bg: BG_017@FLOATING
+    props: [PRP_005, PRP_004]
+    fx: [FX_004]
+    shot: Exterior medium shot of the bakery's porthole, Rosa leaning out and tossing rolls into the night
+    key: Rosa leaning out of the round window, throwing a golden roll into the air; three rolls already arcing away into the dark sky, glowing faintly.
+    lighting: Moonlight and warm window glow; the thrown rolls start to give off a soft golden glow
+    motion: Rosa tosses three rolls in a rhythm; with each toss, the bakery bobs upward a little; the rolls fly away and glow faintly as they rise.
+    camera: Static exterior, the bakery bobbing in frame
+    expressions: {CHR_004: calculating, tongue out in concentration}
+    sfx: [[0.0, "window latch creak"], [1.0, "toss whoosh + little rise 'bwip'"], [2.2, "toss + rise 'bwip'"], [3.4, "toss + rise 'bwip'"], [4.2, "faint twinkle as the rolls glow"]]
+    music: See-saw ostinato; clock tick under it.
+    transition: CUT
+
+  - n: 7
+    beat: BALANCE
+    dur: 4.5
+    action: Inside, Rosa balances the bakery like a scale - a roll on the shelf, a crumb off the table - until the floor is perfectly level. The sky outside begins to lighten.
+    chars: [CHR_004]
+    bg: BG_006@SKY
+    props: [PRP_005]
+    shot: Wide interior shot, the whole room visible, a pendulum-like hanging copper pan showing the tilt
+    key: Rosa placing a single crumb on the table with tweezers-like fingers; a hanging copper pan swinging back to center; window glowing pale pink.
+    lighting: Warm interior, a pale pink glow starting in the window
+    motion: The room tilts left, she adds a roll to the right shelf; it tilts right, she removes a crumb; the hanging pan settles perfectly vertical; she exhales.
+    camera: Room tilts with the action, camera locked to the room
+    expressions: {CHR_004: deep concentration, then relief}
+    sfx: [[0.0, "clock ticking speeding up"], [1.0, "creak left"], [1.6, "roll placed 'tup'"], [2.4, "creak right"], [3.0, "crumb 'tik'"], [3.8, "relieved exhale"]]
+    music: Clock tick at its fastest, then stops; a held string note.
+    transition: CUT
+
+  - n: 8
+    beat: LANDING
+    dur: 4.5
+    action: Dawn. The bakery floats down gently and settles exactly onto its stone foundation. The glowing dough sinks back inside like a sigh. A rooster crows.
+    chars: []
+    bg: BG_017@DAWN
+    props: [PRP_004]
+    fx: [FX_006]
+    shot: Wide exterior shot of the village square at dawn, the bakery descending onto its foundation
+    key: The bakery an inch above its stone foundation, dough cushion shrinking back into the door; pink-gold dawn sky; a rooster on a nearby fence.
+    lighting: Soft pink-gold dawn light
+    motion: The bakery descends slowly and touches down with a gentle squash; the dough retracts into the door; a little flour cloud puffs out; the rooster crows.
+    camera: Slow tilt down following the descent
+    expressions: {}
+    sfx: [[0.0, "soft descending whoosh"], [2.0, "gentle stone settle 'thmp'"], [2.6, "dough sigh 'hhhhff'"], [3.4, "rooster crow"]]
+    music: Music-box waltz returns, warm.
+    transition: CUT
+
+  - n: 9
+    beat: MORNING
+    dur: 4.5
+    action: Rosa steps out of the door, stretches with a happy flour puff, and hands warm bread to villagers already lining up as if nothing happened.
+    chars: [CHR_004, CHR_007]
+    bg: BG_001@DAY
+    props: [PRP_005]
+    fx: [FX_006]
+    shot: Medium-wide shot in the village square, the bakery door, a short line of villagers
+    key: Rosa stretching in the doorway with flour puffing off her; the farmer and the mother with baby waiting with baskets; warm loaves on a tray.
+    lighting: Fresh morning light
+    motion: Rosa stretches, flour puffs; hands a loaf to the farmer who sniffs it blissfully; the baby reaches for a roll.
+    camera: Static
+    expressions: {CHR_004: triumphant contentment, CHR_007: delighted customers}
+    sfx: [[0.0, "door bell 'ting-a-ling'"], [0.8, "big satisfied stretch and joint pop"], [1.4, "flour puff"], [2.6, "crusty bread crackle"], [3.4, "blissful sniff"]]
+    music: Waltz continues, warm horns.
+    transition: CUT
+
+  - n: 10
+    beat: WONDER
+    dur: 4.0
+    action: Rosa looks up at the fading stars in the morning sky and smiles knowingly.
+    chars: [CHR_004]
+    bg: BG_001@DAY
+    shot: Close-up of Rosa's face from a low angle, looking up
+    key: Rosa's face tilted up, the last faint stars reflected in her round spectacles, a knowing little smile.
+    lighting: Soft morning light, faint stars still visible in the blue sky above
+    motion: Rosa pushes up her spectacles and looks up; the reflections of stars twinkle in her glasses; her smile widens.
+    camera: Slow push-in on her spectacles
+    expressions: {CHR_004: knowing, amused smile}
+    sfx: [[0.0, "morning birds"], [1.6, "soft spectacle push 'tk'"], [2.8, "faint twinkle"]]
+    music: Celesta takes the melody alone.
+    transition: ZOOM THROUGH
+
+  - n: 11
+    beat: TWIST
+    dur: 5.0
+    action: Zooming into the sky through her spectacles, the stars come into focus - every star is a softly glowing bread roll, drifting in the heavens. The rolls she threw last night settle in among them and begin to twinkle.
+    chars: []
+    bg: BG_007@DAWN
+    props: [PRP_005]
+    fx: [FX_004, FX_001]
+    shot: Deep-space view above the village, dozens of glowing golden bread rolls arranged like constellations, the village tiny below
+    key: Bread rolls with cross-cut tops glowing like stars in a deep blue sky melting into dawn; three newer rolls drifting up into place and starting to twinkle.
+    lighting: Each roll glows soft gold with a sparkle; deep indigo above, dawn pink below
+    motion: Camera drifts among the floating glowing rolls; three new rolls float up into gaps and twinkle on one by one, completing a constellation shaped like a loaf.
+    camera: Slow forward drift and gentle rotation
+    expressions: {}
+    sfx: [[0.0, "airy celestial shimmer"], [1.8, "twinkle"], [2.6, "twinkle"], [3.4, "twinkle"], [4.2, "warm low chime"]]
+    music: Celesta and harp finale, final B-flat major chord at the cut.
+    transition: CUT TO END CARD
+
+thumbnail:
+  cover_frame: EP004_SC01 at 2.0s (the bakery lifting off)
+  chars: [CHR_004]
+  bg: BG_017@FLOATING
+  prompt: The round stone bakery floating high in the night sky on a glowing golden cloud of dough, Rosa leaning out of the porthole tossing a glowing bread roll toward the stars.
+  overlay: "BAKED TO THE STARS"
+
+publishing:
+  title_en: "Her Bakery Floats Away Every Night 🍞🌙 #Shorts"
+  title_pt_br: "A padaria dela sai voando toda noite 🍞🌙 #Shorts"
+  title_es: "Su panadería sale volando cada noche 🍞🌙 #Shorts"
+  description_en: "Rosa's dough rises so much that the whole bakery takes off every night. Can she bake her way back down before dawn? 🍞 An original ODDLY animated short — no words, just a world full of surprises."
+  description_pt_br: "A massa da Rosa cresce tanto que a padaria inteira sai voando toda noite. Será que ela consegue voltar antes do amanhecer? 🍞 Um curta animado original ODDLY — sem palavras, só um mundo cheio de surpresas."
+  description_es: "La masa de Rosa sube tanto que la panadería entera despega cada noche. ¿Podrá volver antes del amanecer? 🍞 Un corto animado original de ODDLY — sin palabras, solo un mundo lleno de sorpresas."
+  hashtags: ["#ODDLY", "#Shorts", "#Animation", "#Cartoon", "#Bakery", "#Magic", "#Stars"]
+  tags: [oddly, animated short, cartoon, bakery, flying house, bread, stars, magical, no dialogue, 2d animation]
+  pinned_comment: "Look up tonight… how many bread rolls can you count? 🍞✨"
+  series: ODDLY Shorts
+  playlist: Thistledown Tales
+
+edit:
+  grade: Night scenes in indigo with strong amber practicals; SC8-10 transition to a soft pink-gold dawn; SC11 a dreamlike blend of indigo and pink.
+  mix_notes: The clock tick builds tension in SC6-7 - keep it audible but under the creaks; remove it completely on the landing.
+  notes:
+    - SC2, SC4, SC7 interiors tilt - if the generated clip is level, apply a gentle 3-5 degree rotation in the edit.
+    - SC10 to SC11 ZOOM THROUGH - push into her spectacle reflection and cut inside it at the peak.
+    - Keep the rolls in SC11 clearly readable as bread (cross-cut tops) - that is the joke.
+
+qc:
+  character_consistency: Rosa is the only named character; spectacles, pencil bun and flour on cheeks in every shot.
+  story_originality: Flying-building-as-scale mechanic plus the stars-are-bread twist; unique in the slate.
+  scene_continuity: Interior (SKY variant) and exterior (FLOATING/NIGHT) alternate logically; the thrown rolls in SC6 pay off in SC11.
+  visual_quality: Signature frames - lift-off (SC1), near-miss over rooftops (SC5), ballast toss (SC6), bread constellations (SC11).
+  animation_feasibility: One hero, two main sets; tilts can be done in the edit.
+  pacing: Hook 3s; problem at 7.5s; escalation to 26.5s; resolution 36s; twist last 5s.
+  sound_sync: Each toss has a rise 'bwip'; the clock tick accelerates to SC7 and stops at balance.
+  strong_opening: A building lifting off on glowing dough in frame 1.
+  memorable_ending: The stars are bread rolls.

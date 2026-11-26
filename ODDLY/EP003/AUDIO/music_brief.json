@@ -1,0 +1,90 @@
+{
+  "id": "MUS_EP003",
+  "title": "Buzzless",
+  "style": "Bouncy, light ragtime-style pizzicato and clarinet that leaves deliberate gaps so each wrong flight sound is heard clearly; a sad slow waltz for the low point; full comic brass-band finale.",
+  "bpm": "120 (ragtime), 72 (sad), 128 (finale)",
+  "key": "F major -> F minor -> F major",
+  "instrumentation": [
+    "pizzicato strings",
+    "clarinet",
+    "upright piano",
+    "tuba",
+    "snare brushes",
+    "kazoo",
+    "slide trombone",
+    "glockenspiel"
+  ],
+  "rules": "Original instrumental only. No vocals, no lyrics, no spoken word.",
+  "hit_points": [
+    {
+      "scene_id": "EP003_SC01",
+      "timecode": "00:00:00:00",
+      "at_episode": 0,
+      "cue": "Silence under the honks; a single cricket chirp, then the ragtime starts on scene 2."
+    },
+    {
+      "scene_id": "EP003_SC02",
+      "timecode": "00:00:03:00",
+      "at_episode": 3.0,
+      "cue": "Ragtime pizzicato enters between squeaks."
+    },
+    {
+      "scene_id": "EP003_SC03",
+      "timecode": "00:00:07:00",
+      "at_episode": 7.0,
+      "cue": "Piano plays a tiny embarrassed descending phrase."
+    },
+    {
+      "scene_id": "EP003_SC04",
+      "timecode": "00:00:11:12",
+      "at_episode": 11.5,
+      "cue": "Music stops for the trombone; one tuba note on the door thunk."
+    },
+    {
+      "scene_id": "EP003_SC05",
+      "timecode": "00:00:16:12",
+      "at_episode": 16.5,
+      "cue": "Slow sad waltz on solo clarinet in F minor."
+    },
+    {
+      "scene_id": "EP003_SC06",
+      "timecode": "00:00:20:12",
+      "at_episode": 20.5,
+      "cue": "Ragtime returns in short bursts between the attempts."
+    },
+    {
+      "scene_id": "EP003_SC07",
+      "timecode": "00:00:25:12",
+      "at_episode": 25.5,
+      "cue": "Glockenspiel 'discovery' arpeggio."
+    },
+    {
+      "scene_id": "EP003_SC08",
+      "timecode": "00:00:30:00",
+      "at_episode": 30.0,
+      "cue": "Tense pizzicato, then a cymbal swell on the slurp."
+    },
+    {
+      "scene_id": "EP003_SC09",
+      "timecode": "00:00:35:00",
+      "at_episode": 35.0,
+      "cue": "Ragtime returns full and triumphant."
+    },
+    {
+      "scene_id": "EP003_SC10",
+      "timecode": "00:00:39:00",
+      "at_episode": 39.0,
+      "cue": "Music drops to a suspenseful snare roll."
+    },
+    {
+      "scene_id": "EP003_SC11",
+      "timecode": "00:00:43:12",
+      "at_episode": 43.5,
+      "cue": "Brass-band finale built from the silly wing sounds, landing on a final F major chord + honk at the cut."
+    }
+  ],
+  "end_card": {
+    "timecode": "00:00:48:12",
+    "cue": "Music resolves on the final chord exactly at the cut; ODDLY sting plays over 2.0s end card."
+  }
+}

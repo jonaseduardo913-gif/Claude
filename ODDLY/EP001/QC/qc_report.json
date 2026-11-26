@@ -1,0 +1,32 @@
+{
+  "episode_id": "EP001",
+  "automated_checks": {
+    "passed": true,
+    "errors": [],
+    "checked": [
+      "scene numbering",
+      "runtime window",
+      "scene-count window",
+      "hook <= 3.5s",
+      "all character/background/prop/fx IDs exist in library",
+      "characters registered for episode",
+      "SFX inside scene bounds",
+      "every scene has SFX",
+      "valid transitions",
+      "no speech wording",
+      "final cut to end card"
+    ]
+  },
+  "editorial_review": {
+    "character_consistency": "June and Bramblefoot use library refs only; Bramblefoot's GLASSES variant appears only after he puts them on in SC11.",
+    "story_originality": "Unique conflict (lost giant lens mistaken for a lake), not in any other episode.",
+    "scene_continuity": "Lens location tracked - meadow (SC1-7), carried (SC8), giant's eye (SC9-11). Time moves dawn -> day once focus returns.",
+    "visual_quality": "Signature frames - top-down lens (SC1), giant reveal (SC5), eye close-up (SC9), glasses finale (SC11).",
+    "animation_feasibility": "Crowd uses CHR_007 cycle animations; giant shots are mostly slow movements suited to image-to-video.",
+    "pacing": "3.0s hook, setup by 11.5s, threat at 11.5s, reveal 16s, resolution 38s, twist last 5s.",
+    "sound_sync": "All giant beats locked to tuba/bass-drum downbeats; realization uses a 3-beat woodblock pattern.",
+    "strong_opening": "An impossible jelly-wobble lake seen from directly above in frame 1.",
+    "memorable_ending": "The giant puts on glasses on top of the lens and the whole village is reflected in them."
+  },
+  "status": "APPROVED_FOR_PRODUCTION"
+}

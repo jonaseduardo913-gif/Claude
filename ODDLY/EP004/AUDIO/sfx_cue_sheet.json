@@ -1,0 +1,361 @@
+{
+  "episode_id": "EP004",
+  "cues": [
+    {
+      "scene_id": "EP004_SC01",
+      "at_scene": 0.0,
+      "at_episode": 0.0,
+      "timecode": "00:00:00:00",
+      "sound": "creaking stone foundation"
+    },
+    {
+      "scene_id": "EP004_SC01",
+      "at_scene": 0.6,
+      "at_episode": 0.6,
+      "timecode": "00:00:00:14",
+      "sound": "soft rising dough 'whoomf' like a big breath"
+    },
+    {
+      "scene_id": "EP004_SC01",
+      "at_scene": 1.6,
+      "at_episode": 1.6,
+      "timecode": "00:00:01:14",
+      "sound": "flour puff 'pff'"
+    },
+    {
+      "scene_id": "EP004_SC01",
+      "at_scene": 2.4,
+      "at_episode": 2.4,
+      "timecode": "00:00:02:10",
+      "sound": "flour puff 'pff'"
+    },
+    {
+      "scene_id": "EP004_SC02",
+      "at_scene": 0.0,
+      "at_episode": 3.0,
+      "timecode": "00:00:03:00",
+      "sound": "dough slap and knead"
+    },
+    {
+      "scene_id": "EP004_SC02",
+      "at_scene": 1.0,
+      "at_episode": 4.0,
+      "timecode": "00:00:04:00",
+      "sound": "wooden creak of the tilting floor"
+    },
+    {
+      "scene_id": "EP004_SC02",
+      "at_scene": 1.6,
+      "at_episode": 4.6,
+      "timecode": "00:00:04:14",
+      "sound": "rolling pin rolling"
+    },
+    {
+      "scene_id": "EP004_SC02",
+      "at_scene": 2.8,
+      "at_episode": 5.8,
+      "timecode": "00:00:05:19",
+      "sound": "slipper stop 'tup'"
+    },
+    {
+      "scene_id": "EP004_SC02",
+      "at_scene": 3.6,
+      "at_episode": 6.6,
+      "timecode": "00:00:06:14",
+      "sound": "dough slap"
+    },
+    {
+      "scene_id": "EP004_SC03",
+      "at_scene": 0.0,
+      "at_episode": 7.5,
+      "timecode": "00:00:07:12",
+      "sound": "crackling frost"
+    },
+    {
+      "scene_id": "EP004_SC03",
+      "at_scene": 1.2,
+      "at_episode": 8.7,
+      "timecode": "00:00:08:17",
+      "sound": "goose wing flaps"
+    },
+    {
+      "scene_id": "EP004_SC03",
+      "at_scene": 1.8,
+      "at_episode": 9.3,
+      "timecode": "00:00:09:07",
+      "sound": "surprised goose honk"
+    },
+    {
+      "scene_id": "EP004_SC03",
+      "at_scene": 3.0,
+      "at_episode": 10.5,
+      "timecode": "00:00:10:12",
+      "sound": "Rosa's sharp inhale (non-verbal)"
+    },
+    {
+      "scene_id": "EP004_SC04",
+      "at_scene": 0.0,
+      "at_episode": 11.5,
+      "timecode": "00:00:11:12",
+      "sound": "wooden peel scrape on brick"
+    },
+    {
+      "scene_id": "EP004_SC04",
+      "at_scene": 1.2,
+      "at_episode": 12.7,
+      "timecode": "00:00:12:17",
+      "sound": "oven roar"
+    },
+    {
+      "scene_id": "EP004_SC04",
+      "at_scene": 2.0,
+      "at_episode": 13.5,
+      "timecode": "00:00:13:12",
+      "sound": "time-skip shimmer 'zwip'"
+    },
+    {
+      "scene_id": "EP004_SC04",
+      "at_scene": 2.8,
+      "at_episode": 14.3,
+      "timecode": "00:00:14:07",
+      "sound": "heavy loaves 'thud thud thud'"
+    },
+    {
+      "scene_id": "EP004_SC04",
+      "at_scene": 3.6,
+      "at_episode": 15.1,
+      "timecode": "00:00:15:02",
+      "sound": "building drop lurch 'VWOOM'"
+    },
+    {
+      "scene_id": "EP004_SC05",
+      "at_scene": 0.0,
+      "at_episode": 16.0,
+      "timecode": "00:00:16:00",
+      "sound": "falling whistle"
+    },
+    {
+      "scene_id": "EP004_SC05",
+      "at_scene": 2.4,
+      "at_episode": 18.4,
+      "timecode": "00:00:18:10",
+      "sound": "stone scrape on brick chimney"
+    },
+    {
+      "scene_id": "EP004_SC05",
+      "at_scene": 2.8,
+      "at_episode": 18.8,
+      "timecode": "00:00:18:19",
+      "sound": "metal weathervane spinning 'ting-ting-ting'"
+    },
+    {
+      "scene_id": "EP004_SC05",
+      "at_scene": 3.6,
+      "at_episode": 19.6,
+      "timecode": "00:00:19:14",
+      "sound": "springy dough bounce 'boing'"
+    },
+    {
+      "scene_id": "EP004_SC06",
+      "at_scene": 0.0,
+      "at_episode": 21.0,
+      "timecode": "00:00:21:00",
+      "sound": "window latch creak"
+    },
+    {
+      "scene_id": "EP004_SC06",
+      "at_scene": 1.0,
+      "at_episode": 22.0,
+      "timecode": "00:00:22:00",
+      "sound": "toss whoosh + little rise 'bwip'"
+    },
+    {
+      "scene_id": "EP004_SC06",
+      "at_scene": 2.2,
+      "at_episode": 23.2,
+      "timecode": "00:00:23:05",
+      "sound": "toss + rise 'bwip'"
+    },
+    {
+      "scene_id": "EP004_SC06",
+      "at_scene": 3.4,
+      "at_episode": 24.4,
+      "timecode": "00:00:24:10",
+      "sound": "toss + rise 'bwip'"
+    },
+    {
+      "scene_id": "EP004_SC06",
+      "at_scene": 4.2,
+      "at_episode": 25.2,
+      "timecode": "00:00:25:05",
+      "sound": "faint twinkle as the rolls glow"
+    },
+    {
+      "scene_id": "EP004_SC07",
+      "at_scene": 0.0,
+      "at_episode": 26.0,
+      "timecode": "00:00:26:00",
+      "sound": "clock ticking speeding up"
+    },
+    {
+      "scene_id": "EP004_SC07",
+      "at_scene": 1.0,
+      "at_episode": 27.0,
+      "timecode": "00:00:27:00",
+      "sound": "creak left"
+    },
+    {
+      "scene_id": "EP004_SC07",
+      "at_scene": 1.6,
+      "at_episode": 27.6,
+      "timecode": "00:00:27:14",
+      "sound": "roll placed 'tup'"
+    },
+    {
+      "scene_id": "EP004_SC07",
+      "at_scene": 2.4,
+      "at_episode": 28.4,
+      "timecode": "00:00:28:10",
+      "sound": "creak right"
+    },
+    {
+      "scene_id": "EP004_SC07",
+      "at_scene": 3.0,
+      "at_episode": 29.0,
+      "timecode": "00:00:29:00",
+      "sound": "crumb 'tik'"
+    },
+    {
+      "scene_id": "EP004_SC07",
+      "at_scene": 3.8,
+      "at_episode": 29.8,
+      "timecode": "00:00:29:19",
+      "sound": "relieved exhale"
+    },
+    {
+      "scene_id": "EP004_SC08",
+      "at_scene": 0.0,
+      "at_episode": 30.5,
+      "timecode": "00:00:30:12",
+      "sound": "soft descending whoosh"
+    },
+    {
+      "scene_id": "EP004_SC08",
+      "at_scene": 2.0,
+      "at_episode": 32.5,
+      "timecode": "00:00:32:12",
+      "sound": "gentle stone settle 'thmp'"
+    },
+    {
+      "scene_id": "EP004_SC08",
+      "at_scene": 2.6,
+      "at_episode": 33.1,
+      "timecode": "00:00:33:02",
+      "sound": "dough sigh 'hhhhff'"
+    },
+    {
+      "scene_id": "EP004_SC08",
+      "at_scene": 3.4,
+      "at_episode": 33.9,
+      "timecode": "00:00:33:22",
+      "sound": "rooster crow"
+    },
+    {
+      "scene_id": "EP004_SC09",
+      "at_scene": 0.0,
+      "at_episode": 35.0,
+      "timecode": "00:00:35:00",
+      "sound": "door bell 'ting-a-ling'"
+    },
+    {
+      "scene_id": "EP004_SC09",
+      "at_scene": 0.8,
+      "at_episode": 35.8,
+      "timecode": "00:00:35:19",
+      "sound": "big satisfied stretch and joint pop"
+    },
+    {
+      "scene_id": "EP004_SC09",
+      "at_scene": 1.4,
+      "at_episode": 36.4,
+      "timecode": "00:00:36:10",
+      "sound": "flour puff"
+    },
+    {
+      "scene_id": "EP004_SC09",
+      "at_scene": 2.6,
+      "at_episode": 37.6,
+      "timecode": "00:00:37:14",
+      "sound": "crusty bread crackle"
+    },
+    {
+      "scene_id": "EP004_SC09",
+      "at_scene": 3.4,
+      "at_episode": 38.4,
+      "timecode": "00:00:38:10",
+      "sound": "blissful sniff"
+    },
+    {
+      "scene_id": "EP004_SC10",
+      "at_scene": 0.0,
+      "at_episode": 39.5,
+      "timecode": "00:00:39:12",
+      "sound": "morning birds"
+    },
+    {
+      "scene_id": "EP004_SC10",
+      "at_scene": 1.6,
+      "at_episode": 41.1,
+      "timecode": "00:00:41:02",
+      "sound": "soft spectacle push 'tk'"
+    },
+    {
+      "scene_id": "EP004_SC10",
+      "at_scene": 2.8,
+      "at_episode": 42.3,
+      "timecode": "00:00:42:07",
+      "sound": "faint twinkle"
+    },
+    {
+      "scene_id": "EP004_SC11",
+      "at_scene": 0.0,
+      "at_episode": 43.5,
+      "timecode": "00:00:43:12",
+      "sound": "airy celestial shimmer"
+    },
+    {
+      "scene_id": "EP004_SC11",
+      "at_scene": 1.8,
+      "at_episode": 45.3,
+      "timecode": "00:00:45:07",
+      "sound": "twinkle"
+    },
+    {
+      "scene_id": "EP004_SC11",
+      "at_scene": 2.6,
+      "at_episode": 46.1,
+      "timecode": "00:00:46:02",
+      "sound": "twinkle"
+    },
+    {
+      "scene_id": "EP004_SC11",
+      "at_scene": 3.4,
+      "at_episode": 46.9,
+      "timecode": "00:00:46:22",
+      "sound": "twinkle"
+    },
+    {
+      "scene_id": "EP004_SC11",
+      "at_scene": 4.2,
+      "at_episode": 47.7,
+      "timecode": "00:00:47:17",
+      "sound": "warm low chime"
+    },
+    {
+      "scene_id": "ENDCARD",
+      "at_episode": 48.5,
+      "timecode": "00:00:48:12",
+      "sound": "Two-note celesta \"ding-ding\" rising, soft whoosh, tiny sparkle on the star blink. Same sting on every episode."
+    }
+  ]
+}

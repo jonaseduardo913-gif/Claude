@@ -1,0 +1,333 @@
+{
+  "episode_id": "EP002",
+  "cues": [
+    {
+      "scene_id": "EP002_SC01",
+      "at_scene": 0.0,
+      "at_episode": 0.0,
+      "timecode": "00:00:00:00",
+      "sound": "stone eyelids opening 'grrk'"
+    },
+    {
+      "scene_id": "EP002_SC01",
+      "at_scene": 0.6,
+      "at_episode": 0.6,
+      "timecode": "00:00:00:14",
+      "sound": "gravel crunch roll"
+    },
+    {
+      "scene_id": "EP002_SC01",
+      "at_scene": 1.2,
+      "at_episode": 1.2,
+      "timecode": "00:00:01:05",
+      "sound": "soft thud"
+    },
+    {
+      "scene_id": "EP002_SC01",
+      "at_scene": 1.9,
+      "at_episode": 1.9,
+      "timecode": "00:00:01:22",
+      "sound": "thud"
+    },
+    {
+      "scene_id": "EP002_SC01",
+      "at_scene": 2.5,
+      "at_episode": 2.5,
+      "timecode": "00:00:02:12",
+      "sound": "thud and settle wobble"
+    },
+    {
+      "scene_id": "EP002_SC02",
+      "at_scene": 0.0,
+      "at_episode": 3.0,
+      "timecode": "00:00:03:00",
+      "sound": "slurp of tea"
+    },
+    {
+      "scene_id": "EP002_SC02",
+      "at_scene": 1.4,
+      "at_episode": 4.4,
+      "timecode": "00:00:04:10",
+      "sound": "casual glance woodblock 'tok'"
+    },
+    {
+      "scene_id": "EP002_SC02",
+      "at_scene": 2.6,
+      "at_episode": 5.6,
+      "timecode": "00:00:05:14",
+      "sound": "double-take whip 'fwip'"
+    },
+    {
+      "scene_id": "EP002_SC02",
+      "at_scene": 2.8,
+      "at_episode": 5.8,
+      "timecode": "00:00:05:19",
+      "sound": "tea splash"
+    },
+    {
+      "scene_id": "EP002_SC03",
+      "at_scene": 0.0,
+      "at_episode": 7.5,
+      "timecode": "00:00:07:12",
+      "sound": "creaky tiptoe boot steps"
+    },
+    {
+      "scene_id": "EP002_SC03",
+      "at_scene": 1.2,
+      "at_episode": 8.7,
+      "timecode": "00:00:08:17",
+      "sound": "tiny stone eyelid 'tik'"
+    },
+    {
+      "scene_id": "EP002_SC03",
+      "at_scene": 2.0,
+      "at_episode": 9.5,
+      "timecode": "00:00:09:12",
+      "sound": "eyelid snap 'tk'"
+    },
+    {
+      "scene_id": "EP002_SC03",
+      "at_scene": 3.0,
+      "at_episode": 10.5,
+      "timecode": "00:00:10:12",
+      "sound": "eyelid 'tik'"
+    },
+    {
+      "scene_id": "EP002_SC04",
+      "at_scene": 0.0,
+      "at_episode": 11.5,
+      "timecode": "00:00:11:12",
+      "sound": "spin whoosh"
+    },
+    {
+      "scene_id": "EP002_SC04",
+      "at_scene": 0.3,
+      "at_episode": 11.8,
+      "timecode": "00:00:11:19",
+      "sound": "music-stop needle scratch"
+    },
+    {
+      "scene_id": "EP002_SC04",
+      "at_scene": 2.0,
+      "at_episode": 13.5,
+      "timecode": "00:00:13:12",
+      "sound": "single cartoon 'tink' as a sweat drop falls"
+    },
+    {
+      "scene_id": "EP002_SC04",
+      "at_scene": 2.4,
+      "at_episode": 13.9,
+      "timecode": "00:00:13:22",
+      "sound": "heavy stone THUD + dust"
+    },
+    {
+      "scene_id": "EP002_SC04",
+      "at_scene": 3.4,
+      "at_episode": 14.9,
+      "timecode": "00:00:14:22",
+      "sound": "eye-twitch 'twing'"
+    },
+    {
+      "scene_id": "EP002_SC05",
+      "at_scene": 0.0,
+      "at_episode": 16.0,
+      "timecode": "00:00:16:00",
+      "sound": "backward boot steps"
+    },
+    {
+      "scene_id": "EP002_SC05",
+      "at_scene": 1.8,
+      "at_episode": 17.8,
+      "timecode": "00:00:17:19",
+      "sound": "root snag 'thwick'"
+    },
+    {
+      "scene_id": "EP002_SC05",
+      "at_scene": 2.0,
+      "at_episode": 18.0,
+      "timecode": "00:00:18:00",
+      "sound": "body flop into dust 'fwump'"
+    },
+    {
+      "scene_id": "EP002_SC05",
+      "at_scene": 3.2,
+      "at_episode": 19.2,
+      "timecode": "00:00:19:05",
+      "sound": "spring 'boing' as she sits up"
+    },
+    {
+      "scene_id": "EP002_SC05",
+      "at_scene": 4.0,
+      "at_episode": 20.0,
+      "timecode": "00:00:20:00",
+      "sound": "smug little stone 'clack'"
+    },
+    {
+      "scene_id": "EP002_SC06",
+      "at_scene": 0.0,
+      "at_episode": 21.0,
+      "timecode": "00:00:21:00",
+      "sound": "bootlace tugging"
+    },
+    {
+      "scene_id": "EP002_SC06",
+      "at_scene": 1.0,
+      "at_episode": 22.0,
+      "timecode": "00:00:22:00",
+      "sound": "whoosh of the upside-down flip"
+    },
+    {
+      "scene_id": "EP002_SC06",
+      "at_scene": 1.8,
+      "at_episode": 22.8,
+      "timecode": "00:00:22:19",
+      "sound": "gravel skid screech"
+    },
+    {
+      "scene_id": "EP002_SC06",
+      "at_scene": 3.0,
+      "at_episode": 24.0,
+      "timecode": "00:00:24:00",
+      "sound": "slow stone eyelid 'grrrrk' closing"
+    },
+    {
+      "scene_id": "EP002_SC07",
+      "at_scene": 0.0,
+      "at_episode": 25.5,
+      "timecode": "00:00:25:12",
+      "sound": "running boots on gravel"
+    },
+    {
+      "scene_id": "EP002_SC07",
+      "at_scene": 0.9,
+      "at_episode": 26.4,
+      "timecode": "00:00:26:10",
+      "sound": "music stop + wooden post creak"
+    },
+    {
+      "scene_id": "EP002_SC07",
+      "at_scene": 2.1,
+      "at_episode": 27.6,
+      "timecode": "00:00:27:14",
+      "sound": "pine branch creaking under weight"
+    },
+    {
+      "scene_id": "EP002_SC07",
+      "at_scene": 3.4,
+      "at_episode": 28.9,
+      "timecode": "00:00:28:22",
+      "sound": "stone wedge 'crunk'"
+    },
+    {
+      "scene_id": "EP002_SC08",
+      "at_scene": 0.0,
+      "at_episode": 30.0,
+      "timecode": "00:00:30:00",
+      "sound": "heavy breathing (no words)"
+    },
+    {
+      "scene_id": "EP002_SC08",
+      "at_scene": 1.2,
+      "at_episode": 31.2,
+      "timecode": "00:00:31:05",
+      "sound": "relieved sigh"
+    },
+    {
+      "scene_id": "EP002_SC08",
+      "at_scene": 2.4,
+      "at_episode": 32.4,
+      "timecode": "00:00:32:10",
+      "sound": "wind over the summit"
+    },
+    {
+      "scene_id": "EP002_SC08",
+      "at_scene": 3.2,
+      "at_episode": 33.2,
+      "timecode": "00:00:33:05",
+      "sound": "stone rolling past"
+    },
+    {
+      "scene_id": "EP002_SC08",
+      "at_scene": 4.2,
+      "at_episode": 34.2,
+      "timecode": "00:00:34:05",
+      "sound": "satisfied stone wiggle 'clunk-clunk'"
+    },
+    {
+      "scene_id": "EP002_SC09",
+      "at_scene": 0.0,
+      "at_episode": 35.0,
+      "timecode": "00:00:35:00",
+      "sound": "rippling chain of stone eyelids 'grk-grk-grk'"
+    },
+    {
+      "scene_id": "EP002_SC09",
+      "at_scene": 2.2,
+      "at_episode": 37.2,
+      "timecode": "00:00:37:05",
+      "sound": "tiny awkward wave 'swish'"
+    },
+    {
+      "scene_id": "EP002_SC09",
+      "at_scene": 3.4,
+      "at_episode": 38.4,
+      "timecode": "00:00:38:10",
+      "sound": "unison eye-turn 'shhk'"
+    },
+    {
+      "scene_id": "EP002_SC10",
+      "at_scene": 0.0,
+      "at_episode": 39.5,
+      "timecode": "00:00:39:12",
+      "sound": "warm whoosh of light"
+    },
+    {
+      "scene_id": "EP002_SC10",
+      "at_scene": 1.0,
+      "at_episode": 40.5,
+      "timecode": "00:00:40:12",
+      "sound": "deep resonant stone hum, low and harmonic"
+    },
+    {
+      "scene_id": "EP002_SC10",
+      "at_scene": 3.0,
+      "at_episode": 42.5,
+      "timecode": "00:00:42:12",
+      "sound": "birds waking far below"
+    },
+    {
+      "scene_id": "EP002_SC11",
+      "at_scene": 0.0,
+      "at_episode": 44.5,
+      "timecode": "00:00:44:12",
+      "sound": "soft wind"
+    },
+    {
+      "scene_id": "EP002_SC11",
+      "at_scene": 1.8,
+      "at_episode": 46.3,
+      "timecode": "00:00:46:07",
+      "sound": "tiny stone eyelid 'tik'"
+    },
+    {
+      "scene_id": "EP002_SC11",
+      "at_scene": 3.0,
+      "at_episode": 47.5,
+      "timecode": "00:00:47:12",
+      "sound": "Hazel's stifled giggle snort (non-verbal)"
+    },
+    {
+      "scene_id": "EP002_SC11",
+      "at_scene": 3.8,
+      "at_episode": 48.3,
+      "timecode": "00:00:48:07",
+      "sound": "warm chime"
+    },
+    {
+      "scene_id": "ENDCARD",
+      "at_episode": 49.0,
+      "timecode": "00:00:49:00",
+      "sound": "Two-note celesta \"ding-ding\" rising, soft whoosh, tiny sparkle on the star blink. Same sting on every episode."
+    }
+  ]
+}

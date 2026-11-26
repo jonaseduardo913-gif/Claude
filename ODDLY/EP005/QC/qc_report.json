@@ -1,0 +1,32 @@
+{
+  "episode_id": "EP005",
+  "automated_checks": {
+    "passed": true,
+    "errors": [],
+    "checked": [
+      "scene numbering",
+      "runtime window",
+      "scene-count window",
+      "hook <= 3.5s",
+      "all character/background/prop/fx IDs exist in library",
+      "characters registered for episode",
+      "SFX inside scene bounds",
+      "every scene has SFX",
+      "valid transitions",
+      "no speech wording",
+      "final cut to end card"
+    ]
+  },
+  "editorial_review": {
+    "character_consistency": "Pip's checked scarf visible in every shot; the button is carried on his back from SC5 onward; the Moon never moves, only changes expression.",
+    "story_originality": "Sky-as-a-coat with a missing button; unique conflict.",
+    "scene_continuity": "The seam widens SC1 -> SC3 -> SC7 and closes in SC9; climb route goes pond -> heron -> windmill -> spire -> sky, all from BG_008/BG_007.",
+    "visual_quality": "Signature frames - sky tear (SC1), heron catapult (SC4), slingshot (SC7), sewing the sky (SC9), twin moons (SC11).",
+    "animation_feasibility": "One small hero, simple obstacle animals; sky effects are 2D overlays.",
+    "pacing": "Clear escalation ladder, each obstacle 4-5s; payoff at 37s.",
+    "sound_sync": "Every hop on a pizzicato pluck; every stitch on a harp note.",
+    "strong_opening": "The sky ripping open in frame 1.",
+    "memorable_ending": "Pip gets his own little moon nightlight."
+  },
+  "status": "APPROVED_FOR_PRODUCTION"
+}

@@ -1,0 +1,242 @@
+id: EP003
+concept: CON040
+title: The Bee Who Lost Its Buzz
+format: SHORT
+category: Funny situations
+logline: A bee wakes up to find that its wings make every sound except a buzz.
+palette: {dominant: "honey gold #F6C21C and meadow green #7DBA5A", accent: "bike-horn red #E0483E"}
+
+music:
+  id: MUS_EP003
+  title: Buzzless
+  style: Bouncy, light ragtime-style pizzicato and clarinet that leaves deliberate gaps so each wrong flight sound is heard clearly; a sad slow waltz for the low point; full comic brass-band finale.
+  bpm: 120 (ragtime), 72 (sad), 128 (finale)
+  key: F major -> F minor -> F major
+  instrumentation: [pizzicato strings, clarinet, upright piano, tuba, snare brushes, kazoo, slide trombone, glockenspiel]
+  rules: The wrong flight sounds are the lead 'instrument'; leave a gap in the music under each one.
+
+scenes:
+  - n: 1
+    beat: HOOK
+    dur: 3.0
+    action: Bix takes off from a daisy - and instead of a buzz, its wings blast a loud bike-horn HONK. Every bug in the meadow turns to stare.
+    chars: [CHR_022]
+    bg: BG_002@DAY
+    fx: [FX_013, FX_005]
+    shot: Macro close-up of Bix lifting off a big white daisy, a ladybug and a butterfly on nearby flowers in soft focus behind
+    key: Bix a few centimeters above the daisy, wings a blur, a round comic pop-burst shape behind it; nearby bugs with heads snapped toward it.
+    lighting: Bright warm summer daylight, saturated colors
+    motion: Bix crouches, launches; on the first wingbeat a pop-burst shape flashes and every background bug's head snaps toward it at once; Bix hovers, confused.
+    camera: Static macro, tiny shake on the honk
+    expressions: {CHR_022: happy, then frozen in confusion}
+    sfx: [[0.0, "tiny leg-launch 'tik'"], [0.3, "LOUD bike horn HONK"], [0.9, "honk"], [1.4, "unison head-turn 'shk'"], [2.2, "meadow goes silent, one cricket chirp"]]
+    music: Silence under the honks; a single cricket chirp, then the ragtime starts on scene 2.
+    transition: CUT
+
+  - n: 2
+    beat: CONFUSION
+    dur: 4.0
+    action: Bix hovers and twists around to look at its own wings, baffled. It flaps again - every wingbeat now squeaks like a rubber duck.
+    chars: [CHR_022]
+    bg: BG_002@DAY
+    shot: Close-up on Bix in mid-air, wings in sharp detail
+    key: Bix looking back over its shoulder at its wings, antennae curled into question-mark shapes.
+    lighting: Bright daylight
+    motion: Bix twists to inspect its wings, then flaps slowly four times, each beat a squeak; its body bobs down a little on each squeak.
+    camera: Slight orbit around Bix
+    expressions: {CHR_022: baffled, antennae curling, eyes darting}
+    sfx: [[0.0, "silence (ambience only)"], [1.2, "rubber duck squeak"], [1.8, "squeak"], [2.4, "squeak"], [3.0, "squeak"]]
+    music: Ragtime pizzicato enters between squeaks.
+    transition: CUT
+
+  - n: 3
+    beat: EMBARRASSMENT
+    dur: 4.5
+    action: A ladybug and a butterfly giggle behind a leaf. Bix blushes and tries tiny careful flaps - a kazoo noise. The giggling gets louder.
+    chars: [CHR_022]
+    bg: BG_002@DAY
+    shot: Medium macro, Bix in the foreground, the ladybug and butterfly peeking from behind a clover leaf in the background
+    key: Bix with red-blushing cheeks doing tiny dainty wing flaps; behind it a ladybug and a butterfly covering their mouths, shaking with laughter.
+    lighting: Bright daylight with dappled leaf shadows
+    motion: Bix blushes, looks around, then flaps very gently - a kazoo note on each flap; the bugs shake harder with laughter; Bix sinks down a little.
+    camera: Rack focus from the giggling bugs to Bix
+    expressions: {CHR_022: embarrassed, blushing, trying to look casual}
+    sfx: [[0.0, "tiny giggles (non-verbal)"], [1.6, "kazoo 'bzzrt'"], [2.2, "kazoo 'bzzrt'"], [3.0, "louder giggles"], [3.8, "sad deflating kazoo"]]
+    music: Piano plays a tiny embarrassed descending phrase.
+    transition: CUT
+
+  - n: 4
+    beat: REJECTION
+    dur: 5.0
+    action: Bix flies to the Oak Hive. The huge guard bee blocks the door with crossed arms and demonstrates a deep, proper buzz. Bix tries - its wings blast a trombone 'wah-wah-waaah'. The honeycomb door slides shut.
+    chars: [CHR_022, CHR_023]
+    bg: BG_005@DAY
+    shot: Low frontal shot of the hive doorway, the guard bee large in the doorway, Bix small in the foreground
+    key: Guard bee with acorn-cap helmet hovering in the honeycomb doorway with arms crossed; Bix in front, wings mid-flap, a sad trombone pop-burst shape behind it.
+    lighting: Warm dappled sunlight on golden honeycomb
+    motion: Guard buzzes deeply to demonstrate (wings blur); Bix gulps, flaps hard - trombone wah-wah-waaah; guard raises one eyebrow; the hexagonal door slides shut in Bix's face.
+    camera: Static low angle, slight push-in on the door closing
+    expressions: {CHR_022: hopeful then crushed, CHR_023: guard stern, one eyebrow raised}
+    sfx: [[0.0, "deep proper bee BZZZZ"], [1.6, "nervous gulp"], [2.2, "sad trombone 'wah-wah-wah-waaaah'"], [4.0, "waxy door slide and soft thunk"]]
+    music: Music stops for the trombone; one tuba note on the door thunk.
+    transition: CUT
+
+  - n: 5
+    beat: LOW POINT
+    dur: 4.0
+    action: Bix sits alone on a drooping dandelion puff at sunset, knees hugged. It sighs; the sigh blows a single dandelion seed away.
+    chars: [CHR_022]
+    bg: BG_002@DAY
+    fx: [FX_004]
+    shot: Medium-wide macro, Bix tiny on a dandelion, the big sun low in the background
+    key: Bix hunched on top of a white dandelion puff, antennae drooping; one seed floating away in the warm light.
+    lighting: Warm late-afternoon backlight, soft glow, long shadows
+    motion: Bix sighs, shoulders rising and falling; a single dandelion seed lifts off and floats out of frame; the stem droops a little more.
+    camera: Slow pull-back
+    expressions: {CHR_022: heartbroken, droopy antennae}
+    sfx: [[0.0, "soft meadow wind"], [1.2, "small sad sigh"], [2.0, "delicate airy 'fwff' of the seed lifting"]]
+    music: Slow sad waltz on solo clarinet in F minor.
+    transition: DISSOLVE
+
+  - n: 6
+    beat: ATTEMPTS
+    dur: 5.0
+    action: Bix tries everything. Flapping fast makes an accordion wheeze. Flapping slow makes a foghorn. Flapping one wing makes a doorbell ding-dong. It ends upside down, tangled in its own antennae.
+    chars: [CHR_022]
+    bg: BG_002@DAY
+    fx: [FX_005, FX_011]
+    shot: Medium macro on a clover patch, Bix center frame
+    key: Bix spinning in mid-air flapping only one wing, cheeks puffed with effort, sweat drops flying.
+    lighting: Bright daylight
+    motion: Three quick tries - fast flapping (accordion wheeze, body jiggling), slow flapping (foghorn, body sinking), one-wing flapping (ding-dong, spinning in circles) - ending with Bix upside down, antennae knotted.
+    camera: Static, small snap zooms on each attempt
+    expressions: {CHR_022: determined, straining, then dizzy}
+    sfx: [[0.0, "accordion wheeze"], [1.6, "deep foghorn 'BWAAA'"], [3.0, "doorbell 'ding-dong'"], [3.6, "ding-dong"], [4.4, "dizzy cartoon 'wobble-wobble'"]]
+    music: Ragtime returns in short bursts between the attempts.
+    transition: CUT
+
+  - n: 7
+    beat: DISCOVERY
+    dur: 4.5
+    action: Still upside down, Bix spots a honey jar on a tree stump. Inside the amber honey, a tiny glowing golden zigzag squiggle is stuck, vibrating. Bix's eyes go wide - it's the buzz.
+    chars: [CHR_022]
+    bg: BG_005@DAY
+    props: [PRP_003, PRP_015]
+    fx: [FX_001]
+    shot: Upside-down close-up of Bix's face in the foreground, the honey jar on a stump in the background; then the image flips right-side up
+    key: The honey jar glowing on a mossy stump, a tiny golden zigzag squiggle trapped inside the honey, vibrating with a faint glow.
+    lighting: A sunbeam hits the jar, making the honey glow amber
+    motion: Bix's eyes focus; the frame rotates right-side up as Bix flips over; push in on the jar where the golden squiggle vibrates inside the honey.
+    camera: 180-degree roll, then push-in to the jar
+    expressions: {CHR_022: dazed, then eyes going huge with hope}
+    sfx: [[0.0, "dizzy wobble fading"], [1.4, "roll whoosh"], [2.4, "faint muffled 'bzzz' from inside the jar"], [3.4, "sparkle chime"]]
+    music: Glockenspiel 'discovery' arpeggio.
+    transition: CUT
+
+  - n: 8
+    beat: RESCUE
+    dur: 5.0
+    action: Bix dives into the honey jar, wrestles with the sticky honey, and pulls the golden squiggle out like a noodle. It slurps it down.
+    chars: [CHR_022]
+    bg: BG_005@DAY
+    props: [PRP_003, PRP_015]
+    shot: Close-up side view of the honey jar, Bix half inside the honey
+    key: Bix up to its waist in glowing honey, tugging with both arms on the golden zigzag squiggle stretched like a noodle.
+    lighting: Glowing amber from the honey
+    motion: Bix dives in; struggles in slow-motion stickiness; pulls the squiggle which stretches and snaps free; Bix pops out, coated in honey, and slurps the squiggle like spaghetti.
+    camera: Static, slight push-in on the slurp
+    expressions: {CHR_022: determined, straining, then satisfied}
+    sfx: [[0.0, "thick honey 'gloop' dive"], [1.2, "sticky stretching 'squelch'"], [2.6, "elastic snap 'thwang'"], [3.4, "honey pop"], [4.0, "long slurp with a 'bzzt' at the end"]]
+    music: Tense pizzicato, then a cymbal swell on the slurp.
+    transition: CUT
+
+  - n: 9
+    beat: JOY
+    dur: 4.0
+    action: Bix takes off with a perfect, classic BZZZZ. It loops through the flowers with joy, leaving a happy trail.
+    chars: [CHR_022]
+    bg: BG_002@DAY
+    fx: [FX_005, FX_012]
+    shot: Wide macro, Bix zipping in figure-eights through tall flowers
+    key: Bix mid-loop in the air with a golden speed trail, honey droplets flying off, tiny hearts.
+    lighting: Bright daylight
+    motion: Bix launches with a clean buzz and does two big figure-eight loops between flowers, shaking off honey drops.
+    camera: Fast tracking pan following Bix
+    expressions: {CHR_022: joyful, eyes closed in delight}
+    sfx: [[0.0, "perfect classic bee BZZZZZ"], [1.6, "buzz doppler whoosh past camera"], [2.8, "buzz doppler whoosh back"]]
+    music: Ragtime returns full and triumphant.
+    transition: WHIP PAN
+
+  - n: 10
+    beat: WELCOME
+    dur: 4.5
+    action: Back at the hive, Bix buzzes proudly. The guard bee nods and slides the door open. Inside, the whole hive is waiting, staring at Bix with eager eyes.
+    chars: [CHR_022, CHR_023]
+    bg: BG_005@INTERIOR
+    shot: Bix's point of view through the open hexagonal door into the glowing hive, dozens of bees gathered and staring
+    key: Dozens of round bees packed together on honeycomb ledges, all looking toward camera with eager expectant eyes; the guard bee holding the door open.
+    lighting: Glowing amber honeycomb interior
+    motion: Door slides open; the crowd of bees all lean forward at once with eager eyes; one tiny bee mimes flapping and makes a pleading face.
+    camera: Slow push through the doorway
+    expressions: {CHR_022: proud, then puzzled, CHR_023: eager pleading crowd; guard nodding}
+    sfx: [[0.0, "proud buzz"], [1.0, "waxy door slide"], [2.0, "crowd 'ooooh' of tiny hums (non-verbal)"], [3.2, "single tiny pleading 'mm-mm' hum"]]
+    music: Music drops to a suspenseful snare roll.
+    transition: CUT
+
+  - n: 11
+    beat: TWIST
+    dur: 5.0
+    action: Bix shrugs and passes around the honey jar. Every bee takes a lick - and now each bee's wings make a different silly sound. The hive bursts into a honking, squeaking, tooting orchestra, conducted by the guard bee with his antenna.
+    chars: [CHR_022, CHR_023]
+    bg: BG_005@INTERIOR
+    props: [PRP_003]
+    fx: [FX_012, FX_013]
+    shot: Wide interior shot of the hive, bees flying in rows like an orchestra, the guard bee in front conducting
+    key: Bees arranged in rows mid-flight, each with a different comic pop-burst shape behind its wings; the guard bee conducting with one antenna, eyes closed in bliss; Bix in the center playing a proud honk.
+    lighting: Warm glowing amber, sparkles
+    motion: Jar passes around in a quick chain of licks; the bees take off in rows; the guard bee lifts his antenna and conducts; the whole hive bobs in rhythm to the music.
+    camera: Slow crane up over the orchestra
+    expressions: {CHR_022: blissful, CHR_023: joyful crowd; guard blissful conducting}
+    sfx: [[0.0, "chain of 'slurp' licks"], [1.2, "first bike-horn honk"], [1.6, "rubber squeak, kazoo, ding-dong, foghorn layered in rhythm"], [4.0, "final unison HONK"]]
+    music: Brass-band finale built from the silly wing sounds, landing on a final F major chord + honk at the cut.
+    transition: CUT TO END CARD
+
+thumbnail:
+  cover_frame: EP003_SC01 at 0.3s (the first honk)
+  chars: [CHR_022]
+  bg: BG_002@DAY
+  prompt: Close-up of Bix the bee taking off from a daisy with a huge comic pop-burst shape behind its wings, eyes wide in shock, bugs in the background staring.
+  overlay: "HONK?!"
+
+publishing:
+  title_en: "The Bee Who Lost Its Buzz 🐝📯 #Shorts"
+  title_pt_br: "A abelha que perdeu o zumbido 🐝📯 #Shorts"
+  title_es: "La abeja que perdió su zumbido 🐝📯 #Shorts"
+  description_en: "Bix wakes up and its wings make every sound… except a buzz. 🐝 Turn the sound ON for this one! An original ODDLY animated short — no words, just a world full of surprises."
+  description_pt_br: "Bix acorda e suas asas fazem todo tipo de som… menos zumbido. 🐝 Ligue o som! Um curta animado original ODDLY — sem palavras, só um mundo cheio de surpresas."
+  description_es: "Bix despierta y sus alas hacen todos los sonidos… menos zumbar. 🐝 ¡Sube el volumen! Un corto animado original de ODDLY — sin palabras, solo un mundo lleno de sorpresas."
+  hashtags: ["#ODDLY", "#Shorts", "#Animation", "#Cartoon", "#Bee", "#Funny", "#SoundOn"]
+  tags: [oddly, animated short, cartoon, bee, funny sounds, sound on, honey, no dialogue, 2d animation, family cartoon]
+  pinned_comment: "Which sound was the funniest? 📯🦆🪗"
+  series: ODDLY Shorts
+  playlist: Thistledown Tales
+
+edit:
+  grade: Bright saturated summer palette throughout; warm amber sunset grade only on SC5; hive interior glowing amber.
+  mix_notes: Every wrong flight sound must be mixed 3 dB above everything else and perfectly synced to the wingbeat frame. This episode is sound-led - check sync frame by frame.
+  notes:
+    - SC1 starts on the launch, honk on frame 7.
+    - SC6 contains three attempts; if needed split into 3 inserts of 1.6s each with the same background.
+    - SC7 roll the image from upside down to right-side up over 12 frames.
+    - The finale orchestra must be in strict time with the music; sync wing sounds to beats.
+
+qc:
+  character_consistency: Bix keeps its size and stripe pattern; guard bee always wears the acorn-cap helmet.
+  story_originality: Sound-swap comedy built for a dialogue-free format; unique in the slate.
+  scene_continuity: The honey jar is seen near the hive (SC7) before it is used in the finale (SC11). Sunset in SC5 is a short dissolve beat; the following scenes return to daylight as the next morning.
+  visual_quality: Signature frames - honk takeoff (SC1), guard rejection (SC4), dandelion sigh (SC5), hive orchestra (SC11).
+  animation_feasibility: Macro sets with one hero and a reusable bee crowd; sound-shape bursts are simple 2D overlays.
+  pacing: Gag every 3-5s; low point at 16.5s; discovery at 25.5s; finale in the last 5s.
+  sound_sync: Each wingbeat sound is listed at an exact time; music leaves gaps for them.
+  strong_opening: Bike-horn honk on the first wingbeat.
+  memorable_ending: The whole hive turns the silly sounds into an orchestra.

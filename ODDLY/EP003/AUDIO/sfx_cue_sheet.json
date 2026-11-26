@@ -1,0 +1,340 @@
+{
+  "episode_id": "EP003",
+  "cues": [
+    {
+      "scene_id": "EP003_SC01",
+      "at_scene": 0.0,
+      "at_episode": 0.0,
+      "timecode": "00:00:00:00",
+      "sound": "tiny leg-launch 'tik'"
+    },
+    {
+      "scene_id": "EP003_SC01",
+      "at_scene": 0.3,
+      "at_episode": 0.3,
+      "timecode": "00:00:00:07",
+      "sound": "LOUD bike horn HONK"
+    },
+    {
+      "scene_id": "EP003_SC01",
+      "at_scene": 0.9,
+      "at_episode": 0.9,
+      "timecode": "00:00:00:22",
+      "sound": "honk"
+    },
+    {
+      "scene_id": "EP003_SC01",
+      "at_scene": 1.4,
+      "at_episode": 1.4,
+      "timecode": "00:00:01:10",
+      "sound": "unison head-turn 'shk'"
+    },
+    {
+      "scene_id": "EP003_SC01",
+      "at_scene": 2.2,
+      "at_episode": 2.2,
+      "timecode": "00:00:02:05",
+      "sound": "meadow goes silent, one cricket chirp"
+    },
+    {
+      "scene_id": "EP003_SC02",
+      "at_scene": 0.0,
+      "at_episode": 3.0,
+      "timecode": "00:00:03:00",
+      "sound": "silence (ambience only)"
+    },
+    {
+      "scene_id": "EP003_SC02",
+      "at_scene": 1.2,
+      "at_episode": 4.2,
+      "timecode": "00:00:04:05",
+      "sound": "rubber duck squeak"
+    },
+    {
+      "scene_id": "EP003_SC02",
+      "at_scene": 1.8,
+      "at_episode": 4.8,
+      "timecode": "00:00:04:19",
+      "sound": "squeak"
+    },
+    {
+      "scene_id": "EP003_SC02",
+      "at_scene": 2.4,
+      "at_episode": 5.4,
+      "timecode": "00:00:05:10",
+      "sound": "squeak"
+    },
+    {
+      "scene_id": "EP003_SC02",
+      "at_scene": 3.0,
+      "at_episode": 6.0,
+      "timecode": "00:00:06:00",
+      "sound": "squeak"
+    },
+    {
+      "scene_id": "EP003_SC03",
+      "at_scene": 0.0,
+      "at_episode": 7.0,
+      "timecode": "00:00:07:00",
+      "sound": "tiny giggles (non-verbal)"
+    },
+    {
+      "scene_id": "EP003_SC03",
+      "at_scene": 1.6,
+      "at_episode": 8.6,
+      "timecode": "00:00:08:14",
+      "sound": "kazoo 'bzzrt'"
+    },
+    {
+      "scene_id": "EP003_SC03",
+      "at_scene": 2.2,
+      "at_episode": 9.2,
+      "timecode": "00:00:09:05",
+      "sound": "kazoo 'bzzrt'"
+    },
+    {
+      "scene_id": "EP003_SC03",
+      "at_scene": 3.0,
+      "at_episode": 10.0,
+      "timecode": "00:00:10:00",
+      "sound": "louder giggles"
+    },
+    {
+      "scene_id": "EP003_SC03",
+      "at_scene": 3.8,
+      "at_episode": 10.8,
+      "timecode": "00:00:10:19",
+      "sound": "sad deflating kazoo"
+    },
+    {
+      "scene_id": "EP003_SC04",
+      "at_scene": 0.0,
+      "at_episode": 11.5,
+      "timecode": "00:00:11:12",
+      "sound": "deep proper bee BZZZZ"
+    },
+    {
+      "scene_id": "EP003_SC04",
+      "at_scene": 1.6,
+      "at_episode": 13.1,
+      "timecode": "00:00:13:02",
+      "sound": "nervous gulp"
+    },
+    {
+      "scene_id": "EP003_SC04",
+      "at_scene": 2.2,
+      "at_episode": 13.7,
+      "timecode": "00:00:13:17",
+      "sound": "sad trombone 'wah-wah-wah-waaaah'"
+    },
+    {
+      "scene_id": "EP003_SC04",
+      "at_scene": 4.0,
+      "at_episode": 15.5,
+      "timecode": "00:00:15:12",
+      "sound": "waxy door slide and soft thunk"
+    },
+    {
+      "scene_id": "EP003_SC05",
+      "at_scene": 0.0,
+      "at_episode": 16.5,
+      "timecode": "00:00:16:12",
+      "sound": "soft meadow wind"
+    },
+    {
+      "scene_id": "EP003_SC05",
+      "at_scene": 1.2,
+      "at_episode": 17.7,
+      "timecode": "00:00:17:17",
+      "sound": "small sad sigh"
+    },
+    {
+      "scene_id": "EP003_SC05",
+      "at_scene": 2.0,
+      "at_episode": 18.5,
+      "timecode": "00:00:18:12",
+      "sound": "delicate airy 'fwff' of the seed lifting"
+    },
+    {
+      "scene_id": "EP003_SC06",
+      "at_scene": 0.0,
+      "at_episode": 20.5,
+      "timecode": "00:00:20:12",
+      "sound": "accordion wheeze"
+    },
+    {
+      "scene_id": "EP003_SC06",
+      "at_scene": 1.6,
+      "at_episode": 22.1,
+      "timecode": "00:00:22:02",
+      "sound": "deep foghorn 'BWAAA'"
+    },
+    {
+      "scene_id": "EP003_SC06",
+      "at_scene": 3.0,
+      "at_episode": 23.5,
+      "timecode": "00:00:23:12",
+      "sound": "doorbell 'ding-dong'"
+    },
+    {
+      "scene_id": "EP003_SC06",
+      "at_scene": 3.6,
+      "at_episode": 24.1,
+      "timecode": "00:00:24:02",
+      "sound": "ding-dong"
+    },
+    {
+      "scene_id": "EP003_SC06",
+      "at_scene": 4.4,
+      "at_episode": 24.9,
+      "timecode": "00:00:24:22",
+      "sound": "dizzy cartoon 'wobble-wobble'"
+    },
+    {
+      "scene_id": "EP003_SC07",
+      "at_scene": 0.0,
+      "at_episode": 25.5,
+      "timecode": "00:00:25:12",
+      "sound": "dizzy wobble fading"
+    },
+    {
+      "scene_id": "EP003_SC07",
+      "at_scene": 1.4,
+      "at_episode": 26.9,
+      "timecode": "00:00:26:22",
+      "sound": "roll whoosh"
+    },
+    {
+      "scene_id": "EP003_SC07",
+      "at_scene": 2.4,
+      "at_episode": 27.9,
+      "timecode": "00:00:27:22",
+      "sound": "faint muffled 'bzzz' from inside the jar"
+    },
+    {
+      "scene_id": "EP003_SC07",
+      "at_scene": 3.4,
+      "at_episode": 28.9,
+      "timecode": "00:00:28:22",
+      "sound": "sparkle chime"
+    },
+    {
+      "scene_id": "EP003_SC08",
+      "at_scene": 0.0,
+      "at_episode": 30.0,
+      "timecode": "00:00:30:00",
+      "sound": "thick honey 'gloop' dive"
+    },
+    {
+      "scene_id": "EP003_SC08",
+      "at_scene": 1.2,
+      "at_episode": 31.2,
+      "timecode": "00:00:31:05",
+      "sound": "sticky stretching 'squelch'"
+    },
+    {
+      "scene_id": "EP003_SC08",
+      "at_scene": 2.6,
+      "at_episode": 32.6,
+      "timecode": "00:00:32:14",
+      "sound": "elastic snap 'thwang'"
+    },
+    {
+      "scene_id": "EP003_SC08",
+      "at_scene": 3.4,
+      "at_episode": 33.4,
+      "timecode": "00:00:33:10",
+      "sound": "honey pop"
+    },
+    {
+      "scene_id": "EP003_SC08",
+      "at_scene": 4.0,
+      "at_episode": 34.0,
+      "timecode": "00:00:34:00",
+      "sound": "long slurp with a 'bzzt' at the end"
+    },
+    {
+      "scene_id": "EP003_SC09",
+      "at_scene": 0.0,
+      "at_episode": 35.0,
+      "timecode": "00:00:35:00",
+      "sound": "perfect classic bee BZZZZZ"
+    },
+    {
+      "scene_id": "EP003_SC09",
+      "at_scene": 1.6,
+      "at_episode": 36.6,
+      "timecode": "00:00:36:14",
+      "sound": "buzz doppler whoosh past camera"
+    },
+    {
+      "scene_id": "EP003_SC09",
+      "at_scene": 2.8,
+      "at_episode": 37.8,
+      "timecode": "00:00:37:19",
+      "sound": "buzz doppler whoosh back"
+    },
+    {
+      "scene_id": "EP003_SC10",
+      "at_scene": 0.0,
+      "at_episode": 39.0,
+      "timecode": "00:00:39:00",
+      "sound": "proud buzz"
+    },
+    {
+      "scene_id": "EP003_SC10",
+      "at_scene": 1.0,
+      "at_episode": 40.0,
+      "timecode": "00:00:40:00",
+      "sound": "waxy door slide"
+    },
+    {
+      "scene_id": "EP003_SC10",
+      "at_scene": 2.0,
+      "at_episode": 41.0,
+      "timecode": "00:00:41:00",
+      "sound": "crowd 'ooooh' of tiny hums (non-verbal)"
+    },
+    {
+      "scene_id": "EP003_SC10",
+      "at_scene": 3.2,
+      "at_episode": 42.2,
+      "timecode": "00:00:42:05",
+      "sound": "single tiny pleading 'mm-mm' hum"
+    },
+    {
+      "scene_id": "EP003_SC11",
+      "at_scene": 0.0,
+      "at_episode": 43.5,
+      "timecode": "00:00:43:12",
+      "sound": "chain of 'slurp' licks"
+    },
+    {
+      "scene_id": "EP003_SC11",
+      "at_scene": 1.2,
+      "at_episode": 44.7,
+      "timecode": "00:00:44:17",
+      "sound": "first bike-horn honk"
+    },
+    {
+      "scene_id": "EP003_SC11",
+      "at_scene": 1.6,
+      "at_episode": 45.1,
+      "timecode": "00:00:45:02",
+      "sound": "rubber squeak, kazoo, ding-dong, foghorn layered in rhythm"
+    },
+    {
+      "scene_id": "EP003_SC11",
+      "at_scene": 4.0,
+      "at_episode": 47.5,
+      "timecode": "00:00:47:12",
+      "sound": "final unison HONK"
+    },
+    {
+      "scene_id": "ENDCARD",
+      "at_episode": 48.5,
+      "timecode": "00:00:48:12",
+      "sound": "Two-note celesta \"ding-ding\" rising, soft whoosh, tiny sparkle on the star blink. Same sting on every episode."
+    }
+  ]
+}

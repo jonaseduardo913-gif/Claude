@@ -1,0 +1,215 @@
+# ODDLY background & location library. Each background is painted once per variant and reused.
+# Scenes reference "BG_xxx@VARIANT". `prompt` is injected into every image prompt.
+
+BG_001:
+  name: Thistledown Village Square
+  world: THISTLEDOWN
+  prompt: >-
+    the cobblestone square of Thistledown, a hilly storybook village of crooked half-timbered cottages
+    with red and teal tiled roofs, flower boxes, a round stone well in the middle, strings of colorful
+    triangle bunting, a wooden windmill on the green hill behind
+  variants:
+    DAY: bright morning sun, crisp blue sky with puffy clouds
+    NIGHT: deep-indigo night, warm windows glowing orange, lanterns on strings
+  reusable_for: [village life, festivals, crowd scenes]
+  episodes: [EP001, EP004]
+
+BG_002:
+  name: Thistledown Meadow
+  world: THISTLEDOWN
+  prompt: >-
+    a wide rolling meadow just outside Thistledown village, long grass full of daisies, poppies and
+    clover, a lone crooked oak tree, wooden fence, the village rooftops and windmill small on the
+    horizon, Greystep Mountain rising behind
+  variants:
+    DAWN: cool pale dawn, a thin silvery frost-like mist over the grass
+    DAY: warm summer daylight, saturated greens, bees and butterflies
+    NIGHT: deep teal-indigo night, grass silvered by moonlight, paper lanterns on poles
+    STORM: dark violet storm clouds, wind-bent grass, rain streaks
+  reusable_for: [open fields, festivals, chase scenes]
+  episodes: [EP001, EP003, EP008]
+
+BG_003:
+  name: Greystep Mountain Trail
+  world: THISTLEDOWN
+  prompt: >-
+    a steep zig-zagging dirt trail up Greystep Mountain, scattered pine trees, lichen-covered rocks,
+    wooden trail-marker posts with no writing, the toy-sized village of Thistledown far below in the valley
+  variants:
+    DAY: clear late-afternoon light, long golden shadows
+    DUSK: purple-orange dusk, first stars appearing
+  reusable_for: [hikes, chases, travel montages]
+  episodes: [EP002]
+
+BG_004:
+  name: Greystep Summit
+  world: THISTLEDOWN
+  prompt: >-
+    the flat rocky summit ridge of Greystep Mountain above a sea of clouds, distant blue peaks,
+    a few hardy alpine flowers between flat stones
+  variants:
+    PREDAWN: deep blue pre-dawn sky with a thin pink line on the horizon
+    SUNRISE: brilliant golden sunrise breaking over the sea of clouds, warm rim light on everything
+  reusable_for: [finales, sunrises, epic reveals]
+  episodes: [EP002]
+
+BG_005:
+  name: Oak Hive
+  world: THISTLEDOWN
+  prompt: >-
+    the hollow trunk of an old oak at the meadow's edge, with a round doorway framed by golden
+    hexagonal honeycomb, dripping honey, little wax balconies, sunbeams filtering through leaves
+  variants:
+    DAY: warm dappled sunlight
+    INTERIOR: inside the hive, glowing amber honeycomb walls, jars of honey on wax shelves
+  reusable_for: [insect stories, cozy interiors]
+  episodes: [EP003]
+
+BG_006:
+  name: Rosa's Bakery Interior
+  world: THISTLEDOWN
+  prompt: >-
+    a cozy round wooden bakery interior with a glowing brick dome oven, wooden shelves stacked with
+    golden loaves and rolls, flour sacks, a big wooden kneading table, copper pans hanging, a round
+    porthole-like window and a crooked chimney pipe
+  variants:
+    NIGHT: warm amber oven light inside, deep-blue night through the window
+    SKY: same interior but the round window shows stars and clouds drifting past and everything tilts slightly
+    DAWN: soft pink dawn light pouring through the window
+  reusable_for: [kitchens, cozy interiors]
+  episodes: [EP004]
+
+BG_007:
+  name: Thistledown Night Sky Over Rooftops
+  world: THISTLEDOWN
+  prompt: >-
+    a sweeping night sky above the sleeping rooftops of Thistledown, thatched and tiled roofs,
+    chimneys, the windmill and church spire silhouetted, soft rolling clouds and many twinkling stars
+  variants:
+    NIGHT: deep indigo sky, cool moonlight
+    DAWN: indigo melting into pink and gold at the horizon
+  reusable_for: [flying scenes, night establishing shots]
+  episodes: [EP004, EP005, EP008]
+
+BG_008:
+  name: Thistledown Millpond
+  world: THISTLEDOWN
+  prompt: >-
+    a still millpond with big round lily pads, cattail reeds, glowing water reflections, a wooden
+    windmill on the bank and the stone church spire behind, a little arched footbridge
+  variants:
+    NIGHT: deep-indigo night, silver moonlight reflections on the water
+    TORN_SKY: night, but a thin glowing seam of daylight splits the sky above the pond
+  reusable_for: [water scenes, quiet night moments]
+  episodes: [EP005]
+
+BG_009:
+  name: Brassport Laundromat
+  world: BRASSPORT
+  prompt: >-
+    a retro city laundromat with a long row of round chrome-door tumble dryers, checkered black and
+    white floor, plastic orange chairs, a big front window onto a brick street, pastel-teal walls
+  variants:
+    DUSK: orange sunset light through the front window, fluorescent tubes flickering on
+  reusable_for: [city interiors]
+  episodes: [EP006]
+
+BG_010:
+  name: Brassport Rooftops
+  world: BRASSPORT
+  prompt: >-
+    the brick rooftops of Brassport city with wooden water towers, chimney pots, clotheslines with
+    flapping laundry, pigeons on ledges, the harbor and the open sea visible beyond
+  variants:
+    DUSK: warm orange-violet sunset sky
+    DAY: crisp morning light
+  reusable_for: [city flight, chases]
+  episodes: [EP006]
+
+BG_011:
+  name: Sock Island
+  world: BRASSPORT
+  prompt: >-
+    a small tropical island in a turquoise sea, white sand, leaning palm trees with long clotheslines
+    strung between them where hundreds of single socks hang and rest like birds in a colony
+  variants:
+    SUNSET: golden-pink tropical sunset
+  reusable_for: [tropical destinations]
+  episodes: [EP006]
+
+BG_012:
+  name: Brassport Corner Street
+  world: BRASSPORT
+  prompt: >-
+    a sunny Brassport street corner with brick apartment buildings, little iron balconies with flower
+    pots, a café with a striped awning and outdoor tables, a bus stop, and a tall retro vending machine
+    painted mint-green with rows of colorful unlabeled cans behind its glass
+  variants:
+    HOT: blazing midday heat, shimmering heat haze, everything slightly sun-bleached
+    CHAOS: same street mixed with patches of snow, fog, hail and lightning
+    RAINBOW: same street washed in rainbow light
+  reusable_for: [city street gags]
+  episodes: [EP007]
+
+BG_013:
+  name: Milo's Bedroom
+  world: THISTLEDOWN
+  prompt: >-
+    a cozy kid's attic bedroom with a slanted ceiling, a wooden bed with a navy star-patterned quilt,
+    a desk under a round window, shelves of toys and books, a rug shaped like a cloud, and posters
+    of rockets with no writing
+  variants:
+    NIGHT: blue moonlight through the window, a small mushroom-shaped nightlight glowing
+    DAY: morning sun pouring in
+    MESSY: daylight with toys, clothes, socks and crayons scattered everywhere
+    TIDY: daylight, every object perfectly sorted, folded and aligned
+  reusable_for: [home interiors, night-time stories]
+  episodes: [EP009, EP010]
+
+BG_014:
+  name: Inside the Jar Ocean
+  world: THISTLEDOWN
+  prompt: >-
+    the miniature ocean inside a glass jar, curved glass walls distorting the edges, a tiny sea with
+    waves and a tiny sky with its own clouds
+  variants:
+    STORM: tiny black storm clouds, tiny lightning bolts, foaming waves
+    CALM: clear tiny blue sky, gentle glittering waves, a tiny sun
+  reusable_for: [macro worlds]
+  episodes: [EP009]
+
+BG_015:
+  name: The Giant Desk
+  world: UNKNOWN
+  prompt: >-
+    an enormous wooden desk in a vast dim room, a single huge glass jar on it which contains an entire
+    attic bedroom with a round window, a giant brass desk lamp and giant pencils beside it
+  variants:
+    NIGHT: lamp-lit, deep warm shadows
+  reusable_for: [scale-reveal endings]
+  episodes: [EP009]
+
+BG_016:
+  name: Firefly Hollow
+  world: THISTLEDOWN
+  prompt: >-
+    a dark tall-grass field at the edge of the Thistledown woods, crooked birch trees, a narrow path
+    winding back toward the distant glowing village
+  variants:
+    STORM_NIGHT: pitch-dark windy night, rain, grass whipping, only faint shapes visible
+    CLEAR_NIGHT: after the storm, clear starry sky, wet grass sparkling
+  reusable_for: [lost-in-the-dark scenes]
+  episodes: [EP008]
+
+BG_017:
+  name: Rosa's Bakery Exterior
+  world: THISTLEDOWN
+  prompt: >-
+    a small round stone bakery with a conical shingle roof, a crooked brick chimney, a round porthole
+    window and a blue wooden door, standing at the edge of the Thistledown village square
+  variants:
+    NIGHT: deep-indigo night, warm amber light from the windows
+    FLOATING: the bakery hovering high in the night sky on a pillow of glowing golden dough, village rooftops tiny far below
+    DAWN: soft pink-gold dawn, the bakery back on its stone foundation
+  reusable_for: [village shops, flying-building gags]
+  episodes: [EP004]

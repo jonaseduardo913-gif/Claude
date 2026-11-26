@@ -1,0 +1,86 @@
+{
+  "scene_id": "EP004_SC02",
+  "episode_id": "EP004",
+  "scene_number": 2,
+  "beat": "ROUTINE",
+  "duration_seconds": 4.5,
+  "timecode_in": "00:00:03:00",
+  "timecode_out": "00:00:07:12",
+  "format": {
+    "aspect_ratio": "9:16",
+    "resolution": "1080x1920",
+    "fps": 24
+  },
+  "story_action": "Inside, Rosa calmly kneads dough at her table while the floor gently tilts. A rolling pin rolls past; she stops it with her foot without looking. She's done this every night.",
+  "character_references": [
+    {
+      "id": "CHR_004",
+      "name": "Rosa Crumb",
+      "reference_sheet": "LIBRARY/REFS/CHR_004_sheet.png"
+    }
+  ],
+  "background_reference": {
+    "id": "BG_006@SKY",
+    "name": "Rosa's Bakery Interior",
+    "plate": "LIBRARY/REFS/BG_006_SKY.png"
+  },
+  "props": [
+    "PRP_005"
+  ],
+  "effects": [
+    "FX_006"
+  ],
+  "image_generation": {
+    "output_file": "EP004_SC02_KEY.png",
+    "prompt": "Premium cinematic 2D cartoon animation still, professional animated series quality. Clean, consistent dark-brown (#2A1E1A) outlines of even medium weight on characters, thinner colored lines on backgrounds. Cel-shaded characters with one soft shadow tone and one rim light. Lush hand-painted illustrated background with soft gouache texture and atmospheric depth. Vibrant cinematic color with warm-cool contrast. Expressive, appealing character acting. Rounded, friendly shape language. Vertical 9:16 frame, 1080x1920. SHOT: Medium-wide interior shot, Rosa at the kneading table, the round window behind her showing clouds drifting past. KEYFRAME: Rosa kneading with flour puffing, completely relaxed; a rolling pin rolling across the slightly tilted floor toward her foot; clouds in the window. CHARACTERS (match approved reference sheets exactly): [CHR_004] ROSA CRUMB, a round, pear-shaped baker in her fifties, 5 heads tall, rosy-brown skin, silver-white hair in a bun with a pencil stuck through it, round gold spectacles, tall white baker's hat, cream apron over a plum dress with rolled sleeves, flour dust on her cheeks and forearms. SETTING [BG_006@SKY]: a cozy round wooden bakery interior with a glowing brick dome oven, wooden shelves stacked with golden loaves and rolls, flour sacks, a big wooden kneading table, copper pans hanging, a round porthole-like window and a crooked chimney pipe; same interior but the round window shows stars and clouds drifting past and everything tilts slightly. PROPS: round golden-brown bread rolls with a cross cut on top. EFFECTS: billowing soft white flour clouds. LIGHTING & MOOD: Warm amber oven light, cool blue light from the window. EPISODE PALETTE: dominant night indigo #1B1F4B and oven amber #F2A541, accent bread gold #E8A84A. Keep key action inside the vertical safe area.",
+    "negative_prompt": "text, letters, words, captions, subtitles, logos, watermark, signature, speech bubbles, photorealism, 3D render, CGI, anime style, chibi, extra fingers, extra limbs, missing limbs, deformed hands, inconsistent outlines, blurry, low resolution, jpeg artifacts, harsh noise, off-model character, different costume, different colors than reference, cropped heads, horror gore, scary realistic teeth.",
+    "reference_images": [
+      "LIBRARY/REFS/CHR_004_sheet.png",
+      "LIBRARY/REFS/BG_006_SKY.png"
+    ]
+  },
+  "animation": {
+    "input_file": "EP004_SC02_KEY.png",
+    "output_file": "EP004_SC02_ANIM.mp4",
+    "duration_seconds": 4.5,
+    "prompt": "Animate keyframe EP004_SC02_KEY.png into a 4.5-second shot. MOTION: Rosa kneads rhythmically; the room tilts 5 degrees; a rolling pin rolls across and she stops it with her slipper without looking, then nudges it back. CAMERA: Gentle sway with the room tilt. FACIAL ACTING: Rosa Crumb: content and calm, humming silently. ON-MODEL LOCK: Rosa - round body, silver bun with pencil, round spectacles, tall white hat, cream apron over plum dress, flour on cheeks. Smooth 2D cartoon animation at 24 fps, animated on ones for fast action and twos for holds. Squash-and-stretch, anticipation and overshoot on all major actions. Outlines stay stable and consistent between frames (no boiling, no morphing). Characters remain exactly on-model with the reference sheet. Background stays painted and stable except for listed environmental motion. No text appears. No lip-sync, no speech."
+  },
+  "camera_movement": "Gentle sway with the room tilt",
+  "facial_expressions": {
+    "CHR_004": "content and calm, humming silently"
+  },
+  "sound_effects": [
+    {
+      "at_scene": 0.0,
+      "at_episode": 3.0,
+      "timecode": "00:00:03:00",
+      "sound": "dough slap and knead"
+    },
+    {
+      "at_scene": 1.0,
+      "at_episode": 4.0,
+      "timecode": "00:00:04:00",
+      "sound": "wooden creak of the tilting floor"
+    },
+    {
+      "at_scene": 1.6,
+      "at_episode": 4.6,
+      "timecode": "00:00:04:14",
+      "sound": "rolling pin rolling"
+    },
+    {
+      "at_scene": 2.8,
+      "at_episode": 5.8,
+      "timecode": "00:00:05:19",
+      "sound": "slipper stop 'tup'"
+    },
+    {
+      "at_scene": 3.6,
+      "at_episode": 6.6,
+      "timecode": "00:00:06:14",
+      "sound": "dough slap"
+    }
+  ],
+  "music": "Music box and bassoon, cozy.",
+  "transition_out": "CUT"
+}

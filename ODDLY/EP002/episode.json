@@ -1,0 +1,47 @@
+{
+  "id": "EP002",
+  "concept": "CON036",
+  "title": "The Uphill Boulder",
+  "format": "SHORT",
+  "category": "Strange creatures",
+  "logline": "A hiker notices a boulder that rolls uphill whenever she isn't looking — and follows it to the top of the mountain.",
+  "palette": {
+    "dominant": "slate gray #8C8C88 and pine green #3F6B3A",
+    "accent": "lichen yellow #F2D13B"
+  },
+  "runtime_seconds": 51.0,
+  "scene_count": 11,
+  "characters": [
+    "CHR_003",
+    "CHR_021"
+  ],
+  "backgrounds": [
+    "BG_003",
+    "BG_004"
+  ],
+  "files": [
+    "ANIMATION/animation_jobs.json",
+    "AUDIO/music_brief.json",
+    "AUDIO/sfx_cue_sheet.json",
+    "BACKGROUNDS/backgrounds.json",
+    "CHARACTERS/characters.json",
+    "EDIT/edit_decision_list.json",
+    "PUBLISHING/metadata.json",
+    "QC/qc_report.json",
+    "SCENES/EP002_SC01.json",
+    "SCENES/EP002_SC02.json",
+    "SCENES/EP002_SC03.json",
+    "SCENES/EP002_SC04.json",
+    "SCENES/EP002_SC05.json",
+    "SCENES/EP002_SC06.json",
+    "SCENES/EP002_SC07.json",
+    "SCENES/EP002_SC08.json",
+    "SCENES/EP002_SC09.json",
+    "SCENES/EP002_SC10.json",
+    "SCENES/EP002_SC11.json",
+    "SCENES/script.md",
+    "THUMBNAIL/thumbnail.json",
+    "episode.json"
+  ],
+  "qc_status": "APPROVED_FOR_PRODUCTION"
+}

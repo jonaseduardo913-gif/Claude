@@ -1,0 +1,47 @@
+{
+  "id": "EP003",
+  "concept": "CON040",
+  "title": "The Bee Who Lost Its Buzz",
+  "format": "SHORT",
+  "category": "Funny situations",
+  "logline": "A bee wakes up to find that its wings make every sound except a buzz.",
+  "palette": {
+    "dominant": "honey gold #F6C21C and meadow green #7DBA5A",
+    "accent": "bike-horn red #E0483E"
+  },
+  "runtime_seconds": 50.5,
+  "scene_count": 11,
+  "characters": [
+    "CHR_022",
+    "CHR_023"
+  ],
+  "backgrounds": [
+    "BG_002",
+    "BG_005"
+  ],
+  "files": [
+    "ANIMATION/animation_jobs.json",
+    "AUDIO/music_brief.json",
+    "AUDIO/sfx_cue_sheet.json",
+    "BACKGROUNDS/backgrounds.json",
+    "CHARACTERS/characters.json",
+    "EDIT/edit_decision_list.json",
+    "PUBLISHING/metadata.json",
+    "QC/qc_report.json",
+    "SCENES/EP003_SC01.json",
+    "SCENES/EP003_SC02.json",
+    "SCENES/EP003_SC03.json",
+    "SCENES/EP003_SC04.json",
+    "SCENES/EP003_SC05.json",
+    "SCENES/EP003_SC06.json",
+    "SCENES/EP003_SC07.json",
+    "SCENES/EP003_SC08.json",
+    "SCENES/EP003_SC09.json",
+    "SCENES/EP003_SC10.json",
+    "SCENES/EP003_SC11.json",
+    "SCENES/script.md",
+    "THUMBNAIL/thumbnail.json",
+    "episode.json"
+  ],
+  "qc_status": "APPROVED_FOR_PRODUCTION"
+}

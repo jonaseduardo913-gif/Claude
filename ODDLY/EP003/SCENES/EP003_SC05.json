@@ -1,0 +1,72 @@
+{
+  "scene_id": "EP003_SC05",
+  "episode_id": "EP003",
+  "scene_number": 5,
+  "beat": "LOW POINT",
+  "duration_seconds": 4.0,
+  "timecode_in": "00:00:16:12",
+  "timecode_out": "00:00:20:12",
+  "format": {
+    "aspect_ratio": "9:16",
+    "resolution": "1080x1920",
+    "fps": 24
+  },
+  "story_action": "Bix sits alone on a drooping dandelion puff at sunset, knees hugged. It sighs; the sigh blows a single dandelion seed away.",
+  "character_references": [
+    {
+      "id": "CHR_022",
+      "name": "Bix",
+      "reference_sheet": "LIBRARY/REFS/CHR_022_sheet.png"
+    }
+  ],
+  "background_reference": {
+    "id": "BG_002@DAY",
+    "name": "Thistledown Meadow",
+    "plate": "LIBRARY/REFS/BG_002_DAY.png"
+  },
+  "props": [],
+  "effects": [
+    "FX_004"
+  ],
+  "image_generation": {
+    "output_file": "EP003_SC05_KEY.png",
+    "prompt": "Premium cinematic 2D cartoon animation still, professional animated series quality. Clean, consistent dark-brown (#2A1E1A) outlines of even medium weight on characters, thinner colored lines on backgrounds. Cel-shaded characters with one soft shadow tone and one rim light. Lush hand-painted illustrated background with soft gouache texture and atmospheric depth. Vibrant cinematic color with warm-cool contrast. Expressive, appealing character acting. Rounded, friendly shape language. Vertical 9:16 frame, 1080x1920. SHOT: Medium-wide macro, Bix tiny on a dandelion, the big sun low in the background. KEYFRAME: Bix hunched on top of a white dandelion puff, antennae drooping; one seed floating away in the warm light. CHARACTERS (match approved reference sheets exactly): [CHR_022] BIX, a small round fuzzy bumblebee with an oversized head, golden-yellow and dark-brown stripes, translucent wings with a pale-blue shimmer, huge glossy black eyes with two white highlights each, two antennae with curled tips, tiny dark legs. SETTING [BG_002@DAY]: a wide rolling meadow just outside Thistledown village, long grass full of daisies, poppies and clover, a lone crooked oak tree, wooden fence, the village rooftops and windmill small on the horizon, Greystep Mountain rising behind; warm summer daylight, saturated greens, bees and butterflies. EFFECTS: soft drifting glowing particles with bokeh. LIGHTING & MOOD: Warm late-afternoon backlight, soft glow, long shadows. EPISODE PALETTE: dominant honey gold #F6C21C and meadow green #7DBA5A, accent bike-horn red #E0483E. Keep key action inside the vertical safe area.",
+    "negative_prompt": "text, letters, words, captions, subtitles, logos, watermark, signature, speech bubbles, photorealism, 3D render, CGI, anime style, chibi, extra fingers, extra limbs, missing limbs, deformed hands, inconsistent outlines, blurry, low resolution, jpeg artifacts, harsh noise, off-model character, different costume, different colors than reference, cropped heads, horror gore, scary realistic teeth.",
+    "reference_images": [
+      "LIBRARY/REFS/CHR_022_sheet.png",
+      "LIBRARY/REFS/BG_002_DAY.png"
+    ]
+  },
+  "animation": {
+    "input_file": "EP003_SC05_KEY.png",
+    "output_file": "EP003_SC05_ANIM.mp4",
+    "duration_seconds": 4.0,
+    "prompt": "Animate keyframe EP003_SC05_KEY.png into a 4.0-second shot. MOTION: Bix sighs, shoulders rising and falling; a single dandelion seed lifts off and floats out of frame; the stem droops a little more. CAMERA: Slow pull-back. FACIAL ACTING: Bix: heartbroken, droopy antennae. ON-MODEL LOCK: Bix - round fuzzy bee, golden-yellow and dark-brown stripes, oversized head, big glossy black eyes, curled antennae. Smooth 2D cartoon animation at 24 fps, animated on ones for fast action and twos for holds. Squash-and-stretch, anticipation and overshoot on all major actions. Outlines stay stable and consistent between frames (no boiling, no morphing). Characters remain exactly on-model with the reference sheet. Background stays painted and stable except for listed environmental motion. No text appears. No lip-sync, no speech."
+  },
+  "camera_movement": "Slow pull-back",
+  "facial_expressions": {
+    "CHR_022": "heartbroken, droopy antennae"
+  },
+  "sound_effects": [
+    {
+      "at_scene": 0.0,
+      "at_episode": 16.5,
+      "timecode": "00:00:16:12",
+      "sound": "soft meadow wind"
+    },
+    {
+      "at_scene": 1.2,
+      "at_episode": 17.7,
+      "timecode": "00:00:17:17",
+      "sound": "small sad sigh"
+    },
+    {
+      "at_scene": 2.0,
+      "at_episode": 18.5,
+      "timecode": "00:00:18:12",
+      "sound": "delicate airy 'fwff' of the seed lifting"
+    }
+  ],
+  "music": "Slow sad waltz on solo clarinet in F minor.",
+  "transition_out": "DISSOLVE"
+}

@@ -1,0 +1,359 @@
+# ODDLY permanent character database. Approved designs must never change.
+# `prompt` is the canonical description injected into every image prompt.
+# `anim_lock` is the short on-model reminder injected into every animation prompt.
+
+CHR_001:
+  name: Milo
+  type: human child (boy, 8)
+  status: approved
+  prompt: >-
+    MILO, an 8-year-old boy, 4 heads tall with a big round head, small torso and stubby limbs;
+    warm light-tan skin, messy chestnut-brown hair with one upright cowlick, big round dark-brown
+    eyes with a white highlight, five freckles across the nose; mustard-yellow hoodie with a small
+    white star patch on the left chest, navy shorts, white socks, red sneakers with white soles
+  anim_lock: Milo - 4 heads tall, chestnut hair with single cowlick, mustard hoodie with white star patch, navy shorts, red sneakers
+  palette: {skin: "#F2C9A0", hair: "#7A4A2A", eyes: "#3B2416", hoodie: "#E8B23A", star_patch: "#FFFFFF", shorts: "#2B3A67", sneakers: "#D9443A"}
+  proportions: 4 heads tall; head width = shoulder width; hands are 4-finger cartoon hands.
+  movement: Bouncy and quick with big anticipation and overshoot; tiptoes when sneaking; hair cowlick springs on every stop.
+  expressions: [curious, wide-eyed gasp, giggle, scared, determined, sleepy, delighted, annoyed pout]
+  reference_requirements: Turnaround (front, 3/4, side, back) on white; expression sheet of 8; pajama variant (light-blue pajamas with yellow moons) for night scenes.
+  variants:
+    PAJAMAS: light-blue pajamas with small yellow crescent moons replace the hoodie, shorts and sneakers; barefoot
+  episodes: [EP008, EP009, EP010]
+
+CHR_002:
+  name: June
+  type: human child (girl, 9)
+  status: approved
+  prompt: >-
+    JUNE, a 9-year-old girl, 4.2 heads tall, deep-brown skin, two round black hair puffs tied with
+    orange bands, big dark eyes with bright highlights, gap-toothed grin; teal raincoat with yellow
+    toggle buttons, purple leggings, bright-yellow rubber boots
+  anim_lock: June - two round hair puffs with orange bands, teal raincoat with yellow toggles, purple leggings, yellow boots
+  palette: {skin: "#7B4B2E", hair: "#1E1410", hair_bands: "#F07B2A", raincoat: "#2E9C9A", toggles: "#F4C430", leggings: "#6B4C9A", boots: "#F4C430"}
+  proportions: 4.2 heads tall; long legs for her size.
+  movement: Confident long strides, hands on hips, decisive pointing; leader of any group of kids.
+  expressions: [confident grin, astonished, laughing, worried, determined, awed]
+  reference_requirements: Turnaround; expression sheet; ice-skating pose; carrying-lantern pose.
+  episodes: [EP001, EP008]
+
+CHR_003:
+  name: Hazel
+  type: human (young woman hiker, 20)
+  status: approved
+  prompt: >-
+    HAZEL, a lanky 20-year-old hiker, 6.5 heads tall, light skin with freckles, green eyes, long
+    red-auburn braid, forest-green knit beanie, orange windbreaker, brown hiking pants, sturdy
+    boots, big gray backpack with a dented tin mug dangling from it
+  anim_lock: Hazel - red-auburn braid, green beanie, orange windbreaker, gray backpack with tin mug
+  palette: {skin: "#F5D2B8", hair: "#B5482B", eyes: "#4E8A4A", beanie: "#3F6B3A", jacket: "#E36A2E", pants: "#6B4F3A", backpack: "#8A8D91"}
+  proportions: 6.5 heads; long arms and legs.
+  movement: Steady deliberate steps; big comedic double-takes and slow suspicious squints.
+  expressions: [neutral hiking, suspicious squint, double-take shock, sneaky grin, awe, peaceful smile]
+  reference_requirements: Turnaround; frozen 'statue' pose; sitting pose.
+  episodes: [EP002]
+
+CHR_004:
+  name: Rosa Crumb
+  type: human (baker, 55)
+  status: approved
+  prompt: >-
+    ROSA CRUMB, a round, pear-shaped baker in her fifties, 5 heads tall, rosy-brown skin, silver-white
+    hair in a bun with a pencil stuck through it, round gold spectacles, tall white baker's hat,
+    cream apron over a plum dress with rolled sleeves, flour dust on her cheeks and forearms
+  anim_lock: Rosa - round body, silver bun with pencil, round spectacles, tall white hat, cream apron over plum dress, flour on cheeks
+  palette: {skin: "#C98A63", hair: "#E6E3DD", glasses: "#C9A24A", hat: "#FFFFFF", apron: "#F3E6C8", dress: "#7D3C5A"}
+  proportions: 5 heads; small feet; strong forearms.
+  movement: Brisk waddle; efficient, practiced hand motions; flour puffs on every big gesture.
+  expressions: [content, focused, alarmed, calculating, triumphant, amazed]
+  reference_requirements: Turnaround; holding loaf; throwing pose; at oven.
+  episodes: [EP004]
+
+CHR_005:
+  name: Mr. Finch
+  type: human (office worker, 40)
+  status: approved
+  prompt: >-
+    MR. FINCH, a tall, thin man around 40, 7 heads tall with a long neck and narrow face, pale skin,
+    slicked dark hair, thin mustache, rumpled brown suit slightly too short at the wrists and ankles,
+    loosened red tie, carrying a small battered briefcase
+  anim_lock: Mr. Finch - very tall and thin, slicked dark hair, thin mustache, short-sleeved-looking brown suit, loose red tie
+  palette: {skin: "#F0D9C4", hair: "#2A2A2A", suit: "#7A5C3E", tie: "#B33A3A", briefcase: "#4A3A2A"}
+  proportions: 7 heads; very long limbs; tiny head on long neck.
+  movement: Stiff, jerky and flustered; elbows out; tiptoes awkwardly.
+  expressions: [sweaty exhausted, curious, shocked, embarrassed, guilty, tender smile]
+  reference_requirements: Turnaround; drinking-can pose; holding umbrella-less arms over head.
+  episodes: [EP007]
+
+CHR_006:
+  name: Mrs. Pell
+  type: human (elderly neighbor, 80)
+  status: approved
+  prompt: >-
+    MRS. PELL, a tiny hunched elderly woman, 4.5 heads tall, gray curly hair, droopy sad eyes behind
+    thick glasses, lavender cardigan buttoned wrong, blue-gray skirt, fuzzy pink slippers, sitting
+    with a wilted potted geranium
+  anim_lock: Mrs. Pell - tiny hunched, gray curls, thick glasses, lavender cardigan buttoned wrong, pink slippers
+  palette: {skin: "#EBC9AE", hair: "#B8B8C0", cardigan: "#9C8DB8", skirt: "#5E6E85", slippers: "#F2A6B6", geranium: "#C9483E"}
+  proportions: 4.5 heads; very small hands.
+  movement: Slow shuffle, long sighs (shoulders rise and fall).
+  expressions: [gloomy, surprised, tearful joy, delighted laugh]
+  reference_requirements: Turnaround; seated on balcony chair.
+  episodes: [EP007]
+
+CHR_007:
+  name: Thistledown Villagers
+  type: crowd pack (6 reusable designs)
+  status: approved
+  prompt: >-
+    THISTLEDOWN VILLAGERS, a cheerful storybook crowd: a stout farmer in green overalls and straw hat,
+    a tall old man with a white beard and wooden cane, a mother in a mustard shawl carrying a baby,
+    red-haired twin boys in long striped scarves, a plump woman in a polka-dot headscarf, a skinny
+    teen in a blue cap
+  anim_lock: Thistledown villagers - farmer in green overalls, old man with cane, mother in mustard shawl, red-haired twins in striped scarves, woman in polka-dot headscarf, teen in blue cap
+  palette: {overalls: "#4F7A3A", shawl: "#D9A441", scarves: "#C84B3B", headscarf: "#3A6EA5", cap: "#2F5FA8"}
+  proportions: 4.5 to 6 heads; simple shapes for cheap crowd animation.
+  movement: Cycle-friendly - walk, cheer, point, skate cycles reused.
+  expressions: [cheerful, startled, cheering, awed]
+  reference_requirements: Lineup sheet of all 6; skate cycle; panic-run cycle; cheer cycle.
+  episodes: [EP001, EP004, EP008]
+
+CHR_008:
+  name: Brassport Citizens
+  type: crowd pack (5 reusable designs)
+  status: approved
+  prompt: >-
+    BRASSPORT CITIZENS, a city crowd: a barista in a green apron, a bride in a white dress with a
+    groom in a gray suit, a bus driver in a navy uniform, a jogger in a pink tracksuit
+  anim_lock: Brassport citizens - barista in green apron, bride and groom, bus driver in navy, jogger in pink
+  palette: {apron: "#3E8E5E", dress: "#FFFFFF", suit: "#8A8F99", uniform: "#22345E", tracksuit: "#F28AB2"}
+  proportions: 5 to 6.5 heads.
+  movement: Reaction-pose friendly; startled jumps, shiver, shield-face cycles.
+  expressions: [startled, annoyed, soaked, delighted]
+  reference_requirements: Lineup sheet; startled pose for each.
+  episodes: [EP007]
+
+CHR_020:
+  name: Bramblefoot
+  type: gentle giant
+  status: approved
+  prompt: >-
+    BRAMBLEFOOT, a gentle 40-meter giant with a rounded friendly body, warm terracotta skin, a bushy
+    orange beard with two little bird nests in it, a bulbous nose, patched denim-blue overalls,
+    enormous bare feet; his left eye is bright sky-blue and clear, his right eye is squinting and blurry
+  anim_lock: Bramblefoot - giant with terracotta skin, bushy orange beard with bird nests, patched blue overalls, bare feet
+  palette: {skin: "#C97B5A", beard: "#E07A2E", overalls: "#4A6FA5", patches: "#D9B36A", eyes: "#5AB0E0"}
+  proportions: 5 heads; huge hands and feet; always shown with tiny scale references (cottages, people).
+  movement: Slow, heavy and careful; every footstep shakes the ground; groping squints when lens is missing.
+  expressions: [squinting lost, worried, gentle surprise, overjoyed, shy]
+  reference_requirements: Turnaround; scale chart next to a cottage and June; variant wearing round brass glasses.
+  variants:
+    GLASSES: wearing enormous round brass-framed glasses over both eyes
+  episodes: [EP001]
+
+CHR_021:
+  name: Stonekin
+  type: boulder creatures (hero + crowd)
+  status: approved
+  prompt: >-
+    STONEKIN, round granite boulder creatures about 1.5 meters tall, smooth gray stone with pale lichen
+    spots and a small tuft of moss on top, no limbs; when awake they open two heavy-lidded sleepy eyes
+    with tiny white highlights. The HERO STONEKIN has a crack shaped like a smile and a bright-yellow
+    lichen patch on its side
+  anim_lock: Stonekin - round gray boulder, moss tuft on top, lichen spots, heavy-lidded eyes; hero has smile-shaped crack and yellow lichen patch
+  palette: {stone: "#8C8C88", lichen: "#C9C27A", moss: "#6E8F3C", hero_lichen: "#F2D13B", eyes: "#2A2A2A"}
+  proportions: Perfect rounded ovoid; eyes sit in upper third.
+  movement: Rolls with squash on landing; wobbles to settle; freezes instantly into perfect stillness when looked at.
+  expressions: [frozen stone (eyes closed), peeking, smug, sleepy, wonder]
+  reference_requirements: Hero model sheet; 5 crowd variations (size and lichen pattern only).
+  episodes: [EP002]
+
+CHR_022:
+  name: Bix
+  type: bumblebee
+  status: approved
+  prompt: >-
+    BIX, a small round fuzzy bumblebee with an oversized head, golden-yellow and dark-brown stripes,
+    translucent wings with a pale-blue shimmer, huge glossy black eyes with two white highlights each,
+    two antennae with curled tips, tiny dark legs
+  anim_lock: Bix - round fuzzy bee, golden-yellow and dark-brown stripes, oversized head, big glossy black eyes, curled antennae
+  palette: {yellow: "#F6C21C", brown: "#2A2118", wings: "#CFE8F5", eyes: "#111111"}
+  proportions: Head is 45% of body volume.
+  movement: Zippy figure-eight flight, wings as a motion blur; droops and sinks when sad.
+  expressions: [happy, confused, embarrassed, heartbroken, determined, joyful]
+  reference_requirements: Model sheet; flight pose; landing pose.
+  episodes: [EP003]
+
+CHR_023:
+  name: Hive Bees and Guard Bee
+  type: bee crowd + guard
+  status: approved
+  prompt: >-
+    HIVE BEES, a crowd of round fuzzy bumblebees in golden-yellow and dark-brown stripes like Bix but
+    with small variations (one with a flower crown, one plump, one tiny); the GUARD BEE is twice Bix's
+    size, square-jawed, with a dented acorn-cap helmet and stern half-lidded eyes
+  anim_lock: Hive bees - round fuzzy striped bees; guard bee is twice as big with acorn-cap helmet
+  palette: {yellow: "#F6C21C", brown: "#2A2118", helmet: "#8A5A2B"}
+  proportions: Same construction as Bix.
+  movement: Crowd flight cycle; guard bee hovers heavily and blocks with crossed arms.
+  expressions: [curious, giggling, stern (guard), cheering]
+  reference_requirements: Crowd lineup; guard turnaround.
+  episodes: [EP003]
+
+CHR_024:
+  name: Pip
+  type: frog
+  status: approved
+  prompt: >-
+    PIP, a small round frog, bright leaf-green with a cream belly, huge golden eyes, orange blush
+    cheeks, long springy legs, wearing a tiny knotted red-and-white checked scarf
+  anim_lock: Pip - small round leaf-green frog, cream belly, huge golden eyes, orange cheeks, red-and-white checked scarf
+  palette: {skin: "#6DBE45", belly: "#F1EBC4", eyes: "#F2C14E", cheeks: "#F08A4B", scarf: "#D7392F"}
+  proportions: Round body, head merges with body; legs fold flat.
+  movement: Huge squash-and-stretch hops; sticky-toe climbing.
+  expressions: [curious, startled, straining effort, determined, proud, delighted]
+  reference_requirements: Model sheet; hop cycle; carrying-button pose.
+  episodes: [EP005]
+
+CHR_025:
+  name: The Moon and the Sky Coat
+  type: celestial character
+  status: approved
+  prompt: >-
+    THE MOON, a luminous pale-ivory full moon with soft gray craters and a gentle sleepy face (closed
+    crescent eyes, small smile); the night sky is drawn as a deep-indigo velvet coat with fine silver
+    stitched seams and a row of large round silver buttons, one of which is the moon itself
+  anim_lock: The Moon - ivory moon with sleepy kind face; sky as indigo velvet coat with silver seams and round silver buttons
+  palette: {moon: "#F4F1DE", craters: "#C9C6B4", sky: "#1B1F4B", seams: "#D8DDE6", buttons: "#D8DDE6"}
+  proportions: Moon fills about 1/5 of frame width in wide shots.
+  movement: Slow, dreamy; blinks and smiles only, never moves position.
+  expressions: [asleep, worried, grateful wink]
+  reference_requirements: Sky-coat matte; moon face sheet.
+  episodes: [EP005]
+
+CHR_026:
+  name: Heron
+  type: bird (obstacle)
+  status: approved
+  prompt: >-
+    THE HERON, a tall, sleepy gray-blue heron with a long S-curved neck, a black crest feather that
+    droops over one eye, a long yellow beak and thin yellow legs
+  anim_lock: Heron - tall gray-blue heron, droopy black crest, long yellow beak
+  palette: {feathers: "#7D93A8", crest: "#1E1E24", beak: "#E8B93A"}
+  proportions: Legs = half its height.
+  movement: Slow, wobbly dozing; sudden snap of the neck when startled.
+  expressions: [dozing, startled, grumpy]
+  reference_requirements: Standing-asleep pose; neck-snap pose.
+  episodes: [EP005]
+
+CHR_027:
+  name: Stripe
+  type: sock (hero)
+  status: approved
+  prompt: >-
+    STRIPE, a small child's ankle sock with red and cream horizontal stripes; the toe end acts as its
+    head with two small round black eyes and expressive stitched eyebrows; it flies by rippling its
+    body like a ribbon while the open cuff flaps like a tail
+  anim_lock: Stripe - small red-and-cream striped ankle sock, two round black eyes on the toe end, stitched eyebrows
+  palette: {red: "#E0483E", cream: "#FFF6EC", eyes: "#111111"}
+  proportions: Toe 'head' is 40% of length.
+  movement: Ribbon-like undulating flight; inchworm crawl on the ground.
+  expressions: [eager, panicked, exhausted, lonely, overjoyed]
+  reference_requirements: Model sheet; flight undulation keys; crawling pose.
+  episodes: [EP006]
+
+CHR_028:
+  name: Stripe's Pair and the Sock Flock
+  type: socks (partner + crowd)
+  status: approved
+  prompt: >-
+    STRIPE'S PAIR, a sock identical to Stripe (red and cream stripes, two black eyes on the toe) but
+    with a small pink heart-shaped darn patch on the heel; THE SOCK FLOCK, migrating socks of all kinds -
+    gray wool hiking socks, argyle dress socks, white tube socks with blue bands, polka-dot socks,
+    fuzzy rainbow toe-socks - each with two small black eyes on the toe end
+  anim_lock: Stripe's pair - identical to Stripe plus pink heart darn on heel; flock - mixed socks with two black eyes on toe
+  palette: {darn: "#F4A6B8", wool: "#9A9A9A", argyle: "#3D5A80", tube_bands: "#2F6DB5", polka: "#F2C14E"}
+  proportions: Same construction as Stripe.
+  movement: Flock flies in a V-formation with ribbon undulation offset per sock.
+  expressions: [content, excited, welcoming]
+  reference_requirements: Pair model sheet; flock lineup of 8.
+  episodes: [EP006]
+
+CHR_029:
+  name: Pigeon
+  type: bird
+  status: approved
+  prompt: >-
+    THE PIGEON, a plump city pigeon with gray feathers, an iridescent green-purple neck, orange eyes
+    with a permanently bored half-lidded look and pink feet
+  anim_lock: Pigeon - plump gray, iridescent green-purple neck, bored orange eyes, pink feet
+  palette: {feathers: "#8E949C", neck: "#5E8C6A", neck2: "#7A5C9A", eyes: "#F08A24", feet: "#E99A9A"}
+  proportions: Round body, small head.
+  movement: Head-bob walk; heavy flapping flight.
+  expressions: [bored, startled, unimpressed]
+  reference_requirements: Model sheet; flight with passenger pose.
+  episodes: [EP006]
+
+CHR_030:
+  name: Glim
+  type: firefly (secretly a baby star)
+  status: approved
+  prompt: >-
+    GLIM, a tiny round firefly with a dark-brown body, two translucent wings, oversized shy round eyes
+    and a rounded tail lantern that glows only a faint pale yellow-green; in its final form the tail
+    glow becomes a soft white-gold starlight with four gentle rays
+  anim_lock: Glim - tiny round dark-brown firefly, oversized shy eyes, faint pale-green tail glow
+  palette: {body: "#4A3426", wings: "#DDEAF2", glow_dim: "#D9E58A", glow_star: "#FFF1C2"}
+  proportions: Eyes take half the head; tail lantern equals head size.
+  movement: Hesitant fluttering, drifts backward when shy; steady and graceful once brave.
+  expressions: [shy, ashamed, scared, brave, serene]
+  reference_requirements: Model sheet in dim and star states.
+  variants:
+    STAR: tail glow becomes radiant white-gold starlight with four soft rays; body almost hidden in light
+  episodes: [EP008]
+
+CHR_031:
+  name: Firefly Swarm
+  type: insect crowd
+  status: approved
+  prompt: >-
+    THE FIREFLY SWARM, hundreds of tiny fireflies with bright golden-green glowing tails, proud and
+    bouncy, drawn as glowing dots with soft halos at a distance and tiny cartoon bugs close up
+  anim_lock: Firefly swarm - bright golden-green glowing tails, soft halos
+  palette: {glow: "#C8F25A", halo: "#F6E27A"}
+  proportions: Same construction as Glim but brighter.
+  movement: Particle swarm with gentle noise drift.
+  expressions: [proud, scared]
+  reference_requirements: Close-up model; particle sprite.
+  episodes: [EP008]
+
+CHR_032:
+  name: Captain Tot
+  type: tiny sailor
+  status: approved
+  prompt: >-
+    CAPTAIN TOT, a fingertip-sized old sea captain with a round body, navy pea coat with brass buttons,
+    white captain's cap, big fluffy white beard, rosy nose, holding a brass spyglass
+  anim_lock: Captain Tot - tiny round captain, navy pea coat, white cap, fluffy white beard, brass spyglass
+  palette: {coat: "#22345E", cap: "#FFFFFF", beard: "#F4F4F0", buttons: "#C9A24A", nose: "#E5776B"}
+  proportions: 3 heads tall; beard covers the chest.
+  movement: Brave, stocky, braces against wind; salutes.
+  expressions: [stormy determination, terrified, relieved, saluting smile]
+  reference_requirements: Model sheet at macro scale; spyglass pose.
+  episodes: [EP009]
+
+CHR_033:
+  name: Fuzzle
+  type: tidy monster
+  status: approved
+  prompt: >-
+    FUZZLE, a fluffy round monster about 1.2 meters tall, lavender-blue fur with a pale-lilac belly,
+    long thin arms with three-fingered hands, two small horns with pink tips, big yellow eyes with
+    slit pupils that turn round when happy, a tiny frilly white apron, often holding a feather duster
+  anim_lock: Fuzzle - round lavender-blue furry monster, pale-lilac belly, pink-tipped horns, big yellow eyes, tiny white apron
+  palette: {fur: "#8E8CD8", belly: "#C9C6F2", horns_tip: "#F49AC2", eyes: "#FFD84A", apron: "#FFFFFF"}
+  proportions: Body is one big circle; arms reach to the floor.
+  movement: Graceful fussy tiptoe like a ballet dancer; flicks dust off with pinky raised.
+  expressions: [horrified, fussy, sneaky, caught, shy, blissful]
+  reference_requirements: Turnaround; under-bed peeking pose; cleaning poses; blissful pose.
+  episodes: [EP010]

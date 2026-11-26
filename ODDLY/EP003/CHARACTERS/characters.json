@@ -1,0 +1,55 @@
+{
+  "CHR_022": {
+    "name": "Bix",
+    "type": "bumblebee",
+    "status": "approved",
+    "prompt": "BIX, a small round fuzzy bumblebee with an oversized head, golden-yellow and dark-brown stripes, translucent wings with a pale-blue shimmer, huge glossy black eyes with two white highlights each, two antennae with curled tips, tiny dark legs",
+    "anim_lock": "Bix - round fuzzy bee, golden-yellow and dark-brown stripes, oversized head, big glossy black eyes, curled antennae",
+    "palette": {
+      "yellow": "#F6C21C",
+      "brown": "#2A2118",
+      "wings": "#CFE8F5",
+      "eyes": "#111111"
+    },
+    "proportions": "Head is 45% of body volume.",
+    "movement": "Zippy figure-eight flight, wings as a motion blur; droops and sinks when sad.",
+    "expressions": [
+      "happy",
+      "confused",
+      "embarrassed",
+      "heartbroken",
+      "determined",
+      "joyful"
+    ],
+    "reference_requirements": "Model sheet; flight pose; landing pose.",
+    "episodes": [
+      "EP003"
+    ],
+    "variants_used": []
+  },
+  "CHR_023": {
+    "name": "Hive Bees and Guard Bee",
+    "type": "bee crowd + guard",
+    "status": "approved",
+    "prompt": "HIVE BEES, a crowd of round fuzzy bumblebees in golden-yellow and dark-brown stripes like Bix but with small variations (one with a flower crown, one plump, one tiny); the GUARD BEE is twice Bix's size, square-jawed, with a dented acorn-cap helmet and stern half-lidded eyes",
+    "anim_lock": "Hive bees - round fuzzy striped bees; guard bee is twice as big with acorn-cap helmet",
+    "palette": {
+      "yellow": "#F6C21C",
+      "brown": "#2A2118",
+      "helmet": "#8A5A2B"
+    },
+    "proportions": "Same construction as Bix.",
+    "movement": "Crowd flight cycle; guard bee hovers heavily and blocks with crossed arms.",
+    "expressions": [
+      "curious",
+      "giggling",
+      "stern (guard)",
+      "cheering"
+    ],
+    "reference_requirements": "Crowd lineup; guard turnaround.",
+    "episodes": [
+      "EP003"
+    ],
+    "variants_used": []
+  }
+}

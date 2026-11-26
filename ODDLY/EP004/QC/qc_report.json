@@ -1,0 +1,32 @@
+{
+  "episode_id": "EP004",
+  "automated_checks": {
+    "passed": true,
+    "errors": [],
+    "checked": [
+      "scene numbering",
+      "runtime window",
+      "scene-count window",
+      "hook <= 3.5s",
+      "all character/background/prop/fx IDs exist in library",
+      "characters registered for episode",
+      "SFX inside scene bounds",
+      "every scene has SFX",
+      "valid transitions",
+      "no speech wording",
+      "final cut to end card"
+    ]
+  },
+  "editorial_review": {
+    "character_consistency": "Rosa is the only named character; spectacles, pencil bun and flour on cheeks in every shot.",
+    "story_originality": "Flying-building-as-scale mechanic plus the stars-are-bread twist; unique in the slate.",
+    "scene_continuity": "Interior (SKY variant) and exterior (FLOATING/NIGHT) alternate logically; the thrown rolls in SC6 pay off in SC11.",
+    "visual_quality": "Signature frames - lift-off (SC1), near-miss over rooftops (SC5), ballast toss (SC6), bread constellations (SC11).",
+    "animation_feasibility": "One hero, two main sets; tilts can be done in the edit.",
+    "pacing": "Hook 3s; problem at 7.5s; escalation to 26.5s; resolution 36s; twist last 5s.",
+    "sound_sync": "Each toss has a rise 'bwip'; the clock tick accelerates to SC7 and stops at balance.",
+    "strong_opening": "A building lifting off on glowing dough in frame 1.",
+    "memorable_ending": "The stars are bread rolls."
+  },
+  "status": "APPROVED_FOR_PRODUCTION"
+}

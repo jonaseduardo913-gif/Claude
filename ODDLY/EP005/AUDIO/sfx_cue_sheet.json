@@ -1,0 +1,333 @@
+{
+  "episode_id": "EP005",
+  "cues": [
+    {
+      "scene_id": "EP005_SC01",
+      "at_scene": 0.0,
+      "at_episode": 0.0,
+      "timecode": "00:00:00:00",
+      "sound": "thread straining creak"
+    },
+    {
+      "scene_id": "EP005_SC01",
+      "at_scene": 0.5,
+      "at_episode": 0.5,
+      "timecode": "00:00:00:12",
+      "sound": "big button POP"
+    },
+    {
+      "scene_id": "EP005_SC01",
+      "at_scene": 0.9,
+      "at_episode": 0.9,
+      "timecode": "00:00:00:22",
+      "sound": "fabric rip"
+    },
+    {
+      "scene_id": "EP005_SC01",
+      "at_scene": 1.4,
+      "at_episode": 1.4,
+      "timecode": "00:00:01:10",
+      "sound": "cello tremolo rumble"
+    },
+    {
+      "scene_id": "EP005_SC01",
+      "at_scene": 2.2,
+      "at_episode": 2.2,
+      "timecode": "00:00:02:05",
+      "sound": "spinning button whistle"
+    },
+    {
+      "scene_id": "EP005_SC02",
+      "at_scene": 0.0,
+      "at_episode": 3.0,
+      "timecode": "00:00:03:00",
+      "sound": "falling whistle"
+    },
+    {
+      "scene_id": "EP005_SC02",
+      "at_scene": 1.6,
+      "at_episode": 4.6,
+      "timecode": "00:00:04:14",
+      "sound": "big plop splash"
+    },
+    {
+      "scene_id": "EP005_SC02",
+      "at_scene": 2.4,
+      "at_episode": 5.4,
+      "timecode": "00:00:05:10",
+      "sound": "water drips"
+    },
+    {
+      "scene_id": "EP005_SC02",
+      "at_scene": 3.2,
+      "at_episode": 6.2,
+      "timecode": "00:00:06:05",
+      "sound": "little frog spit 'ptoo'"
+    },
+    {
+      "scene_id": "EP005_SC03",
+      "at_scene": 0.0,
+      "at_episode": 7.5,
+      "timecode": "00:00:07:12",
+      "sound": "dive bloop"
+    },
+    {
+      "scene_id": "EP005_SC03",
+      "at_scene": 1.2,
+      "at_episode": 8.7,
+      "timecode": "00:00:08:17",
+      "sound": "surface splash"
+    },
+    {
+      "scene_id": "EP005_SC03",
+      "at_scene": 2.4,
+      "at_episode": 9.9,
+      "timecode": "00:00:09:22",
+      "sound": "fabric rip"
+    },
+    {
+      "scene_id": "EP005_SC03",
+      "at_scene": 3.0,
+      "at_episode": 10.5,
+      "timecode": "00:00:10:12",
+      "sound": "confused owl hoot"
+    },
+    {
+      "scene_id": "EP005_SC04",
+      "at_scene": 0.0,
+      "at_episode": 11.5,
+      "timecode": "00:00:11:12",
+      "sound": "pizzicato hop"
+    },
+    {
+      "scene_id": "EP005_SC04",
+      "at_scene": 1.0,
+      "at_episode": 12.5,
+      "timecode": "00:00:12:12",
+      "sound": "heron snore whistle"
+    },
+    {
+      "scene_id": "EP005_SC04",
+      "at_scene": 2.0,
+      "at_episode": 13.5,
+      "timecode": "00:00:13:12",
+      "sound": "startled heron squawk"
+    },
+    {
+      "scene_id": "EP005_SC04",
+      "at_scene": 2.4,
+      "at_episode": 13.9,
+      "timecode": "00:00:13:22",
+      "sound": "catapult 'thwoing'"
+    },
+    {
+      "scene_id": "EP005_SC04",
+      "at_scene": 3.0,
+      "at_episode": 14.5,
+      "timecode": "00:00:14:12",
+      "sound": "whoosh of Pip flying"
+    },
+    {
+      "scene_id": "EP005_SC05",
+      "at_scene": 0.0,
+      "at_episode": 16.0,
+      "timecode": "00:00:16:00",
+      "sound": "sticky splat landing"
+    },
+    {
+      "scene_id": "EP005_SC05",
+      "at_scene": 0.8,
+      "at_episode": 16.8,
+      "timecode": "00:00:16:19",
+      "sound": "creaking windmill rotation"
+    },
+    {
+      "scene_id": "EP005_SC05",
+      "at_scene": 3.4,
+      "at_episode": 19.4,
+      "timecode": "00:00:19:10",
+      "sound": "sticky toe peel 'thwip thwip thwip'"
+    },
+    {
+      "scene_id": "EP005_SC06",
+      "at_scene": 0.0,
+      "at_episode": 21.0,
+      "timecode": "00:00:21:00",
+      "sound": "spring launch 'boing'"
+    },
+    {
+      "scene_id": "EP005_SC06",
+      "at_scene": 1.6,
+      "at_episode": 22.6,
+      "timecode": "00:00:22:14",
+      "sound": "landing slap"
+    },
+    {
+      "scene_id": "EP005_SC06",
+      "at_scene": 2.0,
+      "at_episode": 23.0,
+      "timecode": "00:00:23:00",
+      "sound": "sliding squeak on stone"
+    },
+    {
+      "scene_id": "EP005_SC06",
+      "at_scene": 3.0,
+      "at_episode": 24.0,
+      "timecode": "00:00:24:00",
+      "sound": "single sticky 'thwick' hold"
+    },
+    {
+      "scene_id": "EP005_SC06",
+      "at_scene": 3.6,
+      "at_episode": 24.6,
+      "timecode": "00:00:24:14",
+      "sound": "relieved exhale"
+    },
+    {
+      "scene_id": "EP005_SC07",
+      "at_scene": 0.0,
+      "at_episode": 25.5,
+      "timecode": "00:00:25:12",
+      "sound": "fabric rip"
+    },
+    {
+      "scene_id": "EP005_SC07",
+      "at_scene": 1.2,
+      "at_episode": 26.7,
+      "timecode": "00:00:26:17",
+      "sound": "web strand pluck 'twang'"
+    },
+    {
+      "scene_id": "EP005_SC07",
+      "at_scene": 2.2,
+      "at_episode": 27.7,
+      "timecode": "00:00:27:17",
+      "sound": "stretching creak"
+    },
+    {
+      "scene_id": "EP005_SC07",
+      "at_scene": 3.4,
+      "at_episode": 28.9,
+      "timecode": "00:00:28:22",
+      "sound": "taut silence, a heartbeat"
+    },
+    {
+      "scene_id": "EP005_SC08",
+      "at_scene": 0.0,
+      "at_episode": 29.5,
+      "timecode": "00:00:29:12",
+      "sound": "slingshot release 'THWANG'"
+    },
+    {
+      "scene_id": "EP005_SC08",
+      "at_scene": 0.6,
+      "at_episode": 30.1,
+      "timecode": "00:00:30:02",
+      "sound": "rocketing whoosh"
+    },
+    {
+      "scene_id": "EP005_SC08",
+      "at_scene": 2.0,
+      "at_episode": 31.5,
+      "timecode": "00:00:31:12",
+      "sound": "cloud puff"
+    },
+    {
+      "scene_id": "EP005_SC08",
+      "at_scene": 3.8,
+      "at_episode": 33.3,
+      "timecode": "00:00:33:07",
+      "sound": "velvet grab 'fwump'"
+    },
+    {
+      "scene_id": "EP005_SC09",
+      "at_scene": 0.0,
+      "at_episode": 34.5,
+      "timecode": "00:00:34:12",
+      "sound": "needle 'thip' through velvet"
+    },
+    {
+      "scene_id": "EP005_SC09",
+      "at_scene": 0.6,
+      "at_episode": 35.1,
+      "timecode": "00:00:35:02",
+      "sound": "thip"
+    },
+    {
+      "scene_id": "EP005_SC09",
+      "at_scene": 1.2,
+      "at_episode": 35.7,
+      "timecode": "00:00:35:17",
+      "sound": "thip"
+    },
+    {
+      "scene_id": "EP005_SC09",
+      "at_scene": 1.8,
+      "at_episode": 36.3,
+      "timecode": "00:00:36:07",
+      "sound": "sparkle zip of the seam closing"
+    },
+    {
+      "scene_id": "EP005_SC09",
+      "at_scene": 3.6,
+      "at_episode": 38.1,
+      "timecode": "00:00:38:02",
+      "sound": "tiny thread snip with teeth"
+    },
+    {
+      "scene_id": "EP005_SC10",
+      "at_scene": 0.0,
+      "at_episode": 39.5,
+      "timecode": "00:00:39:12",
+      "sound": "soft celestial hum"
+    },
+    {
+      "scene_id": "EP005_SC10",
+      "at_scene": 1.2,
+      "at_episode": 40.7,
+      "timecode": "00:00:40:17",
+      "sound": "twinkle"
+    },
+    {
+      "scene_id": "EP005_SC10",
+      "at_scene": 2.0,
+      "at_episode": 41.5,
+      "timecode": "00:00:41:12",
+      "sound": "gentle wink 'ting'"
+    },
+    {
+      "scene_id": "EP005_SC10",
+      "at_scene": 2.8,
+      "at_episode": 42.3,
+      "timecode": "00:00:42:07",
+      "sound": "airy floating whoosh"
+    },
+    {
+      "scene_id": "EP005_SC11",
+      "at_scene": 0.0,
+      "at_episode": 43.5,
+      "timecode": "00:00:43:12",
+      "sound": "frog yawn"
+    },
+    {
+      "scene_id": "EP005_SC11",
+      "at_scene": 1.4,
+      "at_episode": 44.9,
+      "timecode": "00:00:44:22",
+      "sound": "night crickets"
+    },
+    {
+      "scene_id": "EP005_SC11",
+      "at_scene": 3.2,
+      "at_episode": 46.7,
+      "timecode": "00:00:46:17",
+      "sound": "double soft twinkle in sync"
+    },
+    {
+      "scene_id": "ENDCARD",
+      "at_episode": 48.5,
+      "timecode": "00:00:48:12",
+      "sound": "Two-note celesta \"ding-ding\" rising, soft whoosh, tiny sparkle on the star blink. Same sting on every episode."
+    }
+  ]
+}

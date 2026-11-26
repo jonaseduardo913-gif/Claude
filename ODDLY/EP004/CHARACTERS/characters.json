@@ -1,0 +1,61 @@
+{
+  "CHR_004": {
+    "name": "Rosa Crumb",
+    "type": "human (baker, 55)",
+    "status": "approved",
+    "prompt": "ROSA CRUMB, a round, pear-shaped baker in her fifties, 5 heads tall, rosy-brown skin, silver-white hair in a bun with a pencil stuck through it, round gold spectacles, tall white baker's hat, cream apron over a plum dress with rolled sleeves, flour dust on her cheeks and forearms",
+    "anim_lock": "Rosa - round body, silver bun with pencil, round spectacles, tall white hat, cream apron over plum dress, flour on cheeks",
+    "palette": {
+      "skin": "#C98A63",
+      "hair": "#E6E3DD",
+      "glasses": "#C9A24A",
+      "hat": "#FFFFFF",
+      "apron": "#F3E6C8",
+      "dress": "#7D3C5A"
+    },
+    "proportions": "5 heads; small feet; strong forearms.",
+    "movement": "Brisk waddle; efficient, practiced hand motions; flour puffs on every big gesture.",
+    "expressions": [
+      "content",
+      "focused",
+      "alarmed",
+      "calculating",
+      "triumphant",
+      "amazed"
+    ],
+    "reference_requirements": "Turnaround; holding loaf; throwing pose; at oven.",
+    "episodes": [
+      "EP004"
+    ],
+    "variants_used": []
+  },
+  "CHR_007": {
+    "name": "Thistledown Villagers",
+    "type": "crowd pack (6 reusable designs)",
+    "status": "approved",
+    "prompt": "THISTLEDOWN VILLAGERS, a cheerful storybook crowd: a stout farmer in green overalls and straw hat, a tall old man with a white beard and wooden cane, a mother in a mustard shawl carrying a baby, red-haired twin boys in long striped scarves, a plump woman in a polka-dot headscarf, a skinny teen in a blue cap",
+    "anim_lock": "Thistledown villagers - farmer in green overalls, old man with cane, mother in mustard shawl, red-haired twins in striped scarves, woman in polka-dot headscarf, teen in blue cap",
+    "palette": {
+      "overalls": "#4F7A3A",
+      "shawl": "#D9A441",
+      "scarves": "#C84B3B",
+      "headscarf": "#3A6EA5",
+      "cap": "#2F5FA8"
+    },
+    "proportions": "4.5 to 6 heads; simple shapes for cheap crowd animation.",
+    "movement": "Cycle-friendly - walk, cheer, point, skate cycles reused.",
+    "expressions": [
+      "cheerful",
+      "startled",
+      "cheering",
+      "awed"
+    ],
+    "reference_requirements": "Lineup sheet of all 6; skate cycle; panic-run cycle; cheer cycle.",
+    "episodes": [
+      "EP001",
+      "EP004",
+      "EP008"
+    ],
+    "variants_used": []
+  }
+}

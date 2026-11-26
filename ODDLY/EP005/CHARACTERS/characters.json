@@ -1,0 +1,81 @@
+{
+  "CHR_025": {
+    "name": "The Moon and the Sky Coat",
+    "type": "celestial character",
+    "status": "approved",
+    "prompt": "THE MOON, a luminous pale-ivory full moon with soft gray craters and a gentle sleepy face (closed crescent eyes, small smile); the night sky is drawn as a deep-indigo velvet coat with fine silver stitched seams and a row of large round silver buttons, one of which is the moon itself",
+    "anim_lock": "The Moon - ivory moon with sleepy kind face; sky as indigo velvet coat with silver seams and round silver buttons",
+    "palette": {
+      "moon": "#F4F1DE",
+      "craters": "#C9C6B4",
+      "sky": "#1B1F4B",
+      "seams": "#D8DDE6",
+      "buttons": "#D8DDE6"
+    },
+    "proportions": "Moon fills about 1/5 of frame width in wide shots.",
+    "movement": "Slow, dreamy; blinks and smiles only, never moves position.",
+    "expressions": [
+      "asleep",
+      "worried",
+      "grateful wink"
+    ],
+    "reference_requirements": "Sky-coat matte; moon face sheet.",
+    "episodes": [
+      "EP005"
+    ],
+    "variants_used": []
+  },
+  "CHR_024": {
+    "name": "Pip",
+    "type": "frog",
+    "status": "approved",
+    "prompt": "PIP, a small round frog, bright leaf-green with a cream belly, huge golden eyes, orange blush cheeks, long springy legs, wearing a tiny knotted red-and-white checked scarf",
+    "anim_lock": "Pip - small round leaf-green frog, cream belly, huge golden eyes, orange cheeks, red-and-white checked scarf",
+    "palette": {
+      "skin": "#6DBE45",
+      "belly": "#F1EBC4",
+      "eyes": "#F2C14E",
+      "cheeks": "#F08A4B",
+      "scarf": "#D7392F"
+    },
+    "proportions": "Round body, head merges with body; legs fold flat.",
+    "movement": "Huge squash-and-stretch hops; sticky-toe climbing.",
+    "expressions": [
+      "curious",
+      "startled",
+      "straining effort",
+      "determined",
+      "proud",
+      "delighted"
+    ],
+    "reference_requirements": "Model sheet; hop cycle; carrying-button pose.",
+    "episodes": [
+      "EP005"
+    ],
+    "variants_used": []
+  },
+  "CHR_026": {
+    "name": "Heron",
+    "type": "bird (obstacle)",
+    "status": "approved",
+    "prompt": "THE HERON, a tall, sleepy gray-blue heron with a long S-curved neck, a black crest feather that droops over one eye, a long yellow beak and thin yellow legs",
+    "anim_lock": "Heron - tall gray-blue heron, droopy black crest, long yellow beak",
+    "palette": {
+      "feathers": "#7D93A8",
+      "crest": "#1E1E24",
+      "beak": "#E8B93A"
+    },
+    "proportions": "Legs = half its height.",
+    "movement": "Slow, wobbly dozing; sudden snap of the neck when startled.",
+    "expressions": [
+      "dozing",
+      "startled",
+      "grumpy"
+    ],
+    "reference_requirements": "Standing-asleep pose; neck-snap pose.",
+    "episodes": [
+      "EP005"
+    ],
+    "variants_used": []
+  }
+}

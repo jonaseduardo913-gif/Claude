@@ -1,0 +1,240 @@
+id: EP002
+concept: CON036
+title: The Uphill Boulder
+format: SHORT
+category: Strange creatures
+logline: A hiker notices a boulder that rolls uphill whenever she isn't looking — and follows it to the top of the mountain.
+palette: {dominant: "slate gray #8C8C88 and pine green #3F6B3A", accent: "lichen yellow #F2D13B"}
+
+music:
+  id: MUS_EP002
+  title: Statues
+  style: A sneaky tiptoe theme played like a game of musical statues - every time Hazel turns around, the music cuts dead; it restarts when she turns away. Opens into a warm, wide orchestral sunrise.
+  bpm: 112
+  key: E minor (sneaky) -> E major (sunrise)
+  instrumentation: [pizzicato strings, bassoon, muted trumpet, woodblock, marimba, low choir pad (wordless 'ooh', no lyrics), french horns, strings]
+  rules: Hard music stops on every turnaround; the silence is part of the joke. Restart on the next downbeat.
+
+scenes:
+  - n: 1
+    beat: HOOK
+    dur: 3.0
+    action: Hazel hikes up the trail away from camera. Behind her, a round boulder opens two sleepy eyes and rolls uphill after her, against gravity.
+    chars: [CHR_003, CHR_021]
+    bg: BG_003@DAY
+    fx: [FX_002]
+    shot: Low wide shot up the steep trail, the hero Stonekin large in the foreground, Hazel small walking away up the slope
+    key: The round gray boulder mid-roll uphill with a puff of dust, eyes half-open and sly; Hazel's back and gray backpack further up the trail.
+    lighting: Golden late-afternoon light, long shadows pointing downhill
+    motion: The boulder's eyes open, glance at Hazel, and it rolls up the slope in three bouncy hops with squash on each landing, closing its eyes again as it stops.
+    camera: Locked-off, slight upward tilt following the roll
+    expressions: {CHR_021: sly half-lidded peek, CHR_003: unseen face}
+    sfx: [[0.0, "stone eyelids opening 'grrk'"], [0.6, "gravel crunch roll"], [1.2, "soft thud"], [1.9, "thud"], [2.5, "thud and settle wobble"]]
+    music: Sneaky pizzicato and bassoon theme starts on the first hop.
+    transition: CUT
+
+  - n: 2
+    beat: SETUP
+    dur: 4.5
+    action: Hazel stops to sip from her tin mug and glances back. The boulder is now much higher up the trail than it should be, perfectly still. She looks away, sips, then does a huge double-take.
+    chars: [CHR_003, CHR_021]
+    bg: BG_003@DAY
+    props: [PRP_016]
+    shot: Medium shot of Hazel in the foreground sipping, the boulder behind her on the trail
+    key: Hazel mid-sip, eyes sliding sideways toward the boulder; a fresh rolled groove in the dust leading uphill to the boulder.
+    lighting: Warm golden light
+    motion: Hazel sips, glances back casually, looks forward, then whips her head back in a big double-take, tea sloshing out of the mug.
+    camera: Static, snap zoom-in on Hazel's face on the double-take
+    expressions: {CHR_003: neutral sip then wide-eyed double-take, CHR_021: frozen stone with eyes closed}
+    sfx: [[0.0, "slurp of tea"], [1.4, "casual glance woodblock 'tok'"], [2.6, "double-take whip 'fwip'"], [2.8, "tea splash"]]
+    music: Music stops dead on the double-take.
+    transition: CUT
+
+  - n: 3
+    beat: SUSPICION
+    dur: 4.0
+    action: Hazel narrows her eyes at the boulder and walks on very slowly. Behind her back, one stone eye cracks open to check on her.
+    chars: [CHR_003, CHR_021]
+    bg: BG_003@DAY
+    shot: Over-the-boulder shot, the boulder's top in the foreground, Hazel walking away in suspicious slow motion
+    key: Hazel looking back over her shoulder with squinting eyes as she walks; the boulder's single eye peeking open in the foreground.
+    lighting: Warm golden light
+    motion: Hazel takes four exaggerated slow tiptoe steps, glancing back on each; as soon as she faces forward, the eye peeks; when she glances back, it snaps shut.
+    camera: Slow push-in toward the boulder's eye
+    expressions: {CHR_003: suspicious squint, CHR_021: one-eyed peek, snapping shut}
+    sfx: [[0.0, "creaky tiptoe boot steps"], [1.2, "tiny stone eyelid 'tik'"], [2.0, "eyelid snap 'tk'"], [3.0, "eyelid 'tik'"]]
+    music: Pizzicato tiptoe theme restarts quietly, muted trumpet on each peek.
+    transition: CUT
+
+  - n: 4
+    beat: CAUGHT MID-AIR
+    dur: 4.5
+    action: Hazel spins around suddenly. The boulder is caught in the middle of a hop, frozen in mid-air. It hangs there a beat, then drops with a thud, pretending nothing happened.
+    chars: [CHR_003, CHR_021]
+    bg: BG_003@DAY
+    fx: [FX_002, FX_003]
+    shot: Wide shot from the side, Hazel on the left mid-spin, the boulder hanging in the air on the right
+    key: The boulder frozen a meter above the trail, eyes squeezed shut; Hazel's braid swinging from her spin, finger pointing.
+    lighting: Golden light, the boulder casting a shadow on the ground beneath it
+    motion: Hazel spins with a braid whip; the boulder hangs perfectly still in mid-air for 1.5 seconds with a tiny sweat drop, then falls straight down with a heavy thud and dust puff; Hazel's eye twitches.
+    camera: Whip to the boulder on the spin, hold, then camera shake on the landing
+    expressions: {CHR_003: pointing, mouth open in shock, CHR_021: eyes squeezed shut, guilty sweat}
+    sfx: [[0.0, "spin whoosh"], [0.3, "music-stop needle scratch"], [2.0, "single cartoon 'tink' as a sweat drop falls"], [2.4, "heavy stone THUD + dust"], [3.4, "eye-twitch 'twing'"]]
+    music: Silence from the needle scratch until the thud; a single low bassoon note after.
+    transition: CUT
+
+  - n: 5
+    beat: THE GAME
+    dur: 5.0
+    action: Hazel walks backwards uphill, staring at the boulder without blinking. She trips over a pine root and falls flat. When she sits up, the boulder is sitting right next to her, eyes closed, smug.
+    chars: [CHR_003, CHR_021]
+    bg: BG_003@DAY
+    fx: [FX_002]
+    shot: Medium-wide shot from uphill, Hazel walking backwards toward camera, boulder down the trail
+    key: Hazel stepping backwards with two fingers pointed at her eyes then at the boulder; a pine root behind her heel.
+    lighting: Golden light turning orange
+    motion: Hazel backs up three steps doing an 'I'm watching you' gesture, catches her heel on the root and falls out of frame bottom; cut-in beat - she pops back up and the boulder is right beside her shoulder, perfectly still, with its smile-crack looking smug.
+    camera: Slow dolly back, then a quick tilt down when she falls and back up
+    expressions: {CHR_003: intense stare, then dazed, then flat unamused stare, CHR_021: smug closed-eye smile}
+    sfx: [[0.0, "backward boot steps"], [1.8, "root snag 'thwick'"], [2.0, "body flop into dust 'fwump'"], [3.2, "spring 'boing' as she sits up"], [4.0, "smug little stone 'clack'"]]
+    music: Theme stops on the fall; restarts with a cheeky muted-trumpet 'wah' on the reveal.
+    transition: CUT
+
+  - n: 6
+    beat: THE TRICK
+    dur: 4.5
+    action: Hazel pretends to tie her bootlace and secretly peeks back through her legs, upside down. Upside down, she sees the boulder rolling. It freezes — upside down from her view — with its eyes wide open.
+    chars: [CHR_003, CHR_021]
+    bg: BG_003@DAY
+    shot: Upside-down point of view through Hazel's legs, the boulder on the trail behind
+    key: The world upside down framed between two brown-trousered legs; the boulder mid-roll with eyes wide open, caught.
+    lighting: Orange late light
+    motion: Frame starts on Hazel bending down to her boot; flip to the upside-down POV; the boulder is rolling, sees her, screeches to a stop with eyes wide, and slowly closes them as if nothing happened.
+    camera: 180-degree roll into the upside-down POV
+    expressions: {CHR_003: sneaky grin (upside down), CHR_021: eyes wide open caught, slowly closing}
+    sfx: [[0.0, "bootlace tugging"], [1.0, "whoosh of the upside-down flip"], [1.8, "gravel skid screech"], [3.0, "slow stone eyelid 'grrrrk' closing"]]
+    music: Music stops on the skid; a single comic oboe 'boop' when eyes close.
+    transition: CUT
+
+  - n: 7
+    beat: RACE
+    dur: 4.5
+    action: Dusk. Hazel races up the switchbacks, glancing back every few steps. Each time she looks, the boulder is closer and frozen in a sillier spot - balanced on a trail post, perched in a pine tree, wedged between two rocks.
+    chars: [CHR_003, CHR_021]
+    bg: BG_003@DUSK
+    fx: [FX_005]
+    shot: Wide high-angle shot of the zig-zag trail, Hazel climbing in the upper part, the boulder at different points below
+    key: The boulder balanced impossibly on top of a thin wooden trail post below Hazel, eyes closed; first stars in the purple sky.
+    lighting: Purple-orange dusk, first stars
+    motion: Three rapid glance beats - Hazel looks back; the boulder on a post; she runs; looks back; boulder in a pine branch which bends; she runs; looks back; boulder wedged between rocks right behind her.
+    camera: Quick pans tracking each glance
+    expressions: {CHR_003: increasingly frantic, CHR_021: frozen, eyes closed, a little smug}
+    sfx: [[0.0, "running boots on gravel"], [0.9, "music stop + wooden post creak"], [2.1, "pine branch creaking under weight"], [3.4, "stone wedge 'crunk'"]]
+    music: Theme in rapid bursts that stop on each glance, getting faster each time.
+    transition: CUT
+
+  - n: 8
+    beat: SUMMIT
+    dur: 5.0
+    action: Hazel reaches the summit at pre-dawn, breathless, and turns back. The boulder is gone. She sighs with relief, turns forward, and freezes - a long row of hundreds of boulders sits along the ridge facing the horizon. The hero boulder rolls past her ankles and squeezes into a gap in the row.
+    chars: [CHR_003, CHR_021]
+    bg: BG_004@PREDAWN
+    shot: Wide shot from behind Hazel, the endless row of Stonekin along the ridge silhouetted against the pre-dawn sky
+    key: Hundreds of round boulders in a neat line along the summit ridge, a single gap in the row; Hazel standing frozen in the foreground, mouth open; the hero boulder rolling past her boot.
+    lighting: Deep blue pre-dawn, thin pink line on the horizon
+    motion: Hazel turns back (empty trail), exhales with shoulders dropping, turns forward and freezes; the hero boulder rolls past her feet and wiggles into the gap with a satisfied wobble.
+    camera: Slow push past Hazel's shoulder toward the row
+    expressions: {CHR_003: relief, then jaw-drop awe, CHR_021: hero content as it settles}
+    sfx: [[0.0, "heavy breathing (no words)"], [1.2, "relieved sigh"], [2.4, "wind over the summit"], [3.2, "stone rolling past"], [4.2, "satisfied stone wiggle 'clunk-clunk'"]]
+    music: Low wordless choir pad swells softly, the sneaky theme is gone.
+    transition: CUT
+
+  - n: 9
+    beat: NOTICED
+    dur: 4.5
+    action: Hazel tiptoes along the row. One by one, the boulders open sleepy eyes and look at her, then all turn their eyes to the horizon at the same moment.
+    chars: [CHR_003, CHR_021]
+    bg: BG_004@PREDAWN
+    shot: Side tracking shot along the row at boulder height, Hazel walking behind them
+    key: A row of boulders with eyes opening in a wave from left to right, all turned toward Hazel; she is mid-tiptoe with an awkward little wave.
+    lighting: Blue pre-dawn, the horizon brightening
+    motion: A wave of eyes opening left to right; Hazel gives an awkward tiny wave; at once, every eye turns toward the horizon.
+    camera: Lateral track left to right alongside Hazel
+    expressions: {CHR_003: awkward polite smile, CHR_021: sleepy curious eyes}
+    sfx: [[0.0, "rippling chain of stone eyelids 'grk-grk-grk'"], [2.2, "tiny awkward wave 'swish'"], [3.4, "unison eye-turn 'shhk'"]]
+    music: Marimba twinkle pattern, rising.
+    transition: CUT
+
+  - n: 10
+    beat: SUNRISE
+    dur: 5.0
+    action: The sun breaks over the sea of clouds. Every Stonekin opens its eyes wide with wonder in the golden light, and the whole row hums one deep resonant note together.
+    chars: [CHR_003, CHR_021]
+    bg: BG_004@SUNRISE
+    fx: [FX_004]
+    shot: Epic wide frontal shot from the clouds side, the row of glowing boulders and Hazel silhouetted along the ridge, sun bursting behind the camera onto them
+    key: Golden sunlight washing over the row of boulders, every face lit with wide wonder-filled eyes; Hazel among them, hand on heart.
+    lighting: Brilliant warm sunrise, strong golden key light, soft glow particles
+    motion: Light sweeps across the row from left to right; eyes widen in sequence; the boulders vibrate very slightly as they hum.
+    camera: Slow crane up and back
+    expressions: {CHR_021: wonder, eyes wide and sparkling, CHR_003: moved, peaceful smile}
+    sfx: [[0.0, "warm whoosh of light"], [1.0, "deep resonant stone hum, low and harmonic"], [3.0, "birds waking far below"]]
+    music: Full orchestral sunrise in E major, horns and strings, choir pad blooms.
+    transition: CUT
+
+  - n: 11
+    beat: TWIST
+    dur: 4.5
+    action: Hazel sits in the row next to the hero boulder and freezes still as a stone, eyes closed. The hero boulder slowly opens one eye and peeks at her — now she's the one playing statues.
+    chars: [CHR_003, CHR_021]
+    bg: BG_004@SUNRISE
+    props: [PRP_016]
+    shot: Medium two-shot from the front, Hazel and the hero Stonekin side by side in the warm light
+    key: Hazel sitting hugging her knees, perfectly still with eyes closed and a tiny smile, tin mug beside her; the hero Stonekin beside her with one eye open, peeking at her.
+    lighting: Warm golden sunrise
+    motion: Hazel settles and goes completely still; a beat; the hero boulder's eye cracks open and slides toward her; Hazel's mouth twitches into a grin without opening her eyes.
+    camera: Slow push-in on the pair, hold
+    expressions: {CHR_003: serene, then hidden grin, CHR_021: curious one-eyed peek}
+    sfx: [[0.0, "soft wind"], [1.8, "tiny stone eyelid 'tik'"], [3.0, "Hazel's stifled giggle snort (non-verbal)"], [3.8, "warm chime"]]
+    music: One reprise bar of the sneaky theme played slowly and tenderly on bassoon, ending on a soft E major chord at the cut.
+    transition: CUT TO END CARD
+
+thumbnail:
+  cover_frame: EP002_SC04 at 1.5s (the boulder frozen in mid-air)
+  chars: [CHR_003, CHR_021]
+  bg: BG_003@DAY
+  prompt: Hazel spinning around in shock on a mountain trail, pointing at a round boulder caught frozen in mid-air with its eyes squeezed shut and a guilty sweat drop.
+  overlay: "IT MOVED"
+
+publishing:
+  title_en: "This Boulder Only Moves When You're Not Looking 🪨👀 #Shorts"
+  title_pt_br: "Essa pedra só se mexe quando você não está olhando 🪨👀 #Shorts"
+  title_es: "Esta roca solo se mueve cuando no la miras 🪨👀 #Shorts"
+  description_en: "A hiker, a mountain trail, and a boulder that keeps getting closer… Where is it going? 🪨 An original ODDLY animated short — no words, just a world full of surprises."
+  description_pt_br: "Uma trilheira, uma montanha e uma pedra que chega cada vez mais perto… Para onde ela está indo? 🪨 Um curta animado original ODDLY — sem palavras, só um mundo cheio de surpresas."
+  description_es: "Una excursionista, un sendero y una roca que se acerca cada vez más… ¿A dónde va? 🪨 Un corto animado original de ODDLY — sin palabras, solo un mundo lleno de sorpresas."
+  hashtags: ["#ODDLY", "#Shorts", "#Animation", "#Cartoon", "#Funny", "#Sunrise", "#2DAnimation"]
+  tags: [oddly, animated short, cartoon, boulder, statues game, hiking, sunrise, no dialogue, 2d animation, funny animation]
+  pinned_comment: "Would you have caught it moving? 🪨"
+  series: ODDLY Shorts
+  playlist: Thistledown Tales
+
+edit:
+  grade: Warm golden afternoon (SC1-6), purple dusk (SC7), cool blue pre-dawn (SC8-9), blazing gold sunrise (SC10-11). Keep the shift gradual; the sunrise should be the brightest frame in the episode.
+  mix_notes: The music stops are the comedy - cut music to true silence (room tone only) for each stop; restart on beat.
+  notes:
+    - SC4 hold the mid-air freeze for a full 36 frames before the drop; do not shorten.
+    - SC6 is shown fully upside down; roll the image 180 degrees in the edit if the generated clip is right-side up.
+    - SC7 contains three glance beats; if the generator returns one pose, split into three 1.5s inserts using the library boulder positions.
+    - End on Hazel's grin; cut to end card on the final chord.
+
+qc:
+  character_consistency: Hazel and the hero Stonekin (smile crack, yellow lichen) are visually distinguishable from crowd Stonekin in SC8-11.
+  story_originality: Musical-statues mechanic with a living boulder; conflict and twist are unique in the slate.
+  scene_continuity: Time of day progresses afternoon -> dusk -> pre-dawn -> sunrise; tin mug introduced SC2 and returns SC11.
+  visual_quality: Signature frames - mid-air freeze (SC4), upside-down POV (SC6), row of boulders (SC8), sunrise (SC10).
+  animation_feasibility: Stonekin are simple spheres with eyes; the crowd is duplicated with only lichen and size changes.
+  pacing: Gag escalation every 4-5s; emotional turn at 34s; twist in last 4.5s.
+  sound_sync: Music stops synced to every turnaround (SC2, SC4, SC6, SC7); stone hum lands with the light sweep.
+  strong_opening: A boulder rolling uphill in frame 1.
+  memorable_ending: The game reverses - the boulder peeks at Hazel.

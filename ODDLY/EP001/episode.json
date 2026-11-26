@@ -1,0 +1,47 @@
+{
+  "id": "EP001",
+  "concept": "CON024",
+  "title": "The Giant's Contact Lens",
+  "format": "SHORT",
+  "category": "Unexpected encounters",
+  "logline": "Thistledown goes skating on a perfect round lake that appeared overnight — until the giant who lost it comes looking.",
+  "palette": {
+    "dominant": "sky blue #8FC8E8 and meadow green #7DBA5A",
+    "accent": "beard orange #E07A2E"
+  },
+  "runtime_seconds": 50.5,
+  "scene_count": 11,
+  "characters": [
+    "CHR_002",
+    "CHR_007",
+    "CHR_020"
+  ],
+  "backgrounds": [
+    "BG_002"
+  ],
+  "files": [
+    "ANIMATION/animation_jobs.json",
+    "AUDIO/music_brief.json",
+    "AUDIO/sfx_cue_sheet.json",
+    "BACKGROUNDS/backgrounds.json",
+    "CHARACTERS/characters.json",
+    "EDIT/edit_decision_list.json",
+    "PUBLISHING/metadata.json",
+    "QC/qc_report.json",
+    "SCENES/EP001_SC01.json",
+    "SCENES/EP001_SC02.json",
+    "SCENES/EP001_SC03.json",
+    "SCENES/EP001_SC04.json",
+    "SCENES/EP001_SC05.json",
+    "SCENES/EP001_SC06.json",
+    "SCENES/EP001_SC07.json",
+    "SCENES/EP001_SC08.json",
+    "SCENES/EP001_SC09.json",
+    "SCENES/EP001_SC10.json",
+    "SCENES/EP001_SC11.json",
+    "SCENES/script.md",
+    "THUMBNAIL/thumbnail.json",
+    "episode.json"
+  ],
+  "qc_status": "APPROVED_FOR_PRODUCTION"
+}
