@@ -5,3 +5,4 @@ output/*/stills/
 output/*/video_raw.mp4
 output/*/mix.wav
 output/*/render.log
+__pycache__/
