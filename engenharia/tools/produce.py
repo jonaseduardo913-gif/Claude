@@ -359,7 +359,7 @@ def final(ep, out):
     run(["ffmpeg", "-y", "-loglevel", "error", "-i", out / "video_raw.mp4", "-i", out / "mix.wav",
          "-vf", f"ass={out / 'captions.ass'}:fontsdir=/usr/share/fonts/opentype/inter",
          "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
-         "-c:v", "libx264", "-preset", "slow", "-crf", "19", "-profile:v", "high", "-pix_fmt", "yuv420p",
+         "-c:v", "libx264", "-preset", "slow", "-crf", "20", "-maxrate", "10M", "-bufsize", "20M", "-profile:v", "high", "-pix_fmt", "yuv420p",
          "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", "-shortest", dst])
     probe = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=codec_name,width,height,r_frame_rate",
                             "-of", "json", dst], capture_output=True, text=True).stdout
