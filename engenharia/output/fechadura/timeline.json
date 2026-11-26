@@ -75,7 +75,7 @@
    "tail": 0.45,
    "clip_seconds": 5.65,
    "frame_offset": 1102,
-   "transition": "zoomin"
+   "transition": "fade"
   },
   {
    "id": "S09",
