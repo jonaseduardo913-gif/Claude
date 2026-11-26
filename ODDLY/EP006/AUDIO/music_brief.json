@@ -1,0 +1,91 @@
+{
+  "id": "MUS_EP006",
+  "title": "Southbound",
+  "style": "Whimsical travel adventure - a soaring flute and accordion 'flock theme', a lonely solo piano for Stripe, a plodding bassoon for the pigeon, and a warm marimba and steel-pan finale on the island.",
+  "bpm": 116,
+  "key": "G major",
+  "instrumentation": [
+    "flute",
+    "accordion",
+    "pizzicato strings",
+    "solo piano",
+    "bassoon",
+    "marimba",
+    "steel pan",
+    "light percussion",
+    "strings"
+  ],
+  "rules": "Original instrumental only. No vocals, no lyrics, no spoken word.",
+  "hit_points": [
+    {
+      "scene_id": "EP006_SC01",
+      "timecode": "00:00:00:00",
+      "at_episode": 0,
+      "cue": "Flute and accordion flock theme bursts in on the door pop."
+    },
+    {
+      "scene_id": "EP006_SC02",
+      "timecode": "00:00:03:00",
+      "at_episode": 3.0,
+      "cue": "The flock theme fades into the distance; solo piano."
+    },
+    {
+      "scene_id": "EP006_SC03",
+      "timecode": "00:00:07:12",
+      "at_episode": 7.5,
+      "cue": "Piano lifts into a brave little rising line."
+    },
+    {
+      "scene_id": "EP006_SC04",
+      "timecode": "00:00:11:12",
+      "at_episode": 11.5,
+      "cue": "Pizzicato scramble."
+    },
+    {
+      "scene_id": "EP006_SC05",
+      "timecode": "00:00:16:12",
+      "at_episode": 16.5,
+      "cue": "Plodding bassoon pigeon theme."
+    },
+    {
+      "scene_id": "EP006_SC06",
+      "timecode": "00:00:21:00",
+      "at_episode": 21.0,
+      "cue": "Bassoon and flute play together for the first time."
+    },
+    {
+      "scene_id": "EP006_SC07",
+      "timecode": "00:00:26:00",
+      "at_episode": 26.0,
+      "cue": "Strings build under the flute."
+    },
+    {
+      "scene_id": "EP006_SC08",
+      "timecode": "00:00:30:12",
+      "at_episode": 30.5,
+      "cue": "Full flock theme returns on flute, accordion and strings."
+    },
+    {
+      "scene_id": "EP006_SC09",
+      "timecode": "00:00:35:00",
+      "at_episode": 35.0,
+      "cue": "Marimba and steel pan join the theme."
+    },
+    {
+      "scene_id": "EP006_SC10",
+      "timecode": "00:00:40:00",
+      "at_episode": 40.0,
+      "cue": "Solo piano returns over soft steel pan."
+    },
+    {
+      "scene_id": "EP006_SC11",
+      "timecode": "00:00:44:00",
+      "at_episode": 44.0,
+      "cue": "Flock theme slows into a tender final statement; final G major chord at the cut."
+    }
+  ],
+  "end_card": {
+    "timecode": "00:00:49:00",
+    "cue": "Music resolves on the final chord exactly at the cut; ODDLY sting plays over 2.0s end card."
+  }
+}

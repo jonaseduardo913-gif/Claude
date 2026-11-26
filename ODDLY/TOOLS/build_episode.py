@@ -205,7 +205,7 @@ def build(src_path, errors):
                 "output_file": f"{sid}_KEY.png",
                 "prompt": image_prompt,
                 "negative_prompt": STYLE["image_negative_prompt"],
-                "reference_images": [f"LIBRARY/REFS/{split_char(r)[0]}_sheet.png" for r in char_refs]
+                "reference_images": [f"LIBRARY/REFS/{split_char(r)[0]}{'_' + split_char(r)[1] if split_char(r)[1] else ''}_sheet.png" for r in char_refs]
                 + [f"LIBRARY/REFS/{bid}_{var or 'BASE'}.png"],
             },
             "animation": {

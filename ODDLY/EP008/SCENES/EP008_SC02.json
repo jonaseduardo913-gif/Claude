@@ -1,0 +1,92 @@
+{
+  "scene_id": "EP008_SC02",
+  "episode_id": "EP008",
+  "scene_number": 2,
+  "beat": "REJECTED",
+  "duration_seconds": 4.5,
+  "timecode_in": "00:00:03:00",
+  "timecode_out": "00:00:07:12",
+  "format": {
+    "aspect_ratio": "9:16",
+    "resolution": "1080x1920",
+    "fps": 24
+  },
+  "story_action": "Villagers hang paper lanterns and fireflies fly inside to light them. Glim flies into a lantern, but it stays dark. A bright firefly flies in, lights it up, and shoos Glim out.",
+  "character_references": [
+    {
+      "id": "CHR_030",
+      "name": "Glim",
+      "reference_sheet": "LIBRARY/REFS/CHR_030_sheet.png"
+    },
+    {
+      "id": "CHR_031",
+      "name": "Firefly Swarm",
+      "reference_sheet": "LIBRARY/REFS/CHR_031_sheet.png"
+    },
+    {
+      "id": "CHR_007",
+      "name": "Thistledown Villagers",
+      "reference_sheet": "LIBRARY/REFS/CHR_007_sheet.png"
+    }
+  ],
+  "background_reference": {
+    "id": "BG_002@NIGHT",
+    "name": "Thistledown Meadow",
+    "plate": "LIBRARY/REFS/BG_002_NIGHT.png"
+  },
+  "props": [
+    "PRP_013"
+  ],
+  "effects": [],
+  "image_generation": {
+    "output_file": "EP008_SC02_KEY.png",
+    "prompt": "Premium cinematic 2D cartoon animation still, professional animated series quality. Clean, consistent dark-brown (#2A1E1A) outlines of even medium weight on characters, thinner colored lines on backgrounds. Cel-shaded characters with one soft shadow tone and one rim light. Lush hand-painted illustrated background with soft gouache texture and atmospheric depth. Vibrant cinematic color with warm-cool contrast. Expressive, appealing character acting. Rounded, friendly shape language. Vertical 9:16 frame, 1080x1920. SHOT: Medium shot of a row of paper lanterns on poles, one dark lantern in the middle. KEYFRAME: A row of glowing paper lanterns with one dark lantern; Glim faintly visible inside it; a bright firefly arriving; villagers in soft focus behind. CHARACTERS (match approved reference sheets exactly): [CHR_030] GLIM, a tiny round firefly with a dark-brown body, two translucent wings, oversized shy round eyes and a rounded tail lantern that glows only a faint pale yellow-green; in its final form the tail glow becomes a soft white-gold starlight with four gentle rays. [CHR_031] THE FIREFLY SWARM, hundreds of tiny fireflies with bright golden-green glowing tails, proud and bouncy, drawn as glowing dots with soft halos at a distance and tiny cartoon bugs close up. [CHR_007] THISTLEDOWN VILLAGERS, a cheerful storybook crowd: a stout farmer in green overalls and straw hat, a tall old man with a white beard and wooden cane, a mother in a mustard shawl carrying a baby, red-haired twin boys in long striped scarves, a plump woman in a polka-dot headscarf, a skinny teen in a blue cap. SETTING [BG_002@NIGHT]: a wide rolling meadow just outside Thistledown village, long grass full of daisies, poppies and clover, a lone crooked oak tree, wooden fence, the village rooftops and windmill small on the horizon, Greystep Mountain rising behind; deep teal-indigo night, grass silvered by moonlight, paper lanterns on poles. PROPS: round paper lanterns on wooden poles. LIGHTING & MOOD: Warm lantern glows, one dark gap. EPISODE PALETTE: dominant midnight teal #14324A and firefly gold-green #C8F25A, accent star white #FFF1C2. Keep key action inside the vertical safe area.",
+    "negative_prompt": "text, letters, words, captions, subtitles, logos, watermark, signature, speech bubbles, photorealism, 3D render, CGI, anime style, chibi, extra fingers, extra limbs, missing limbs, deformed hands, inconsistent outlines, blurry, low resolution, jpeg artifacts, harsh noise, off-model character, different costume, different colors than reference, cropped heads, horror gore, scary realistic teeth.",
+    "reference_images": [
+      "LIBRARY/REFS/CHR_030_sheet.png",
+      "LIBRARY/REFS/CHR_031_sheet.png",
+      "LIBRARY/REFS/CHR_007_sheet.png",
+      "LIBRARY/REFS/BG_002_NIGHT.png"
+    ]
+  },
+  "animation": {
+    "input_file": "EP008_SC02_KEY.png",
+    "output_file": "EP008_SC02_ANIM.mp4",
+    "duration_seconds": 4.5,
+    "prompt": "Animate keyframe EP008_SC02_KEY.png into a 4.5-second shot. MOTION: Glim enters the lantern; it glows barely at all; a bright firefly zooms in and the lantern blazes; the bright firefly nudges Glim out with a flick. CAMERA: Static, slight push-in on the dark lantern. FACIAL ACTING: Glim: hopeful, then ashamed; Firefly Swarm: proud, dismissive; Thistledown Villagers: happy villagers in background. ON-MODEL LOCK: Glim - tiny round dark-brown firefly, oversized shy eyes, faint pale-green tail glow; Firefly swarm - bright golden-green glowing tails, soft halos; Thistledown villagers - farmer in green overalls, old man with cane, mother in mustard shawl, red-haired twins in striped scarves, woman in polka-dot headscarf, teen in blue cap. Smooth 2D cartoon animation at 24 fps, animated on ones for fast action and twos for holds. Squash-and-stretch, anticipation and overshoot on all major actions. Outlines stay stable and consistent between frames (no boiling, no morphing). Characters remain exactly on-model with the reference sheet. Background stays painted and stable except for listed environmental motion. No text appears. No lip-sync, no speech."
+  },
+  "camera_movement": "Static, slight push-in on the dark lantern",
+  "facial_expressions": {
+    "CHR_030": "hopeful, then ashamed",
+    "CHR_031": "proud, dismissive",
+    "CHR_007": "happy villagers in background"
+  },
+  "sound_effects": [
+    {
+      "at_scene": 0.0,
+      "at_episode": 3.0,
+      "timecode": "00:00:03:00",
+      "sound": "festival crowd murmur (no words)"
+    },
+    {
+      "at_scene": 1.0,
+      "at_episode": 4.0,
+      "timecode": "00:00:04:00",
+      "sound": "tiny paper rustle"
+    },
+    {
+      "at_scene": 2.4,
+      "at_episode": 5.4,
+      "timecode": "00:00:05:10",
+      "sound": "lantern lights 'fwoom'"
+    },
+    {
+      "at_scene": 3.2,
+      "at_episode": 6.2,
+      "timecode": "00:00:06:05",
+      "sound": "little flick 'tk'"
+    }
+  ],
+  "music": "Festival tune continues in the background, slightly muffled.",
+  "transition_out": "CUT"
+}

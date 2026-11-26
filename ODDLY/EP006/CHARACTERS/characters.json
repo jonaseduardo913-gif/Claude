@@ -1,0 +1,80 @@
+{
+  "CHR_028": {
+    "name": "Stripe's Pair and the Sock Flock",
+    "type": "socks (partner + crowd)",
+    "status": "approved",
+    "prompt": "STRIPE'S PAIR, a sock identical to Stripe (red and cream stripes, two black eyes on the toe) but with a small pink heart-shaped darn patch on the heel; THE SOCK FLOCK, migrating socks of all kinds - gray wool hiking socks, argyle dress socks, white tube socks with blue bands, polka-dot socks, fuzzy rainbow toe-socks - each with two small black eyes on the toe end",
+    "anim_lock": "Stripe's pair - identical to Stripe plus pink heart darn on heel; flock - mixed socks with two black eyes on toe",
+    "palette": {
+      "darn": "#F4A6B8",
+      "wool": "#9A9A9A",
+      "argyle": "#3D5A80",
+      "tube_bands": "#2F6DB5",
+      "polka": "#F2C14E"
+    },
+    "proportions": "Same construction as Stripe.",
+    "movement": "Flock flies in a V-formation with ribbon undulation offset per sock.",
+    "expressions": [
+      "content",
+      "excited",
+      "welcoming"
+    ],
+    "reference_requirements": "Pair model sheet; flock lineup of 8.",
+    "episodes": [
+      "EP006"
+    ],
+    "variants_used": []
+  },
+  "CHR_027": {
+    "name": "Stripe",
+    "type": "sock (hero)",
+    "status": "approved",
+    "prompt": "STRIPE, a small child's ankle sock with red and cream horizontal stripes; the toe end acts as its head with two small round black eyes and expressive stitched eyebrows; it flies by rippling its body like a ribbon while the open cuff flaps like a tail",
+    "anim_lock": "Stripe - small red-and-cream striped ankle sock, two round black eyes on the toe end, stitched eyebrows",
+    "palette": {
+      "red": "#E0483E",
+      "cream": "#FFF6EC",
+      "eyes": "#111111"
+    },
+    "proportions": "Toe 'head' is 40% of length.",
+    "movement": "Ribbon-like undulating flight; inchworm crawl on the ground.",
+    "expressions": [
+      "eager",
+      "panicked",
+      "exhausted",
+      "lonely",
+      "overjoyed"
+    ],
+    "reference_requirements": "Model sheet; flight undulation keys; crawling pose.",
+    "episodes": [
+      "EP006"
+    ],
+    "variants_used": []
+  },
+  "CHR_029": {
+    "name": "Pigeon",
+    "type": "bird",
+    "status": "approved",
+    "prompt": "THE PIGEON, a plump city pigeon with gray feathers, an iridescent green-purple neck, orange eyes with a permanently bored half-lidded look and pink feet",
+    "anim_lock": "Pigeon - plump gray, iridescent green-purple neck, bored orange eyes, pink feet",
+    "palette": {
+      "feathers": "#8E949C",
+      "neck": "#5E8C6A",
+      "neck2": "#7A5C9A",
+      "eyes": "#F08A24",
+      "feet": "#E99A9A"
+    },
+    "proportions": "Round body, small head.",
+    "movement": "Head-bob walk; heavy flapping flight.",
+    "expressions": [
+      "bored",
+      "startled",
+      "unimpressed"
+    ],
+    "reference_requirements": "Model sheet; flight with passenger pose.",
+    "episodes": [
+      "EP006"
+    ],
+    "variants_used": []
+  }
+}

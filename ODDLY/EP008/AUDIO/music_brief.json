@@ -1,0 +1,92 @@
+{
+  "id": "MUS_EP008",
+  "title": "Little Light",
+  "style": "Festive village folk (fiddle, flute, frame drum, accordion) that falls into a fragile music-box motif for Glim; a dark storm of low strings and thunder; a rising wordless choir pad and glockenspiel for the transformation.",
+  "bpm": "108 (festival), 70 (Glim and storm)",
+  "key": "D major -> B minor -> D major",
+  "instrumentation": [
+    "fiddle",
+    "flute",
+    "accordion",
+    "frame drum",
+    "music box",
+    "low strings",
+    "timpani",
+    "wordless choir pad (no lyrics)",
+    "glockenspiel",
+    "harp"
+  ],
+  "rules": "Original instrumental only. No vocals, no lyrics, no spoken word.",
+  "hit_points": [
+    {
+      "scene_id": "EP008_SC01",
+      "timecode": "00:00:00:00",
+      "at_episode": 0,
+      "cue": "Festival fiddle tune starts loud, then drops to Glim's music-box motif."
+    },
+    {
+      "scene_id": "EP008_SC02",
+      "timecode": "00:00:03:00",
+      "at_episode": 3.0,
+      "cue": "Festival tune continues in the background, slightly muffled."
+    },
+    {
+      "scene_id": "EP008_SC03",
+      "timecode": "00:00:07:12",
+      "at_episode": 7.5,
+      "cue": "Music-box motif alone, slow."
+    },
+    {
+      "scene_id": "EP008_SC04",
+      "timecode": "00:00:11:12",
+      "at_episode": 11.5,
+      "cue": "A playful fiddle phrase, then thunder rumbles underneath."
+    },
+    {
+      "scene_id": "EP008_SC05",
+      "timecode": "00:00:16:00",
+      "at_episode": 16.0,
+      "cue": "Low strings and timpani storm."
+    },
+    {
+      "scene_id": "EP008_SC06",
+      "timecode": "00:00:20:12",
+      "at_episode": 20.5,
+      "cue": "Storm strings, very low."
+    },
+    {
+      "scene_id": "EP008_SC07",
+      "timecode": "00:00:25:00",
+      "at_episode": 25.0,
+      "cue": "Glim's music-box motif plays bravely over the storm."
+    },
+    {
+      "scene_id": "EP008_SC08",
+      "timecode": "00:00:29:00",
+      "at_episode": 29.0,
+      "cue": "Music-box motif joined by harp; the storm strings fade."
+    },
+    {
+      "scene_id": "EP008_SC09",
+      "timecode": "00:00:34:00",
+      "at_episode": 34.0,
+      "cue": "Festival fiddle returns softly, slowed and warm."
+    },
+    {
+      "scene_id": "EP008_SC10",
+      "timecode": "00:00:38:12",
+      "at_episode": 38.5,
+      "cue": "Wordless choir pad rises, glockenspiel."
+    },
+    {
+      "scene_id": "EP008_SC11",
+      "timecode": "00:00:43:00",
+      "at_episode": 43.0,
+      "cue": "Glim's three-note motif played big by the full ensemble; final D major chord at the cut."
+    }
+  ],
+  "end_card": {
+    "timecode": "00:00:48:00",
+    "cue": "Music resolves on the final chord exactly at the cut; ODDLY sting plays over 2.0s end card."
+  }
+}

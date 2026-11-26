@@ -1,0 +1,80 @@
+{
+  "scene_id": "EP009_SC08",
+  "episode_id": "EP009",
+  "scene_number": 8,
+  "beat": "CALM",
+  "duration_seconds": 5.0,
+  "timecode_in": "00:00:28:12",
+  "timecode_out": "00:00:33:12",
+  "format": {
+    "aspect_ratio": "9:16",
+    "resolution": "1080x1920",
+    "fps": 24
+  },
+  "story_action": "Inside the jar, the clouds part, a tiny sun comes out, and the waves settle into gentle sparkles. Captain Tot slumps with relief, then stands up straight and salutes Milo.",
+  "character_references": [
+    {
+      "id": "CHR_032",
+      "name": "Captain Tot",
+      "reference_sheet": "LIBRARY/REFS/CHR_032_sheet.png"
+    }
+  ],
+  "background_reference": {
+    "id": "BG_014@CALM",
+    "name": "Inside the Jar Ocean",
+    "plate": "LIBRARY/REFS/BG_014_CALM.png"
+  },
+  "props": [
+    "PRP_010"
+  ],
+  "effects": [
+    "FX_001"
+  ],
+  "image_generation": {
+    "output_file": "EP009_SC08_KEY.png",
+    "prompt": "Premium cinematic 2D cartoon animation still, professional animated series quality. Clean, consistent dark-brown (#2A1E1A) outlines of even medium weight on characters, thinner colored lines on backgrounds. Cel-shaded characters with one soft shadow tone and one rim light. Lush hand-painted illustrated background with soft gouache texture and atmospheric depth. Vibrant cinematic color with warm-cool contrast. Expressive, appealing character acting. Rounded, friendly shape language. Vertical 9:16 frame, 1080x1920. SHOT: Macro shot of the ship on calm sparkling water, a tiny sun in a tiny blue sky, the curved glass wall around. KEYFRAME: The tiny ship on gentle glittering waves, Captain Tot standing at the rail saluting with a big smile, a tiny bright sun overhead. CHARACTERS (match approved reference sheets exactly): [CHR_032] CAPTAIN TOT, a fingertip-sized old sea captain with a round body, navy pea coat with brass buttons, white captain's cap, big fluffy white beard, rosy nose, holding a brass spyglass. SETTING [BG_014@CALM]: the miniature ocean inside a glass jar, curved glass walls distorting the edges, a tiny sea with waves and a tiny sky with its own clouds; clear tiny blue sky, gentle glittering waves, a tiny sun. PROPS: a fingertip-sized wooden sailing ship with three white sails and a red hull stripe. EFFECTS: small four-point star sparkles. LIGHTING & MOOD: Warm tiny sunlight, sparkles on the water. EPISODE PALETTE: dominant ocean blue #2F6DB5 and storm gray #4A5263, accent ship red #C8392F. Keep key action inside the vertical safe area.",
+    "negative_prompt": "text, letters, words, captions, subtitles, logos, watermark, signature, speech bubbles, photorealism, 3D render, CGI, anime style, chibi, extra fingers, extra limbs, missing limbs, deformed hands, inconsistent outlines, blurry, low resolution, jpeg artifacts, harsh noise, off-model character, different costume, different colors than reference, cropped heads, horror gore, scary realistic teeth.",
+    "reference_images": [
+      "LIBRARY/REFS/CHR_032_sheet.png",
+      "LIBRARY/REFS/BG_014_CALM.png"
+    ]
+  },
+  "animation": {
+    "input_file": "EP009_SC08_KEY.png",
+    "output_file": "EP009_SC08_ANIM.mp4",
+    "duration_seconds": 5.0,
+    "prompt": "Animate keyframe EP009_SC08_KEY.png into a 5.0-second shot. MOTION: Clouds slide away; sunlight sweeps across; waves smooth out; Captain Tot slumps, wipes his brow, straightens up, and salutes toward camera. CAMERA: Slow pull-back to show the calm sea. FACIAL ACTING: Captain Tot: relieved, then saluting smile. ON-MODEL LOCK: Captain Tot - tiny round captain, navy pea coat, white cap, fluffy white beard, brass spyglass. Smooth 2D cartoon animation at 24 fps, animated on ones for fast action and twos for holds. Squash-and-stretch, anticipation and overshoot on all major actions. Outlines stay stable and consistent between frames (no boiling, no morphing). Characters remain exactly on-model with the reference sheet. Background stays painted and stable except for listed environmental motion. No text appears. No lip-sync, no speech."
+  },
+  "camera_movement": "Slow pull-back to show the calm sea",
+  "facial_expressions": {
+    "CHR_032": "relieved, then saluting smile"
+  },
+  "sound_effects": [
+    {
+      "at_scene": 0.0,
+      "at_episode": 28.5,
+      "timecode": "00:00:28:12",
+      "sound": "clouds parting whoosh"
+    },
+    {
+      "at_scene": 1.2,
+      "at_episode": 29.7,
+      "timecode": "00:00:29:17",
+      "sound": "gentle lapping waves (filtered)"
+    },
+    {
+      "at_scene": 2.4,
+      "at_episode": 30.9,
+      "timecode": "00:00:30:22",
+      "sound": "tiny seagull peep"
+    },
+    {
+      "at_scene": 3.8,
+      "at_episode": 32.3,
+      "timecode": "00:00:32:07",
+      "sound": "tiny heel click of the salute"
+    }
+  ],
+  "music": "The shanty returns as a calm, happy lullaby.",
+  "transition_out": "CUT"
+}

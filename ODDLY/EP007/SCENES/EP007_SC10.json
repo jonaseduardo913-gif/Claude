@@ -1,0 +1,85 @@
+{
+  "scene_id": "EP007_SC10",
+  "episode_id": "EP007",
+  "scene_number": 10,
+  "beat": "RAINBOW",
+  "duration_seconds": 4.5,
+  "timecode_in": "00:00:38:00",
+  "timecode_out": "00:00:42:12",
+  "format": {
+    "aspect_ratio": "9:16",
+    "resolution": "1080x1920",
+    "fps": 24
+  },
+  "story_action": "A rainbow squeezes out of the coin slot - far too big. It unfurls like a giant ribbon up the street, sweeping away the fog, hail and snow, and arcs over to Mrs. Pell's balcony.",
+  "character_references": [
+    {
+      "id": "CHR_005",
+      "name": "Mr. Finch",
+      "reference_sheet": "LIBRARY/REFS/CHR_005_sheet.png"
+    }
+  ],
+  "background_reference": {
+    "id": "BG_012@RAINBOW",
+    "name": "Brassport Corner Street",
+    "plate": "LIBRARY/REFS/BG_012_RAINBOW.png"
+  },
+  "props": [],
+  "effects": [
+    "FX_010",
+    "FX_001"
+  ],
+  "image_generation": {
+    "output_file": "EP007_SC10_KEY.png",
+    "prompt": "Premium cinematic 2D cartoon animation still, professional animated series quality. Clean, consistent dark-brown (#2A1E1A) outlines of even medium weight on characters, thinner colored lines on backgrounds. Cel-shaded characters with one soft shadow tone and one rim light. Lush hand-painted illustrated background with soft gouache texture and atmospheric depth. Vibrant cinematic color with warm-cool contrast. Expressive, appealing character acting. Rounded, friendly shape language. Vertical 9:16 frame, 1080x1920. SHOT: Wide street shot, the rainbow ribbon unrolling from the machine across the frame and up toward the balcony. KEYFRAME: A thick glossy rainbow pouring out of the vending machine's slot and arching across the street; snow, fog and hail patches evaporating in sparkles; Mr. Finch knocked back holding his hat-less head. CHARACTERS (match approved reference sheets exactly): [CHR_005] MR. FINCH, a tall, thin man around 40, 7 heads tall with a long neck and narrow face, pale skin, slicked dark hair, thin mustache, rumpled brown suit slightly too short at the wrists and ankles, loosened red tie, carrying a small battered briefcase. SETTING [BG_012@RAINBOW]: a sunny Brassport street corner with brick apartment buildings, little iron balconies with flower pots, a café with a striped awning and outdoor tables, a bus stop, and a tall retro vending machine painted mint-green with rows of colorful unlabeled cans behind its glass; same street washed in rainbow light. EFFECTS: a thick glossy rainbow ribbon with sparkles. small four-point star sparkles. LIGHTING & MOOD: Rainbow light washing over the street. EPISODE PALETTE: dominant mint green #8FD9B6 and heat yellow #F7D046, accent rainbow spectrum. Keep key action inside the vertical safe area.",
+    "negative_prompt": "text, letters, words, captions, subtitles, logos, watermark, signature, speech bubbles, photorealism, 3D render, CGI, anime style, chibi, extra fingers, extra limbs, missing limbs, deformed hands, inconsistent outlines, blurry, low resolution, jpeg artifacts, harsh noise, off-model character, different costume, different colors than reference, cropped heads, horror gore, scary realistic teeth.",
+    "reference_images": [
+      "LIBRARY/REFS/CHR_005_sheet.png",
+      "LIBRARY/REFS/BG_012_RAINBOW.png"
+    ]
+  },
+  "animation": {
+    "input_file": "EP007_SC10_KEY.png",
+    "output_file": "EP007_SC10_ANIM.mp4",
+    "duration_seconds": 4.5,
+    "prompt": "Animate keyframe EP007_SC10_KEY.png into a 4.5-second shot. MOTION: The rainbow squeezes out like toothpaste then springs out in a big unfurling arc; weather patches burst into sparkles as it passes; it arcs up and lands on the balcony. CAMERA: Fast tilt and pan following the rainbow. FACIAL ACTING: Mr. Finch: astonished. ON-MODEL LOCK: Mr. Finch - very tall and thin, slicked dark hair, thin mustache, short-sleeved-looking brown suit, loose red tie. Smooth 2D cartoon animation at 24 fps, animated on ones for fast action and twos for holds. Squash-and-stretch, anticipation and overshoot on all major actions. Outlines stay stable and consistent between frames (no boiling, no morphing). Characters remain exactly on-model with the reference sheet. Background stays painted and stable except for listed environmental motion. No text appears. No lip-sync, no speech."
+  },
+  "camera_movement": "Fast tilt and pan following the rainbow",
+  "facial_expressions": {
+    "CHR_005": "astonished"
+  },
+  "sound_effects": [
+    {
+      "at_scene": 0.0,
+      "at_episode": 38.0,
+      "timecode": "00:00:38:00",
+      "sound": "squeezing 'squeeeeek'"
+    },
+    {
+      "at_scene": 0.8,
+      "at_episode": 38.8,
+      "timecode": "00:00:38:19",
+      "sound": "spring 'SPROING'"
+    },
+    {
+      "at_scene": 1.2,
+      "at_episode": 39.2,
+      "timecode": "00:00:39:05",
+      "sound": "shimmering sweep"
+    },
+    {
+      "at_scene": 2.2,
+      "at_episode": 40.2,
+      "timecode": "00:00:40:05",
+      "sound": "weather patches popping into sparkles"
+    },
+    {
+      "at_scene": 3.6,
+      "at_episode": 41.6,
+      "timecode": "00:00:41:14",
+      "sound": "soft landing chime"
+    }
+  ],
+  "music": "Big-band swell, strings soaring.",
+  "transition_out": "CUT"
+}

@@ -1,0 +1,245 @@
+id: EP010
+concept: CON006
+title: The Tidy Monster
+format: SHORT
+category: Strange creatures
+logline: The monster under Milo's bed isn't scary — it's a neat freak, and Milo's mess is driving it crazy.
+palette: {dominant: "lavender #8E8CD8 and morning yellow #F7D046", accent: "duster pink #F49AC2"}
+
+music:
+  id: MUS_EP010
+  title: Clean Sweep
+  style: A fussy, elegant harpsichord minuet for Fuzzle's cleaning, crashed by chaotic drums and slide whistles for Milo's mess; the two themes eventually play together as a duet.
+  bpm: 112 (minuet), 140 (mess)
+  key: G major
+  instrumentation: [harpsichord, pizzicato strings, bassoon, flute, drum kit, slide whistle, toy piano, celesta]
+  rules: Minuet = order, drums = mess. In the finale both themes play together.
+
+scenes:
+  - n: 1
+    beat: HOOK
+    dur: 3.0
+    action: In the dark under Milo's bed, two glowing yellow eyes open. A long lavender furry hand creeps out - holding a pink feather duster.
+    chars: [CHR_033]
+    bg: BG_013@NIGHT
+    props: [PRP_011]
+    shot: Low floor-level shot under the bed, deep shadow, the hand emerging toward camera
+    key: Two glowing yellow slit-pupil eyes in the darkness under the bed; a long lavender three-fingered hand reaching out, pinky raised, holding a pink feather duster.
+    lighting: Dark blue night, the eyes glowing, moonlight on the floorboards
+    motion: The eyes blink open; the hand creeps out slowly like a spooky reveal, then delicately flicks the duster over a floorboard with its pinky raised.
+    camera: Slow push toward the darkness
+    expressions: {CHR_033: sneaky}
+    sfx: [[0.0, "low spooky drone"], [0.6, "eyes opening 'shing'"], [1.4, "fur sliding on floorboards"], [2.4, "dainty feather-duster flick 'fft'"]]
+    music: Spooky drone that breaks into a dainty harpsichord trill on the duster flick.
+    transition: CUT
+
+  - n: 2
+    beat: HORROR
+    dur: 4.5
+    action: Fuzzle emerges fully and sees the messy room - toys, socks, crayons everywhere. It clutches its face in horror, pupils shrinking to pinpricks.
+    chars: [CHR_033, "CHR_001:PAJAMAS"]
+    bg: BG_013@NIGHT
+    shot: Medium-wide shot, Fuzzle in the foreground beside the bed, the messy room spread out in front of it, Milo asleep in bed
+    key: Fuzzle standing with both hands on its cheeks, mouth open in a silent scream, staring at a floor covered in toys, socks and crayons; Milo asleep, drooling slightly.
+    lighting: Moonlight through the round window, the nightlight glowing
+    motion: Fuzzle rises, looks around, its pupils shrink to dots, and it slowly lifts both hands to its cheeks; its fur bristles.
+    camera: Snap zoom-in on Fuzzle's face
+    expressions: {CHR_033: horrified, CHR_001: asleep, drooling}
+    sfx: [[0.0, "fluffy fur rustle"], [1.2, "violin screech sting"], [2.0, "fur bristling 'fwshh'"], [3.4, "Milo's tiny snore"]]
+    music: Horror-movie violin screech, played comically.
+    transition: CUT
+
+  - n: 3
+    beat: CLEANING
+    dur: 4.0
+    action: Fuzzle tiptoes around the sleeping Milo like a ballet dancer, folding socks, stacking crayons by color and lining up toy cars.
+    chars: [CHR_033, "CHR_001:PAJAMAS"]
+    bg: BG_013@NIGHT
+    props: [PRP_011]
+    fx: [FX_001]
+    shot: Wide shot of the room, Fuzzle mid-pirouette in the center
+    key: Fuzzle on tiptoes mid-spin with a folded sock in one hand and the feather duster in the other; a neat rainbow row of crayons on the floor; Milo asleep.
+    lighting: Moonlight, little sparkles where things become tidy
+    motion: Fuzzle pirouettes, folds a sock in midair, places crayons in a rainbow row, lines up toy cars with a flick; each tidy item sparkles.
+    camera: Slow orbit around Fuzzle
+    expressions: {CHR_033: fussy, satisfied, CHR_001: asleep}
+    sfx: [[0.0, "tiptoe pads"], [0.8, "sock fold 'fff-fp'"], [1.6, "crayons clicking into place 'tik-tik-tik'"], [2.6, "toy cars lining up 'clk-clk-clk'"], [3.4, "sparkle"]]
+    music: Elegant harpsichord minuet.
+    transition: DISSOLVE
+
+  - n: 4
+    beat: MORNING CHAOS
+    dur: 4.5
+    action: Morning. Milo wakes to a spotless room, confused, scratching his head. Then he grabs a toy rocket and a cape, and in seconds the room is a disaster again.
+    chars: ["CHR_001:PAJAMAS"]
+    bg: BG_013@TIDY
+    fx: [FX_002, FX_005]
+    shot: Wide shot of the tidy morning room, Milo sitting up in bed
+    key: Milo sitting up in bed in the perfectly tidy sunlit room, scratching his head, cowlick springing; a toy rocket on the shelf within reach.
+    lighting: Bright morning sun
+    motion: Milo blinks at the tidy room, scratches his head, shrugs, grabs the rocket and a towel cape, and races around the room in a whirlwind of flying toys and clothes.
+    camera: Static, small shake during the whirlwind
+    expressions: {CHR_001: puzzled, then gleeful}
+    sfx: [[0.0, "morning birds"], [1.0, "head scratch"], [2.0, "rocket 'zoom' mouth-noise (non-verbal)"], [2.6, "chaos of toys clattering"], [3.6, "slide whistle"]]
+    music: The minuet is smashed by a chaotic drum fill.
+    transition: CUT
+
+  - n: 5
+    beat: THE LOOP
+    dur: 4.5
+    action: Time-lapse - night tidy, day mess, night tidy, day mess. Each night Fuzzle looks more frazzled - fur sticking out, bags under its eyes, duster losing feathers.
+    chars: [CHR_033, "CHR_001:PAJAMAS"]
+    bg: BG_013@MESSY
+    props: [PRP_011]
+    fx: [FX_011]
+    shot: Locked-off wide shot of the room from the same angle, light flickering between night and day
+    key: The room half tidy, half messy in a time-lapse blur; Fuzzle in the middle with frazzled fur sticking out, dark bags under its eyes and a balding feather duster.
+    lighting: Light alternating rapidly between moonlight and daylight
+    motion: Rapid day-night cycles - objects jump between tidy and messy; Fuzzle appears each night more disheveled, feathers dropping off the duster.
+    camera: Locked-off time-lapse
+    expressions: {CHR_033: fussy, then frazzled and twitchy, CHR_001: gleeful blur}
+    sfx: [[0.0, "time-lapse whooshes alternating"], [0.8, "minuet fragment"], [1.6, "drum crash"], [2.4, "minuet fragment"], [3.2, "drum crash"], [4.0, "single feather falling 'fwip'"]]
+    music: Minuet and drum crashes alternate faster and faster.
+    transition: CUT
+
+  - n: 6
+    beat: OUCH
+    dur: 4.0
+    action: Another night. A frazzled Fuzzle sweeps dramatically - and steps on a toy brick. It hops on one foot in silent agony, eyes watering, both hands over its mouth to stay quiet.
+    chars: [CHR_033, "CHR_001:PAJAMAS"]
+    bg: BG_013@NIGHT
+    props: [PRP_011]
+    shot: Medium shot of Fuzzle beside the bed, the toy brick under its foot
+    key: Fuzzle hopping on one foot, the other foot clutched, eyes watering, mouth covered with a hand to stay silent; a small toy brick on the floor.
+    lighting: Moonlight
+    motion: Fuzzle sweeps with a flourish, steps down, freezes, then hops on one foot in tiny silent hops, cheeks puffing, tears welling.
+    camera: Static, push-in on the face
+    expressions: {CHR_033: silent agony, CHR_001: asleep}
+    sfx: [[0.0, "dramatic sweep 'shhhk'"], [1.0, "toy brick crunch 'krik'"], [1.4, "muffled squeak through hands"], [2.0, "tiny hops 'pmf pmf pmf'"]]
+    music: Music stops on the brick crunch.
+    transition: CUT
+
+  - n: 7
+    beat: CAUGHT
+    dur: 4.5
+    action: Milo's eyes open. He sees Fuzzle mid-hop, holding a feather duster. They both freeze, staring at each other.
+    chars: [CHR_033, "CHR_001:PAJAMAS"]
+    bg: BG_013@NIGHT
+    shot: Two-shot over the bed edge, Milo's face peeking over the quilt in the foreground, Fuzzle frozen on one foot in the background
+    key: Milo's wide eyes peeking over the navy star quilt; Fuzzle frozen on one foot, holding the duster, yellow eyes huge.
+    lighting: Moonlight and nightlight glow
+    motion: Milo's eyes pop open; Fuzzle freezes mid-hop; a long beat; Fuzzle slowly hides the duster behind its back.
+    camera: Slow push between them
+    expressions: {CHR_001: wide-eyed, CHR_033: caught, guilty}
+    sfx: [[0.0, "eyes opening 'pik'"], [1.0, "dead silence, a clock ticking"], [3.0, "duster rustling behind back"]]
+    music: Silence with only a ticking clock.
+    transition: CUT
+
+  - n: 8
+    beat: THE TEST
+    dur: 4.5
+    action: Milo doesn't scream. Slowly, watching Fuzzle, he picks up a sock and drops it on the floor. Fuzzle twitches - it can't resist - and folds it perfectly. Milo grins.
+    chars: [CHR_033, "CHR_001:PAJAMAS"]
+    bg: BG_013@NIGHT
+    shot: Medium two-shot, Milo sitting up in bed holding a sock over the floor, Fuzzle twitching
+    key: Milo holding a sock between two fingers over the edge of the bed with a curious half-smile; Fuzzle leaning forward, twitching, hands reaching.
+    lighting: Moonlight, warm nightlight glow
+    motion: Milo drops the sock; Fuzzle twitches twice, then dives and folds it into a perfect square in one swift move, then looks embarrassed; Milo grins.
+    camera: Static, small snap zoom on the fold
+    expressions: {CHR_001: curious, then delighted grin, CHR_033: twitchy, then embarrassed}
+    sfx: [[0.0, "sock drop 'flp'"], [1.0, "twitch 'twing'"], [1.6, "twitch 'twing'"], [2.2, "lightning-fast fold 'fft-fft-fp'"], [3.4, "Milo's giggle (non-verbal)"]]
+    music: Harpsichord trill on the fold.
+    transition: CUT
+
+  - n: 9
+    beat: THE GIFT
+    dur: 5.0
+    action: The next evening, Milo builds a pile of mess on purpose - socks, crayons, toys - and ties a ribbon bow on top like a present, then winks at the bed. Fuzzle's eyes peek out and turn round and happy.
+    chars: ["CHR_001:PAJAMAS", CHR_033]
+    bg: BG_013@NIGHT
+    fx: [FX_012]
+    shot: Medium shot of Milo kneeling beside a pile of mess with a red bow on top, the dark gap under the bed beside him
+    key: Milo placing a red ribbon bow on a neat-looking pile of toys and socks, winking toward the bed; two yellow eyes under the bed with round pupils and floating hearts.
+    lighting: Evening blue with the nightlight glowing
+    motion: Milo builds the pile, ties the bow, gives it a pat, winks at the bed; under the bed, the slit pupils widen into round happy pupils; little hearts float up.
+    camera: Slow push toward the bed gap
+    expressions: {CHR_001: sly wink, CHR_033: blissful}
+    sfx: [[0.0, "toys piling up"], [1.6, "ribbon tying 'zzip'"], [2.6, "wink 'ting'"], [3.4, "happy fluffy purr from under the bed"]]
+    music: Toy piano plays the minuet sweetly.
+    transition: CUT
+
+  - n: 10
+    beat: JOY
+    dur: 4.0
+    action: That night Fuzzle cleans with pure joy, waltzing with its feather duster while Milo sleeps with a smile.
+    chars: [CHR_033, "CHR_001:PAJAMAS"]
+    bg: BG_013@NIGHT
+    props: [PRP_011]
+    fx: [FX_001, FX_012]
+    shot: Wide shot of the room, Fuzzle waltzing in the center, Milo asleep smiling
+    key: Fuzzle waltzing with the feather duster as a dance partner, eyes closed in bliss, things tidying themselves in sparkles around it; Milo asleep with a smile.
+    lighting: Warm moonlight, sparkles
+    motion: Fuzzle waltzes in circles; socks fold and toys hop onto shelves in sparkling arcs as it passes; Milo turns over in his sleep, smiling.
+    camera: Slow crane up
+    expressions: {CHR_033: blissful, CHR_001: asleep, smiling}
+    sfx: [[0.0, "graceful twirl swishes"], [1.2, "cascade of tidy sparkles"], [2.6, "soft folding sounds"], [3.4, "Milo's contented sleepy sigh"]]
+    music: Minuet and the mess drums play together as a duet.
+    transition: CUT
+
+  - n: 11
+    beat: TWIST
+    dur: 5.0
+    action: Morning. On Milo's pillow sits a row of origami cranes folded from socks. Milo picks one up - and the sock crane flaps its wings, flies up, and lands on his cowlick.
+    chars: ["CHR_001:PAJAMAS"]
+    bg: BG_013@TIDY
+    props: [PRP_012]
+    fx: [FX_001]
+    shot: Medium close-up of Milo sitting up in bed, the row of sock cranes on his pillow
+    key: Milo holding up a crane folded from a striped sock, mouth open in wonder; four more sock cranes lined up on the pillow; morning sun through the window.
+    lighting: Bright warm morning sun
+    motion: Milo picks up a crane; it flaps its sock wings, lifts off with a little flutter, circles once and perches on his cowlick, which springs; Milo laughs.
+    camera: Slight tilt up following the crane to his head
+    expressions: {CHR_001: wonder, then delighted laugh}
+    sfx: [[0.0, "morning birds"], [1.2, "soft fabric flutter"], [2.4, "tiny crane chirp"], [3.2, "cowlick 'boing'"], [4.0, "Milo's laugh (non-verbal)"]]
+    music: The minuet on celesta with a final playful drum tap, landing on G major at the cut.
+    transition: CUT TO END CARD
+
+thumbnail:
+  cover_frame: EP010_SC01 at 2.4s (the hand with the feather duster)
+  chars: [CHR_033]
+  bg: BG_013@NIGHT
+  prompt: Two glowing yellow eyes under a dark bed and a furry lavender hand reaching out - holding a pink feather duster with its pinky raised.
+  overlay: "IT CLEANS"
+
+publishing:
+  title_en: "The Monster Under My Bed Is a Neat Freak 🧹👀 #Shorts"
+  title_pt_br: "O monstro debaixo da minha cama é obcecado por limpeza 🧹👀 #Shorts"
+  title_es: "El monstruo bajo mi cama es un maniático de la limpieza 🧹👀 #Shorts"
+  description_en: "Every night, something cleans Milo's room. Every morning, Milo wrecks it again. 🧹 An original ODDLY animated short — no words, just a world full of surprises."
+  description_pt_br: "Toda noite, alguma coisa arruma o quarto do Milo. Toda manhã, o Milo bagunça tudo de novo. 🧹 Um curta animado original ODDLY — sem palavras, só um mundo cheio de surpresas."
+  description_es: "Cada noche, algo ordena el cuarto de Milo. Cada mañana, Milo lo desordena otra vez. 🧹 Un corto animado original de ODDLY — sin palabras, solo un mundo lleno de sorpresas."
+  hashtags: ["#ODDLY", "#Shorts", "#Animation", "#Cartoon", "#Monster", "#Funny", "#Wholesome"]
+  tags: [oddly, animated short, cartoon, monster under the bed, tidy, cleaning, funny animation, wholesome, no dialogue, 2d animation]
+  pinned_comment: "We all need a Fuzzle 🧹💜"
+  series: ODDLY Shorts
+  playlist: Thistledown Tales
+
+edit:
+  grade: Night scenes lavender-blue with warm nightlight; morning scenes bright yellow sunlight; SC5 strobes between the two.
+  mix_notes: Keep the minuet/drums contrast clear; the finale duet should be balanced.
+  notes:
+    - SC1 opens in near-darkness; the eyes must be visible on frame 1.
+    - SC3 to SC4 dissolve over 12 frames from night to morning.
+    - SC5 time-lapse - alternate night/day every 12 frames; if generated as one clip, add the light strobe in grading.
+    - SC7 hold the frozen stare for at least 36 frames; the silence is the gag.
+
+qc:
+  character_consistency: Milo in PAJAMAS throughout (it is always bedtime or just after waking); Fuzzle's apron and pink-tipped horns in every shot; the duster loses feathers in SC5 and is shown whole again in SC10 as a sign of joy (acceptable stylization, noted for the art team).
+  story_originality: Monster-under-the-bed inverted into a neat freak; the gift-of-mess resolution is unique.
+  scene_continuity: Uses the same bedroom set as EP009 (shared world); MESSY and TIDY variants mark state; the toy brick from SC6 is part of the gift pile in SC9.
+  visual_quality: Signature frames - duster reveal (SC1), horror face (SC2), ballet cleaning (SC3), silent agony (SC6), mutual freeze (SC7), sock crane (SC11).
+  animation_feasibility: One set, two characters; the time-lapse can be done in the edit.
+  pacing: Hook 3s, premise by 11.5s, escalation to 24.5s, confrontation 28.5s, resolution 37.5s, twist last 5s.
+  sound_sync: Minuet = order and drums = mess motif carries the story; silence for the caught moment.
+  strong_opening: A monster hand reaching out from under the bed holding a feather duster.
+  memorable_ending: A sock crane comes to life and perches on Milo's cowlick.

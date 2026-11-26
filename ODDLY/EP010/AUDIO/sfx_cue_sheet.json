@@ -1,0 +1,354 @@
+{
+  "episode_id": "EP010",
+  "cues": [
+    {
+      "scene_id": "EP010_SC01",
+      "at_scene": 0.0,
+      "at_episode": 0.0,
+      "timecode": "00:00:00:00",
+      "sound": "low spooky drone"
+    },
+    {
+      "scene_id": "EP010_SC01",
+      "at_scene": 0.6,
+      "at_episode": 0.6,
+      "timecode": "00:00:00:14",
+      "sound": "eyes opening 'shing'"
+    },
+    {
+      "scene_id": "EP010_SC01",
+      "at_scene": 1.4,
+      "at_episode": 1.4,
+      "timecode": "00:00:01:10",
+      "sound": "fur sliding on floorboards"
+    },
+    {
+      "scene_id": "EP010_SC01",
+      "at_scene": 2.4,
+      "at_episode": 2.4,
+      "timecode": "00:00:02:10",
+      "sound": "dainty feather-duster flick 'fft'"
+    },
+    {
+      "scene_id": "EP010_SC02",
+      "at_scene": 0.0,
+      "at_episode": 3.0,
+      "timecode": "00:00:03:00",
+      "sound": "fluffy fur rustle"
+    },
+    {
+      "scene_id": "EP010_SC02",
+      "at_scene": 1.2,
+      "at_episode": 4.2,
+      "timecode": "00:00:04:05",
+      "sound": "violin screech sting"
+    },
+    {
+      "scene_id": "EP010_SC02",
+      "at_scene": 2.0,
+      "at_episode": 5.0,
+      "timecode": "00:00:05:00",
+      "sound": "fur bristling 'fwshh'"
+    },
+    {
+      "scene_id": "EP010_SC02",
+      "at_scene": 3.4,
+      "at_episode": 6.4,
+      "timecode": "00:00:06:10",
+      "sound": "Milo's tiny snore"
+    },
+    {
+      "scene_id": "EP010_SC03",
+      "at_scene": 0.0,
+      "at_episode": 7.5,
+      "timecode": "00:00:07:12",
+      "sound": "tiptoe pads"
+    },
+    {
+      "scene_id": "EP010_SC03",
+      "at_scene": 0.8,
+      "at_episode": 8.3,
+      "timecode": "00:00:08:07",
+      "sound": "sock fold 'fff-fp'"
+    },
+    {
+      "scene_id": "EP010_SC03",
+      "at_scene": 1.6,
+      "at_episode": 9.1,
+      "timecode": "00:00:09:02",
+      "sound": "crayons clicking into place 'tik-tik-tik'"
+    },
+    {
+      "scene_id": "EP010_SC03",
+      "at_scene": 2.6,
+      "at_episode": 10.1,
+      "timecode": "00:00:10:02",
+      "sound": "toy cars lining up 'clk-clk-clk'"
+    },
+    {
+      "scene_id": "EP010_SC03",
+      "at_scene": 3.4,
+      "at_episode": 10.9,
+      "timecode": "00:00:10:22",
+      "sound": "sparkle"
+    },
+    {
+      "scene_id": "EP010_SC04",
+      "at_scene": 0.0,
+      "at_episode": 11.5,
+      "timecode": "00:00:11:12",
+      "sound": "morning birds"
+    },
+    {
+      "scene_id": "EP010_SC04",
+      "at_scene": 1.0,
+      "at_episode": 12.5,
+      "timecode": "00:00:12:12",
+      "sound": "head scratch"
+    },
+    {
+      "scene_id": "EP010_SC04",
+      "at_scene": 2.0,
+      "at_episode": 13.5,
+      "timecode": "00:00:13:12",
+      "sound": "rocket 'zoom' mouth-noise (non-verbal)"
+    },
+    {
+      "scene_id": "EP010_SC04",
+      "at_scene": 2.6,
+      "at_episode": 14.1,
+      "timecode": "00:00:14:02",
+      "sound": "chaos of toys clattering"
+    },
+    {
+      "scene_id": "EP010_SC04",
+      "at_scene": 3.6,
+      "at_episode": 15.1,
+      "timecode": "00:00:15:02",
+      "sound": "slide whistle"
+    },
+    {
+      "scene_id": "EP010_SC05",
+      "at_scene": 0.0,
+      "at_episode": 16.0,
+      "timecode": "00:00:16:00",
+      "sound": "time-lapse whooshes alternating"
+    },
+    {
+      "scene_id": "EP010_SC05",
+      "at_scene": 0.8,
+      "at_episode": 16.8,
+      "timecode": "00:00:16:19",
+      "sound": "minuet fragment"
+    },
+    {
+      "scene_id": "EP010_SC05",
+      "at_scene": 1.6,
+      "at_episode": 17.6,
+      "timecode": "00:00:17:14",
+      "sound": "drum crash"
+    },
+    {
+      "scene_id": "EP010_SC05",
+      "at_scene": 2.4,
+      "at_episode": 18.4,
+      "timecode": "00:00:18:10",
+      "sound": "minuet fragment"
+    },
+    {
+      "scene_id": "EP010_SC05",
+      "at_scene": 3.2,
+      "at_episode": 19.2,
+      "timecode": "00:00:19:05",
+      "sound": "drum crash"
+    },
+    {
+      "scene_id": "EP010_SC05",
+      "at_scene": 4.0,
+      "at_episode": 20.0,
+      "timecode": "00:00:20:00",
+      "sound": "single feather falling 'fwip'"
+    },
+    {
+      "scene_id": "EP010_SC06",
+      "at_scene": 0.0,
+      "at_episode": 20.5,
+      "timecode": "00:00:20:12",
+      "sound": "dramatic sweep 'shhhk'"
+    },
+    {
+      "scene_id": "EP010_SC06",
+      "at_scene": 1.0,
+      "at_episode": 21.5,
+      "timecode": "00:00:21:12",
+      "sound": "toy brick crunch 'krik'"
+    },
+    {
+      "scene_id": "EP010_SC06",
+      "at_scene": 1.4,
+      "at_episode": 21.9,
+      "timecode": "00:00:21:22",
+      "sound": "muffled squeak through hands"
+    },
+    {
+      "scene_id": "EP010_SC06",
+      "at_scene": 2.0,
+      "at_episode": 22.5,
+      "timecode": "00:00:22:12",
+      "sound": "tiny hops 'pmf pmf pmf'"
+    },
+    {
+      "scene_id": "EP010_SC07",
+      "at_scene": 0.0,
+      "at_episode": 24.5,
+      "timecode": "00:00:24:12",
+      "sound": "eyes opening 'pik'"
+    },
+    {
+      "scene_id": "EP010_SC07",
+      "at_scene": 1.0,
+      "at_episode": 25.5,
+      "timecode": "00:00:25:12",
+      "sound": "dead silence, a clock ticking"
+    },
+    {
+      "scene_id": "EP010_SC07",
+      "at_scene": 3.0,
+      "at_episode": 27.5,
+      "timecode": "00:00:27:12",
+      "sound": "duster rustling behind back"
+    },
+    {
+      "scene_id": "EP010_SC08",
+      "at_scene": 0.0,
+      "at_episode": 29.0,
+      "timecode": "00:00:29:00",
+      "sound": "sock drop 'flp'"
+    },
+    {
+      "scene_id": "EP010_SC08",
+      "at_scene": 1.0,
+      "at_episode": 30.0,
+      "timecode": "00:00:30:00",
+      "sound": "twitch 'twing'"
+    },
+    {
+      "scene_id": "EP010_SC08",
+      "at_scene": 1.6,
+      "at_episode": 30.6,
+      "timecode": "00:00:30:14",
+      "sound": "twitch 'twing'"
+    },
+    {
+      "scene_id": "EP010_SC08",
+      "at_scene": 2.2,
+      "at_episode": 31.2,
+      "timecode": "00:00:31:05",
+      "sound": "lightning-fast fold 'fft-fft-fp'"
+    },
+    {
+      "scene_id": "EP010_SC08",
+      "at_scene": 3.4,
+      "at_episode": 32.4,
+      "timecode": "00:00:32:10",
+      "sound": "Milo's giggle (non-verbal)"
+    },
+    {
+      "scene_id": "EP010_SC09",
+      "at_scene": 0.0,
+      "at_episode": 33.5,
+      "timecode": "00:00:33:12",
+      "sound": "toys piling up"
+    },
+    {
+      "scene_id": "EP010_SC09",
+      "at_scene": 1.6,
+      "at_episode": 35.1,
+      "timecode": "00:00:35:02",
+      "sound": "ribbon tying 'zzip'"
+    },
+    {
+      "scene_id": "EP010_SC09",
+      "at_scene": 2.6,
+      "at_episode": 36.1,
+      "timecode": "00:00:36:02",
+      "sound": "wink 'ting'"
+    },
+    {
+      "scene_id": "EP010_SC09",
+      "at_scene": 3.4,
+      "at_episode": 36.9,
+      "timecode": "00:00:36:22",
+      "sound": "happy fluffy purr from under the bed"
+    },
+    {
+      "scene_id": "EP010_SC10",
+      "at_scene": 0.0,
+      "at_episode": 38.5,
+      "timecode": "00:00:38:12",
+      "sound": "graceful twirl swishes"
+    },
+    {
+      "scene_id": "EP010_SC10",
+      "at_scene": 1.2,
+      "at_episode": 39.7,
+      "timecode": "00:00:39:17",
+      "sound": "cascade of tidy sparkles"
+    },
+    {
+      "scene_id": "EP010_SC10",
+      "at_scene": 2.6,
+      "at_episode": 41.1,
+      "timecode": "00:00:41:02",
+      "sound": "soft folding sounds"
+    },
+    {
+      "scene_id": "EP010_SC10",
+      "at_scene": 3.4,
+      "at_episode": 41.9,
+      "timecode": "00:00:41:22",
+      "sound": "Milo's contented sleepy sigh"
+    },
+    {
+      "scene_id": "EP010_SC11",
+      "at_scene": 0.0,
+      "at_episode": 42.5,
+      "timecode": "00:00:42:12",
+      "sound": "morning birds"
+    },
+    {
+      "scene_id": "EP010_SC11",
+      "at_scene": 1.2,
+      "at_episode": 43.7,
+      "timecode": "00:00:43:17",
+      "sound": "soft fabric flutter"
+    },
+    {
+      "scene_id": "EP010_SC11",
+      "at_scene": 2.4,
+      "at_episode": 44.9,
+      "timecode": "00:00:44:22",
+      "sound": "tiny crane chirp"
+    },
+    {
+      "scene_id": "EP010_SC11",
+      "at_scene": 3.2,
+      "at_episode": 45.7,
+      "timecode": "00:00:45:17",
+      "sound": "cowlick 'boing'"
+    },
+    {
+      "scene_id": "EP010_SC11",
+      "at_scene": 4.0,
+      "at_episode": 46.5,
+      "timecode": "00:00:46:12",
+      "sound": "Milo's laugh (non-verbal)"
+    },
+    {
+      "scene_id": "ENDCARD",
+      "at_episode": 47.5,
+      "timecode": "00:00:47:12",
+      "sound": "Two-note celesta \"ding-ding\" rising, soft whoosh, tiny sparkle on the star blink. Same sting on every episode."
+    }
+  ]
+}

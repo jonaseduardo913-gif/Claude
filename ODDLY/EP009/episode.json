@@ -1,0 +1,48 @@
+{
+  "id": "EP009",
+  "concept": "CON039",
+  "title": "Ocean in a Jar",
+  "format": "SHORT",
+  "category": "Impossible experiments",
+  "logline": "A jar of seawater on Milo's desk has its own waves, its own weather and a tiny ship in trouble — and Milo has to calm the storm without shaking the jar.",
+  "palette": {
+    "dominant": "ocean blue #2F6DB5 and storm gray #4A5263",
+    "accent": "ship red #C8392F"
+  },
+  "runtime_seconds": 49.5,
+  "scene_count": 11,
+  "characters": [
+    "CHR_001",
+    "CHR_032"
+  ],
+  "backgrounds": [
+    "BG_013",
+    "BG_014",
+    "BG_015"
+  ],
+  "files": [
+    "ANIMATION/animation_jobs.json",
+    "AUDIO/music_brief.json",
+    "AUDIO/sfx_cue_sheet.json",
+    "BACKGROUNDS/backgrounds.json",
+    "CHARACTERS/characters.json",
+    "EDIT/edit_decision_list.json",
+    "PUBLISHING/metadata.json",
+    "QC/qc_report.json",
+    "SCENES/EP009_SC01.json",
+    "SCENES/EP009_SC02.json",
+    "SCENES/EP009_SC03.json",
+    "SCENES/EP009_SC04.json",
+    "SCENES/EP009_SC05.json",
+    "SCENES/EP009_SC06.json",
+    "SCENES/EP009_SC07.json",
+    "SCENES/EP009_SC08.json",
+    "SCENES/EP009_SC09.json",
+    "SCENES/EP009_SC10.json",
+    "SCENES/EP009_SC11.json",
+    "SCENES/script.md",
+    "THUMBNAIL/thumbnail.json",
+    "episode.json"
+  ],
+  "qc_status": "APPROVED_FOR_PRODUCTION"
+}

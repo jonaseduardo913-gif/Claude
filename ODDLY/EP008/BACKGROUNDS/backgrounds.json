@@ -1,0 +1,67 @@
+{
+  "BG_002": {
+    "name": "Thistledown Meadow",
+    "world": "THISTLEDOWN",
+    "prompt": "a wide rolling meadow just outside Thistledown village, long grass full of daisies, poppies and clover, a lone crooked oak tree, wooden fence, the village rooftops and windmill small on the horizon, Greystep Mountain rising behind",
+    "variants": {
+      "DAWN": "cool pale dawn, a thin silvery frost-like mist over the grass",
+      "DAY": "warm summer daylight, saturated greens, bees and butterflies",
+      "NIGHT": "deep teal-indigo night, grass silvered by moonlight, paper lanterns on poles",
+      "STORM": "dark violet storm clouds, wind-bent grass, rain streaks"
+    },
+    "reusable_for": [
+      "open fields",
+      "festivals",
+      "chase scenes"
+    ],
+    "episodes": [
+      "EP001",
+      "EP003",
+      "EP008"
+    ],
+    "variants_used": [
+      "NIGHT",
+      "STORM"
+    ]
+  },
+  "BG_016": {
+    "name": "Firefly Hollow",
+    "world": "THISTLEDOWN",
+    "prompt": "a dark tall-grass field at the edge of the Thistledown woods, crooked birch trees, a narrow path winding back toward the distant glowing village",
+    "variants": {
+      "STORM_NIGHT": "pitch-dark windy night, rain, grass whipping, only faint shapes visible",
+      "CLEAR_NIGHT": "after the storm, clear starry sky, wet grass sparkling"
+    },
+    "reusable_for": [
+      "lost-in-the-dark scenes"
+    ],
+    "episodes": [
+      "EP008"
+    ],
+    "variants_used": [
+      "CLEAR_NIGHT",
+      "STORM_NIGHT"
+    ]
+  },
+  "BG_007": {
+    "name": "Thistledown Night Sky Over Rooftops",
+    "world": "THISTLEDOWN",
+    "prompt": "a sweeping night sky above the sleeping rooftops of Thistledown, thatched and tiled roofs, chimneys, the windmill and church spire silhouetted, soft rolling clouds and many twinkling stars",
+    "variants": {
+      "NIGHT": "deep indigo sky, cool moonlight",
+      "DAWN": "indigo melting into pink and gold at the horizon"
+    },
+    "reusable_for": [
+      "flying scenes",
+      "night establishing shots"
+    ],
+    "episodes": [
+      "EP004",
+      "EP005",
+      "EP008"
+    ],
+    "variants_used": [
+      "NIGHT"
+    ]
+  }
+}

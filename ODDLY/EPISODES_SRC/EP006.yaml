@@ -1,0 +1,239 @@
+id: EP006
+concept: CON009
+title: Sock Migration
+format: SHORT
+category: Funny situations
+logline: Lost socks aren't lost — they migrate south. One little striped sock misses the flock and has to catch up alone.
+palette: {dominant: "sunset orange #F28C3A and brick red #A8483A", accent: "stripe red #E0483E"}
+
+music:
+  id: MUS_EP006
+  title: Southbound
+  style: Whimsical travel adventure - a soaring flute and accordion 'flock theme', a lonely solo piano for Stripe, a plodding bassoon for the pigeon, and a warm marimba and steel-pan finale on the island.
+  bpm: 116
+  key: G major
+  instrumentation: [flute, accordion, pizzicato strings, solo piano, bassoon, marimba, steel pan, light percussion, strings]
+  rules: The flock theme is stated in SC1 and returns in full only when Stripe joins the V in SC8.
+
+scenes:
+  - n: 1
+    beat: HOOK
+    dur: 3.0
+    action: In a laundromat at sunset, a dryer door bursts open and a V-formation of socks flaps out, sails across the room and out through the open front window into the orange sky.
+    chars: [CHR_028]
+    bg: BG_009@DUSK
+    props: [PRP_014]
+    fx: [FX_005]
+    shot: Wide interior shot down the row of dryers toward the front window, the flock flying toward camera then out the window
+    key: A V-formation of mixed socks (argyle, wool, tube, polka-dot) flying out of an open round dryer door, rippling like ribbons, sunset glowing through the window.
+    lighting: Warm orange sunset light through the window, cool flickering fluorescent tubes
+    motion: The dryer door pops open; socks pour out and snap into a V-formation; they ripple across the room and exit through the window into the sky.
+    camera: Quick pan following the flock to the window
+    expressions: {CHR_028: excited, eager}
+    sfx: [[0.0, "dryer door CLUNK open"], [0.4, "flurry of fabric flaps like wings"], [1.6, "whoosh past camera"], [2.4, "distant fabric flapping"]]
+    music: Flute and accordion flock theme bursts in on the door pop.
+    transition: CUT
+
+  - n: 2
+    beat: LEFT BEHIND
+    dur: 4.5
+    action: Inside the still-tumbling dryer, Stripe is tangled in a big towel. It wriggles free and tumbles out of the door - just in time to see the last sock vanish out of the window.
+    chars: [CHR_027]
+    bg: BG_009@DUSK
+    props: [PRP_014]
+    shot: Close-up through the round dryer window, then Stripe flopping onto the checkered floor
+    key: Stripe tangled in a fluffy blue towel inside the slowly turning dryer drum, eyes panicked, stitched eyebrows raised.
+    lighting: Warm interior, the dryer glass reflecting the sunset
+    motion: The drum turns; Stripe wriggles out of the towel, gets flung out of the door, flops onto the floor, sits up, and sees the final sock disappear out of the window.
+    camera: Static on the dryer, tilt down to the floor
+    expressions: {CHR_027: panicked, then crushed}
+    sfx: [[0.0, "slow dryer tumble thumps"], [1.2, "fabric wriggle"], [2.2, "soft 'flump' onto the floor"], [3.2, "distant last flap"], [3.8, "sad little sigh"]]
+    music: The flock theme fades into the distance; solo piano.
+    transition: CUT
+
+  - n: 3
+    beat: DETERMINATION
+    dur: 4.0
+    action: Stripe crawls up onto the window sill like an inchworm and watches the V-formation shrinking over the rooftops toward the harbor. It straightens up, determined.
+    chars: [CHR_027]
+    bg: BG_009@DUSK
+    shot: Behind Stripe on the window sill looking out over the brick street, the tiny V in the sky
+    key: Stripe standing tall on the sill, silhouetted against the sunset, the flock a tiny V over the rooftops in the distance.
+    lighting: Golden sunset backlight
+    motion: Stripe inchworms up onto the sill, watches the tiny V, then stiffens tall and determined, and launches off the sill.
+    camera: Slow push past Stripe toward the sky
+    expressions: {CHR_027: lonely, then determined}
+    sfx: [[0.0, "soft fabric inchworm shuffles"], [2.4, "determined fabric snap"], [3.4, "launch flap"]]
+    music: Piano lifts into a brave little rising line.
+    transition: CUT
+
+  - n: 4
+    beat: CITY
+    dur: 5.0
+    action: Stripe flies clumsily over the Brassport rooftops, gets snagged on a clothesline between two buildings among flapping laundry, and wriggles free when a clothespin snaps.
+    chars: [CHR_027]
+    bg: BG_010@DUSK
+    fx: [FX_005]
+    shot: Medium-wide shot over the rooftops, a clothesline with laundry crossing the frame
+    key: Stripe caught on a clothesline between a giant pair of long johns and a flapping shirt, a wooden clothespin pinching its cuff.
+    lighting: Orange-violet sunset
+    motion: Stripe flies in wobbly ripples; hits the clothesline and gets pinned by a clothespin; struggles; the clothespin springs off and Stripe tumbles free and flies on.
+    camera: Tracking with Stripe, slight bounce on the snag
+    expressions: {CHR_027: eager, then panicked, then relieved}
+    sfx: [[0.0, "wobbly fabric flapping"], [1.4, "clothesline twang"], [2.0, "clothespin snap 'tak'"], [3.2, "struggling fabric"], [3.8, "clothespin spring 'boing'"]]
+    music: Pizzicato scramble.
+    transition: CUT
+
+  - n: 5
+    beat: EXHAUSTED
+    dur: 4.5
+    action: Exhausted, Stripe drops onto a rooftop ledge next to a plump pigeon, who looks at it with total boredom.
+    chars: [CHR_027, CHR_029]
+    bg: BG_010@DUSK
+    shot: Medium two-shot on a brick ledge with a water tower behind
+    key: Stripe draped flat on the ledge panting; the plump pigeon beside it, half-lidded bored eyes, head turned.
+    lighting: Fading violet sunset
+    motion: Stripe flops onto the ledge, puffing; the pigeon slowly turns its head, blinks once, unimpressed.
+    camera: Static
+    expressions: {CHR_027: exhausted, CHR_029: bored, unimpressed}
+    sfx: [[0.0, "soft fabric flop"], [0.8, "tiny panting puffs"], [2.4, "pigeon coo 'brrrooo'"], [3.4, "slow blink 'tk'"]]
+    music: Plodding bassoon pigeon theme.
+    transition: CUT
+
+  - n: 6
+    beat: THE DEAL
+    dur: 5.0
+    action: Stripe points south at the distant flock, pleading. The pigeon ignores it. Stripe pulls a breadcrumb out of its cuff and offers it. The pigeon gobbles it, sighs, and lowers its back. Stripe climbs on.
+    chars: [CHR_027, CHR_029]
+    bg: BG_010@DUSK
+    shot: Close two-shot, Stripe holding up a breadcrumb toward the pigeon's beak
+    key: Stripe holding up a breadcrumb with pleading eyes; the pigeon looking at the crumb sideways with interest.
+    lighting: Violet dusk with the first city lights
+    motion: Stripe points at the sky, the pigeon looks away; Stripe pulls a crumb out of its cuff; the pigeon snatches it, gulps, sighs heavily, and crouches; Stripe wraps around its neck like a scarf.
+    camera: Slight push-in
+    expressions: {CHR_027: pleading, then hopeful, CHR_029: bored, then interested, then resigned}
+    sfx: [[0.0, "fabric pointing swish"], [1.4, "tiny crumb rustle"], [2.2, "pigeon peck and gulp"], [3.0, "heavy pigeon sigh"], [4.0, "fabric wrapping"]]
+    music: Bassoon and flute play together for the first time.
+    transition: CUT
+
+  - n: 7
+    beat: SEA CROSSING
+    dur: 4.5
+    action: The pigeon flaps heavily over the harbor and out to sea, Stripe wrapped around its neck like a scarf, stripes rippling in the wind.
+    chars: [CHR_027, CHR_029]
+    bg: BG_010@DUSK
+    fx: [FX_005]
+    shot: Side tracking shot of the pigeon flying over the harbor, ships and lighthouse below
+    key: The plump pigeon flying with heavy wingbeats, Stripe wrapped around its neck, its toe end flapping behind like a scarf, the harbor and open sea below.
+    lighting: Last golden light on the sea
+    motion: Heavy flapping flight cycle; Stripe's end flutters behind; they leave the harbor and fly out over open water.
+    camera: Side track matching the flight
+    expressions: {CHR_027: exhilarated, CHR_029: grimly flapping}
+    sfx: [[0.0, "heavy pigeon wingbeats"], [1.6, "harbor bell"], [2.6, "sea wind whoosh"], [3.6, "seagull call far away"]]
+    music: Strings build under the flute.
+    transition: CUT
+
+  - n: 8
+    beat: JOINING THE V
+    dur: 4.5
+    action: Over the ocean they catch up with the flock. The socks shuffle and open a gap in the V. Stripe flies off the pigeon and slips into the gap. The pigeon peels away with a tiny unimpressed nod.
+    chars: [CHR_027, CHR_028, CHR_029]
+    bg: BG_010@DUSK
+    fx: [FX_012]
+    shot: Wide aerial shot of the V-formation of socks over the sea, the pigeon below one wing
+    key: The V-formation of socks with one empty gap; Stripe flying up into it; the pigeon below veering off.
+    lighting: Golden-pink light over the ocean
+    motion: The flock opens a gap; Stripe leaves the pigeon and ripples into position; the pigeon nods once and peels away; the V flies in perfect rhythm.
+    camera: Slow orbit around the formation
+    expressions: {CHR_027: overjoyed, CHR_028: welcoming, CHR_029: unimpressed tiny nod}
+    sfx: [[0.0, "flock flapping in rhythm"], [1.4, "fabric snap into formation"], [2.6, "pigeon wing peel-away whoosh"], [3.4, "rhythmic synchronized flapping"]]
+    music: Full flock theme returns on flute, accordion and strings.
+    transition: DISSOLVE
+
+  - n: 9
+    beat: SOCK ISLAND
+    dur: 5.0
+    action: A tropical island appears with palm trees strung with long clotheslines, where hundreds of single socks rest like birds in a colony. The flock lands.
+    chars: [CHR_027, CHR_028]
+    bg: BG_011@SUNSET
+    shot: Wide establishing shot of the island from the sea, the flock descending
+    key: The island at sunset with clotheslines between palm trees full of hanging socks, the V-formation descending toward it.
+    lighting: Golden-pink tropical sunset
+    motion: The flock glides down in a spiral and lands on the clotheslines, which bounce; resting socks sway in the breeze.
+    camera: Slow push toward the island
+    expressions: {CHR_027: amazed, CHR_028: content}
+    sfx: [[0.0, "gentle surf"], [1.2, "tropical birds"], [2.6, "many soft fabric landings"], [3.6, "clothesline bounce creaks"]]
+    music: Marimba and steel pan join the theme.
+    transition: CUT
+
+  - n: 10
+    beat: ALONE
+    dur: 4.0
+    action: Stripe hangs on a clothesline among hundreds of mismatched single socks, looking left and right. Everyone else seems to belong. Stripe droops.
+    chars: [CHR_027, CHR_028]
+    bg: BG_011@SUNSET
+    shot: Medium shot along a crowded clothesline, Stripe in the middle
+    key: Stripe hanging among argyles, tube socks and polka-dots, looking around with lonely eyes.
+    lighting: Warm sunset
+    motion: Stripe looks left, looks right; socks around it sway; Stripe slowly droops on the line.
+    camera: Slow lateral track along the line
+    expressions: {CHR_027: lonely}
+    sfx: [[0.0, "breeze in palms"], [1.4, "clothesline creak"], [2.8, "small sad sigh"]]
+    music: Solo piano returns over soft steel pan.
+    transition: CUT
+
+  - n: 11
+    beat: TWIST
+    dur: 5.0
+    action: A sock further down the line turns around - red and cream stripes, with a little pink heart darn on the heel. It's Stripe's pair, who flew south last year. They rush together, hug, and roll up into a matched sock ball, nestled together on the line.
+    chars: [CHR_027, CHR_028]
+    bg: BG_011@SUNSET
+    fx: [FX_012]
+    shot: Medium two-shot on the clothesline, then a close-up on the matched sock ball
+    key: Stripe and its identical pair (with a pink heart darn) hugging on the clothesline, rolled into a cozy sock ball, little hearts floating, the sunset behind.
+    lighting: Golden sunset glow, soft rim light
+    motion: The pair turns; both freeze in recognition; they shuffle along the line toward each other, hug, and roll up into a ball; the line sways gently.
+    camera: Push-in to the sock ball, hold
+    expressions: {CHR_027: overjoyed, CHR_028: pair overjoyed}
+    sfx: [[0.0, "surprised little fabric gasp"], [1.4, "quick shuffling along the line"], [2.6, "soft fabric hug 'fwmp'"], [3.4, "cozy rolling-up rustle"], [4.4, "warm chime"]]
+    music: Flock theme slows into a tender final statement; final G major chord at the cut.
+    transition: CUT TO END CARD
+
+thumbnail:
+  cover_frame: EP006_SC01 at 1.6s (the flock bursting toward camera)
+  chars: [CHR_027, CHR_028]
+  bg: BG_009@DUSK
+  prompt: A V-formation of socks flying out of a laundromat dryer into a sunset sky, little striped Stripe flying hard to catch up at the back.
+  overlay: "WHERE SOCKS GO"
+
+publishing:
+  title_en: "This Is Where Your Lost Socks Go 🧦🌴 #Shorts"
+  title_pt_br: "É pra cá que vão as suas meias perdidas 🧦🌴 #Shorts"
+  title_es: "Aquí es a donde van tus calcetines perdidos 🧦🌴 #Shorts"
+  description_en: "Lost socks aren't lost. They migrate. 🧦 One little striped sock misses the flock… An original ODDLY animated short — no words, just a world full of surprises."
+  description_pt_br: "Meias perdidas não estão perdidas. Elas migram. 🧦 Uma meinha listrada perde o bando… Um curta animado original ODDLY — sem palavras, só um mundo cheio de surpresas."
+  description_es: "Los calcetines perdidos no se pierden. Migran. 🧦 Un calcetín a rayas se queda atrás… Un corto animado original de ODDLY — sin palabras, solo un mundo lleno de sorpresas."
+  hashtags: ["#ODDLY", "#Shorts", "#Animation", "#Cartoon", "#Socks", "#Funny", "#Wholesome"]
+  tags: [oddly, animated short, cartoon, lost socks, migration, laundry, wholesome, no dialogue, 2d animation, funny animation]
+  pinned_comment: "How many of YOUR socks are on that island? 🧦"
+  series: ODDLY Shorts
+  playlist: Brassport Stories
+
+edit:
+  grade: Warm sunset palette throughout, cooling to violet at SC5-6, then golden-pink tropical warmth on the island.
+  mix_notes: Fabric-flap SFX are soft; keep the flock flaps rhythmic and in tempo with the music.
+  notes:
+    - SC1 begins on the dryer door pop - no lead-in.
+    - SC8 to SC9 dissolve over 12 frames to cover the long sea crossing.
+    - The pink heart darn must be clearly visible in SC11; push in if needed.
+
+qc:
+  character_consistency: Stripe and its pair share the identical design, distinguished only by the pink heart darn; the pigeon is consistent across SC5-8.
+  story_originality: Socks as migratory birds; unique premise.
+  scene_continuity: Same evening throughout - laundromat dusk -> rooftop dusk -> sea -> island sunset (moving south and west keeps the sun up).
+  visual_quality: Signature frames - dryer launch (SC1), clothesline snag (SC4), sock scarf on a pigeon (SC7), sock island (SC9), sock ball (SC11).
+  animation_feasibility: Socks are simple ribbon shapes; the flock reuses one undulation cycle with offsets.
+  pacing: Loss at 3s, journey 7.5-34s, arrival 34s, lonely beat 39s, twist last 5s.
+  sound_sync: Flock theme reserved for SC1 and SC8 to mark loss and return.
+  strong_opening: Socks flying out of a dryer in formation.
+  memorable_ending: Stripe finds its matching pair and they roll into a sock ball.

@@ -1,0 +1,32 @@
+{
+  "episode_id": "EP009",
+  "automated_checks": {
+    "passed": true,
+    "errors": [],
+    "checked": [
+      "scene numbering",
+      "runtime window",
+      "scene-count window",
+      "hook <= 3.5s",
+      "all character/background/prop/fx IDs exist in library",
+      "characters registered for episode",
+      "SFX inside scene bounds",
+      "every scene has SFX",
+      "valid transitions",
+      "no speech wording",
+      "final cut to end card"
+    ]
+  },
+  "editorial_review": {
+    "character_consistency": "Milo is in the PAJAMAS variant throughout; Captain Tot keeps his spyglass, which pays off in SC10.",
+    "story_originality": "A tiny storm calmed by breath, with a recursive scale-reveal ending; EP001's giant is not referenced, keeping the mystery.",
+    "scene_continuity": "The jar moves desk -> window sill (SC9), consistent with SC11 where the attic window is lit.",
+    "visual_quality": "Signature frames - storm in a jar (SC1), giant eye beyond the glass (SC3), nightlight lighthouse (SC5), calm tiny sun (SC8), pull-back (SC11).",
+    "animation_feasibility": "Two sets plus a macro jar set; the pull-back is the most complex shot and is flagged for stitching.",
+    "pacing": "Hook 3s, problem by 11.5s, failure 16s, attempts to 32s, calm 37s, twist last 9.5s.",
+    "sound_sync": "Filter-switch rule distinguishes inside vs outside; breath fog in SC7 and SC11 share the same breath SFX.",
+    "strong_opening": "Lightning in a jar lighting a dark bedroom.",
+    "memorable_ending": "Milo's room is itself in a jar, and someone breathes on it."
+  },
+  "status": "APPROVED_FOR_PRODUCTION"
+}

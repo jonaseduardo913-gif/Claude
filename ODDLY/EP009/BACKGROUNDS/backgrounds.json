@@ -1,0 +1,60 @@
+{
+  "BG_013": {
+    "name": "Milo's Bedroom",
+    "world": "THISTLEDOWN",
+    "prompt": "a cozy kid's attic bedroom with a slanted ceiling, a wooden bed with a navy star-patterned quilt, a desk under a round window, shelves of toys and books, a rug shaped like a cloud, and posters of rockets with no writing",
+    "variants": {
+      "NIGHT": "blue moonlight through the window, a small mushroom-shaped nightlight glowing",
+      "DAY": "morning sun pouring in",
+      "MESSY": "daylight with toys, clothes, socks and crayons scattered everywhere",
+      "TIDY": "daylight, every object perfectly sorted, folded and aligned"
+    },
+    "reusable_for": [
+      "home interiors",
+      "night-time stories"
+    ],
+    "episodes": [
+      "EP009",
+      "EP010"
+    ],
+    "variants_used": [
+      "NIGHT"
+    ]
+  },
+  "BG_014": {
+    "name": "Inside the Jar Ocean",
+    "world": "THISTLEDOWN",
+    "prompt": "the miniature ocean inside a glass jar, curved glass walls distorting the edges, a tiny sea with waves and a tiny sky with its own clouds",
+    "variants": {
+      "STORM": "tiny black storm clouds, tiny lightning bolts, foaming waves",
+      "CALM": "clear tiny blue sky, gentle glittering waves, a tiny sun"
+    },
+    "reusable_for": [
+      "macro worlds"
+    ],
+    "episodes": [
+      "EP009"
+    ],
+    "variants_used": [
+      "CALM",
+      "STORM"
+    ]
+  },
+  "BG_015": {
+    "name": "The Giant Desk",
+    "world": "UNKNOWN",
+    "prompt": "an enormous wooden desk in a vast dim room, a single huge glass jar on it which contains an entire attic bedroom with a round window, a giant brass desk lamp and giant pencils beside it",
+    "variants": {
+      "NIGHT": "lamp-lit, deep warm shadows"
+    },
+    "reusable_for": [
+      "scale-reveal endings"
+    ],
+    "episodes": [
+      "EP009"
+    ],
+    "variants_used": [
+      "NIGHT"
+    ]
+  }
+}

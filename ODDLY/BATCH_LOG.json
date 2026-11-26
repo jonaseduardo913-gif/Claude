@@ -2,7 +2,9 @@
   "production": "ODDLY Shorts Season 1",
   "batches": [
     {"batch": "PB01", "episodes": ["EP001", "EP002", "EP003", "EP004", "EP005"], "status": "complete"},
-    {"batch": "PB02", "episodes": ["EP006", "EP007", "EP008", "EP009", "EP010"], "status": "in_progress"}
+    {"batch": "PB02", "episodes": ["EP006", "EP007", "EP008", "EP009", "EP010"], "status": "complete"}
   ],
-  "next_unfinished_episode": "EP006"
+  "next_unfinished_episode": null,
+  "next_episode_id": "EP011",
+  "unused_shortlist_concepts": ["CON017 (LONG)", "CON047 (LONG)", "CON032", "CON045", "CON030", "CON037", "CON028 (LONG)", "CON007", "CON031", "CON038"]
 }

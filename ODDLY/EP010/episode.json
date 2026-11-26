@@ -1,0 +1,46 @@
+{
+  "id": "EP010",
+  "concept": "CON006",
+  "title": "The Tidy Monster",
+  "format": "SHORT",
+  "category": "Strange creatures",
+  "logline": "The monster under Milo's bed isn't scary — it's a neat freak, and Milo's mess is driving it crazy.",
+  "palette": {
+    "dominant": "lavender #8E8CD8 and morning yellow #F7D046",
+    "accent": "duster pink #F49AC2"
+  },
+  "runtime_seconds": 49.5,
+  "scene_count": 11,
+  "characters": [
+    "CHR_001",
+    "CHR_033"
+  ],
+  "backgrounds": [
+    "BG_013"
+  ],
+  "files": [
+    "ANIMATION/animation_jobs.json",
+    "AUDIO/music_brief.json",
+    "AUDIO/sfx_cue_sheet.json",
+    "BACKGROUNDS/backgrounds.json",
+    "CHARACTERS/characters.json",
+    "EDIT/edit_decision_list.json",
+    "PUBLISHING/metadata.json",
+    "QC/qc_report.json",
+    "SCENES/EP010_SC01.json",
+    "SCENES/EP010_SC02.json",
+    "SCENES/EP010_SC03.json",
+    "SCENES/EP010_SC04.json",
+    "SCENES/EP010_SC05.json",
+    "SCENES/EP010_SC06.json",
+    "SCENES/EP010_SC07.json",
+    "SCENES/EP010_SC08.json",
+    "SCENES/EP010_SC09.json",
+    "SCENES/EP010_SC10.json",
+    "SCENES/EP010_SC11.json",
+    "SCENES/script.md",
+    "THUMBNAIL/thumbnail.json",
+    "episode.json"
+  ],
+  "qc_status": "APPROVED_FOR_PRODUCTION"
+}

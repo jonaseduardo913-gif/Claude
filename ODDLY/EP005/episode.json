@@ -40,7 +40,9 @@
     "SCENES/EP005_SC09.json",
     "SCENES/EP005_SC10.json",
     "SCENES/EP005_SC11.json",
-    "THUMBNAIL/thumbnail.json"
+    "SCENES/script.md",
+    "THUMBNAIL/thumbnail.json",
+    "episode.json"
   ],
   "qc_status": "APPROVED_FOR_PRODUCTION"
 }

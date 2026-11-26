@@ -1,0 +1,32 @@
+{
+  "episode_id": "EP010",
+  "automated_checks": {
+    "passed": true,
+    "errors": [],
+    "checked": [
+      "scene numbering",
+      "runtime window",
+      "scene-count window",
+      "hook <= 3.5s",
+      "all character/background/prop/fx IDs exist in library",
+      "characters registered for episode",
+      "SFX inside scene bounds",
+      "every scene has SFX",
+      "valid transitions",
+      "no speech wording",
+      "final cut to end card"
+    ]
+  },
+  "editorial_review": {
+    "character_consistency": "Milo in PAJAMAS throughout (it is always bedtime or just after waking); Fuzzle's apron and pink-tipped horns in every shot; the duster loses feathers in SC5 and is shown whole again in SC10 as a sign of joy (acceptable stylization, noted for the art team).",
+    "story_originality": "Monster-under-the-bed inverted into a neat freak; the gift-of-mess resolution is unique.",
+    "scene_continuity": "Uses the same bedroom set as EP009 (shared world); MESSY and TIDY variants mark state; the toy brick from SC6 is part of the gift pile in SC9.",
+    "visual_quality": "Signature frames - duster reveal (SC1), horror face (SC2), ballet cleaning (SC3), silent agony (SC6), mutual freeze (SC7), sock crane (SC11).",
+    "animation_feasibility": "One set, two characters; the time-lapse can be done in the edit.",
+    "pacing": "Hook 3s, premise by 11.5s, escalation to 24.5s, confrontation 28.5s, resolution 37.5s, twist last 5s.",
+    "sound_sync": "Minuet = order and drums = mess motif carries the story; silence for the caught moment.",
+    "strong_opening": "A monster hand reaching out from under the bed holding a feather duster.",
+    "memorable_ending": "A sock crane comes to life and perches on Milo's cowlick."
+  },
+  "status": "APPROVED_FOR_PRODUCTION"
+}

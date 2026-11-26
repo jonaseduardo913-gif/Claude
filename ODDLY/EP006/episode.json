@@ -1,0 +1,49 @@
+{
+  "id": "EP006",
+  "concept": "CON009",
+  "title": "Sock Migration",
+  "format": "SHORT",
+  "category": "Funny situations",
+  "logline": "Lost socks aren't lost — they migrate south. One little striped sock misses the flock and has to catch up alone.",
+  "palette": {
+    "dominant": "sunset orange #F28C3A and brick red #A8483A",
+    "accent": "stripe red #E0483E"
+  },
+  "runtime_seconds": 51.0,
+  "scene_count": 11,
+  "characters": [
+    "CHR_027",
+    "CHR_028",
+    "CHR_029"
+  ],
+  "backgrounds": [
+    "BG_009",
+    "BG_010",
+    "BG_011"
+  ],
+  "files": [
+    "ANIMATION/animation_jobs.json",
+    "AUDIO/music_brief.json",
+    "AUDIO/sfx_cue_sheet.json",
+    "BACKGROUNDS/backgrounds.json",
+    "CHARACTERS/characters.json",
+    "EDIT/edit_decision_list.json",
+    "PUBLISHING/metadata.json",
+    "QC/qc_report.json",
+    "SCENES/EP006_SC01.json",
+    "SCENES/EP006_SC02.json",
+    "SCENES/EP006_SC03.json",
+    "SCENES/EP006_SC04.json",
+    "SCENES/EP006_SC05.json",
+    "SCENES/EP006_SC06.json",
+    "SCENES/EP006_SC07.json",
+    "SCENES/EP006_SC08.json",
+    "SCENES/EP006_SC09.json",
+    "SCENES/EP006_SC10.json",
+    "SCENES/EP006_SC11.json",
+    "SCENES/script.md",
+    "THUMBNAIL/thumbnail.json",
+    "episode.json"
+  ],
+  "qc_status": "APPROVED_FOR_PRODUCTION"
+}

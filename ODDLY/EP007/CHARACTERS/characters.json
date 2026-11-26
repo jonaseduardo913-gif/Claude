@@ -1,0 +1,86 @@
+{
+  "CHR_005": {
+    "name": "Mr. Finch",
+    "type": "human (office worker, 40)",
+    "status": "approved",
+    "prompt": "MR. FINCH, a tall, thin man around 40, 7 heads tall with a long neck and narrow face, pale skin, slicked dark hair, thin mustache, rumpled brown suit slightly too short at the wrists and ankles, loosened red tie, carrying a small battered briefcase",
+    "anim_lock": "Mr. Finch - very tall and thin, slicked dark hair, thin mustache, short-sleeved-looking brown suit, loose red tie",
+    "palette": {
+      "skin": "#F0D9C4",
+      "hair": "#2A2A2A",
+      "suit": "#7A5C3E",
+      "tie": "#B33A3A",
+      "briefcase": "#4A3A2A"
+    },
+    "proportions": "7 heads; very long limbs; tiny head on long neck.",
+    "movement": "Stiff, jerky and flustered; elbows out; tiptoes awkwardly.",
+    "expressions": [
+      "sweaty exhausted",
+      "curious",
+      "shocked",
+      "embarrassed",
+      "guilty",
+      "tender smile"
+    ],
+    "reference_requirements": "Turnaround; drinking-can pose; holding umbrella-less arms over head.",
+    "episodes": [
+      "EP007"
+    ],
+    "variants_used": []
+  },
+  "CHR_008": {
+    "name": "Brassport Citizens",
+    "type": "crowd pack (5 reusable designs)",
+    "status": "approved",
+    "prompt": "BRASSPORT CITIZENS, a city crowd: a barista in a green apron, a bride in a white dress with a groom in a gray suit, a bus driver in a navy uniform, a jogger in a pink tracksuit",
+    "anim_lock": "Brassport citizens - barista in green apron, bride and groom, bus driver in navy, jogger in pink",
+    "palette": {
+      "apron": "#3E8E5E",
+      "dress": "#FFFFFF",
+      "suit": "#8A8F99",
+      "uniform": "#22345E",
+      "tracksuit": "#F28AB2"
+    },
+    "proportions": "5 to 6.5 heads.",
+    "movement": "Reaction-pose friendly; startled jumps, shiver, shield-face cycles.",
+    "expressions": [
+      "startled",
+      "annoyed",
+      "soaked",
+      "delighted"
+    ],
+    "reference_requirements": "Lineup sheet; startled pose for each.",
+    "episodes": [
+      "EP007"
+    ],
+    "variants_used": []
+  },
+  "CHR_006": {
+    "name": "Mrs. Pell",
+    "type": "human (elderly neighbor, 80)",
+    "status": "approved",
+    "prompt": "MRS. PELL, a tiny hunched elderly woman, 4.5 heads tall, gray curly hair, droopy sad eyes behind thick glasses, lavender cardigan buttoned wrong, blue-gray skirt, fuzzy pink slippers, sitting with a wilted potted geranium",
+    "anim_lock": "Mrs. Pell - tiny hunched, gray curls, thick glasses, lavender cardigan buttoned wrong, pink slippers",
+    "palette": {
+      "skin": "#EBC9AE",
+      "hair": "#B8B8C0",
+      "cardigan": "#9C8DB8",
+      "skirt": "#5E6E85",
+      "slippers": "#F2A6B6",
+      "geranium": "#C9483E"
+    },
+    "proportions": "4.5 heads; very small hands.",
+    "movement": "Slow shuffle, long sighs (shoulders rise and fall).",
+    "expressions": [
+      "gloomy",
+      "surprised",
+      "tearful joy",
+      "delighted laugh"
+    ],
+    "reference_requirements": "Turnaround; seated on balcony chair.",
+    "episodes": [
+      "EP007"
+    ],
+    "variants_used": []
+  }
+}

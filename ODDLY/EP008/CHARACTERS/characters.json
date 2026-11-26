@@ -1,0 +1,155 @@
+{
+  "CHR_031": {
+    "name": "Firefly Swarm",
+    "type": "insect crowd",
+    "status": "approved",
+    "prompt": "THE FIREFLY SWARM, hundreds of tiny fireflies with bright golden-green glowing tails, proud and bouncy, drawn as glowing dots with soft halos at a distance and tiny cartoon bugs close up",
+    "anim_lock": "Firefly swarm - bright golden-green glowing tails, soft halos",
+    "palette": {
+      "glow": "#C8F25A",
+      "halo": "#F6E27A"
+    },
+    "proportions": "Same construction as Glim but brighter.",
+    "movement": "Particle swarm with gentle noise drift.",
+    "expressions": [
+      "proud",
+      "scared"
+    ],
+    "reference_requirements": "Close-up model; particle sprite.",
+    "episodes": [
+      "EP008"
+    ],
+    "variants_used": []
+  },
+  "CHR_030": {
+    "name": "Glim",
+    "type": "firefly (secretly a baby star)",
+    "status": "approved",
+    "prompt": "GLIM, a tiny round firefly with a dark-brown body, two translucent wings, oversized shy round eyes and a rounded tail lantern that glows only a faint pale yellow-green; in its final form the tail glow becomes a soft white-gold starlight with four gentle rays",
+    "anim_lock": "Glim - tiny round dark-brown firefly, oversized shy eyes, faint pale-green tail glow",
+    "palette": {
+      "body": "#4A3426",
+      "wings": "#DDEAF2",
+      "glow_dim": "#D9E58A",
+      "glow_star": "#FFF1C2"
+    },
+    "proportions": "Eyes take half the head; tail lantern equals head size.",
+    "movement": "Hesitant fluttering, drifts backward when shy; steady and graceful once brave.",
+    "expressions": [
+      "shy",
+      "ashamed",
+      "scared",
+      "brave",
+      "serene"
+    ],
+    "reference_requirements": "Model sheet in dim and star states.",
+    "variants": {
+      "STAR": "tail glow becomes radiant white-gold starlight with four soft rays; body almost hidden in light"
+    },
+    "episodes": [
+      "EP008"
+    ],
+    "variants_used": [
+      "STAR"
+    ]
+  },
+  "CHR_007": {
+    "name": "Thistledown Villagers",
+    "type": "crowd pack (6 reusable designs)",
+    "status": "approved",
+    "prompt": "THISTLEDOWN VILLAGERS, a cheerful storybook crowd: a stout farmer in green overalls and straw hat, a tall old man with a white beard and wooden cane, a mother in a mustard shawl carrying a baby, red-haired twin boys in long striped scarves, a plump woman in a polka-dot headscarf, a skinny teen in a blue cap",
+    "anim_lock": "Thistledown villagers - farmer in green overalls, old man with cane, mother in mustard shawl, red-haired twins in striped scarves, woman in polka-dot headscarf, teen in blue cap",
+    "palette": {
+      "overalls": "#4F7A3A",
+      "shawl": "#D9A441",
+      "scarves": "#C84B3B",
+      "headscarf": "#3A6EA5",
+      "cap": "#2F5FA8"
+    },
+    "proportions": "4.5 to 6 heads; simple shapes for cheap crowd animation.",
+    "movement": "Cycle-friendly - walk, cheer, point, skate cycles reused.",
+    "expressions": [
+      "cheerful",
+      "startled",
+      "cheering",
+      "awed"
+    ],
+    "reference_requirements": "Lineup sheet of all 6; skate cycle; panic-run cycle; cheer cycle.",
+    "episodes": [
+      "EP001",
+      "EP004",
+      "EP008"
+    ],
+    "variants_used": []
+  },
+  "CHR_001": {
+    "name": "Milo",
+    "type": "human child (boy, 8)",
+    "status": "approved",
+    "prompt": "MILO, an 8-year-old boy, 4 heads tall with a big round head, small torso and stubby limbs; warm light-tan skin, messy chestnut-brown hair with one upright cowlick, big round dark-brown eyes with a white highlight, five freckles across the nose; mustard-yellow hoodie with a small white star patch on the left chest, navy shorts, white socks, red sneakers with white soles",
+    "anim_lock": "Milo - 4 heads tall, chestnut hair with single cowlick, mustard hoodie with white star patch, navy shorts, red sneakers",
+    "palette": {
+      "skin": "#F2C9A0",
+      "hair": "#7A4A2A",
+      "eyes": "#3B2416",
+      "hoodie": "#E8B23A",
+      "star_patch": "#FFFFFF",
+      "shorts": "#2B3A67",
+      "sneakers": "#D9443A"
+    },
+    "proportions": "4 heads tall; head width = shoulder width; hands are 4-finger cartoon hands.",
+    "movement": "Bouncy and quick with big anticipation and overshoot; tiptoes when sneaking; hair cowlick springs on every stop.",
+    "expressions": [
+      "curious",
+      "wide-eyed gasp",
+      "giggle",
+      "scared",
+      "determined",
+      "sleepy",
+      "delighted",
+      "annoyed pout"
+    ],
+    "reference_requirements": "Turnaround (front, 3/4, side, back) on white; expression sheet of 8; pajama variant (light-blue pajamas with yellow moons) for night scenes.",
+    "variants": {
+      "PAJAMAS": "light-blue pajamas with small yellow crescent moons replace the hoodie, shorts and sneakers; barefoot"
+    },
+    "episodes": [
+      "EP008",
+      "EP009",
+      "EP010"
+    ],
+    "variants_used": []
+  },
+  "CHR_002": {
+    "name": "June",
+    "type": "human child (girl, 9)",
+    "status": "approved",
+    "prompt": "JUNE, a 9-year-old girl, 4.2 heads tall, deep-brown skin, two round black hair puffs tied with orange bands, big dark eyes with bright highlights, gap-toothed grin; teal raincoat with yellow toggle buttons, purple leggings, bright-yellow rubber boots",
+    "anim_lock": "June - two round hair puffs with orange bands, teal raincoat with yellow toggles, purple leggings, yellow boots",
+    "palette": {
+      "skin": "#7B4B2E",
+      "hair": "#1E1410",
+      "hair_bands": "#F07B2A",
+      "raincoat": "#2E9C9A",
+      "toggles": "#F4C430",
+      "leggings": "#6B4C9A",
+      "boots": "#F4C430"
+    },
+    "proportions": "4.2 heads tall; long legs for her size.",
+    "movement": "Confident long strides, hands on hips, decisive pointing; leader of any group of kids.",
+    "expressions": [
+      "confident grin",
+      "astonished",
+      "laughing",
+      "worried",
+      "determined",
+      "awed"
+    ],
+    "reference_requirements": "Turnaround; expression sheet; ice-skating pose; carrying-lantern pose.",
+    "episodes": [
+      "EP001",
+      "EP008"
+    ],
+    "variants_used": []
+  }
+}

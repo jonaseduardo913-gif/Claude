@@ -1,0 +1,291 @@
+{
+  "episode_id": "EP008",
+  "cues": [
+    {
+      "scene_id": "EP008_SC01",
+      "at_scene": 0.0,
+      "at_episode": 0.0,
+      "timecode": "00:00:00:00",
+      "sound": "rising shimmer of many tiny wings"
+    },
+    {
+      "scene_id": "EP008_SC01",
+      "at_scene": 1.4,
+      "at_episode": 1.4,
+      "timecode": "00:00:01:10",
+      "sound": "airy whoosh of the swarm"
+    },
+    {
+      "scene_id": "EP008_SC01",
+      "at_scene": 2.2,
+      "at_episode": 2.2,
+      "timecode": "00:00:02:05",
+      "sound": "single faint flicker 'tik… tik'"
+    },
+    {
+      "scene_id": "EP008_SC02",
+      "at_scene": 0.0,
+      "at_episode": 3.0,
+      "timecode": "00:00:03:00",
+      "sound": "festival crowd murmur (no words)"
+    },
+    {
+      "scene_id": "EP008_SC02",
+      "at_scene": 1.0,
+      "at_episode": 4.0,
+      "timecode": "00:00:04:00",
+      "sound": "tiny paper rustle"
+    },
+    {
+      "scene_id": "EP008_SC02",
+      "at_scene": 2.4,
+      "at_episode": 5.4,
+      "timecode": "00:00:05:10",
+      "sound": "lantern lights 'fwoom'"
+    },
+    {
+      "scene_id": "EP008_SC02",
+      "at_scene": 3.2,
+      "at_episode": 6.2,
+      "timecode": "00:00:06:05",
+      "sound": "little flick 'tk'"
+    },
+    {
+      "scene_id": "EP008_SC03",
+      "at_scene": 0.0,
+      "at_episode": 7.5,
+      "timecode": "00:00:07:12",
+      "sound": "distant festival music"
+    },
+    {
+      "scene_id": "EP008_SC03",
+      "at_scene": 1.4,
+      "at_episode": 8.9,
+      "timecode": "00:00:08:22",
+      "sound": "grass blade creak"
+    },
+    {
+      "scene_id": "EP008_SC03",
+      "at_scene": 2.6,
+      "at_episode": 10.1,
+      "timecode": "00:00:10:02",
+      "sound": "tiny sigh"
+    },
+    {
+      "scene_id": "EP008_SC04",
+      "at_scene": 0.0,
+      "at_episode": 11.5,
+      "timecode": "00:00:11:12",
+      "sound": "running footsteps in grass"
+    },
+    {
+      "scene_id": "EP008_SC04",
+      "at_scene": 1.2,
+      "at_episode": 12.7,
+      "timecode": "00:00:12:17",
+      "sound": "children's giggles (non-verbal)"
+    },
+    {
+      "scene_id": "EP008_SC04",
+      "at_scene": 3.0,
+      "at_episode": 14.5,
+      "timecode": "00:00:14:12",
+      "sound": "grass swishing closed"
+    },
+    {
+      "scene_id": "EP008_SC05",
+      "at_scene": 0.0,
+      "at_episode": 16.0,
+      "timecode": "00:00:16:00",
+      "sound": "howling wind gust"
+    },
+    {
+      "scene_id": "EP008_SC05",
+      "at_scene": 1.0,
+      "at_episode": 17.0,
+      "timecode": "00:00:17:00",
+      "sound": "lanterns snuffing out 'fff fff fff'"
+    },
+    {
+      "scene_id": "EP008_SC05",
+      "at_scene": 2.4,
+      "at_episode": 18.4,
+      "timecode": "00:00:18:10",
+      "sound": "thunder crack"
+    },
+    {
+      "scene_id": "EP008_SC05",
+      "at_scene": 3.4,
+      "at_episode": 19.4,
+      "timecode": "00:00:19:10",
+      "sound": "rain starting"
+    },
+    {
+      "scene_id": "EP008_SC06",
+      "at_scene": 0.0,
+      "at_episode": 20.5,
+      "timecode": "00:00:20:12",
+      "sound": "rain and wind in tall grass"
+    },
+    {
+      "scene_id": "EP008_SC06",
+      "at_scene": 1.6,
+      "at_episode": 22.1,
+      "timecode": "00:00:22:02",
+      "sound": "lightning crack"
+    },
+    {
+      "scene_id": "EP008_SC06",
+      "at_scene": 2.4,
+      "at_episode": 22.9,
+      "timecode": "00:00:22:22",
+      "sound": "frightened breath (non-verbal)"
+    },
+    {
+      "scene_id": "EP008_SC06",
+      "at_scene": 3.6,
+      "at_episode": 24.1,
+      "timecode": "00:00:24:02",
+      "sound": "distant thunder"
+    },
+    {
+      "scene_id": "EP008_SC07",
+      "at_scene": 0.0,
+      "at_episode": 25.0,
+      "timecode": "00:00:25:00",
+      "sound": "rain on roof tiles"
+    },
+    {
+      "scene_id": "EP008_SC07",
+      "at_scene": 1.4,
+      "at_episode": 26.4,
+      "timecode": "00:00:26:10",
+      "sound": "tiny determined breath"
+    },
+    {
+      "scene_id": "EP008_SC07",
+      "at_scene": 2.2,
+      "at_episode": 27.2,
+      "timecode": "00:00:27:05",
+      "sound": "tiny wings into wind"
+    },
+    {
+      "scene_id": "EP008_SC07",
+      "at_scene": 3.2,
+      "at_episode": 28.2,
+      "timecode": "00:00:28:05",
+      "sound": "raindrop near-misses 'plip plip'"
+    },
+    {
+      "scene_id": "EP008_SC08",
+      "at_scene": 0.0,
+      "at_episode": 29.0,
+      "timecode": "00:00:29:00",
+      "sound": "rain softening"
+    },
+    {
+      "scene_id": "EP008_SC08",
+      "at_scene": 1.2,
+      "at_episode": 30.2,
+      "timecode": "00:00:30:05",
+      "sound": "small gasp of relief"
+    },
+    {
+      "scene_id": "EP008_SC08",
+      "at_scene": 2.4,
+      "at_episode": 31.4,
+      "timecode": "00:00:31:10",
+      "sound": "footsteps on wet path"
+    },
+    {
+      "scene_id": "EP008_SC08",
+      "at_scene": 3.6,
+      "at_episode": 32.6,
+      "timecode": "00:00:32:14",
+      "sound": "gentle chime each time Glim pauses"
+    },
+    {
+      "scene_id": "EP008_SC09",
+      "at_scene": 0.0,
+      "at_episode": 34.0,
+      "timecode": "00:00:34:00",
+      "sound": "rain stopping, drips"
+    },
+    {
+      "scene_id": "EP008_SC09",
+      "at_scene": 1.0,
+      "at_episode": 35.0,
+      "timecode": "00:00:35:00",
+      "sound": "lanterns relighting 'fwoom fwoom'"
+    },
+    {
+      "scene_id": "EP008_SC09",
+      "at_scene": 2.0,
+      "at_episode": 36.0,
+      "timecode": "00:00:36:00",
+      "sound": "warm crowd 'ahh' (non-verbal)"
+    },
+    {
+      "scene_id": "EP008_SC09",
+      "at_scene": 3.2,
+      "at_episode": 37.2,
+      "timecode": "00:00:37:05",
+      "sound": "soft cloth hug"
+    },
+    {
+      "scene_id": "EP008_SC10",
+      "at_scene": 0.0,
+      "at_episode": 38.5,
+      "timecode": "00:00:38:12",
+      "sound": "rising shimmer"
+    },
+    {
+      "scene_id": "EP008_SC10",
+      "at_scene": 1.8,
+      "at_episode": 40.3,
+      "timecode": "00:00:40:07",
+      "sound": "glow swell hum"
+    },
+    {
+      "scene_id": "EP008_SC10",
+      "at_scene": 3.2,
+      "at_episode": 41.7,
+      "timecode": "00:00:41:17",
+      "sound": "glockenspiel sparkle"
+    },
+    {
+      "scene_id": "EP008_SC11",
+      "at_scene": 0.0,
+      "at_episode": 43.0,
+      "timecode": "00:00:43:00",
+      "sound": "airy celestial hush"
+    },
+    {
+      "scene_id": "EP008_SC11",
+      "at_scene": 1.6,
+      "at_episode": 44.6,
+      "timecode": "00:00:44:14",
+      "sound": "star settling chime"
+    },
+    {
+      "scene_id": "EP008_SC11",
+      "at_scene": 3.0,
+      "at_episode": 46.0,
+      "timecode": "00:00:46:00",
+      "sound": "twinkle"
+    },
+    {
+      "scene_id": "EP008_SC11",
+      "at_scene": 3.6,
+      "at_episode": 46.6,
+      "timecode": "00:00:46:14",
+      "sound": "twinkle"
+    },
+    {
+      "scene_id": "ENDCARD",
+      "at_episode": 48.0,
+      "timecode": "00:00:48:00",
+      "sound": "Two-note celesta \"ding-ding\" rising, soft whoosh, tiny sparkle on the star blink. Same sting on every episode."
+    }
+  ]
+}
