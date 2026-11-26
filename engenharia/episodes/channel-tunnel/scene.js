@@ -297,6 +297,7 @@ export async function build(ctx) {
     passMat.clippingPlanes = cut.planes;
     plugN.material = plugN.userData.mat || (plugN.userData.mat = plugN.material);
     linSV2.visible = false; plugSV.visible = false;
+    lin.SV.position.x = XL; lin.SV.scale.x = XR - XL;   // never inherit state from the previous frame
     Object.assign(st, { xFront: 40 });
     ctx.studio.sun.intensity = 2.6; ctx.studio.hemi.intensity = 1.1;
     ctx.grade.uniforms.fade.value = 0;
@@ -334,7 +335,7 @@ export async function build(ctx) {
   }
   function finished() {
     tbm.g.visible = false; wagons.visible = false; spoil.visible = false;
-    lin.N.position.x = XL; lin.N.scale.x = XR - XL; plugN.scale.x = 0.001;
+    lin.N.position.x = XL; lin.N.scale.x = XR - XL; plugN.position.x = XR + 50; plugN.scale.x = 0.001;
     placeJoints(-100, 140, ZN);
   }
 
