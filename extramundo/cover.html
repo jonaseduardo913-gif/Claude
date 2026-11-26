@@ -78,7 +78,7 @@ async function horizontal(img) {
   const l = ctx.createLinearGradient(0, 0, W * 0.75, 0); l.addColorStop(0, 'rgba(0,0,0,.88)'); l.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = l; ctx.fillRect(0, 0, W, H);
   if (CFG.circle) { const p = map(...CFG.circle); handCircle(ctx, p.x, p.y, 130, 80); }
   const ht = CFG.top.replace('|', ' '); outlined(ctx, ht, 60, 150, fit(ctx, ht, 72, 1160), '#FFFFFF', 9, 'left');
-  const bs = 168; outlined(ctx, CFG.big, 52, 285, bs, fireGradient(ctx, 285, bs), 13, 'left', 'rgba(255,90,31,.9)');
+  const bs = fit(ctx, CFG.big, 168, 1160); outlined(ctx, CFG.big, 52, 285, bs, fireGradient(ctx, 285, bs), 13, 'left', 'rgba(255,90,31,.9)');
   ctx.save(); ctx.translate(60, 0); questionBar(ctx, CFG.q, 300, 450, 50); ctx.restore();
   brand(ctx, 62, H - 70, 40, 'left');
 }

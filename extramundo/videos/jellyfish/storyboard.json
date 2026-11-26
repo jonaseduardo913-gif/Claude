@@ -1,0 +1,660 @@
+{
+ "lead": 0.1,
+ "headline": {
+  "lines": [
+   "ELA CONSEGUE",
+   "REJUVENESCER?!"
+  ],
+  "until_word": 11
+ },
+ "stamp": null,
+ "epic_word": 61,
+ "music": [
+  {
+   "t": 0,
+   "level": 0.3
+  },
+  {
+   "word": 12,
+   "level": 0.4
+  },
+  {
+   "word": 29,
+   "level": 0.45
+  },
+  {
+   "word": 47,
+   "level": 0.5
+  },
+  {
+   "word": 55,
+   "level": 0.7
+  },
+  {
+   "word": 61,
+   "level": 0.85
+  },
+  {
+   "word": 78,
+   "level": 1.0
+  },
+  {
+   "word": 96,
+   "level": 0.6
+  },
+  {
+   "word": 106,
+   "level": 0.9
+  },
+  {
+   "word": 117,
+   "level": 0.35
+  },
+  {
+   "word": 133,
+   "level": 0.55
+  },
+  {
+   "word": 145,
+   "level": 0.75
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.0,
+   "kind": "underwater",
+   "dur": 76
+  },
+  {
+   "t": 0.1,
+   "kind": "sub"
+  },
+  {
+   "word": 12,
+   "kind": "whooshlong"
+  },
+  {
+   "word": 33,
+   "kind": "swell"
+  },
+  {
+   "word": 61,
+   "kind": "bubble"
+  },
+  {
+   "word": 65,
+   "kind": "swell"
+  },
+  {
+   "word": 72,
+   "kind": "bubble"
+  },
+  {
+   "word": 77,
+   "kind": "sub"
+  },
+  {
+   "word": 78,
+   "kind": "swell"
+  },
+  {
+   "word": 87,
+   "kind": "bubble"
+  },
+  {
+   "word": 96,
+   "kind": "whoosh"
+  },
+  {
+   "word": 114,
+   "kind": "swell"
+  },
+  {
+   "word": 145,
+   "kind": "rumble"
+  }
+ ],
+ "shots": [
+  {
+   "at": 0,
+   "src": "noaa_crossota:36.0",
+   "speed": 0.7,
+   "cam": {
+    "from": {
+     "cx": 0.62,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.62,
+     "cy": 0.45,
+     "z": 1.25
+    }
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Crossota millsae · imagem NOAA",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "at": 7,
+   "src": "noaa_crossota:20.0",
+   "speed": 0.6,
+   "trans": "xfade",
+   "cam": {
+    "from": {
+     "cx": 0.6,
+     "cy": 0.3,
+     "z": 1.15
+    },
+    "to": {
+     "cx": 0.6,
+     "cy": 0.3,
+     "z": 1.4
+    }
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Crossota millsae · imagem NOAA",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 12,
+   "src": "noaa_poralia:27.0",
+   "speed": 0.6,
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.25
+    },
+    "to": {
+     "cx": 0.55,
+     "cy": 0.5,
+     "z": 1.45
+    }
+   },
+   "overlays": [
+    {
+     "type": "brand",
+     "word": 13,
+     "dur": 2.6
+    },
+    {
+     "type": "tag",
+     "text": "Poralia sp. · imagem NOAA",
+     "at": 0.1
+    }
+   ],
+   "fit": "blurfill"
+  },
+  {
+   "at": 15,
+   "src": "img:inat/in04",
+   "trans": "xfade",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.3
+    }
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Turritopsis rubra · mesmo gênero",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "at": 23,
+   "src": "img:inat/in05",
+   "cam": {
+    "from": {
+     "cx": 0.52,
+     "cy": 0.5,
+     "z": 1.1
+    },
+    "to": {
+     "cx": 0.52,
+     "cy": 0.47,
+     "z": 1.4
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "ÁGUA-VIVA|IMORTAL",
+     "color": "gold",
+     "size": 140,
+     "y": 0.22,
+     "word": 27
+    },
+    {
+     "type": "tag",
+     "text": "Turritopsis rubra · mesmo gênero",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 29,
+   "src": "img:si/si00",
+   "trans": "zoomblur",
+   "cam": {
+    "from": {
+     "cx": 0.52,
+     "cy": 0.45,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.525,
+     "cy": 0.425,
+     "z": 2.0
+    },
+    "ease": "inOutCubic"
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "TURRITOPSIS|DOHRNII",
+     "color": "cyan",
+     "size": 120,
+     "y": 0.22,
+     "word": 33
+    },
+    {
+     "type": "tag",
+     "text": "Turritopsis dohrnii · Smithsonian (NMNH)",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 35,
+   "src": "img:si/si02",
+   "cam": {
+    "from": {
+     "cx": 0.483,
+     "cy": 0.41,
+     "z": 2.3
+    },
+    "to": {
+     "cx": 0.483,
+     "cy": 0.41,
+     "z": 1.9
+    }
+   },
+   "overlays": [
+    {
+     "type": "scale",
+     "text": "≈ 4,5 mm",
+     "word": 37
+    },
+    {
+     "type": "tag",
+     "text": "Turritopsis dohrnii · Smithsonian (NMNH)",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 39,
+   "src": "img:inat/in11",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.47,
+     "z": 1.25
+    }
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Turritopsis rubra · mesmo gênero",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 43,
+   "src": "img:inat/in01",
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.25
+    },
+    "to": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.0
+    }
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Turritopsis rubra · mesmo gênero",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 47,
+   "src": "img:inat/in13",
+   "fit": "blurfill",
+   "trans": "dip",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.2
+    }
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Turritopsis rubra · mesmo gênero",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 52,
+   "src": "img:inat/in26",
+   "cam": {
+    "from": {
+     "cx": 0.56,
+     "cy": 0.5,
+     "z": 1.5
+    },
+    "to": {
+     "cx": 0.54,
+     "cy": 0.5,
+     "z": 1.05
+    },
+    "ease": "linear"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Turritopsis rubra · mesmo gênero",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 55,
+   "src": "img:inat/in12",
+   "trans": "zoomblur",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.15
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.6
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "TRANSFORMAÇÃO",
+     "color": "gold",
+     "size": 130,
+     "y": 0.22,
+     "word": 59
+    },
+    {
+     "type": "tag",
+     "text": "Turritopsis rubra · mesmo gênero",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 61,
+   "src": "anim:lifecycle",
+   "range": [
+    0,
+    0.55
+   ],
+   "trans": "dip"
+  },
+  {
+   "at": 78,
+   "src": "anim:lifecycle",
+   "range": [
+    0.55,
+    1
+   ]
+  },
+  {
+   "at": 96,
+   "src": "compare:bf/borboleta4,bf/lagarta0",
+   "labels": [
+    "BORBOLETA",
+    "LAGARTA"
+   ],
+   "trans": "zoomblur"
+  },
+  {
+   "at": 106,
+   "src": "anim:cycle",
+   "trans": "xfade"
+  },
+  {
+   "at": 117,
+   "src": "img:inat/in34",
+   "fit": "blurfill",
+   "trans": "dip",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "NÃO É|INVULNERÁVEL",
+     "color": "pink",
+     "size": 120,
+     "y": 0.22,
+     "word": 122
+    },
+    {
+     "type": "tag",
+     "text": "Turritopsis rubra · mesmo gênero",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 128,
+   "src": "img:inat/in35",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.3
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "ease": "linear"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Turritopsis sp. · iNaturalist",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 133,
+   "src": "img:si/si04",
+   "trans": "xfade",
+   "cam": {
+    "from": {
+     "cx": 0.525,
+     "cy": 0.41,
+     "z": 1.8
+    },
+    "to": {
+     "cx": 0.525,
+     "cy": 0.41,
+     "z": 2.3
+    }
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Turritopsis dohrnii · Smithsonian (NMNH)",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 138,
+   "src": "img:inat/in31",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.47,
+     "z": 1.3
+    }
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Turritopsis rubra · mesmo gênero",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 145,
+   "src": "noaa_crossota:12.5",
+   "speed": 0.7,
+   "trans": "xfade",
+   "cam": {
+    "from": {
+     "cx": 0.44,
+     "cy": 0.3,
+     "z": 1.5
+    },
+    "to": {
+     "cx": 0.44,
+     "cy": 0.3,
+     "z": 1.0
+    },
+    "ease": "linear"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Crossota millsae · imagem NOAA",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 148,
+   "src": "img:inat/in10",
+   "fit": "blurfill",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 2.4
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Turritopsis rubra · mesmo gênero",
+     "at": 0.1
+    }
+   ]
+  }
+ ],
+ "end": {
+  "hold": 3.4,
+  "trans": "flash",
+  "fade": 0.8
+ },
+ "keywords": {
+  "cyan": [
+   "OCEANO",
+   "ÁGUA-VIVA",
+   "NATUREZA",
+   "CRIATURA",
+   "ANIMAL"
+  ],
+  "gold": [
+   "JOVEM",
+   "IMORTAL",
+   "TRANSFORMAÇÃO",
+   "CISTO",
+   "PÓLIPO",
+   "REPETIR",
+   "RECOMEÇAR",
+   "EXTRAORDINÁRIAS",
+   "LAGARTA"
+  ],
+  "pink": [
+   "MORRER",
+   "PREDADORES",
+   "DOENÇAS",
+   "INVULNERÁVEL",
+   "FERIDA"
+  ]
+ }
+}

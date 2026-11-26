@@ -57,10 +57,15 @@ for k, s in enumerate(shots):
     elif src.startswith('anim:'):
         sh['src'] = {'type': 'anim', 'name': src[5:], 'w': 1080, 'h': 1920}
         if 'map' in s: sh['src']['map'] = s['map']
+        if 'range' in s: sh['src']['range'] = s['range']
         if 'marks' in s: sh['src']['marks'] = {k: (wstart(v) - t0) / (t1 - t0) for k, v in s['marks'].items()}
         if 'collapse_word' in s: sh['collapseAt'] = wstart(s['collapse_word'])
     elif src.startswith('compare:'):
-        a, b = src[8:].split(','); pa, pb = [next((f'{MEDIA}/{f}' for f in sorted(os.listdir(MEDIA)) if os.path.splitext(f)[0] == k), f'{MEDIA}/night.jpg') for k in (a, b)]
+        a, b = src[8:].split(',')
+        def _res(k):
+            sub, key = k.rsplit('/', 1) if '/' in k else ('', k); base = f'{MEDIA}/{sub}'.rstrip('/')
+            return next((f'{base}/{f}' for f in sorted(os.listdir(base)) if os.path.splitext(f)[0] == key), f'{MEDIA}/night.jpg')
+        pa, pb = _res(a), _res(b)
         sh['src'] = {'type': 'compare', 'a': pa, 'b': pb, 'la': s.get('labels', ['', ''])[0], 'lb': s.get('labels', ['', ''])[1], 'w': 1080, 'h': 1920}
     else:  # video clip "name:seconds" -> vertical band of frames
         name, start = src.rsplit(':', 1); start = float(start); speed = s.get('speed', 1.0)

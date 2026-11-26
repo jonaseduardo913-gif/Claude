@@ -1,0 +1,11 @@
+{
+ "bg": "input/media/inat/in04.jpg",
+ "top": "ELA CONSEGUE",
+ "big": "REJUVENESCER?!",
+ "q": "A ÁGUA-VIVA IMORTAL",
+ "cropV": {"cx": 0.47, "cy": 0.5, "z": 1.0},
+ "cropH": {"cx": 0.3, "cy": 0.45, "z": 1.25},
+ "circle": null,
+ "filter": "saturate(1.6) contrast(1.2) brightness(1.08)",
+ "textY": 1180
+}

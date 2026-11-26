@@ -62,6 +62,8 @@ const toScreen = (r, nx, ny) => ({ x: (nx * r.srcW - r.x0) / r.vw * W, y: (ny * 
 async function drawPlate(ctx, shot, t, opt = {}) {
   if (shot.src.type === 'anim' && shot.src.name === 'map') { await drawGeoMap(ctx, shot, t); return null; }
   if ((shot.src.type === 'still' || shot.src.type === 'clip') && shot.fit === 'blurfill') { await drawBlurFill(ctx, shot, t); return null; }
+  if (shot.src.type === 'anim' && shot.src.name === 'lifecycle') { const r = shot.src.range || [0, 1]; drawLifecycle(ctx, lerp(r[0], r[1], prog(t, shot.t0, shot.t1)), t); return null; }
+  if (shot.src.type === 'anim' && shot.src.name === 'cycle') { drawCycle(ctx, prog(t, shot.t0, shot.t1), t); return null; }
   if (shot.src.type === 'anim' && shot.src.name === 'cavitation') { drawCavitation(ctx, t - shot.t0, shot.t1 - shot.t0, shot.src.marks || {}); return null; }
   if (shot.src.type === 'anim' && shot.src.name === 'calcify') { drawCalcify(ctx, t - shot.t0, shot.t1 - shot.t0); return null; }
   if (shot.src.type === 'anim') { const cs = (shot.collapseAt || shot.t0) - shot.t0; drawCollapse(ctx, t - shot.t0, shot.t1 - shot.t0, cs); if (shot.filter === 'oldfilm' && t - shot.t0 < cs) oldFilm(ctx, t); return null; }
@@ -271,6 +273,9 @@ function drawSpeedo(ctx, o, t) {
 function drawOverlays(ctx, shot, r, t) {
   for (const o of shot.overlays) {
     if (o.type === 'speedo') drawSpeedo(ctx, o, t);
+    if (o.type === 'scale') drawScale(ctx, o, t);
+    if (o.type === 'tag') drawTag(ctx, o, t, shot);
+    if (o.type === 'brand') drawBrandMark(ctx, o, t, shot);
     if (o.type === 'bigtext') drawBigText(ctx, o, t);
     if (o.type === 'pin' && r) drawPin(ctx, o, r, t);
     if (!r && ['arrow', 'ring', 'maplabel'].includes(o.type)) continue;
@@ -462,6 +467,144 @@ async function drawGeoMap(ctx, shot, t) {
     }
   }
 }
+// ---------------- Turritopsis life cycle (scientific animation) ----------------
+function deepSea(ctx, t) {
+  const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#062B4A'); g.addColorStop(0.55, '#031B30'); g.addColorStop(1, '#010A14'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  ctx.save(); ctx.globalCompositeOperation = 'lighter';
+  for (let i = 0; i < 5; i++) { ctx.fillStyle = 'rgba(90,170,230,0.045)'; const x = W * (0.05 + 0.2 * i) + Math.sin(t * 0.3 + i) * 50; ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x + 120, 0); ctx.lineTo(x + 360, H); ctx.lineTo(x + 160, H); ctx.fill(); }
+  for (let i = 0; i < 90; i++) { const y = ((hash(i * 7) * H - t * 12 * (0.4 + hash(i))) % H + H) % H; ctx.fillStyle = `rgba(170,220,255,${0.12 + 0.25 * hash(i)})`; ctx.beginPath(); ctx.arc(hash(i * 3) * W + Math.sin(t + i) * 6, y, 1.2 + hash(i * 5) * 2.4, 0, Math.PI * 2); ctx.fill(); }
+  ctx.restore();
+}
+function medusa(ctx, x, y, s, t, { shrink = 0, tent = 1, alpha = 1, pulse = 1 } = {}) {
+  // translucent bell with radial canals, red manubrium (typical of Turritopsis) and fine marginal tentacles
+  const pz = 1 + 0.06 * Math.sin(t * 5) * pulse * (1 - shrink);
+  const bw = 150 * s * (1 - 0.6 * shrink) * pz, bh = 165 * s * (1 - 0.45 * shrink) / pz;
+  ctx.save(); ctx.translate(x, y); ctx.globalAlpha *= alpha;
+  // tentacles
+  const nT = 44, tl = 330 * s * tent * Math.pow(1 - shrink, 1.4);
+  if (tl > 4) { ctx.lineWidth = 1.8 * s + 0.4; ctx.lineCap = 'round';
+    for (let i = 0; i < nT; i++) { const u = i / (nT - 1) - 0.5, x0 = u * bw * 1.9;
+      ctx.strokeStyle = `rgba(200,235,255,${0.35 + 0.25 * hash(i)})`; ctx.beginPath(); ctx.moveTo(x0, 0);
+      for (let k = 1; k <= 12; k++) { const f = k / 12; ctx.lineTo(x0 + Math.sin(t * 2.2 + i * 0.7 + f * 5) * 18 * s * f + u * 40 * s * f, f * tl * (0.75 + 0.35 * hash(i * 3))); } ctx.stroke(); } }
+  // bell
+  const bell = () => { ctx.beginPath(); ctx.moveTo(-bw, 0); ctx.bezierCurveTo(-bw, -bh * 1.25, bw, -bh * 1.25, bw, 0); ctx.quadraticCurveTo(0, bh * 0.18, -bw, 0); ctx.closePath(); };
+  const bg = ctx.createRadialGradient(0, -bh * 0.6, 10, 0, -bh * 0.4, bw * 1.3); bg.addColorStop(0, `rgba(${lerp(220, 255, shrink)},${lerp(245, 150, shrink)},${lerp(255, 130, shrink)},${0.38 + 0.4 * shrink})`); bg.addColorStop(1, `rgba(${lerp(120, 210, shrink)},${lerp(190, 70, shrink)},${lerp(240, 80, shrink)},${0.10 + 0.5 * shrink})`);
+  bell(); ctx.fillStyle = bg; ctx.fill(); ctx.strokeStyle = 'rgba(210,240,255,0.75)'; ctx.lineWidth = 3 * s + 1; ctx.shadowColor = 'rgba(140,220,255,0.8)'; ctx.shadowBlur = 25 * s; ctx.stroke(); ctx.shadowBlur = 0;
+  ctx.strokeStyle = 'rgba(230,250,255,0.35)'; ctx.lineWidth = 2 * s; for (const u of [-0.55, -0.18, 0.18, 0.55]) { ctx.beginPath(); ctx.moveTo(u * bw * 0.3, -bh * 0.9); ctx.quadraticCurveTo(u * bw * 0.8, -bh * 0.5, u * bw * 1.6, -2); ctx.stroke(); }
+  // red manubrium / gonads
+  const mg = ctx.createRadialGradient(0, -bh * 0.45, 2, 0, -bh * 0.45, bw * 0.45); mg.addColorStop(0, 'rgba(255,90,70,0.95)'); mg.addColorStop(1, 'rgba(200,30,40,0.5)');
+  ctx.fillStyle = mg; ctx.beginPath(); ctx.ellipse(0, -bh * 0.42, bw * 0.32, bh * 0.38, 0, 0, Math.PI * 2); ctx.fill();
+  ctx.restore();
+}
+function cystShape(ctx, x, y, r, t) {
+  const g = ctx.createRadialGradient(x - r * 0.3, y - r * 0.4, r * 0.1, x, y, r); g.addColorStop(0, 'rgba(255,170,140,0.95)'); g.addColorStop(0.6, 'rgba(210,70,70,0.9)'); g.addColorStop(1, 'rgba(120,30,40,0.9)');
+  ctx.save(); ctx.shadowColor = 'rgba(255,120,100,0.6)'; ctx.shadowBlur = 30; ctx.fillStyle = g; ctx.beginPath();
+  for (let k = 0; k <= 40; k++) { const a = k / 40 * Math.PI * 2; const rr = r * (1 + 0.04 * Math.sin(a * 5 + t * 2)); k ? ctx.lineTo(x + Math.cos(a) * rr, y + Math.sin(a) * rr * 0.85) : ctx.moveTo(x + Math.cos(a) * rr, y + Math.sin(a) * rr * 0.85); }
+  ctx.fill(); ctx.restore();
+}
+function polyp(ctx, x, y, h, open, t, s = 1) {
+  // stalk + hydranth with a crown of filiform tentacles
+  ctx.save(); ctx.strokeStyle = 'rgba(230,200,170,0.9)'; ctx.lineWidth = 9 * s; ctx.lineCap = 'round';
+  const sw = Math.sin(t * 1.3 + x * 0.01) * 10 * s; ctx.beginPath(); ctx.moveTo(x, y); ctx.quadraticCurveTo(x + sw, y - h * 0.5, x + sw * 0.6, y - h); ctx.stroke();
+  const hx = x + sw * 0.6, hy = y - h; const hg = ctx.createRadialGradient(hx, hy - 20 * s, 2, hx, hy - 20 * s, 40 * s); hg.addColorStop(0, '#FF9A7A'); hg.addColorStop(1, '#C8384A');
+  ctx.fillStyle = hg; ctx.beginPath(); ctx.ellipse(hx, hy - 22 * s, 20 * s, 32 * s, 0, 0, Math.PI * 2); ctx.fill();
+  if (open > 0) { ctx.strokeStyle = 'rgba(255,225,205,0.9)'; ctx.lineWidth = 2.5 * s; for (let k = 0; k < 12; k++) { const a = -Math.PI / 2 + (k / 11 - 0.5) * Math.PI * 1.5; const L = 60 * s * open;
+    ctx.beginPath(); ctx.moveTo(hx, hy - 40 * s); ctx.quadraticCurveTo(hx + Math.cos(a) * L * 0.6, hy - 40 * s + Math.sin(a) * L * 0.6 - 10 * s, hx + Math.cos(a) * L + Math.sin(t * 2 + k) * 4, hy - 40 * s + Math.sin(a) * L); ctx.stroke(); } }
+  ctx.restore();
+}
+function stageLabel(ctx, txt) {
+  ctx.save(); ctx.font = font(34, 800); ctx.letterSpacing = '4px'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  const lw = ctx.measureText(txt).width + 56; ctx.fillStyle = 'rgba(0,0,0,0.5)'; roundRect(ctx, W / 2 - lw / 2, H * 0.17 - 30, lw, 60, 30); ctx.fill();
+  ctx.strokeStyle = 'rgba(255,194,26,0.7)'; ctx.lineWidth = 2; roundRect(ctx, W / 2 - lw / 2, H * 0.17 - 30, lw, 60, 30); ctx.stroke();
+  ctx.fillStyle = '#FFE28A'; ctx.fillText(txt, W / 2, H * 0.17 + 2);
+  ctx.font = font(24, 800); ctx.fillStyle = 'rgba(255,255,255,0.55)'; ctx.fillText('ANIMAÇÃO CIENTÍFICA', W / 2, H * 0.115);
+  ctx.restore();
+}
+function drawLifecycle(ctx, p, t) {
+  deepSea(ctx, t);
+  const floorY = H * 0.78;
+  ctx.fillStyle = '#1B1A1F'; ctx.beginPath(); ctx.moveTo(0, floorY); for (let x = 0; x <= W; x += 30) ctx.lineTo(x, floorY + Math.sin(x * 0.012) * 18 + hash(x) * 6); ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.fill();
+  ctx.fillStyle = 'rgba(70,90,110,0.5)'; for (let i = 0; i < 60; i++) { ctx.beginPath(); ctx.arc(hash(i) * W, floorY + 20 + hash(i * 3) * (H - floorY - 20), 3 + hash(i * 5) * 9, 0, Math.PI * 2); ctx.fill(); }
+  const cx = W / 2, cystY = floorY - 30;
+  if (p < 0.45) {             // adult -> regression, sinking
+    const shrink = E.inOutSine(prog(p, 0.2, 0.43));
+    const y = lerp(H * 0.42 + Math.sin(t * 1.2) * 20 * (1 - shrink), cystY + 40, E.inOutSine(prog(p, 0.22, 0.45)));
+    const fuse = prog(p, 0.39, 0.45);
+    medusa(ctx, cx, y, 1.7, t, { shrink, tent: 1, pulse: 1 - shrink, alpha: 1 - fuse });
+    if (fuse > 0) { ctx.save(); ctx.globalAlpha = fuse; cystShape(ctx, cx, y - 40, 70, t); ctx.restore(); }
+    if (p > 0.2 && p < 0.44) { // arrows showing the body contracting
+      ctx.save(); ctx.globalAlpha = Math.sin(Math.PI * prog(p, 0.2, 0.44)) * 0.9; ctx.strokeStyle = '#FFC21A'; ctx.lineWidth = 8; ctx.lineCap = 'round';
+      for (const sgn of [-1, 1]) { const ax = cx + sgn * 330, ay = y - 120; ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(ax - sgn * 90, ay); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(ax - sgn * 90, ay); ctx.lineTo(ax - sgn * 60, ay - 22); ctx.moveTo(ax - sgn * 90, ay); ctx.lineTo(ax - sgn * 60, ay + 22); ctx.stroke(); }
+      ctx.restore(); }
+    stageLabel(ctx, p < 0.2 ? '1 · MEDUSA ADULTA' : '2 · REGRESSÃO DO CORPO');
+  } else if (p < 0.55) {      // cyst
+    cystShape(ctx, cx, cystY, 70 + 6 * Math.sin(t * 2), t); stageLabel(ctx, '3 · CISTO');
+    ctx.save(); ctx.globalAlpha = prog(p, 0.46, 0.5); ctx.strokeStyle = '#FFC21A'; ctx.lineWidth = 6; ctx.setLineDash([14, 10]); ctx.beginPath(); ctx.arc(cx, cystY, 120, 0, Math.PI * 2); ctx.stroke(); ctx.restore();
+  } else {                     // stolon + polyps, then medusae budding
+    const gr = E.outCubic(prog(p, 0.55, 0.75));
+    cystShape(ctx, cx, cystY, 70 * (1 - 0.6 * gr), t);
+    ctx.strokeStyle = 'rgba(230,200,170,0.85)'; ctx.lineWidth = 10; ctx.lineCap = 'round';
+    ctx.beginPath(); ctx.moveTo(cx - 380 * gr, cystY + 40); ctx.lineTo(cx + 380 * gr, cystY + 40); ctx.stroke();
+    const spots = [-330, -165, 0, 165, 330];
+    spots.forEach((dx, i) => { const g2 = E.outBack(prog(p, 0.58 + i * 0.03, 0.72 + i * 0.03), 1.4); if (g2 > 0) polyp(ctx, cx + dx, cystY + 40, (300 + 90 * hash(i)) * g2, prog(p, 0.66 + i * 0.03, 0.76 + i * 0.03), t, 1.6); });
+    // new medusae bud from the polyps and swim up
+    spots.forEach((dx, i) => { const b = prog(p, 0.8 + i * 0.025, 1); if (b <= 0) return; const sy = cystY + 40 - (300 + 90 * hash(i)) - 100;
+      const y = sy - E.inOutSine(prog(b, 0.25, 1)) * (500 + 150 * hash(i * 3)); const x = cx + dx + Math.sin(t * 1.5 + i) * 30 * b;
+      medusa(ctx, x, y, 0.5 + 0.2 * b, t + i, { tent: 0.6, pulse: 1 }); });
+    stageLabel(ctx, p < 0.8 ? '4 · PÓLIPO' : '5 · NOVAS MEDUSAS');
+  }
+}
+function drawCycle(ctx, p, t) {
+  deepSea(ctx, t);
+  const cx = W / 2, cy = H * 0.47, R0 = 330;
+  const nodes = [['MEDUSA', -Math.PI / 2], ['CISTO', 0], ['PÓLIPO', Math.PI / 2], ['NOVA MEDUSA', Math.PI]];
+  const spin = E.inOutSine(prog(p, 0.55, 1)) * Math.PI * 0.5;
+  // arrows between nodes appear one by one (reverse direction: adult -> cyst -> polyp -> new medusa -> ...)
+  ctx.save(); ctx.lineCap = 'round';
+  for (let k = 0; k < 4; k++) { const a0 = nodes[k][1] + 0.38 + spin, a1 = nodes[k][1] + Math.PI / 2 - 0.38 + spin; const d = prog(p, 0.08 + k * 0.1, 0.18 + k * 0.1); if (d <= 0) continue;
+    const ae = lerp(a0, a1, d); ctx.strokeStyle = '#FFC21A'; ctx.lineWidth = 12; ctx.shadowColor = 'rgba(255,194,26,0.7)'; ctx.shadowBlur = 20; ctx.beginPath(); ctx.arc(cx, cy, R0, a0, ae); ctx.stroke(); ctx.shadowBlur = 0;
+    if (d > 0.9) { const hx = cx + Math.cos(ae) * R0, hy = cy + Math.sin(ae) * R0, ta = ae + Math.PI / 2; ctx.fillStyle = '#FFC21A'; ctx.beginPath(); ctx.moveTo(hx + Math.cos(ta) * 30, hy + Math.sin(ta) * 30); ctx.lineTo(hx + Math.cos(ta + 2.5) * 26, hy + Math.sin(ta + 2.5) * 26); ctx.lineTo(hx + Math.cos(ta - 2.5) * 26, hy + Math.sin(ta - 2.5) * 26); ctx.fill(); } }
+  ctx.restore();
+  nodes.forEach(([name, a], k) => { const aa = a + spin, x = cx + Math.cos(aa) * R0, y = cy + Math.sin(aa) * R0; const s = E.outBack(prog(p, k * 0.1, k * 0.1 + 0.08), 2); if (s <= 0) return;
+    ctx.save(); ctx.globalAlpha = Math.min(1, s); ctx.fillStyle = 'rgba(2,20,36,0.85)'; ctx.beginPath(); ctx.arc(x, y, 105 * s, 0, Math.PI * 2); ctx.fill(); ctx.strokeStyle = 'rgba(160,220,255,0.6)'; ctx.lineWidth = 4; ctx.stroke();
+    if (k === 0) medusa(ctx, x, y + 10, 0.42 * s, t, {}); if (k === 3) medusa(ctx, x, y + 10, 0.28 * s, t + 2, { tent: 0.6 });
+    if (k === 1) cystShape(ctx, x, y, 38 * s, t); if (k === 2) polyp(ctx, x, y + 60, 85 * s, 1, t, 0.6);
+    ctx.restore(); outlinedText(ctx, name, x, y + 140 * s, { size: 40, color: '#fff', stroke: 6 }); });
+  const lp = prog(p, 0.5, 0.62); if (lp > 0) { ctx.save(); ctx.globalAlpha = lp; ctx.translate(cx, cy); ctx.rotate(t * 0.8); ctx.strokeStyle = 'rgba(255,226,138,0.85)'; ctx.lineWidth = 10; ctx.beginPath(); ctx.arc(0, 0, 70, 0.3, Math.PI * 1.7); ctx.stroke();
+    ctx.fillStyle = 'rgba(255,226,138,0.85)'; ctx.beginPath(); ctx.moveTo(70 * Math.cos(0.3) + 20, 70 * Math.sin(0.3) - 6); ctx.lineTo(70 * Math.cos(0.3) - 22, 70 * Math.sin(0.3) - 18); ctx.lineTo(70 * Math.cos(0.3) - 6, 70 * Math.sin(0.3) + 22); ctx.fill(); ctx.restore();
+    ctx.globalAlpha = lp; outlinedText(ctx, 'PODE SE REPETIR', cx, cy, { size: 46, color: '#FFE28A', stroke: 7 }); ctx.globalAlpha = 1; }
+  ctx.save(); ctx.font = font(24, 800); ctx.letterSpacing = '4px'; ctx.textAlign = 'center'; ctx.fillStyle = 'rgba(255,255,255,0.55)'; ctx.fillText('ANIMAÇÃO CIENTÍFICA', W / 2, H * 0.115); ctx.restore();
+}
+// scale bar overlay ("régua visual")
+// discreet species / source tag under the captions (keeps footage honest)
+function drawTag(ctx, o, t, shot) {
+  const lt = t - o.t; if (lt < 0) return; const a = Math.min(E.outCubic(prog(lt, 0, 0.35)), clamp((shot.t1 - t) / 0.25));
+  ctx.save(); ctx.globalAlpha = a * 0.92; ctx.font = font(30, 700, true); ctx.letterSpacing = '1px';
+  const w = ctx.measureText(o.text).width + 48, y = H * (o.y || 0.855);
+  ctx.fillStyle = 'rgba(0,0,0,0.5)'; roundRect(ctx, (W - w) / 2, y - 26, w, 52, 26); ctx.fill();
+  ctx.fillStyle = '#E8F7FF'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(o.text, W / 2, y + 1);
+  ctx.restore();
+}
+// small eclipse + wordmark, fades in and out
+function drawBrandMark(ctx, o, t, shot) {
+  const lt = t - o.t; if (lt < 0) return; const end = o.dur ? o.t + o.dur : shot.t1;
+  const a = Math.min(E.outCubic(prog(lt, 0, 0.6)), clamp((end - t) / 0.5)); if (a <= 0) return;
+  ctx.save(); ctx.globalAlpha = a * 0.85; const y = H * (o.y || 0.115);
+  ctx.font = font(40, 900); ctx.letterSpacing = '6px'; const tw = ctx.measureText('EXTRAMUNDO').width, r = 20, total = r * 2 + 22 + tw, x0 = (W - total) / 2;
+  eclipse(ctx, x0 + r, y, r, 1, t);
+  const g = ctx.createLinearGradient(0, y - 20, 0, y + 20); g.addColorStop(0, '#FFF1B8'); g.addColorStop(0.5, '#FFC21A'); g.addColorStop(1, '#C77700');
+  ctx.shadowColor = 'rgba(0,0,0,0.7)'; ctx.shadowBlur = 12; ctx.fillStyle = g; ctx.textBaseline = 'middle'; ctx.fillText('EXTRAMUNDO', x0 + r * 2 + 22, y + 2);
+  ctx.restore();
+}
+function drawScale(ctx, o, t) {
+  const lt = t - o.t; if (lt < 0) return; const d = E.outCubic(prog(lt, 0, 0.5));
+  const x0 = W / 2 - 260, y = H * 0.62, L = 520 * d;
+  ctx.save(); ctx.strokeStyle = '#fff'; ctx.lineWidth = 6; ctx.shadowColor = 'rgba(0,0,0,0.8)'; ctx.shadowBlur = 10;
+  ctx.beginPath(); ctx.moveTo(x0, y); ctx.lineTo(x0 + L, y); ctx.stroke();
+  for (let k = 0; k <= 10; k++) { const x = x0 + 52 * k; if (x > x0 + L) break; ctx.beginPath(); ctx.moveTo(x, y - (k % 5 ? 14 : 26)); ctx.lineTo(x, y); ctx.stroke(); }
+  ctx.restore(); if (d > 0.9) outlinedText(ctx, o.text || '≈ 4,5 mm', W / 2, y + 60, { size: 62, color: '#FFE28A', stroke: 8 });
+}
 // explainer: club strikes a shell, cavitation bubble forms, collapses, shock wave
 function drawCavitation(ctx, lt, dur, marks) {
   // marks: fractions of the shot where bubble forms / collapses (default 0.3 / 0.55)
@@ -599,8 +742,9 @@ async function drawCompare(ctx, shot, t) {
     ctx.save(); ctx.beginPath(); ctx.rect(0, y0, W, vh); ctx.clip();
     ctx.filter = 'saturate(1.14) contrast(1.06)'; ctx.drawImage(img, (img.width - sw) / 2, (ih - sh) / 2, sw, sh, 0, y0, vw, vh); ctx.filter = 'none';
     const a = E.outCubic(prog(lt, 0.15 + k * 0.25, 0.4 + k * 0.25));
-    ctx.translate(lerp(-300, 0, a), 0); ctx.fillStyle = k ? C.cyan : C.pink; roundRect(ctx, 50, y0 + 44, 300, 96, 18); ctx.fill();
-    ctx.font = font(64); ctx.fillStyle = C.ink; ctx.textBaseline = 'middle'; ctx.textAlign = 'center'; ctx.fillText(label, 200, y0 + 94);
+    ctx.font = font(64); const lw = Math.max(300, ctx.measureText(label).width + 70);
+    ctx.translate(lerp(-lw - 60, 0, a), 0); ctx.fillStyle = k ? C.cyan : C.pink; roundRect(ctx, 50, y0 + 44, lw, 96, 18); ctx.fill();
+    ctx.fillStyle = C.ink; ctx.textBaseline = 'middle'; ctx.textAlign = 'center'; ctx.fillText(label, 50 + lw / 2, y0 + 94);
     ctx.restore();
   };
   await half(s.a, 0, s.la, 0); await half(s.b, H / 2, s.lb, 1);
