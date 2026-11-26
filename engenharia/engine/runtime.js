@@ -6,6 +6,7 @@ import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
 import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import * as kit from './kit.js';
+import * as lowpoly from './lowpoly.js';
 
 export async function boot(ep, { width, height }) {
   await Promise.all(['800 72px Inter', '600 72px Inter'].map(f => document.fonts.load(f)));
@@ -32,11 +33,21 @@ export async function boot(ep, { width, height }) {
   const grade = new ShaderPass(kit.GradeShader);
   composer.addPass(grade);
 
-  const ctx = { THREE, kit, scene, camera, renderer, width, height, bloom, grade };
-  ctx.studio = kit.makeStudio(renderer, scene);
-  ctx.cut = new kit.Cutaway(scene);
-
   const mod = await import(`/episodes/${ep}/scene.js`);
+  const style = mod.style || 'studio';
+  const ctx = { THREE, kit, lowpoly, scene, camera, renderer, width, height, bloom, grade, style };
+  if (style === 'lowpoly') {
+    renderer.toneMapping = THREE.NeutralToneMapping;
+    renderer.toneMappingExposure = 1.0;
+    bloom.strength = 0.08;
+    grade.uniforms.vignette.value = 0.16;
+    grade.uniforms.grain.value = 0.01;
+    camera.far = 4000; camera.updateProjectionMatrix();
+    ctx.studio = lowpoly.makeSkyStudio(renderer, scene);
+  } else {
+    ctx.studio = kit.makeStudio(renderer, scene);
+  }
+  ctx.cut = new kit.Cutaway(scene);
   const show = await mod.build(ctx);
 
   window.renderFrame = (sceneId, t, dur, frame) => {
@@ -51,4 +62,5 @@ export async function boot(ep, { width, height }) {
     return renderer.domElement.toDataURL('image/jpeg', 0.94);
   };
   window.SCENE_IDS = Object.keys(show.scenes);
+  window.__ctx = ctx;
 }

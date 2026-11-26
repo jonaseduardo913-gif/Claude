@@ -3,7 +3,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 npm install
-pip install -q numpy scipy pillow piper-tts
+pip install -q numpy scipy pillow piper-tts faster-whisper
 mkdir -p /opt/tools/voices
 for n in faber cadu jeff; do
   f=pt_BR-$n-medium

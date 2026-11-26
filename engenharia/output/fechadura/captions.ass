@@ -22,7 +22,7 @@ Dialogue: 0,0:00:01.95,0:00:02.01,Cap,,0,0,0,,MAS {\c&H3DD9FF&\fscx106\fscy106}O
 Dialogue: 0,0:00:02.01,0:00:02.15,Cap,,0,0,0,,MAS O {\c&H3DD9FF&\fscx106\fscy106}QUE{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:02.15,0:00:02.65,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}ACONTECE{\c&HFFFFFF&\fscx100\fscy100} AQUI DENTRO?
 Dialogue: 0,0:00:02.65,0:00:02.84,Cap,,0,0,0,,ACONTECE {\c&H3DD9FF&\fscx106\fscy106}AQUI{\c&HFFFFFF&\fscx100\fscy100} DENTRO?
-Dialogue: 0,0:00:02.84,0:00:03.50,Cap,,0,0,0,,ACONTECE AQUI {\c&H3DD9FF&\fscx106\fscy106}DENTRO?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:02.84,0:00:03.85,Cap,,0,0,0,,ACONTECE AQUI {\c&H3DD9FF&\fscx106\fscy106}DENTRO?{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:04.38,0:00:04.65,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}ESTA{\c&HFFFFFF&\fscx100\fscy100} É UMA
 Dialogue: 0,0:00:04.65,0:00:04.73,Cap,,0,0,0,,ESTA {\c&H3DD9FF&\fscx106\fscy106}É{\c&HFFFFFF&\fscx100\fscy100} UMA
 Dialogue: 0,0:00:04.73,0:00:04.94,Cap,,0,0,0,,ESTA É {\c&H3DD9FF&\fscx106\fscy106}UMA{\c&HFFFFFF&\fscx100\fscy100}
@@ -39,7 +39,7 @@ Dialogue: 0,0:00:07.88,0:00:08.47,Cap,,0,0,0,,UM {\c&H3DD9FF&\fscx106\fscy106}CI
 Dialogue: 0,0:00:08.47,0:00:08.57,Cap,,0,0,0,,UM CILINDRO {\c&H3DD9FF&\fscx106\fscy106}QUE{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:08.57,0:00:09.03,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}GIRA{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:09.03,0:00:09.11,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}O{\c&HFFFFFF&\fscx100\fscy100} TAMBOR
-Dialogue: 0,0:00:09.11,0:00:09.85,Cap,,0,0,0,,O {\c&H3DD9FF&\fscx106\fscy106}TAMBOR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:09.11,0:00:10.20,Cap,,0,0,0,,O {\c&H3DD9FF&\fscx106\fscy106}TAMBOR{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:10.21,0:00:10.86,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}ATRAVESSANDO{\c&HFFFFFF&\fscx100\fscy100} OS DOIS
 Dialogue: 0,0:00:10.86,0:00:10.95,Cap,,0,0,0,,ATRAVESSANDO {\c&H3DD9FF&\fscx106\fscy106}OS{\c&HFFFFFF&\fscx100\fscy100} DOIS
 Dialogue: 0,0:00:10.95,0:00:11.34,Cap,,0,0,0,,ATRAVESSANDO OS {\c&H3DD9FF&\fscx106\fscy106}DOIS{\c&HFFFFFF&\fscx100\fscy100}
@@ -51,7 +51,7 @@ Dialogue: 0,0:00:12.31,0:00:12.77,Cap,,0,0,0,,DE {\c&H3DD9FF&\fscx106\fscy106}TA
 Dialogue: 0,0:00:12.77,0:00:13.62,Cap,,0,0,0,,DE TAMANHOS {\c&H3DD9FF&\fscx106\fscy106}DIFERENTES{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:13.62,0:00:14.18,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}EMPURRADOS{\c&HFFFFFF&\fscx100\fscy100} POR MOLAS
 Dialogue: 0,0:00:14.18,0:00:14.32,Cap,,0,0,0,,EMPURRADOS {\c&H3DD9FF&\fscx106\fscy106}POR{\c&HFFFFFF&\fscx100\fscy100} MOLAS
-Dialogue: 0,0:00:14.32,0:00:14.89,Cap,,0,0,0,,EMPURRADOS POR {\c&H3DD9FF&\fscx106\fscy106}MOLAS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:14.32,0:00:15.24,Cap,,0,0,0,,EMPURRADOS POR {\c&H3DD9FF&\fscx106\fscy106}MOLAS{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:15.25,0:00:15.44,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}SEM{\c&HFFFFFF&\fscx100\fscy100} A CHAVE
 Dialogue: 0,0:00:15.44,0:00:15.51,Cap,,0,0,0,,SEM {\c&H3DD9FF&\fscx106\fscy106}A{\c&HFFFFFF&\fscx100\fscy100} CHAVE
 Dialogue: 0,0:00:15.51,0:00:15.92,Cap,,0,0,0,,SEM A {\c&H3DD9FF&\fscx106\fscy106}CHAVE{\c&HFFFFFF&\fscx100\fscy100}
@@ -73,7 +73,7 @@ Dialogue: 0,0:00:20.00,0:00:20.09,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\f
 Dialogue: 0,0:00:20.09,0:00:20.15,Cap,,0,0,0,,E {\c&H3DD9FF&\fscx106\fscy106}O{\c&HFFFFFF&\fscx100\fscy100} TAMBOR
 Dialogue: 0,0:00:20.15,0:00:20.49,Cap,,0,0,0,,E O {\c&H3DD9FF&\fscx106\fscy106}TAMBOR{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:20.49,0:00:20.70,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}NÃO{\c&HFFFFFF&\fscx100\fscy100} GIRA
-Dialogue: 0,0:00:20.70,0:00:21.20,Cap,,0,0,0,,NÃO {\c&H3DD9FF&\fscx106\fscy106}GIRA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:20.70,0:00:21.56,Cap,,0,0,0,,NÃO {\c&H3DD9FF&\fscx106\fscy106}GIRA{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:21.55,0:00:21.75,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}ESSA{\c&HFFFFFF&\fscx100\fscy100} FRONTEIRA É
 Dialogue: 0,0:00:21.75,0:00:22.37,Cap,,0,0,0,,ESSA {\c&H3DD9FF&\fscx106\fscy106}FRONTEIRA{\c&HFFFFFF&\fscx100\fscy100} É
 Dialogue: 0,0:00:22.37,0:00:22.44,Cap,,0,0,0,,ESSA FRONTEIRA {\c&H3DD9FF&\fscx106\fscy106}É{\c&HFFFFFF&\fscx100\fscy100}
@@ -83,7 +83,7 @@ Dialogue: 0,0:00:22.78,0:00:22.93,Cap,,0,0,0,,A LINHA {\c&H3DD9FF&\fscx106\fscy1
 Dialogue: 0,0:00:22.93,0:00:23.86,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}CISALHAMENTO{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:23.86,0:00:24.09,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}TUDO{\c&HFFFFFF&\fscx100\fscy100} DEPENDE DELA
 Dialogue: 0,0:00:24.09,0:00:24.58,Cap,,0,0,0,,TUDO {\c&H3DD9FF&\fscx106\fscy106}DEPENDE{\c&HFFFFFF&\fscx100\fscy100} DELA
-Dialogue: 0,0:00:24.58,0:00:25.10,Cap,,0,0,0,,TUDO DEPENDE {\c&H3DD9FF&\fscx106\fscy106}DELA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:24.58,0:00:25.45,Cap,,0,0,0,,TUDO DEPENDE {\c&H3DD9FF&\fscx106\fscy106}DELA{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:25.55,0:00:25.62,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}A{\c&HFFFFFF&\fscx100\fscy100} CHAVE CERTA
 Dialogue: 0,0:00:25.62,0:00:25.88,Cap,,0,0,0,,A {\c&H3DD9FF&\fscx106\fscy106}CHAVE{\c&HFFFFFF&\fscx100\fscy100} CERTA
 Dialogue: 0,0:00:25.88,0:00:26.19,Cap,,0,0,0,,A CHAVE {\c&H3DD9FF&\fscx106\fscy106}CERTA{\c&HFFFFFF&\fscx100\fscy100}
@@ -93,7 +93,7 @@ Dialogue: 0,0:00:26.90,0:00:27.16,Cap,,0,0,0,,EMPURRA CADA {\c&H3DD9FF&\fscx106\
 Dialogue: 0,0:00:27.16,0:00:27.36,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}ATÉ{\c&HFFFFFF&\fscx100\fscy100} UMA ALTURA
 Dialogue: 0,0:00:27.36,0:00:27.57,Cap,,0,0,0,,ATÉ {\c&H3DD9FF&\fscx106\fscy106}UMA{\c&HFFFFFF&\fscx100\fscy100} ALTURA
 Dialogue: 0,0:00:27.57,0:00:27.98,Cap,,0,0,0,,ATÉ UMA {\c&H3DD9FF&\fscx106\fscy106}ALTURA{\c&HFFFFFF&\fscx100\fscy100}
-Dialogue: 0,0:00:27.98,0:00:28.64,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}EXATA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:27.98,0:00:28.99,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}EXATA{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:30.35,0:00:30.41,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}E{\c&HFFFFFF&\fscx100\fscy100} TODAS AS
 Dialogue: 0,0:00:30.41,0:00:30.66,Cap,,0,0,0,,E {\c&H3DD9FF&\fscx106\fscy106}TODAS{\c&HFFFFFF&\fscx100\fscy100} AS
 Dialogue: 0,0:00:30.66,0:00:30.74,Cap,,0,0,0,,E TODAS {\c&H3DD9FF&\fscx106\fscy106}AS{\c&HFFFFFF&\fscx100\fscy100}
@@ -102,7 +102,7 @@ Dialogue: 0,0:00:31.28,0:00:31.36,Cap,,0,0,0,,DIVISÕES {\c&H3DD9FF&\fscx106\fsc
 Dialogue: 0,0:00:31.36,0:00:31.78,Cap,,0,0,0,,DIVISÕES SE {\c&H3DD9FF&\fscx106\fscy106}ALINHAM{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:31.78,0:00:31.94,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}COM{\c&HFFFFFF&\fscx100\fscy100} A LINHA
 Dialogue: 0,0:00:31.94,0:00:32.00,Cap,,0,0,0,,COM {\c&H3DD9FF&\fscx106\fscy106}A{\c&HFFFFFF&\fscx100\fscy100} LINHA
-Dialogue: 0,0:00:32.00,0:00:32.50,Cap,,0,0,0,,COM A {\c&H3DD9FF&\fscx106\fscy106}LINHA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:32.00,0:00:32.85,Cap,,0,0,0,,COM A {\c&H3DD9FF&\fscx106\fscy106}LINHA{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:33.75,0:00:34.01,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}NADA{\c&HFFFFFF&\fscx100\fscy100} MAIS BLOQUEIA
 Dialogue: 0,0:00:34.01,0:00:34.27,Cap,,0,0,0,,NADA {\c&H3DD9FF&\fscx106\fscy106}MAIS{\c&HFFFFFF&\fscx100\fscy100} BLOQUEIA
 Dialogue: 0,0:00:34.27,0:00:35.01,Cap,,0,0,0,,NADA MAIS {\c&H3DD9FF&\fscx106\fscy106}BLOQUEIA{\c&HFFFFFF&\fscx100\fscy100}
@@ -116,7 +116,7 @@ Dialogue: 0,0:00:36.29,0:00:36.82,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\f
 Dialogue: 0,0:00:36.82,0:00:36.91,Cap,,0,0,0,,MECANISMO {\c&H3DD9FF&\fscx106\fscy106}QUE{\c&HFFFFFF&\fscx100\fscy100} RECOLHE
 Dialogue: 0,0:00:36.91,0:00:37.29,Cap,,0,0,0,,MECANISMO QUE {\c&H3DD9FF&\fscx106\fscy106}RECOLHE{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:37.29,0:00:37.36,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}A{\c&HFFFFFF&\fscx100\fscy100} LINGUETA
-Dialogue: 0,0:00:37.36,0:00:38.19,Cap,,0,0,0,,A {\c&H3DD9FF&\fscx106\fscy106}LINGUETA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:37.36,0:00:38.54,Cap,,0,0,0,,A {\c&H3DD9FF&\fscx106\fscy106}LINGUETA{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:38.95,0:00:39.13,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}COM{\c&HFFFFFF&\fscx100\fscy100} A CHAVE
 Dialogue: 0,0:00:39.13,0:00:39.20,Cap,,0,0,0,,COM {\c&H3DD9FF&\fscx106\fscy106}A{\c&HFFFFFF&\fscx100\fscy100} CHAVE
 Dialogue: 0,0:00:39.20,0:00:39.43,Cap,,0,0,0,,COM A {\c&H3DD9FF&\fscx106\fscy106}CHAVE{\c&HFFFFFF&\fscx100\fscy100}
@@ -130,7 +130,7 @@ Dialogue: 0,0:00:40.89,0:00:41.16,Cap,,0,0,0,,FORA DO {\c&H3DD9FF&\fscx106\fscy1
 Dialogue: 0,0:00:41.16,0:00:41.40,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}PARA{\c&HFFFFFF&\fscx100\fscy100} TUDO CONTINUAR
 Dialogue: 0,0:00:41.40,0:00:41.63,Cap,,0,0,0,,PARA {\c&H3DD9FF&\fscx106\fscy106}TUDO{\c&HFFFFFF&\fscx100\fscy100} CONTINUAR
 Dialogue: 0,0:00:41.63,0:00:42.23,Cap,,0,0,0,,PARA TUDO {\c&H3DD9FF&\fscx106\fscy106}CONTINUAR{\c&HFFFFFF&\fscx100\fscy100}
-Dialogue: 0,0:00:42.23,0:00:42.94,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}TRAVADO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:42.23,0:00:43.29,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}TRAVADO{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:43.75,0:00:44.08,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}CINCO{\c&HFFFFFF&\fscx100\fscy100} PINOS
 Dialogue: 0,0:00:44.08,0:00:44.54,Cap,,0,0,0,,CINCO {\c&H3DD9FF&\fscx106\fscy106}PINOS{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:44.54,0:00:44.73,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}ATÉ{\c&HFFFFFF&\fscx100\fscy100} DEZ ALTURAS
@@ -141,7 +141,7 @@ Dialogue: 0,0:00:45.76,0:00:45.90,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\f
 Dialogue: 0,0:00:45.90,0:00:46.50,Cap,,0,0,0,,EM {\c&H3DD9FF&\fscx106\fscy106}TEORIA{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:46.50,0:00:46.74,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}CEM{\c&HFFFFFF&\fscx100\fscy100} MIL COMBINAÇÕES
 Dialogue: 0,0:00:46.74,0:00:46.93,Cap,,0,0,0,,CEM {\c&H3DD9FF&\fscx106\fscy106}MIL{\c&HFFFFFF&\fscx100\fscy100} COMBINAÇÕES
-Dialogue: 0,0:00:46.93,0:00:48.00,Cap,,0,0,0,,CEM MIL {\c&H3DD9FF&\fscx106\fscy106}COMBINAÇÕES{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:46.93,0:00:48.35,Cap,,0,0,0,,CEM MIL {\c&H3DD9FF&\fscx106\fscy106}COMBINAÇÕES{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:48.35,0:00:48.42,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}A{\c&HFFFFFF&\fscx100\fscy100} IDEIA TEM
 Dialogue: 0,0:00:48.42,0:00:48.78,Cap,,0,0,0,,A {\c&H3DD9FF&\fscx106\fscy106}IDEIA{\c&HFFFFFF&\fscx100\fscy100} TEM
 Dialogue: 0,0:00:48.78,0:00:48.99,Cap,,0,0,0,,A IDEIA {\c&H3DD9FF&\fscx106\fscy106}TEM{\c&HFFFFFF&\fscx100\fscy100}
@@ -159,7 +159,7 @@ Dialogue: 0,0:00:51.89,0:00:52.35,Cap,,0,0,0,,A {\c&H3DD9FF&\fscx106\fscy106}FAM
 Dialogue: 0,0:00:52.35,0:00:52.83,Cap,,0,0,0,,A FAMÍLIA {\c&H3DD9FF&\fscx106\fscy106}YALE{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:52.83,0:00:52.94,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}NO{\c&HFFFFFF&\fscx100\fscy100} SÉCULO DEZENOVE
 Dialogue: 0,0:00:52.94,0:00:53.30,Cap,,0,0,0,,NO {\c&H3DD9FF&\fscx106\fscy106}SÉCULO{\c&HFFFFFF&\fscx100\fscy100} DEZENOVE
-Dialogue: 0,0:00:53.30,0:00:54.11,Cap,,0,0,0,,NO SÉCULO {\c&H3DD9FF&\fscx106\fscy106}DEZENOVE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:53.30,0:00:54.46,Cap,,0,0,0,,NO SÉCULO {\c&H3DD9FF&\fscx106\fscy106}DEZENOVE{\c&HFFFFFF&\fscx100\fscy100}
 Dialogue: 0,0:00:54.45,0:00:54.52,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}E{\c&HFFFFFF&\fscx100\fscy100} PROVAVELMENTE É
 Dialogue: 0,0:00:54.52,0:00:55.35,Cap,,0,0,0,,E {\c&H3DD9FF&\fscx106\fscy106}PROVAVELMENTE{\c&HFFFFFF&\fscx100\fscy100} É
 Dialogue: 0,0:00:55.35,0:00:55.42,Cap,,0,0,0,,E PROVAVELMENTE {\c&H3DD9FF&\fscx106\fscy106}É{\c&HFFFFFF&\fscx100\fscy100}
@@ -169,4 +169,4 @@ Dialogue: 0,0:00:55.70,0:00:56.07,Cap,,0,0,0,,ELA QUE {\c&H3DD9FF&\fscx106\fscy1
 Dialogue: 0,0:00:56.07,0:00:56.14,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}A{\c&HFFFFFF&\fscx100\fscy100} SUA PORTA
 Dialogue: 0,0:00:56.14,0:00:56.32,Cap,,0,0,0,,A {\c&H3DD9FF&\fscx106\fscy106}SUA{\c&HFFFFFF&\fscx100\fscy100} PORTA
 Dialogue: 0,0:00:56.32,0:00:56.60,Cap,,0,0,0,,A SUA {\c&H3DD9FF&\fscx106\fscy106}PORTA{\c&HFFFFFF&\fscx100\fscy100}
-Dialogue: 0,0:00:56.60,0:00:57.08,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}HOJE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 0,0:00:56.60,0:00:57.43,Cap,,0,0,0,,{\fad(40,0)}{\c&H3DD9FF&\fscx106\fscy106}HOJE{\c&HFFFFFF&\fscx100\fscy100}

@@ -1,0 +1,88 @@
+{
+  "id": "channel-tunnel",
+  "title": "How Did They Build a Tunnel Under the Ocean?",
+  "language": "en-US",
+  "format": { "width": 1080, "height": 1920, "fps": 30, "duration_range": [55, 65], "scene_seconds": [3, 13] },
+  "narration_audio": { "file": "narration.mp3", "alignment": "alignment.json", "max_pause": 0.38, "tempo": 1.03, "voice": "ElevenLabs Nathan (provided by client)" },
+  "captions": { "style": "pop" },
+  "outro_seconds": 0.8,
+  "music": { "bpm": 92, "key": "D", "mood": "epic, industrial, wonder" },
+  "research": {
+    "summary": "The Channel Tunnel (Folkestone-Coquelles) is 50.5 km long, about 38 km under the sea. It consists of two running rail tunnels of 7.6 m internal diameter and a central 4.8 m service tunnel, linked by cross-passages nominally every 375 m. It was bored mainly through the chalk marl layer, below the seabed (deepest point about 75 m below sea level), by several tunnel boring machines working from both the English and French sides; tunnels were lined with precast segments erected inside the TBM. The two sides met in December 1990 (service tunnel breakthrough). It carries Eurostar passenger trains and Le Shuttle vehicle shuttles (cars and trucks loaded onto shuttle trains).",
+    "facts_checked": [
+      "Total length 50.5 km, undersea section about 38 km (Eurotunnel); other sources give 37-37.9 km.",
+      "Two 7.6 m internal-diameter running tunnels and a central 4.8 m service tunnel connected by cross passages (Geological Society).",
+      "Cross-passages nominally every 375 m; the service tunnel carries maintenance, evacuation and ventilation functions.",
+      "Tunnels follow the chalk marl (West Melbury Marly Chalk) beneath the seabed.",
+      "December 1990: the two sides meet (Eurotunnel timeline); opening May 1994.",
+      "Deepest point about 75 m below sea level.",
+      "Multiple TBMs worked from both sides (eleven according to one source; not confirmed by a second, so the video shows several machines without a number)."
+    ],
+    "sources": [
+      "https://www.geolsoc.org.uk/GeositesChannelTunnel",
+      "https://eurotunnel.com/uk/build/the-channel-tunnel/",
+      "https://www.getlinkgroup.com/uk/the-channel-tunnel/",
+      "https://ice.org.uk/what-is-civil-engineering/infrastructure-projects/the-channel-tunnel",
+      "https://www.pbs.org/wgbh/buildingbig/wonder/structure/channel.html"
+    ]
+  },
+  "cast": ["otto (TBM operator, English side)", "crewA / crewB (tunnel crews, French side)"],
+  "scenes": [
+    {
+      "id": "S01", "starts_with": "Imagine building",
+      "narration": "Imagine building a tunnel dozens of kilometers long beneath the ocean, without letting the water flood the construction site.",
+      "storyboard": "HOOK. Aerial over the English Channel between white chalk cliffs; the camera skims the low-poly waves and dives under the surface (blue underwater tint), down to the seabed; a section plane slices the ground revealing geological layers and the tunnels running far below the seabed.",
+      "camera": "aerial skim, dive through the water surface, descend to the geological section",
+      "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.0, "type": "impact" }, { "u": 0.0, "type": "ocean", "dur": 3.0 }, { "u": 0.38, "type": "underwater", "dur": 3.4 }, { "u": 0.7, "type": "cut_reveal" } ]
+    },
+    {
+      "id": "S02", "starts_with": "It sounds impossible",
+      "narration": "It sounds impossible. But that's exactly what engineers accomplished between England and France. The construction relied on enormous machines called tunnel boring machines.",
+      "storyboard": "Wide front view of a giant tunnel boring machine in the chalk marl (rock ahead shown translucent): rotating cutterhead with disc cutters, shield, hydraulic thrust rams. Otto at the controls on the back-up gantry gives scale. Move closer to the cutterhead biting into the chalk.",
+      "camera": "front tracking shot, then close-up of the rotating cutterhead",
+      "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.0, "type": "rumble", "dur": 10.5 }, { "u": 0.55, "type": "hydraulic", "dur": 1.5 } ]
+    },
+    {
+      "id": "S03", "starts_with": "They slowly moved",
+      "narration": "They slowly moved through the seabed, cutting through layers of rock and removing thousands of tons of material. But digging was only part of the challenge.",
+      "storyboard": "Side section tracking shot: the TBM advances; chalk spoil falls from the cutterhead onto the conveyor and travels back to muck wagons on rails; new tunnel appears behind the machine. Pull back to show the geological layers and the sea far above.",
+      "camera": "side tracking along the machine, then pull back to show the sea above",
+      "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.0, "type": "rumble", "dur": 8.0 }, { "u": 0.1, "type": "conveyor", "dur": 6.5 } ]
+    },
+    {
+      "id": "S04", "starts_with": "As the machines",
+      "narration": "As the machines advanced, they installed massive precast concrete segments to line the tunnel walls and keep the structure protected.",
+      "storyboard": "Inside the rear of the shield: the hydraulic erector arm picks a curved precast concrete segment, swings it around and places it to complete a ring; the key segment closes the ring. Pull back to reveal the finished rings receding down the tunnel while the TBM keeps advancing.",
+      "camera": "close mechanical shot of the erector, then wide tunnel reveal",
+      "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.05, "type": "hydraulic", "dur": 2.0 }, { "u": 0.36, "type": "clunk" }, { "u": 0.5, "type": "hydraulic", "dur": 1.5 }, { "u": 0.66, "type": "clunk" } ]
+    },
+    {
+      "id": "S05", "starts_with": "And here's something",
+      "narration": "And here's something even more surprising. They didn't build just one tunnel. The project consists of two main railway tunnels and a third service tunnel, used for maintenance and emergency access.",
+      "storyboard": "Side view of the tunnel, then the section plane rotates to a cross-section revealing THREE parallel tunnels: two 7.6 m rail tunnels (a passenger train in one, a vehicle shuttle carrying cars and trucks in the other) and the smaller 4.8 m service tunnel in the middle with a service vehicle; cross-passages connect them. Labels with dimensions.",
+      "camera": "orbit from side view to full cross-section",
+      "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.02, "type": "whoosh_in" }, { "u": 0.35, "type": "ui_tick" }, { "u": 0.5, "type": "ui_tick" }, { "u": 0.66, "type": "ui_tick" }, { "u": 0.4, "type": "train_pass", "dur": 4.0 } ]
+    },
+    {
+      "id": "S06", "starts_with": "All three run",
+      "narration": "All three run beneath the seabed. After years of construction, the teams finally connected both sides.",
+      "storyboard": "Wide section: tunnels running under the seabed from both coasts. Two crews approach from the English and French sides; the last rock wall crumbles and Otto shakes hands with the French crew through the opening. Label DECEMBER 1990.",
+      "camera": "wide underground shot, slow push toward the breakthrough",
+      "transition": "fade", "music": 3,
+      "sfx": [ { "u": 0.1, "type": "rumble", "dur": 2.5 }, { "u": 0.45, "type": "rock_break" }, { "u": 0.6, "type": "riser", "dur": 2.4 } ]
+    },
+    {
+      "id": "S07", "starts_with": "The result was",
+      "narration": "The result was one of the most impressive engineering projects in history: the Channel Tunnel. A railway passage that allows people and vehicles to cross between England and France without taking a boat.",
+      "storyboard": "A passenger train races toward camera through the lit tunnel; side tracking shot; then a map of England and France with the tunnel line from Folkestone to Calais beneath the Channel; final wide pull-back of the three tunnels under the sea.",
+      "camera": "front tracking, side tracking, geographic pull-back",
+      "transition": "none", "music": 3,
+      "sfx": [ { "u": 0.0, "type": "train_pass", "dur": 4.5 }, { "u": 0.5, "type": "whoosh_in" }, { "u": 0.82, "type": "impact" } ]
+    }
+  ]
+}

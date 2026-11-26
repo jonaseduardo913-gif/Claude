@@ -49,7 +49,59 @@ def words_of(text):
     return re.findall(r"[\wÀ-ÿ\-\.,:;!?…'’]+", text)
 
 
+def norm_word(w):
+    return re.sub(r"[^a-z0-9']", "", w.lower().replace("’", "'"))
+
+
+def external_narration(ep, out):
+    """Use a provided narration file + word alignment (faster-whisper) instead of TTS."""
+    na = ep["narration_audio"]
+    tempo = na.get("tempo", 1.0)
+    src = ROOT / "episodes" / ep["id"] / na["file"]
+    nd = out / "narration"; nd.mkdir(exist_ok=True)
+    dst = nd / "full.wav"
+    words = json.loads((ROOT / "episodes" / ep["id"] / na.get("alignment", "alignment.json")).read_text())
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(src), "-f", "f32le", "-ac", "1", "-ar", "48000", "-"], capture_output=True).stdout
+    a = np.frombuffer(raw, np.float32).copy()
+    mp = na.get("max_pause")
+    if mp:  # shorten long pauses between words (keeps the voice untouched)
+        keep, removed, cursor, xf = [], 0.0, 0, int(0.012 * 48000)
+        shift = [0.0] * len(words)
+        for i in range(len(words) - 1):
+            shift[i] = removed
+            g0, g1 = words[i]["end"], words[i + 1]["start"]
+            if g1 - g0 > mp:
+                c0, c1 = int((g0 + mp / 2) * 48000), int((g1 - mp / 2) * 48000)
+                keep.append(a[cursor:c0]); cursor = c1; removed += (c1 - c0) / 48000
+        shift[-1] = removed
+        keep.append(a[cursor:])
+        out_a = keep[0]
+        for k in keep[1:]:
+            if len(out_a) > xf and len(k) > xf:
+                ramp = np.linspace(0, 1, xf, dtype=np.float32)
+                out_a = np.concatenate([out_a[:-xf], out_a[-xf:] * (1 - ramp) + k[:xf] * ramp, k[xf:]])
+            else:
+                out_a = np.concatenate([out_a, k])
+        words = [{"w": w["w"], "start": w["start"] - shift[i], "end": w["end"] - shift[i]} for i, w in enumerate(words)]
+        print(f"pauses shortened: removed {removed:.2f}s")
+        a = out_a
+    tmp = nd / "trimmed.wav"
+    with wave.open(str(tmp), "wb") as wf:
+        wf.setnchannels(1); wf.setsampwidth(2); wf.setframerate(48000)
+        wf.writeframes((np.clip(a, -1, 1) * 32767).astype(np.int16).tobytes())
+    af = f"atempo={tempo}" if abs(tempo - 1) > 1e-6 else "anull"
+    run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-af", af, "-ac", "1", "-ar", "48000", dst])
+    words = [{"w": w["w"], "start": round(w["start"] / tempo, 3), "end": round(w["end"] / tempo, 3)} for w in words]
+    with wave.open(str(dst)) as wf:
+        secs = wf.getnframes() / wf.getframerate()
+    (out / "narration.json").write_text(json.dumps({"mode": "external", "file": str(dst.relative_to(ROOT)), "seconds": round(secs, 3),
+                                                    "tempo": tempo, "words": words}, indent=1, ensure_ascii=False))
+    print(f"narration: external {secs:.2f}s (tempo {tempo}), {len(words)} words")
+
+
 def tts(ep, out):
+    if ep.get("narration_audio"):
+        return external_narration(ep, out)
     from piper import PiperVoice, SynthesisConfig
     v = ep["voice"]
     voice = PiperVoice.load(str(VOICES / f"{v['model']}.onnx"))
@@ -109,9 +161,42 @@ def tts(ep, out):
 
 
 # ------------------------------------------------------------------ 2. timeline
+def scene_starts_external(ep, nar):
+    ws = [norm_word(w["w"]) for w in nar["words"]]
+    starts = []
+    for i, sc in enumerate(ep["scenes"]):
+        key = [norm_word(x) for x in sc["starts_with"].split()]
+        lo = 0 if not starts else starts[-1][1] + 1
+        idx = next((j for j in range(lo, len(ws)) if ws[j:j + len(key)] == key), None)
+        if idx is None:
+            raise SystemExit(f"{sc['id']}: starts_with '{sc['starts_with']}' not found in alignment")
+        t = 0.0 if i == 0 else max(0.0, nar["words"][idx]["start"] - 0.12)
+        starts.append((t, idx))
+    return [t for t, _ in starts]
+
+
 def timeline(ep, out):
     nar = json.loads((out / "narration.json").read_text())
     f = ep["format"]
+    if nar.get("mode") == "external":
+        st = scene_starts_external(ep, nar)
+        end = max(nar["seconds"], nar["words"][-1]["end"]) + ep.get("outro_seconds", 1.0)
+        scenes, frames = [], 0
+        for i, sc in enumerate(ep["scenes"]):
+            t0 = round(st[i] * f["fps"]) / f["fps"]
+            t1 = round((st[i + 1] if i + 1 < len(st) else end) * f["fps"]) / f["fps"]
+            dur = round(t1 - t0, 4)
+            last = i == len(ep["scenes"]) - 1
+            tail = 0 if last or XFADE.get(sc.get("transition", "fade")) is None else TAIL
+            scenes.append({"id": sc["id"], "start": t0, "duration": dur, "tail": tail, "clip_seconds": round(dur + tail, 3),
+                           "frame_offset": frames, "transition": sc.get("transition", "fade")})
+            frames += round((dur + tail) * f["fps"])
+        total = scenes[-1]["start"] + scenes[-1]["duration"]
+        tl = {"episode": ep["id"], "fps": f["fps"], "width": f["width"], "height": f["height"], "total_seconds": round(total, 3),
+              "scenes": scenes, "warnings": []}
+        (out / "timeline.json").write_text(json.dumps(tl, indent=1))
+        print(f"timeline: {len(scenes)} scenes, {total:.2f}s  " + " ".join(f"{x['id']}={x['duration']:.1f}" for x in scenes))
+        return tl
     t, frames, scenes, warn = 0.0, 0, [], []
     for i, sc in enumerate(ep["scenes"]):
         need = nar[sc["id"]]["seconds"] + LEAD_IN + 0.42
@@ -169,10 +254,15 @@ def build_audio(ep, out):
     nar = json.loads((out / "narration.json").read_text())
     by_id = {s["id"]: s for s in ep["scenes"]}
     clips, events, energy = [], [], []
+    external = nar.get("mode") == "external"
+    if external:
+        with wave.open(str(ROOT / nar["file"])) as wf:
+            clips.append((0.0, np.frombuffer(wf.readframes(wf.getnframes()), np.int16).astype(np.float32) / 32767))
     for s in tl["scenes"]:
-        with wave.open(str(ROOT / nar[s["id"]]["file"])) as wf:
-            x = np.frombuffer(wf.readframes(wf.getnframes()), np.int16).astype(np.float32) / 32767
-        clips.append((s["start"] + LEAD_IN, x))
+        if not external:
+            with wave.open(str(ROOT / nar[s["id"]]["file"])) as wf:
+                x = np.frombuffer(wf.readframes(wf.getnframes()), np.int16).astype(np.float32) / 32767
+            clips.append((s["start"] + LEAD_IN, x))
         for ev in by_id[s["id"]].get("sfx", []):
             events.append((s["start"] + ev["u"] * s["duration"], ev["type"], ev, s["duration"]))
         energy.append((s["start"], s["start"] + s["duration"], by_id[s["id"]].get("music", 1)))
@@ -218,20 +308,36 @@ Style: Cap,Inter ExtraBold,76,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
+    style = ep.get("captions", {}).get("style", "karaoke")
+    if style == "pop":
+        hdr = hdr.replace("Style: Cap,Inter ExtraBold,76,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,1,0,1,7,3,2,90,90,330,1",
+                          "Style: Cap,Inter ExtraBold,96,&H00FFFFFF,&H00FFFFFF,&H00202020,&H96000000,0,0,0,0,100,100,0,0,1,4,5,2,80,80,640,1")
     ev, srt, n = [], [], 0
-    for s in tl["scenes"]:
-        words = [dict(w, start=w["start"] + s["start"] + LEAD_IN, end=w["end"] + s["start"] + LEAD_IN) for w in nar[s["id"]]["words"]]
+    groups = ([[dict(w) for w in nar["words"]]] if nar.get("mode") == "external" else
+              [[dict(w, start=w["start"] + s["start"] + LEAD_IN, end=w["end"] + s["start"] + LEAD_IN) for w in nar[s["id"]]["words"]] for s in tl["scenes"]])
+    for words in groups:
         # group into chunks: max 3 words / 18 chars, break after punctuation
         chunks, cur = [], []
+        maxw, maxc = (2, 14) if style == "pop" else (3, 18)
         for w in words:
+            if cur and w["start"] - cur[-1]["end"] > 0.45:   # pause in speech -> new caption
+                chunks.append(cur); cur = []
             cur.append(w)
             text = " ".join(x["w"] for x in cur)
-            if len(cur) >= 3 or len(text) >= 18 or re.search(r"[\.,:;\?!]$", w["w"]):
+            if len(cur) >= maxw or len(text) >= maxc or re.search(r"[\.,:;\?!]$", w["w"]):
                 chunks.append(cur); cur = []
         if cur:
             chunks.append(cur)
         for ci, ch in enumerate(chunks):
-            end_hold = chunks[ci + 1][0]["start"] if ci + 1 < len(chunks) else ch[-1]["end"] + 0.25
+            nxt = chunks[ci + 1][0]["start"] if ci + 1 < len(chunks) else 1e9
+            end_hold = min(nxt, ch[-1]["end"] + 0.6)
+            if style == "pop":
+                txt = " ".join(re.sub(r"[\.,;:]+$", "", x["w"]) for x in ch)
+                ev.append(f"Dialogue: 0,{ts_ass(ch[0]['start'])},{ts_ass(end_hold)},Cap,,0,0,0,,"
+                          + r"{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}" + txt)
+                n += 1
+                srt.append(f"{n}\n{ts_srt(ch[0]['start'])} --> {ts_srt(end_hold)}\n{txt}\n")
+                continue
             clean = [re.sub(r"[\.,;:]+$", "", x["w"]).upper() for x in ch]
             for wi, w in enumerate(ch):
                 t0 = w["start"]

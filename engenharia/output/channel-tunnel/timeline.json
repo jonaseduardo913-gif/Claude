@@ -1,0 +1,73 @@
+{
+ "episode": "channel-tunnel",
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "total_seconds": 64.0,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "duration": 7.2333,
+   "tail": 0.45,
+   "clip_seconds": 7.683,
+   "frame_offset": 0,
+   "transition": "fade"
+  },
+  {
+   "id": "S02",
+   "start": 7.233333333333333,
+   "duration": 10.3,
+   "tail": 0.45,
+   "clip_seconds": 10.75,
+   "frame_offset": 230,
+   "transition": "fade"
+  },
+  {
+   "id": "S03",
+   "start": 17.533333333333335,
+   "duration": 8.4333,
+   "tail": 0.45,
+   "clip_seconds": 8.883,
+   "frame_offset": 552,
+   "transition": "fade"
+  },
+  {
+   "id": "S04",
+   "start": 25.966666666666665,
+   "duration": 8.2,
+   "tail": 0.45,
+   "clip_seconds": 8.65,
+   "frame_offset": 818,
+   "transition": "fade"
+  },
+  {
+   "id": "S05",
+   "start": 34.166666666666664,
+   "duration": 10.7,
+   "tail": 0.45,
+   "clip_seconds": 11.15,
+   "frame_offset": 1077,
+   "transition": "fade"
+  },
+  {
+   "id": "S06",
+   "start": 44.86666666666667,
+   "duration": 6.1667,
+   "tail": 0.45,
+   "clip_seconds": 6.617,
+   "frame_offset": 1411,
+   "transition": "fade"
+  },
+  {
+   "id": "S07",
+   "start": 51.03333333333333,
+   "duration": 12.9667,
+   "tail": 0,
+   "clip_seconds": 12.967,
+   "frame_offset": 1610,
+   "transition": "none"
+  }
+ ],
+ "warnings": []
+}

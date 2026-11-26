@@ -17,6 +17,10 @@ Sistema em `engenharia/` (leia `engenharia/README.md`). Episódio-modelo complet
 - Não invente mecanismos. Se fontes divergem (datas, números), use a formulação segura ("no século dezenove", "em teoria") e registre a divergência em `research.facts_checked`.
 - Registre `research.summary`, ≥3 `facts_checked` e ≥2 `sources` (URLs) em `episode.json`.
 
+### 1b. Estilo, idioma e narração
+- Estilo `studio` (documentário escuro) ou `lowpoly` (3D facetado colorido com personagens originais Otto/Nova/crew — referência: canais tipo "Desmontando o Mundo"). Pergunte se não estiver claro; se o usuário mandar referências, siga-as.
+- Se o usuário fornecer narração (MP3/WAV): copie para `episodes/<slug>/narration.mp3`, configure `narration_audio` e rode `python3 tools/align.py <slug>`; use `starts_with` em cada cena; ajuste `max_pause`/`tempo` para caber na duração pedida (`format.duration_range`).
+
 ### 2. Esqueleto
 ```
 cd engenharia && python3 tools/new_episode.py <slug> "<tema>"

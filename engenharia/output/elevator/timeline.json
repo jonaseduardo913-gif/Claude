@@ -1,0 +1,73 @@
+{
+ "episode": "elevator",
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "total_seconds": 58.367,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "duration": 4.6333,
+   "tail": 0.45,
+   "clip_seconds": 5.083,
+   "frame_offset": 0,
+   "transition": "fade"
+  },
+  {
+   "id": "S02",
+   "start": 4.633333333333334,
+   "duration": 10.4,
+   "tail": 0.45,
+   "clip_seconds": 10.85,
+   "frame_offset": 152,
+   "transition": "smoothup"
+  },
+  {
+   "id": "S03",
+   "start": 15.033333333333333,
+   "duration": 10.4333,
+   "tail": 0.45,
+   "clip_seconds": 10.883,
+   "frame_offset": 478,
+   "transition": "zoomin"
+  },
+  {
+   "id": "S04",
+   "start": 25.466666666666665,
+   "duration": 6.5,
+   "tail": 0.45,
+   "clip_seconds": 6.95,
+   "frame_offset": 804,
+   "transition": "fade"
+  },
+  {
+   "id": "S05",
+   "start": 31.966666666666665,
+   "duration": 9.9333,
+   "tail": 0.45,
+   "clip_seconds": 10.383,
+   "frame_offset": 1012,
+   "transition": "fade"
+  },
+  {
+   "id": "S06",
+   "start": 41.9,
+   "duration": 3.8667,
+   "tail": 0.45,
+   "clip_seconds": 4.317,
+   "frame_offset": 1323,
+   "transition": "fade"
+  },
+  {
+   "id": "S07",
+   "start": 45.766666666666666,
+   "duration": 12.6,
+   "tail": 0,
+   "clip_seconds": 12.6,
+   "frame_offset": 1453,
+   "transition": "none"
+  }
+ ],
+ "warnings": []
+}

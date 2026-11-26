@@ -1,0 +1,848 @@
+{
+ "mode": "external",
+ "file": "output/channel-tunnel/narration/full.wav",
+ "seconds": 63.206,
+ "tempo": 1.03,
+ "words": [
+  {
+   "w": "Imagine",
+   "start": 0.0,
+   "end": 0.485
+  },
+  {
+   "w": "building",
+   "start": 0.485,
+   "end": 0.854
+  },
+  {
+   "w": "a",
+   "start": 0.854,
+   "end": 1.068
+  },
+  {
+   "w": "tunnel",
+   "start": 1.068,
+   "end": 1.359
+  },
+  {
+   "w": "dozens",
+   "start": 1.359,
+   "end": 1.864
+  },
+  {
+   "w": "of",
+   "start": 1.864,
+   "end": 2.175
+  },
+  {
+   "w": "kilometers",
+   "start": 2.175,
+   "end": 2.544
+  },
+  {
+   "w": "long",
+   "start": 2.544,
+   "end": 3.049
+  },
+  {
+   "w": "beneath",
+   "start": 3.049,
+   "end": 3.456
+  },
+  {
+   "w": "the",
+   "start": 3.456,
+   "end": 3.748
+  },
+  {
+   "w": "ocean",
+   "start": 3.748,
+   "end": 4.117
+  },
+  {
+   "w": "without",
+   "start": 4.117,
+   "end": 4.816
+  },
+  {
+   "w": "letting",
+   "start": 4.816,
+   "end": 5.126
+  },
+  {
+   "w": "the",
+   "start": 5.126,
+   "end": 5.34
+  },
+  {
+   "w": "water",
+   "start": 5.34,
+   "end": 5.65
+  },
+  {
+   "w": "flood",
+   "start": 5.65,
+   "end": 5.961
+  },
+  {
+   "w": "the",
+   "start": 5.961,
+   "end": 6.136
+  },
+  {
+   "w": "construction",
+   "start": 6.136,
+   "end": 6.505
+  },
+  {
+   "w": "site.",
+   "start": 6.505,
+   "end": 6.971
+  },
+  {
+   "w": "It",
+   "start": 7.34,
+   "end": 7.515
+  },
+  {
+   "w": "sounds",
+   "start": 7.515,
+   "end": 7.806
+  },
+  {
+   "w": "impossible,",
+   "start": 7.806,
+   "end": 8.408
+  },
+  {
+   "w": "but",
+   "start": 8.777,
+   "end": 9.184
+  },
+  {
+   "w": "that's",
+   "start": 9.184,
+   "end": 9.437
+  },
+  {
+   "w": "exactly",
+   "start": 9.437,
+   "end": 9.903
+  },
+  {
+   "w": "what",
+   "start": 9.903,
+   "end": 10.214
+  },
+  {
+   "w": "engineers",
+   "start": 10.214,
+   "end": 10.544
+  },
+  {
+   "w": "accomplished",
+   "start": 10.544,
+   "end": 11.223
+  },
+  {
+   "w": "between",
+   "start": 11.223,
+   "end": 11.612
+  },
+  {
+   "w": "England",
+   "start": 11.612,
+   "end": 12.0
+  },
+  {
+   "w": "and",
+   "start": 12.0,
+   "end": 12.311
+  },
+  {
+   "w": "France.",
+   "start": 12.311,
+   "end": 12.738
+  },
+  {
+   "w": "The",
+   "start": 13.107,
+   "end": 13.301
+  },
+  {
+   "w": "construction",
+   "start": 13.301,
+   "end": 13.689
+  },
+  {
+   "w": "relied",
+   "start": 13.689,
+   "end": 14.175
+  },
+  {
+   "w": "on",
+   "start": 14.175,
+   "end": 14.427
+  },
+  {
+   "w": "enormous",
+   "start": 14.427,
+   "end": 14.913
+  },
+  {
+   "w": "machines",
+   "start": 14.913,
+   "end": 15.553
+  },
+  {
+   "w": "called",
+   "start": 15.553,
+   "end": 15.883
+  },
+  {
+   "w": "tunnel",
+   "start": 15.883,
+   "end": 16.33
+  },
+  {
+   "w": "boring",
+   "start": 16.33,
+   "end": 16.68
+  },
+  {
+   "w": "machines.",
+   "start": 16.68,
+   "end": 17.301
+  },
+  {
+   "w": "They",
+   "start": 17.67,
+   "end": 17.825
+  },
+  {
+   "w": "slowly",
+   "start": 17.825,
+   "end": 18.252
+  },
+  {
+   "w": "moved",
+   "start": 18.252,
+   "end": 18.68
+  },
+  {
+   "w": "through",
+   "start": 18.68,
+   "end": 18.971
+  },
+  {
+   "w": "the",
+   "start": 18.971,
+   "end": 19.126
+  },
+  {
+   "w": "seabed,",
+   "start": 19.126,
+   "end": 19.573
+  },
+  {
+   "w": "cutting",
+   "start": 19.806,
+   "end": 20.097
+  },
+  {
+   "w": "through",
+   "start": 20.097,
+   "end": 20.369
+  },
+  {
+   "w": "layers",
+   "start": 20.369,
+   "end": 20.699
+  },
+  {
+   "w": "of",
+   "start": 20.699,
+   "end": 20.951
+  },
+  {
+   "w": "rock",
+   "start": 20.951,
+   "end": 21.223
+  },
+  {
+   "w": "and",
+   "start": 21.223,
+   "end": 21.573
+  },
+  {
+   "w": "removing",
+   "start": 21.573,
+   "end": 21.922
+  },
+  {
+   "w": "thousands",
+   "start": 21.922,
+   "end": 22.369
+  },
+  {
+   "w": "of",
+   "start": 22.369,
+   "end": 22.757
+  },
+  {
+   "w": "tons",
+   "start": 22.757,
+   "end": 23.049
+  },
+  {
+   "w": "of",
+   "start": 23.049,
+   "end": 23.282
+  },
+  {
+   "w": "material.",
+   "start": 23.282,
+   "end": 23.728
+  },
+  {
+   "w": "But",
+   "start": 24.097,
+   "end": 24.272
+  },
+  {
+   "w": "digging",
+   "start": 24.272,
+   "end": 24.621
+  },
+  {
+   "w": "was",
+   "start": 24.621,
+   "end": 24.874
+  },
+  {
+   "w": "only",
+   "start": 24.874,
+   "end": 25.126
+  },
+  {
+   "w": "part",
+   "start": 25.126,
+   "end": 25.398
+  },
+  {
+   "w": "of",
+   "start": 25.398,
+   "end": 25.553
+  },
+  {
+   "w": "the",
+   "start": 25.553,
+   "end": 25.65
+  },
+  {
+   "w": "challenge.",
+   "start": 25.65,
+   "end": 26.097
+  },
+  {
+   "w": "As",
+   "start": 26.097,
+   "end": 26.796
+  },
+  {
+   "w": "the",
+   "start": 26.796,
+   "end": 26.951
+  },
+  {
+   "w": "machines",
+   "start": 26.951,
+   "end": 27.243
+  },
+  {
+   "w": "advanced,",
+   "start": 27.243,
+   "end": 27.845
+  },
+  {
+   "w": "they",
+   "start": 28.214,
+   "end": 28.233
+  },
+  {
+   "w": "installed",
+   "start": 28.233,
+   "end": 28.641
+  },
+  {
+   "w": "massive",
+   "start": 28.641,
+   "end": 29.223
+  },
+  {
+   "w": "precast",
+   "start": 29.223,
+   "end": 29.864
+  },
+  {
+   "w": "concrete",
+   "start": 29.864,
+   "end": 30.369
+  },
+  {
+   "w": "segments",
+   "start": 30.369,
+   "end": 30.893
+  },
+  {
+   "w": "to",
+   "start": 30.893,
+   "end": 31.184
+  },
+  {
+   "w": "line",
+   "start": 31.184,
+   "end": 31.437
+  },
+  {
+   "w": "the",
+   "start": 31.437,
+   "end": 31.592
+  },
+  {
+   "w": "tunnel",
+   "start": 31.592,
+   "end": 31.845
+  },
+  {
+   "w": "walls",
+   "start": 31.845,
+   "end": 32.233
+  },
+  {
+   "w": "and",
+   "start": 32.233,
+   "end": 32.621
+  },
+  {
+   "w": "keep",
+   "start": 32.621,
+   "end": 32.835
+  },
+  {
+   "w": "the",
+   "start": 32.835,
+   "end": 33.029
+  },
+  {
+   "w": "structure",
+   "start": 33.029,
+   "end": 33.379
+  },
+  {
+   "w": "protected.",
+   "start": 33.379,
+   "end": 33.903
+  },
+  {
+   "w": "And",
+   "start": 34.272,
+   "end": 34.349
+  },
+  {
+   "w": "here's",
+   "start": 34.349,
+   "end": 34.621
+  },
+  {
+   "w": "something",
+   "start": 34.621,
+   "end": 34.874
+  },
+  {
+   "w": "even",
+   "start": 34.874,
+   "end": 35.165
+  },
+  {
+   "w": "more",
+   "start": 35.165,
+   "end": 35.476
+  },
+  {
+   "w": "surprising.",
+   "start": 35.476,
+   "end": 35.922
+  },
+  {
+   "w": "They",
+   "start": 36.291,
+   "end": 36.408
+  },
+  {
+   "w": "didn't",
+   "start": 36.408,
+   "end": 36.66
+  },
+  {
+   "w": "build",
+   "start": 36.66,
+   "end": 36.854
+  },
+  {
+   "w": "just",
+   "start": 36.854,
+   "end": 37.126
+  },
+  {
+   "w": "one",
+   "start": 37.126,
+   "end": 37.515
+  },
+  {
+   "w": "tunnel.",
+   "start": 37.515,
+   "end": 37.864
+  },
+  {
+   "w": "The",
+   "start": 38.233,
+   "end": 38.388
+  },
+  {
+   "w": "project",
+   "start": 38.388,
+   "end": 38.718
+  },
+  {
+   "w": "consists",
+   "start": 38.718,
+   "end": 39.146
+  },
+  {
+   "w": "of",
+   "start": 39.146,
+   "end": 39.437
+  },
+  {
+   "w": "two",
+   "start": 39.437,
+   "end": 39.786
+  },
+  {
+   "w": "main",
+   "start": 39.786,
+   "end": 40.136
+  },
+  {
+   "w": "railway",
+   "start": 40.136,
+   "end": 40.485
+  },
+  {
+   "w": "tunnels",
+   "start": 40.485,
+   "end": 40.854
+  },
+  {
+   "w": "and",
+   "start": 40.854,
+   "end": 41.223
+  },
+  {
+   "w": "a",
+   "start": 41.223,
+   "end": 41.398
+  },
+  {
+   "w": "third",
+   "start": 41.398,
+   "end": 41.612
+  },
+  {
+   "w": "service",
+   "start": 41.612,
+   "end": 42.078
+  },
+  {
+   "w": "tunnel",
+   "start": 42.078,
+   "end": 42.427
+  },
+  {
+   "w": "used",
+   "start": 42.427,
+   "end": 42.854
+  },
+  {
+   "w": "for",
+   "start": 42.854,
+   "end": 43.068
+  },
+  {
+   "w": "maintenance",
+   "start": 43.068,
+   "end": 43.417
+  },
+  {
+   "w": "and",
+   "start": 43.417,
+   "end": 43.709
+  },
+  {
+   "w": "emergency",
+   "start": 43.709,
+   "end": 44.078
+  },
+  {
+   "w": "access.",
+   "start": 44.078,
+   "end": 44.621
+  },
+  {
+   "w": "All",
+   "start": 44.99,
+   "end": 45.223
+  },
+  {
+   "w": "three",
+   "start": 45.223,
+   "end": 45.631
+  },
+  {
+   "w": "run",
+   "start": 45.631,
+   "end": 45.981
+  },
+  {
+   "w": "beneath",
+   "start": 45.981,
+   "end": 46.33
+  },
+  {
+   "w": "the",
+   "start": 46.33,
+   "end": 46.524
+  },
+  {
+   "w": "seabed.",
+   "start": 46.524,
+   "end": 46.893
+  },
+  {
+   "w": "After",
+   "start": 47.262,
+   "end": 47.553
+  },
+  {
+   "w": "years",
+   "start": 47.553,
+   "end": 47.922
+  },
+  {
+   "w": "of",
+   "start": 47.922,
+   "end": 48.136
+  },
+  {
+   "w": "construction,",
+   "start": 48.136,
+   "end": 48.621
+  },
+  {
+   "w": "the",
+   "start": 48.99,
+   "end": 49.107
+  },
+  {
+   "w": "teams",
+   "start": 49.107,
+   "end": 49.359
+  },
+  {
+   "w": "finally",
+   "start": 49.359,
+   "end": 49.883
+  },
+  {
+   "w": "connected",
+   "start": 49.883,
+   "end": 50.427
+  },
+  {
+   "w": "both",
+   "start": 50.427,
+   "end": 50.699
+  },
+  {
+   "w": "sides.",
+   "start": 50.699,
+   "end": 51.146
+  },
+  {
+   "w": "The",
+   "start": 51.146,
+   "end": 51.786
+  },
+  {
+   "w": "result",
+   "start": 51.786,
+   "end": 52.136
+  },
+  {
+   "w": "was",
+   "start": 52.136,
+   "end": 52.505
+  },
+  {
+   "w": "one",
+   "start": 52.505,
+   "end": 52.68
+  },
+  {
+   "w": "of",
+   "start": 52.68,
+   "end": 52.796
+  },
+  {
+   "w": "the",
+   "start": 52.796,
+   "end": 52.893
+  },
+  {
+   "w": "most",
+   "start": 52.893,
+   "end": 53.107
+  },
+  {
+   "w": "impressive",
+   "start": 53.107,
+   "end": 53.709
+  },
+  {
+   "w": "engineering",
+   "start": 53.709,
+   "end": 54.252
+  },
+  {
+   "w": "projects",
+   "start": 54.252,
+   "end": 54.796
+  },
+  {
+   "w": "in",
+   "start": 54.796,
+   "end": 55.126
+  },
+  {
+   "w": "history.",
+   "start": 55.126,
+   "end": 55.612
+  },
+  {
+   "w": "The",
+   "start": 55.981,
+   "end": 56.039
+  },
+  {
+   "w": "Channel",
+   "start": 56.039,
+   "end": 56.388
+  },
+  {
+   "w": "Tunnel,",
+   "start": 56.388,
+   "end": 56.796
+  },
+  {
+   "w": "a",
+   "start": 57.165,
+   "end": 57.301
+  },
+  {
+   "w": "railway",
+   "start": 57.301,
+   "end": 57.592
+  },
+  {
+   "w": "passage",
+   "start": 57.592,
+   "end": 58.058
+  },
+  {
+   "w": "that",
+   "start": 58.058,
+   "end": 58.349
+  },
+  {
+   "w": "allows",
+   "start": 58.349,
+   "end": 58.621
+  },
+  {
+   "w": "people",
+   "start": 58.621,
+   "end": 59.01
+  },
+  {
+   "w": "and",
+   "start": 59.01,
+   "end": 59.359
+  },
+  {
+   "w": "vehicles",
+   "start": 59.359,
+   "end": 59.767
+  },
+  {
+   "w": "to",
+   "start": 59.767,
+   "end": 60.078
+  },
+  {
+   "w": "cross",
+   "start": 60.078,
+   "end": 60.349
+  },
+  {
+   "w": "between",
+   "start": 60.349,
+   "end": 60.718
+  },
+  {
+   "w": "England",
+   "start": 60.718,
+   "end": 61.107
+  },
+  {
+   "w": "and",
+   "start": 61.107,
+   "end": 61.359
+  },
+  {
+   "w": "France",
+   "start": 61.359,
+   "end": 61.767
+  },
+  {
+   "w": "without",
+   "start": 61.767,
+   "end": 62.311
+  },
+  {
+   "w": "taking",
+   "start": 62.311,
+   "end": 62.66
+  },
+  {
+   "w": "a",
+   "start": 62.66,
+   "end": 62.815
+  },
+  {
+   "w": "boat.",
+   "start": 62.815,
+   "end": 63.01
+  }
+ ]
+}

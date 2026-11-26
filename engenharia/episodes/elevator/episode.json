@@ -1,0 +1,85 @@
+{
+  "id": "elevator",
+  "title": "What Actually Stops an Elevator From Falling?",
+  "language": "en-US",
+  "format": { "width": 1080, "height": 1920, "fps": 30, "duration_range": [55, 65], "scene_seconds": [3, 13] },
+  "narration_audio": { "file": "narration.mp3", "alignment": "alignment.json", "tempo": 1.0, "voice": "ElevenLabs Nathan (provided by client)" },
+  "captions": { "style": "pop" },
+  "outro_seconds": 1.2,
+  "music": { "bpm": 100, "key": "D", "mood": "curious, cinematic, building tension then resolving" },
+  "research": {
+    "summary": "Conventional traction elevator: car and counterweight hang from steel wire ropes that pass over a motor-driven traction sheave (here with a deflector sheave); traction comes from rope-groove friction. The counterweight balances the car plus part of the rated load, so the motor only moves the imbalance. An overspeed governor (sheave driven by a governor rope loop tied to the car, kept taut by a tension pulley in the pit) trips at excess speed: first it opens the safety circuit (power cut, machine brake applied), then mechanically grips the governor rope; the rope pulls the car's safety linkage, lifting wedges in the safety gear that clamp the guide rails and stop the car. Buffers in the pit and the spring-applied machine brake are further independent layers.",
+    "facts_checked": [
+      "The governor monitors car speed on traction elevators and trips the car safety at overspeed; tripping its overspeed switch also cuts power to the drive and applies the brakes (TK Elevator classroom).",
+      "Safety gear stops a downward-moving car by engaging the guide rails; it is triggered via the governor rope; types are instantaneous or progressive (Elevator World).",
+      "Overspeed can result from controller malfunction or loss of machine-brake performance (Elevator World) - used as the depicted failure.",
+      "The safety gear is not triggered by every electrical failure; normal power loss is handled by the machine brake (client accuracy note respected).",
+      "Counterweight typically equals car weight plus about 40-50% of rated load (industry practice); narration only says it balances much of the weight."
+    ],
+    "sources": [
+      "https://www.tkelevator.com/us-en/tools/classroom-on-demand/governor-module.html",
+      "https://elevatorworld.com/?p=78940",
+      "https://elevatorworld.com/?p=25722",
+      "https://www.otis.com/tools-resources/high-rise-safety-systems"
+    ]
+  },
+  "cast": ["nova (passenger)", "otto (elevator engineer)"],
+  "scenes": [
+    {
+      "id": "S01", "starts_with": "Have you ever",
+      "narration": "Have you ever wondered what stops an elevator from falling dozens of floors?",
+      "storyboard": "HOOK. Aerial shot of a low-poly glass skyscraper in a sunny city. Fast push-in; the facade slices away (section plane) as the camera passes through the wall, revealing the vertical shaft. The cabin travels downward with Nova inside looking up. Vertigo feeling.",
+      "camera": "fast aerial push-in, pass through the facade, vertical tracking of the cabin",
+      "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.0, "type": "impact" }, { "u": 0.02, "type": "wind", "dur": 2.5 }, { "u": 0.45, "type": "cut_reveal" }, { "u": 0.55, "type": "motor_hum", "dur": 3.0 } ]
+    },
+    {
+      "id": "S02", "starts_with": "The answer is",
+      "narration": "The answer is more fascinating than you might think. First, elevators use incredibly strong steel suspension cables designed to carry enormous loads.",
+      "storyboard": "Medium shot of the cabin hanging in the shaft from 4 steel ropes. Camera climbs along the ropes; macro reveal of one rope: outer strands twisted around a core, each strand made of individual wires; the end of the rope opens into a cross-section. A load arrow shows the rope carrying the cabin.",
+      "camera": "slow climb along ropes, macro zoom into the rope cutaway",
+      "transition": "smoothup", "music": 1,
+      "sfx": [ { "u": 0.05, "type": "rope_creak" }, { "u": 0.42, "type": "shimmer" }, { "u": 0.7, "type": "rope_creak" } ]
+    },
+    {
+      "id": "S03", "starts_with": "But they don't",
+      "narration": "But they don't work alone. At the top of the building, an electric motor turns a massive pulley, moving the cables while a counterweight balances much of the elevator's weight.",
+      "storyboard": "Wide cutaway of the whole traction system: machine room with motor, brake and traction sheave, deflector sheave, ropes, cabin, counterweight and guide rails. Otto stands by the machine and points. The cabin goes up while the counterweight goes down, then reverses; the sheave turns accordingly. Labels name each part.",
+      "camera": "orbit around the machine room, then wide side cutaway of the full shaft",
+      "transition": "zoomin", "music": 2,
+      "sfx": [ { "u": 0.0, "type": "motor_hum", "dur": 9.5 }, { "u": 0.3, "type": "ui_tick" }, { "u": 0.55, "type": "ui_tick" }, { "u": 0.62, "type": "clunk" } ]
+    },
+    {
+      "id": "S04", "starts_with": "But what happens",
+      "narration": "But what happens if something goes wrong? That's where one of the most impressive safety systems comes in.",
+      "storyboard": "The cabin runs normally. Cut to the overspeed governor next to the machine: its sheave turns with the governor rope loop that runs down the shaft to a tension pulley in the pit and is tied to the cabin; the flyweights spin. Otto watches it closely. Slow tension-building push-in.",
+      "camera": "slow macro push toward the governor",
+      "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.0, "type": "governor_spin", "dur": 6.0 }, { "u": 0.5, "type": "riser", "dur": 2.8 } ]
+    },
+    {
+      "id": "S05", "starts_with": "If the elevator",
+      "narration": "If the elevator moves too fast, a special mechanism called an overspeed governor activates the safety gear, gripping the guide rails and slowing the cabin down.",
+      "storyboard": "Wide: the cabin accelerates downward (machine brake failure). Speed gauge rises. Governor flyweights fly out and the jaw clamps the governor rope; the rope stops while the cabin continues, pulling the safety linkage. Close-up section of the safety gear: wedges slide up the tapered housing and squeeze the guide rail; the cabin decelerates progressively and stops. Nova grabs the handrail, then relaxes.",
+      "camera": "wide shaft, then extreme close-up of the safety gear cutaway",
+      "transition": "fade", "music": 3,
+      "sfx": [ { "u": 0.0, "type": "wind", "dur": 2.2 }, { "u": 0.28, "type": "governor_trip" }, { "u": 0.46, "type": "wedge_grip", "dur": 2.2 }, { "u": 0.8, "type": "clunk" } ]
+    },
+    {
+      "id": "S06", "starts_with": "There are also",
+      "narration": "There are also motor brakes and several independent safety systems.",
+      "storyboard": "Fast technical tour of the cutaway: 1) machine brake shoes clamp the drum, 2) traction machine, 3) overspeed governor, 4) safety gear, 5) spring buffers in the pit. Each highlights with a soft glow and a label, synchronized with a tick.",
+      "camera": "smooth descending move through the system, one beat per component",
+      "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.02, "type": "clunk" }, { "u": 0.22, "type": "ui_tick" }, { "u": 0.42, "type": "ui_tick" }, { "u": 0.62, "type": "ui_tick" }, { "u": 0.82, "type": "buffer" } ]
+    },
+    {
+      "id": "S07", "starts_with": "So a modern",
+      "narration": "So a modern elevator doesn't rely on just one cable to keep you safe. It's designed with multiple layers of protection. And that's exactly why elevator accidents are so rare.",
+      "storyboard": "Close-up of the cabin gliding up smoothly, Nova smiling and waving. Pull back: the full shaft with its safety layers glowing one by one, then the section closes and the camera flies back out to a beautiful wide shot of the skyscraper in the sunny city. Ding at the end.",
+      "camera": "long continuous pull-back from cabin to architectural wide shot",
+      "transition": "none", "music": 2,
+      "sfx": [ { "u": 0.05, "type": "motor_hum", "dur": 4.0 }, { "u": 0.55, "type": "riser", "dur": 3.0 }, { "u": 0.9, "type": "elevator_ding" } ]
+    }
+  ]
+}

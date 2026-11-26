@@ -254,6 +254,86 @@ def sfx(kind, ev, dur):
     if k == "outro":
         tt = t_(2.5)
         return [(0, np.sin(2 * np.pi * 55 * tt) * np.exp(-tt * 1.6), 0.6), (0, bell(hz("D", 5), 2.5), 0.15)]
+    D = ev.get("dur", 2.0)
+    if k == "motor_hum":
+        tt = t_(D)
+        x = sum(a * np.sin(2 * np.pi * f * tt) for f, a in [(100, 1), (200, 0.5), (300, 0.25), (50, 0.6)])
+        x = x * (0.85 + 0.15 * np.sin(2 * np.pi * 0.7 * tt)) + lowpass(noise(len(tt)), 400) * 0.3
+        e = np.minimum(1, tt / 0.4) * np.minimum(1, (D - tt) / 0.6)
+        return [(0, x * e, 0.12)]
+    if k == "wind":
+        tt = t_(D)
+        x = bandpass(noise(len(tt)), 250, 2200) * (0.6 + 0.4 * np.sin(2 * np.pi * 0.5 * tt + 1))
+        return [(0, x * np.sin(np.pi * tt / D), 0.35)]
+    if k == "rope_creak":
+        tt = t_(0.9)
+        f = 180 + 40 * np.sin(2 * np.pi * 3 * tt)
+        x = signal.sawtooth(2 * np.pi * np.cumsum(f) / SR) * (np.abs(np.sin(2 * np.pi * 9 * tt)) ** 3)
+        return [(0, bandpass(x, 300, 2500) * np.sin(np.pi * tt / 0.9), 0.25)]
+    if k == "shimmer":
+        tt = t_(1.4)
+        x = sum(np.sin(2 * np.pi * hz(n, 6) * tt) * np.exp(-tt * (2 + i)) for i, n in enumerate(["D", "A", "F#", "E"]))
+        return [(0, x * np.minimum(1, tt / 0.02), 0.12)]
+    if k == "governor_spin":
+        tt = t_(D)
+        f = 18 + 10 * tt / D
+        x = (np.abs(np.sin(np.pi * np.cumsum(f) / SR)) ** 8) * bandpass(noise(len(tt)), 800, 4000)
+        return [(0, x * np.minimum(1, tt / 0.3) * np.minimum(1, (D - tt) / 0.3), 0.5)]
+    if k == "governor_trip":
+        return [(0, metal_click(0.55, 0.3), 1.0), (0, thud(140, 0.3), 0.7), (0.05, metal_click(0.8, 0.12), 0.6)]
+    if k == "wedge_grip":
+        tt = t_(D)
+        f = 900 - 500 * tt / D
+        x = signal.sawtooth(2 * np.pi * np.cumsum(f + 40 * np.sin(2 * np.pi * 23 * tt)) / SR)
+        x = bandpass(x, 600, 5000) * np.exp(-tt * 0.8) * np.minimum(1, tt / 0.03) + bandpass(noise(len(tt)), 2000, 8000) * np.exp(-tt * 2) * 0.4
+        return [(0, x, 0.3), (0, thud(80, 0.5), 0.8)]
+    if k == "buffer":
+        return [(0, thud(90, 0.4), 0.7)] + sfx("spring", {}, 1)
+    if k == "elevator_ding":
+        return [(0, bell(hz("E", 5), 1.6), 0.25), (0.32, bell(hz("C", 5), 2.0), 0.25)]
+    if k == "riser":
+        tt = t_(D)
+        x = bandpass(noise(len(tt)), 300, 6000) * (tt / D) ** 2
+        tone = np.sin(2 * np.pi * np.cumsum(110 * 2 ** (2 * tt / D)) / SR) * (tt / D) ** 2
+        return [(0, x * 0.6 + tone * 0.4, 0.4)]
+    if k == "ocean":
+        tt = t_(D)
+        x = lowpass(noise(len(tt)), 900) * (0.55 + 0.45 * np.sin(2 * np.pi * 0.18 * tt) ** 2)
+        return [(0, x * np.minimum(1, tt / 0.5) * np.minimum(1, (D - tt) / 0.8), 0.5)]
+    if k == "underwater":
+        tt = t_(D)
+        x = lowpass(noise(len(tt)), 350) + 0.3 * np.sin(2 * np.pi * 60 * tt)
+        bub = np.zeros(len(tt))
+        for i in range(int(D * 6)):
+            st = int(RNG.uniform(0, D - 0.1) * SR); n = int(0.06 * SR)
+            bt = np.arange(n) / SR
+            bub[st:st + n] += np.sin(2 * np.pi * (600 + 900 * bt / 0.06) * bt)[: len(bub[st:st + n])] * np.exp(-bt * 40)
+        return [(0, (x * 0.8 + bub * 0.3) * np.minimum(1, tt / 0.3) * np.minimum(1, (D - tt) / 0.5), 0.5)]
+    if k == "rumble":
+        tt = t_(D)
+        x = lowpass(noise(len(tt)), 160) * 1.5 + 0.4 * np.sin(2 * np.pi * 38 * tt) + bandpass(noise(len(tt)), 900, 3000) * (np.abs(np.sin(2 * np.pi * 7 * tt)) ** 6) * 0.5
+        return [(0, x * np.minimum(1, tt / 0.4) * np.minimum(1, (D - tt) / 0.5), 0.5)]
+    if k == "conveyor":
+        tt = t_(D)
+        x = bandpass(noise(len(tt)), 400, 1800) * (0.6 + 0.4 * (np.sin(2 * np.pi * 11 * tt) > 0.6)) + 0.2 * np.sin(2 * np.pi * 120 * tt)
+        return [(0, x * np.minimum(1, tt / 0.3) * np.minimum(1, (D - tt) / 0.4), 0.3)]
+    if k == "hydraulic":
+        tt = t_(D)
+        whine = np.sin(2 * np.pi * np.cumsum(300 + 200 * tt / D) / SR) * 0.4
+        hiss = highpass(noise(len(tt)), 3000) * 0.3
+        return [(0, (whine + hiss) * np.sin(np.pi * tt / D), 0.4)]
+    if k == "rock_break":
+        out = [(0, lowpass(noise(int(1.2 * SR)), 1200) * np.exp(-t_(1.2) * 3), 0.8), (0, thud(55, 0.9), 0.9)]
+        out += [(RNG.uniform(0.05, 0.9), bandpass(noise(int(0.08 * SR)), 800, 4000) * env_ad(int(0.08 * SR), 0.001, 0.05, 5), 0.4) for _ in range(14)]
+        return out
+    if k == "train_pass":
+        tt = t_(D)
+        x = lowpass(noise(len(tt)), 700) * (0.4 + 0.6 * np.exp(-((tt - D / 2) / (D / 4)) ** 2))
+        clack = np.zeros(len(tt))
+        for i in range(int(D * 4)):
+            st = int(i / 4 * SR); n = int(0.05 * SR)
+            clack[st:st + n] += bandpass(noise(n), 300, 1500)[: len(clack[st:st + n])] * np.exp(-np.arange(n)[: len(clack[st:st + n])] / SR * 60)
+        return [(0, (x + clack * 0.6) * np.minimum(1, tt / 0.5) * np.minimum(1, (D - tt) / 0.6), 0.5)]
     raise ValueError("unknown sfx " + kind)
 
 

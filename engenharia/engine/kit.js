@@ -131,8 +131,15 @@ export class Cutaway {
     this.caps = [];
     this.n = 0;
   }
-  set offset(z) { this.plane.constant = z; for (const c of this.caps) c.position.z = z; }
+  set offset(z) { this.plane.constant = z; this._placeCaps(); }
   get offset() { return this.plane.constant; }
+  /** arbitrary section plane: keeps the side where normal·p + constant >= 0 */
+  setPlane(normal, constant) { this.plane.normal.set(...normal).normalize(); this.plane.constant = constant; this._placeCaps(); }
+  _placeCaps() {
+    const n = this.plane.normal, c = this.plane.constant;
+    const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 0, 1), n.clone().negate());
+    for (const cap of this.caps) { cap.position.copy(n).multiplyScalar(-c); cap.quaternion.copy(q); }
+  }
   add(mesh, capMat) {
     mesh.material.clippingPlanes = this.planes;
     mesh.material.clipShadows = true;
@@ -148,12 +155,12 @@ export class Cutaway {
     const cm = capMat.clone();
     Object.assign(cm, { stencilWrite: true, stencilRef: 0, stencilFunc: THREE.NotEqualStencilFunc,
       stencilFail: THREE.ReplaceStencilOp, stencilZFail: THREE.ReplaceStencilOp, stencilZPass: THREE.ReplaceStencilOp });
-    const cap = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), cm);
+    const cap = new THREE.Mesh(new THREE.PlaneGeometry(this.capSize || 40, this.capSize || 40), cm);
     cap.renderOrder = order + 1;
-    cap.position.z = this.plane.constant;
     cap.onBeforeRender = () => { cap.visible = mesh.visible; };
     this.scene.add(cap);
     this.caps.push(cap);
+    this._placeCaps();
     return mesh;
   }
 }
@@ -172,6 +179,7 @@ export function brush(geo, { pos = [0, 0, 0], rot = [0, 0, 0] } = {}) {
 }
 /** csg(baseBrush, [['-', brush], ['+', brush], ...]) -> BufferGeometry */
 export function csg(base, ops) {
+  if (!ops.length) { const g = base.geometry.clone(); g.applyMatrix4(base.matrixWorld); g.computeBoundingSphere(); return g; }
   let r = base;
   for (const [op, b] of ops) r = evaluator.evaluate(r, b, op === '+' ? ADDITION : SUBTRACTION);
   const geo = r.geometry; geo.computeBoundingSphere();
