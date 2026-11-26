@@ -7,3 +7,4 @@ output/*/mix.wav
 output/*/render.log
 __pycache__/
 output/*/finish.log
+output/*/*.log

@@ -30,7 +30,7 @@
    "tail": 0.45,
    "clip_seconds": 10.883,
    "frame_offset": 478,
-   "transition": "zoomin"
+   "transition": "fade"
   },
   {
    "id": "S04",

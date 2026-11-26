@@ -1,0 +1,94 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,96,&H00FFFFFF,&H00FFFFFF,&H00202020,&H96000000,0,0,0,0,100,100,0,0,1,4,5,2,80,80,640,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}Have you
+Dialogue: 0,0:00:00.36,0:00:00.98,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ever wondered
+Dialogue: 0,0:00:00.98,0:00:01.58,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}what stops
+Dialogue: 0,0:00:01.58,0:00:02.28,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}an elevator
+Dialogue: 0,0:00:02.28,0:00:02.98,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}from falling
+Dialogue: 0,0:00:02.98,0:00:03.72,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}dozens of
+Dialogue: 0,0:00:03.72,0:00:04.62,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}floors?
+Dialogue: 0,0:00:04.76,0:00:05.22,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}The answer
+Dialogue: 0,0:00:05.22,0:00:05.92,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}is more
+Dialogue: 0,0:00:05.92,0:00:06.76,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}fascinating than
+Dialogue: 0,0:00:06.76,0:00:07.08,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}you might
+Dialogue: 0,0:00:07.08,0:00:08.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}think
+Dialogue: 0,0:00:08.18,0:00:09.06,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}First
+Dialogue: 0,0:00:09.08,0:00:09.66,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}elevators use
+Dialogue: 0,0:00:09.66,0:00:10.92,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}incredibly strong
+Dialogue: 0,0:00:10.92,0:00:11.92,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}steel suspension
+Dialogue: 0,0:00:11.92,0:00:12.94,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}cables designed
+Dialogue: 0,0:00:12.94,0:00:13.44,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}to carry
+Dialogue: 0,0:00:13.44,0:00:15.14,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}enormous loads
+Dialogue: 0,0:00:15.14,0:00:15.76,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}But they
+Dialogue: 0,0:00:15.76,0:00:16.20,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}don't work
+Dialogue: 0,0:00:16.20,0:00:17.18,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}alone
+Dialogue: 0,0:00:17.18,0:00:17.42,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}At the
+Dialogue: 0,0:00:17.42,0:00:17.80,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}top of
+Dialogue: 0,0:00:17.80,0:00:18.54,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the building
+Dialogue: 0,0:00:18.54,0:00:19.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}an electric
+Dialogue: 0,0:00:19.10,0:00:19.78,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}motor turns
+Dialogue: 0,0:00:19.78,0:00:20.50,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}a massive
+Dialogue: 0,0:00:20.50,0:00:21.30,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}pulley
+Dialogue: 0,0:00:21.30,0:00:21.80,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}moving the
+Dialogue: 0,0:00:21.80,0:00:22.46,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}cables while
+Dialogue: 0,0:00:22.46,0:00:23.14,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}a counterweight
+Dialogue: 0,0:00:23.14,0:00:23.98,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}balances much
+Dialogue: 0,0:00:23.98,0:00:24.28,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of the
+Dialogue: 0,0:00:24.28,0:00:25.58,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}elevator's weight
+Dialogue: 0,0:00:25.58,0:00:26.20,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}But what
+Dialogue: 0,0:00:26.20,0:00:26.78,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}happens if
+Dialogue: 0,0:00:26.78,0:00:27.30,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}something goes
+Dialogue: 0,0:00:27.30,0:00:28.26,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}wrong?
+Dialogue: 0,0:00:28.26,0:00:28.86,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}That's where
+Dialogue: 0,0:00:28.86,0:00:29.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}one of
+Dialogue: 0,0:00:29.16,0:00:29.48,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the most
+Dialogue: 0,0:00:29.48,0:00:30.54,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}impressive safety
+Dialogue: 0,0:00:30.54,0:00:31.26,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}systems comes
+Dialogue: 0,0:00:31.26,0:00:32.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}in
+Dialogue: 0,0:00:32.10,0:00:32.40,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}If the
+Dialogue: 0,0:00:32.40,0:00:33.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}elevator moves
+Dialogue: 0,0:00:33.10,0:00:34.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}too fast
+Dialogue: 0,0:00:34.16,0:00:34.70,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}a special
+Dialogue: 0,0:00:34.70,0:00:35.58,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}mechanism called
+Dialogue: 0,0:00:35.58,0:00:36.42,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}an overspeed
+Dialogue: 0,0:00:36.42,0:00:37.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}governor activates
+Dialogue: 0,0:00:37.60,0:00:38.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the safety
+Dialogue: 0,0:00:38.16,0:00:38.80,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}gear
+Dialogue: 0,0:00:38.80,0:00:39.34,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}gripping the
+Dialogue: 0,0:00:39.34,0:00:39.84,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}guide rails
+Dialogue: 0,0:00:39.84,0:00:40.54,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}and slowing
+Dialogue: 0,0:00:40.54,0:00:41.06,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the cabin
+Dialogue: 0,0:00:41.06,0:00:42.02,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}down
+Dialogue: 0,0:00:42.02,0:00:42.24,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}There are
+Dialogue: 0,0:00:42.24,0:00:42.92,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}also motor
+Dialogue: 0,0:00:42.92,0:00:43.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}brakes and
+Dialogue: 0,0:00:43.60,0:00:44.48,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}several independent
+Dialogue: 0,0:00:44.48,0:00:45.88,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}safety systems
+Dialogue: 0,0:00:45.88,0:00:46.34,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}So
+Dialogue: 0,0:00:46.34,0:00:46.78,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}a modern
+Dialogue: 0,0:00:46.78,0:00:47.72,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}elevator doesn't
+Dialogue: 0,0:00:47.72,0:00:48.24,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}rely on
+Dialogue: 0,0:00:48.24,0:00:48.80,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}just one
+Dialogue: 0,0:00:48.80,0:00:49.38,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}cable to
+Dialogue: 0,0:00:49.38,0:00:49.74,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}keep you
+Dialogue: 0,0:00:49.74,0:00:50.44,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}safe
+Dialogue: 0,0:00:50.44,0:00:51.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}It's designed
+Dialogue: 0,0:00:51.10,0:00:51.80,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}with multiple
+Dialogue: 0,0:00:51.80,0:00:52.46,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}layers of
+Dialogue: 0,0:00:52.46,0:00:53.46,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}protection
+Dialogue: 0,0:00:53.48,0:00:53.90,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}And that's
+Dialogue: 0,0:00:53.90,0:00:54.74,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}exactly why
+Dialogue: 0,0:00:54.74,0:00:55.68,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}elevator accidents
+Dialogue: 0,0:00:55.68,0:00:56.32,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}are so
+Dialogue: 0,0:00:56.32,0:00:57.24,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}rare
