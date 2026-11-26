@@ -1,0 +1,20 @@
+{
+ "bg": "input/media/inat/in03.jpg",
+ "top": "O SOCO MAIS",
+ "big": "FORTE",
+ "q": "DO OCEANO?!",
+ "cropV": {
+  "cx": 0.5,
+  "cy": 0.5,
+  "z": 1.0
+ },
+ "cropH": {
+  "cx": 0.22,
+  "cy": 0.35,
+  "z": 1.35
+ },
+ "circle": null,
+ "filter": "saturate(1.6) contrast(1.2) brightness(1.06)",
+ "textY": 1180,
+ "bgH": "input/media/inat/in04.jpg"
+}

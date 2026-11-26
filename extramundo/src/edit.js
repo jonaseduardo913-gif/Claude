@@ -62,6 +62,7 @@ const toScreen = (r, nx, ny) => ({ x: (nx * r.srcW - r.x0) / r.vw * W, y: (ny * 
 async function drawPlate(ctx, shot, t, opt = {}) {
   if (shot.src.type === 'anim' && shot.src.name === 'map') { await drawGeoMap(ctx, shot, t); return null; }
   if ((shot.src.type === 'still' || shot.src.type === 'clip') && shot.fit === 'blurfill') { await drawBlurFill(ctx, shot, t); return null; }
+  if (shot.src.type === 'anim' && shot.src.name === 'cavitation') { drawCavitation(ctx, t - shot.t0, shot.t1 - shot.t0, shot.src.marks || {}); return null; }
   if (shot.src.type === 'anim' && shot.src.name === 'calcify') { drawCalcify(ctx, t - shot.t0, shot.t1 - shot.t0); return null; }
   if (shot.src.type === 'anim') { const cs = (shot.collapseAt || shot.t0) - shot.t0; drawCollapse(ctx, t - shot.t0, shot.t1 - shot.t0, cs); if (shot.filter === 'oldfilm' && t - shot.t0 < cs) oldFilm(ctx, t); return null; }
   if (shot.src.type === 'compare') { await drawCompare(ctx, shot, t); return null; }
@@ -244,8 +245,32 @@ function drawPin(ctx, o, r, t) {
   if (o.label) { const ls = prog(lt, 0.25, 0.45); ctx.globalAlpha = ls; outlinedText(ctx, o.label, 0, -150, { size: 56, color: C.white, stroke: 8 }); }
   ctx.restore();
 }
+function drawSpeedo(ctx, o, t) {
+  const lt = t - o.t; if (lt < 0) return;
+  const cx = W / 2, cy = H * 0.3, R0 = 230;
+  const fill = E.outCubic(prog(lt, 0.1, 0.9)), val = Math.round((o.value || 80) * fill);
+  ctx.save();
+  // motion streaks behind
+  ctx.globalCompositeOperation = 'lighter';
+  for (let i = 0; i < 26; i++) { const y = H * (0.12 + hash(i) * 0.5), len = 200 + hash(i * 3) * 500, x = ((hash(i * 7) * W * 2 - lt * 2600 * (0.6 + hash(i))) % (W + len) + W + len) % (W + len) - len;
+    ctx.strokeStyle = `rgba(255,220,140,${0.12 + 0.2 * hash(i * 5)})`; ctx.lineWidth = 3 + hash(i * 9) * 5; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + len, y); ctx.stroke(); }
+  ctx.globalCompositeOperation = 'source-over';
+  const s = E.outBack(prog(lt, 0, 6 / FPS), 2); ctx.translate(cx, cy); ctx.scale(s, s);
+  ctx.fillStyle = 'rgba(5,8,14,0.72)'; ctx.beginPath(); ctx.arc(0, 0, R0 + 40, 0, Math.PI * 2); ctx.fill();
+  const a0 = Math.PI * 0.8, a1 = Math.PI * 2.2;
+  ctx.lineCap = 'round'; ctx.lineWidth = 26; ctx.strokeStyle = 'rgba(255,255,255,0.15)'; ctx.beginPath(); ctx.arc(0, 0, R0, a0, a1); ctx.stroke();
+  const g = ctx.createLinearGradient(-R0, 0, R0, 0); g.addColorStop(0, '#FFE28A'); g.addColorStop(0.6, '#FFC21A'); g.addColorStop(1, '#FF5A1F');
+  ctx.strokeStyle = g; ctx.shadowColor = 'rgba(255,170,40,0.8)'; ctx.shadowBlur = 30; ctx.beginPath(); ctx.arc(0, 0, R0, a0, a0 + (a1 - a0) * fill * 0.86); ctx.stroke(); ctx.shadowBlur = 0;
+  for (let k = 0; k <= 10; k++) { const a = a0 + (a1 - a0) * k / 10 * 0.86 / 0.86 * 0.86; ctx.strokeStyle = 'rgba(255,255,255,0.6)'; ctx.lineWidth = k % 5 ? 3 : 6; ctx.beginPath(); ctx.moveTo(Math.cos(a) * (R0 - 50), Math.sin(a) * (R0 - 50)); ctx.lineTo(Math.cos(a) * (R0 - 30), Math.sin(a) * (R0 - 30)); ctx.stroke(); }
+  const na = a0 + (a1 - a0) * fill * 0.86; ctx.strokeStyle = '#fff'; ctx.lineWidth = 8; ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(Math.cos(na) * (R0 - 70), Math.sin(na) * (R0 - 70)); ctx.stroke();
+  ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(0, 0, 16, 0, Math.PI * 2); ctx.fill();
+  outlinedText(ctx, '~' + val, 0, 95, { size: 130, color: '#FFC21A', stroke: 10 });
+  outlinedText(ctx, 'KM/H', 0, 185, { size: 54, color: '#fff', stroke: 7 });
+  ctx.restore();
+}
 function drawOverlays(ctx, shot, r, t) {
   for (const o of shot.overlays) {
+    if (o.type === 'speedo') drawSpeedo(ctx, o, t);
     if (o.type === 'bigtext') drawBigText(ctx, o, t);
     if (o.type === 'pin' && r) drawPin(ctx, o, r, t);
     if (!r && ['arrow', 'ring', 'maplabel'].includes(o.type)) continue;
@@ -436,6 +461,65 @@ async function drawGeoMap(ctx, shot, t) {
       ctx.restore();
     }
   }
+}
+// explainer: club strikes a shell, cavitation bubble forms, collapses, shock wave
+function drawCavitation(ctx, lt, dur, marks) {
+  // marks: fractions of the shot where bubble forms / collapses (default 0.3 / 0.55)
+  const pb = marks.bubble ?? 0.3, pc = marks.collapse ?? 0.55; const p = clamp(lt / dur);
+  const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#04263A'); g.addColorStop(0.6, '#021624'); g.addColorStop(1, '#010A12'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  // light rays + drifting particles
+  ctx.save(); ctx.globalCompositeOperation = 'lighter';
+  for (let i = 0; i < 6; i++) { ctx.fillStyle = 'rgba(80,180,220,0.05)'; ctx.beginPath(); const x = W * (0.1 + 0.16 * i) + Math.sin(lt * 0.4 + i) * 40; ctx.moveTo(x, 0); ctx.lineTo(x + 90, 0); ctx.lineTo(x + 300, H); ctx.lineTo(x + 140, H); ctx.fill(); }
+  for (let i = 0; i < 70; i++) { ctx.fillStyle = `rgba(180,230,255,${0.15 + 0.25 * hash(i)})`; ctx.beginPath(); ctx.arc(hash(i * 3) * W, (hash(i * 7) * H - lt * 20 * (0.5 + hash(i))) % H + H * (hash(i * 7) * H - lt * 20 < 0 ? 1 : 0), 1.5 + hash(i * 5) * 2.5, 0, Math.PI * 2); ctx.fill(); }
+  ctx.restore();
+  // sand floor
+  ctx.fillStyle = '#2B2418'; ctx.beginPath(); ctx.moveTo(0, H * 0.74); for (let x = 0; x <= W; x += 40) ctx.lineTo(x, H * 0.74 + Math.sin(x * 0.01) * 14); ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.fill();
+  const sx = W * 0.64, sy = H * 0.62;   // shell / impact point
+  // snail shell
+  const crack = prog(p, pc, pc + 0.15);
+  ctx.save(); ctx.translate(sx, sy);
+  const sg = ctx.createRadialGradient(-30, -30, 10, 0, 0, 160); sg.addColorStop(0, '#F3D9B1'); sg.addColorStop(1, '#9A6A3A');
+  ctx.fillStyle = sg; ctx.beginPath(); ctx.ellipse(40, 0, 150, 120, 0, 0, Math.PI * 2); ctx.fill();
+  ctx.strokeStyle = '#6E4522'; ctx.lineWidth = 7; for (let k = 1; k < 4; k++) { ctx.beginPath(); ctx.arc(40 - k * 10, 0, 120 - k * 30, -2.2, 2.4); ctx.stroke(); }
+  if (crack > 0) { ctx.strokeStyle = '#1A0E06'; ctx.lineWidth = 6; for (let k = 0; k < 6; k++) { ctx.beginPath(); let x = -100, y = (k - 2.5) * 18; ctx.moveTo(x, y); for (let j = 0; j < 6 * crack; j++) { x += 30; y += (hash(k * 11 + j) - 0.5) * 40; ctx.lineTo(x, y); } ctx.stroke(); } }
+  ctx.restore();
+  // the club (raptorial appendage) swings in: slow-motion approach, contact at pb
+  const sw = E.inCubic(prog(p, 0.05, pb)); const ang = lerp(-1.2, 0.05, sw) + (p > pb ? -0.08 * prog(p, pb, pb + 0.1) : 0);
+  ctx.save(); ctx.translate(W * 0.18, H * 0.66); ctx.rotate(ang);
+  const cg = ctx.createLinearGradient(0, -40, 0, 40); cg.addColorStop(0, '#5BD6B4'); cg.addColorStop(1, '#1F7F6A');
+  ctx.fillStyle = cg; ctx.beginPath(); ctx.roundRect ? ctx.roundRect(0, -32, 420, 64, 30) : ctx.rect(0, -32, 420, 64); ctx.fill();
+  ctx.fillStyle = '#F05A7E'; ctx.beginPath(); ctx.ellipse(440, 0, 70, 58, 0, 0, Math.PI * 2); ctx.fill();                  // dactyl club
+  ctx.fillStyle = 'rgba(255,255,255,0.35)'; ctx.beginPath(); ctx.ellipse(425, -22, 30, 14, -0.3, 0, Math.PI * 2); ctx.fill();
+  ctx.restore();
+  if (p < pb) { // speed streaks while swinging
+    ctx.save(); ctx.globalAlpha = 0.5 * sw; ctx.strokeStyle = '#BFF3FF'; ctx.lineWidth = 6; for (let k = 0; k < 7; k++) { ctx.beginPath(); ctx.arc(W * 0.18, H * 0.66, 380 + k * 22, ang - 0.5, ang - 0.05); ctx.stroke(); } ctx.restore(); }
+  // bubble: grows after contact, collapses at pc
+  const ix = sx - 110, iy = sy;
+  if (p >= pb && p < pc) {
+    const gr = E.outCubic(prog(p, pb, pb + (pc - pb) * 0.6)); const shrink = E.inCubic(prog(p, pb + (pc - pb) * 0.7, pc));
+    const br = 20 + 110 * gr * (1 - shrink);
+    const bg = ctx.createRadialGradient(ix - br * 0.3, iy - br * 0.3, br * 0.1, ix, iy, br); bg.addColorStop(0, 'rgba(255,255,255,0.9)'); bg.addColorStop(0.6, 'rgba(190,240,255,0.35)'); bg.addColorStop(1, 'rgba(255,255,255,0.8)');
+    ctx.fillStyle = bg; ctx.beginPath(); ctx.arc(ix, iy, br, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.lineWidth = 4; ctx.stroke();
+    ctx.globalAlpha = prog(p, pb, pb + 0.05); outlinedText(ctx, 'BOLHA DE CAVITAÇÃO', W / 2, H * 0.4, { size: 66, color: '#BFF3FF', stroke: 9 }); ctx.globalAlpha = 1;
+    // arrow to the bubble
+    ctx.strokeStyle = '#FFC21A'; ctx.lineWidth = 10; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(W / 2, H * 0.43); ctx.quadraticCurveTo(W / 2 - 60, H * 0.5, ix - 10, iy - br - 20); ctx.stroke();
+  }
+  if (p >= pc) {
+    const q = prog(p, pc, 1);
+    const fl = Math.exp(-q * 30); if (fl > 0.01) { ctx.fillStyle = `rgba(255,255,255,${fl})`; ctx.fillRect(0, 0, W, H); }
+    ctx.save(); ctx.globalCompositeOperation = 'lighter';
+    const lg = ctx.createRadialGradient(ix, iy, 0, ix, iy, 120); lg.addColorStop(0, `rgba(200,240,255,${Math.exp(-q * 12)})`); lg.addColorStop(1, 'rgba(200,240,255,0)'); ctx.fillStyle = lg; ctx.fillRect(ix - 120, iy - 120, 240, 240);
+    ctx.restore();
+    for (let k = 0; k < 4; k++) { const rq = prog(q, k * 0.08, k * 0.08 + 0.6); if (rq <= 0 || rq >= 1) continue;
+      ctx.strokeStyle = `rgba(190,240,255,${1 - rq})`; ctx.lineWidth = 16 * (1 - rq) + 2; ctx.beginPath(); ctx.arc(ix, iy, 30 + rq * 900, 0, Math.PI * 2); ctx.stroke(); }
+    ctx.globalAlpha = prog(q, 0.05, 0.15); outlinedText(ctx, 'ONDA DE CHOQUE', W / 2, H * 0.4, { size: 80, color: '#FFC21A', stroke: 10 }); ctx.globalAlpha = 1;
+  }
+  // step labels
+  ctx.save(); ctx.font = font(30, 800); ctx.letterSpacing = '4px'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  const step = p < pb ? '1 · O GOLPE' : p < pc ? '2 · A BOLHA SE FORMA' : '3 · A BOLHA COLAPSA';
+  const lw = ctx.measureText(step).width + 48; ctx.fillStyle = 'rgba(0,0,0,0.55)'; roundRect(ctx, W / 2 - lw / 2, H * 0.085 - 26, lw, 52, 26); ctx.fill();
+  ctx.fillStyle = '#F5DC9A'; ctx.fillText(step, W / 2, H * 0.085 + 2); ctx.restore();
 }
 // illustration: a flamingo on the soda crust gets covered by mineral crystals until it looks like stone
 const CAL = {};

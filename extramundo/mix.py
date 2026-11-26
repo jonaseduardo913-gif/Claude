@@ -118,8 +118,10 @@ LIB = {
     'wind': lambda e: wind(e.get('dur', 3.0)),
     'fire': lambda e: fire(e.get('dur', 4.0)),
     'rumble': lambda e: rumble(e.get('dur', 3.0)),
+    'underwater': lambda e: (lp(rng.standard_normal(int(e.get('dur', 10) * SR)), 380) * 0.9 + sum(add(np.zeros(int(e.get('dur', 10) * SR)), np.pad(np.sin(2 * np.pi * np.cumsum(np.linspace(500, 1400, int(0.05 * SR))) / SR) * env(0.05, 0.002, 60) * 0.25, (int(rng.uniform(0, e.get('dur', 10) - 0.1) * SR), 0))[:int(e.get('dur', 10) * SR)]) for _ in range(int(e.get('dur', 10) * 1.5)))) * np.minimum(1, tt(e.get('dur', 10)) / 1.0) * np.minimum(1, (e.get('dur', 10) - tt(e.get('dur', 10))) / 1.0) * 0.6,
+    'bubble': lambda e: np.sin(2 * np.pi * np.cumsum(np.linspace(300, 1800, int(0.08 * SR))) / SR) * env(0.08, 0.001, 40) * 0.5,
 }
-GAIN = {'pop': 0.45, 'tick': 0.6, 'blip': 0.5, 'fire': 0.55, 'wind': 0.8}
+GAIN = {'underwater': 0.7, 'bubble': 0.8, 'pop': 0.45, 'tick': 0.6, 'blip': 0.5, 'fire': 0.55, 'wind': 0.8}
 for e in TL['sfx']: put(sfx, LIB[e['kind']](e), e['t'], GAIN.get(e['kind'], 1.0))
 
 # ---------------- master ----------------

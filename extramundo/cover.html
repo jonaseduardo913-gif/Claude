@@ -65,8 +65,9 @@ async function vertical(img) {
   const v = ctx.createRadialGradient(W / 2, H * 0.55, H * 0.3, W / 2, H * 0.55, H * 0.75); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
   if (CFG.circle) { const p = map(...CFG.circle); handCircle(ctx, p.x, p.y, 200, 130); }
   const tl = CFG.top.split('|'); const ts = Math.min(...tl.map((l) => fit(ctx, l, 112, 960)));
-  tl.forEach((l, i) => outlined(ctx, l, W / 2, 210 + i * ts * 1.08, ts, '#FFFFFF', 12));
-  const by = 210 + tl.length * ts * 1.08 + 110;
+  const ty = CFG.textY || 210;
+  tl.forEach((l, i) => outlined(ctx, l, W / 2, ty + i * ts * 1.08, ts, '#FFFFFF', 12));
+  const by = ty + tl.length * ts * 1.08 + 110;
   const bs = fit(ctx, CFG.big, 260, 1000); outlined(ctx, CFG.big, W / 2, by, bs, fireGradient(ctx, by, bs), 18, 'center', 'rgba(255,90,31,.9)');
   questionBar(ctx, CFG.q, W / 2, by + 200, fit(ctx, CFG.q, 78, 860));
   brand(ctx, W / 2, by + 350, 54);
@@ -84,7 +85,7 @@ async function horizontal(img) {
 window.__ready = (async () => {
   await document.fonts.load('900 100px "Montserrat"');
   CFG = await (await fetch('cover.json')).json();
-  const img = await load(CFG.bg); await vertical(img); await horizontal(img);
+  const img = await load(CFG.bg); await vertical(img); await horizontal(CFG.bgH ? await load(CFG.bgH) : img);
   window.out = { v: document.getElementById('v').toDataURL('image/jpeg', 0.95), h: document.getElementById('h').toDataURL('image/jpeg', 0.95) };
   return true;
 })();

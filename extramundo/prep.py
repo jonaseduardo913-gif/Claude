@@ -57,6 +57,7 @@ for k, s in enumerate(shots):
     elif src.startswith('anim:'):
         sh['src'] = {'type': 'anim', 'name': src[5:], 'w': 1080, 'h': 1920}
         if 'map' in s: sh['src']['map'] = s['map']
+        if 'marks' in s: sh['src']['marks'] = {k: (wstart(v) - t0) / (t1 - t0) for k, v in s['marks'].items()}
         if 'collapse_word' in s: sh['collapseAt'] = wstart(s['collapse_word'])
     elif src.startswith('compare:'):
         a, b = src[8:].split(','); pa, pb = [next((f'{MEDIA}/{f}' for f in sorted(os.listdir(MEDIA)) if os.path.splitext(f)[0] == k), f'{MEDIA}/night.jpg') for k in (a, b)]
