@@ -1,0 +1,99 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,96,&H00FFFFFF,&H00FFFFFF,&H00202020,&H96000000,0,0,0,0,100,100,0,0,1,4,5,2,80,80,640,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.85,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}Imagine building
+Dialogue: 0,0:00:00.85,0:00:01.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}a tunnel
+Dialogue: 0,0:00:01.36,0:00:02.17,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}dozens of
+Dialogue: 0,0:00:02.17,0:00:03.05,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}kilometers long
+Dialogue: 0,0:00:03.05,0:00:03.75,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}beneath the
+Dialogue: 0,0:00:03.75,0:00:04.82,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ocean without
+Dialogue: 0,0:00:04.82,0:00:05.34,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}letting the
+Dialogue: 0,0:00:05.34,0:00:05.96,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}water flood
+Dialogue: 0,0:00:05.96,0:00:06.50,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the construction
+Dialogue: 0,0:00:06.50,0:00:07.34,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}site
+Dialogue: 0,0:00:07.34,0:00:07.81,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}It sounds
+Dialogue: 0,0:00:07.81,0:00:08.78,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}impossible
+Dialogue: 0,0:00:08.78,0:00:09.44,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}but that's
+Dialogue: 0,0:00:09.44,0:00:10.21,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}exactly what
+Dialogue: 0,0:00:10.21,0:00:11.22,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}engineers accomplished
+Dialogue: 0,0:00:11.22,0:00:12.00,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}between England
+Dialogue: 0,0:00:12.00,0:00:13.11,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}and France
+Dialogue: 0,0:00:13.11,0:00:13.69,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}The construction
+Dialogue: 0,0:00:13.69,0:00:14.43,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}relied on
+Dialogue: 0,0:00:14.43,0:00:15.55,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}enormous machines
+Dialogue: 0,0:00:15.55,0:00:16.33,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}called tunnel
+Dialogue: 0,0:00:16.33,0:00:17.67,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}boring machines
+Dialogue: 0,0:00:17.67,0:00:18.25,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}They slowly
+Dialogue: 0,0:00:18.25,0:00:18.97,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}moved through
+Dialogue: 0,0:00:18.97,0:00:19.81,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the seabed
+Dialogue: 0,0:00:19.81,0:00:20.37,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}cutting through
+Dialogue: 0,0:00:20.37,0:00:20.95,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}layers of
+Dialogue: 0,0:00:20.95,0:00:21.57,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}rock and
+Dialogue: 0,0:00:21.57,0:00:22.37,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}removing thousands
+Dialogue: 0,0:00:22.37,0:00:23.05,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of tons
+Dialogue: 0,0:00:23.05,0:00:24.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of material
+Dialogue: 0,0:00:24.10,0:00:24.62,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}But digging
+Dialogue: 0,0:00:24.62,0:00:25.13,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}was only
+Dialogue: 0,0:00:25.13,0:00:25.55,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}part of
+Dialogue: 0,0:00:25.55,0:00:26.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the challenge
+Dialogue: 0,0:00:26.10,0:00:26.95,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}As the
+Dialogue: 0,0:00:26.95,0:00:28.21,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}machines advanced
+Dialogue: 0,0:00:28.21,0:00:28.64,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}they installed
+Dialogue: 0,0:00:28.64,0:00:29.86,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}massive precast
+Dialogue: 0,0:00:29.86,0:00:30.89,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}concrete segments
+Dialogue: 0,0:00:30.89,0:00:31.44,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}to line
+Dialogue: 0,0:00:31.44,0:00:31.84,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the tunnel
+Dialogue: 0,0:00:31.84,0:00:32.62,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}walls and
+Dialogue: 0,0:00:32.62,0:00:33.03,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}keep the
+Dialogue: 0,0:00:33.03,0:00:34.27,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}structure protected
+Dialogue: 0,0:00:34.27,0:00:34.62,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}And here's
+Dialogue: 0,0:00:34.62,0:00:35.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}something even
+Dialogue: 0,0:00:35.16,0:00:36.29,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}more surprising
+Dialogue: 0,0:00:36.29,0:00:36.66,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}They didn't
+Dialogue: 0,0:00:36.66,0:00:37.13,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}build just
+Dialogue: 0,0:00:37.13,0:00:38.23,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}one tunnel
+Dialogue: 0,0:00:38.23,0:00:38.72,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}The project
+Dialogue: 0,0:00:38.72,0:00:39.44,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}consists of
+Dialogue: 0,0:00:39.44,0:00:40.14,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}two main
+Dialogue: 0,0:00:40.14,0:00:40.85,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}railway tunnels
+Dialogue: 0,0:00:40.85,0:00:41.40,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}and a
+Dialogue: 0,0:00:41.40,0:00:42.08,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}third service
+Dialogue: 0,0:00:42.08,0:00:42.85,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}tunnel used
+Dialogue: 0,0:00:42.85,0:00:43.42,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}for maintenance
+Dialogue: 0,0:00:43.42,0:00:44.08,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}and emergency
+Dialogue: 0,0:00:44.08,0:00:44.99,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}access
+Dialogue: 0,0:00:44.99,0:00:45.63,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}All three
+Dialogue: 0,0:00:45.63,0:00:46.33,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}run beneath
+Dialogue: 0,0:00:46.33,0:00:47.26,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the seabed
+Dialogue: 0,0:00:47.26,0:00:47.92,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}After years
+Dialogue: 0,0:00:47.92,0:00:48.99,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of construction
+Dialogue: 0,0:00:48.99,0:00:49.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the teams
+Dialogue: 0,0:00:49.36,0:00:50.43,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}finally connected
+Dialogue: 0,0:00:50.43,0:00:51.15,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}both sides
+Dialogue: 0,0:00:51.15,0:00:52.14,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}The result
+Dialogue: 0,0:00:52.14,0:00:52.68,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}was one
+Dialogue: 0,0:00:52.68,0:00:52.89,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of the
+Dialogue: 0,0:00:52.89,0:00:53.71,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}most impressive
+Dialogue: 0,0:00:53.71,0:00:54.80,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}engineering projects
+Dialogue: 0,0:00:54.80,0:00:55.98,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}in history
+Dialogue: 0,0:00:55.98,0:00:56.39,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}The Channel
+Dialogue: 0,0:00:56.39,0:00:57.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}Tunnel
+Dialogue: 0,0:00:57.16,0:00:57.59,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}a railway
+Dialogue: 0,0:00:57.59,0:00:58.35,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}passage that
+Dialogue: 0,0:00:58.35,0:00:59.01,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}allows people
+Dialogue: 0,0:00:59.01,0:00:59.77,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}and vehicles
+Dialogue: 0,0:00:59.77,0:01:00.35,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}to cross
+Dialogue: 0,0:01:00.35,0:01:01.11,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}between England
+Dialogue: 0,0:01:01.11,0:01:01.77,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}and France
+Dialogue: 0,0:01:01.77,0:01:02.66,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}without taking
+Dialogue: 0,0:01:02.66,0:01:03.61,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}a boat
