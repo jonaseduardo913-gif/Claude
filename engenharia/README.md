@@ -46,6 +46,8 @@ Passos podem ser rodados isoladamente: `--steps tts,timeline`, `--steps render -
 - `tools/validate.py <slug> [--final]` — checa estrutura, fontes, durações, transições, SFX, resolução e loudness.
 - `tools/render.cjs --ep <slug> --still S03:2.5 --out <dir>` — prévias de quadros únicos.
 - `tools/align.py <slug>` — alinhamento palavra a palavra de uma narração fornecida.
+- `tools/check_frames.py <slug>` — detecta quadros corrompidos (blocos pretos) nos clipes; re-renderize as cenas apontadas com `--only`.
+  Em cenas de fundo escuro pode haver falso positivo: confira os quadros apontados visualmente.
 
 ## Motor 3D (`engine/`)
 - `kit.js`: estúdio (fundo gradiente, piso técnico, luz-chave/recorte, HDRI), materiais PBR (aço, latão, níquel…),

@@ -57,8 +57,10 @@ Monte uma prancha e INSPECIONE as imagens: enquadramento 9:16, etiquetas dentro 
 ### 7. Produção completa
 ```
 python3 tools/produce.py <slug> --steps render,video,audio,captions,final,storyboard --workers 2
+python3 tools/check_frames.py <slug>     # blocos pretos? re-renderize as cenas com --steps render --only Sxx
 python3 tools/validate.py <slug> --final
 ```
+Não rode mais de 2 workers ao mesmo tempo na máquina (CPU compartilhada).
 (~1,5 s por quadro por worker; um vídeo de 55 s leva ~25–35 min. Rode em segundo plano.)
 
 ### 8. Controle de qualidade final
