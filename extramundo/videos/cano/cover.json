@@ -1,0 +1,11 @@
+{
+ "bg": "input/media/cm/cm56.jpg",
+ "top": "O RIO QUE PARECE UM",
+ "big": "ARCO-ÍRIS!",
+ "q": "E ELE EXISTE!",
+ "cropV": {"cx": 0.5, "cy": 0.55, "z": 1.0},
+ "cropH": {"cx": 0.6, "cy": 0.55, "z": 1.05},
+ "circle": null,
+ "filter": "saturate(1.45) contrast(1.15) brightness(1.06)",
+ "textY": 1150
+}
