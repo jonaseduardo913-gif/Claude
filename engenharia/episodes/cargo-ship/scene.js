@@ -277,7 +277,7 @@ export async function build(ctx) {
     },
     S06(t, d) {
       const u = t / d;
-      ocean.waves(t, 0.5);
+      ocean.waves(t, 0.5); ocean.seeThrough(0.45);
       cut.setPlane([0, 0, -1], lerp(40, 0, seg(u, 0.0, 0.3)));
       airMat.opacity = 0.32 * seg(u, 0.38, 0.5);
       airVols.forEach((m, i) => (m.material.emissiveIntensity = 0.5 + 0.3 * Math.sin(t * 4 + i)));
