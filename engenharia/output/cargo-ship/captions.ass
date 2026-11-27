@@ -1,0 +1,80 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,96,&H00FFFFFF,&H00FFFFFF,&H00202020,&H96000000,0,0,0,0,100,100,0,0,1,4,5,2,80,80,640,1
+
+Style: Title,Inter Black,104,&H00FFFFFF,&H00FFFFFF,&H00141414,&H96000000,0,0,0,0,100,100,2,0,1,5,6,5,70,70,0,1
+Style: Brand,Inter ExtraBold,46,&H00FFFFFF,&H00FFFFFF,&H00141414,&H64000000,0,0,0,0,100,100,8,0,1,3,2,2,70,70,330,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.68,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}A massive
+Dialogue: 0,0:00:00.68,0:00:01.52,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}cargo ship
+Dialogue: 0,0:00:01.52,0:00:01.92,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}can weigh
+Dialogue: 0,0:00:01.92,0:00:02.90,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}over 200
+Dialogue: 0,0:00:02.90,0:00:04.58,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)},000 tons
+Dialogue: 0,0:00:04.58,0:00:05.42,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}so how
+Dialogue: 0,0:00:05.42,0:00:05.84,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}does something
+Dialogue: 0,0:00:05.84,0:00:06.52,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}made mostly
+Dialogue: 0,0:00:06.52,0:00:07.22,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of steel
+Dialogue: 0,0:00:07.22,0:00:08.40,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}float instead
+Dialogue: 0,0:00:08.40,0:00:09.42,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of sinking?
+Dialogue: 0,0:00:09.68,0:00:10.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}The secret
+Dialogue: 0,0:00:10.16,0:00:11.84,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}is displacement
+Dialogue: 0,0:00:12.14,0:00:12.48,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}When a
+Dialogue: 0,0:00:12.48,0:00:12.98,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ship enters
+Dialogue: 0,0:00:12.98,0:00:13.84,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the water
+Dialogue: 0,0:00:13.84,0:00:14.48,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}its enormous
+Dialogue: 0,0:00:14.48,0:00:15.42,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}hull pushes
+Dialogue: 0,0:00:15.42,0:00:16.12,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}water out
+Dialogue: 0,0:00:16.12,0:00:16.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of the
+Dialogue: 0,0:00:16.36,0:00:17.26,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}way
+Dialogue: 0,0:00:17.26,0:00:17.94,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}That displaced
+Dialogue: 0,0:00:17.94,0:00:18.86,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}water creates
+Dialogue: 0,0:00:18.86,0:00:19.50,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}an upward
+Dialogue: 0,0:00:19.50,0:00:20.40,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}force called
+Dialogue: 0,0:00:20.40,0:00:21.62,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}buoyancy
+Dialogue: 0,0:00:21.66,0:00:22.06,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}As long
+Dialogue: 0,0:00:22.06,0:00:22.40,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}as this
+Dialogue: 0,0:00:22.40,0:00:23.22,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}upward force
+Dialogue: 0,0:00:23.22,0:00:24.02,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}balances the
+Dialogue: 0,0:00:24.02,0:00:25.04,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ship's weight
+Dialogue: 0,0:00:25.04,0:00:25.96,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}it floats
+Dialogue: 0,0:00:26.10,0:00:26.58,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}But here's
+Dialogue: 0,0:00:26.58,0:00:27.12,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the interesting
+Dialogue: 0,0:00:27.12,0:00:28.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}part
+Dialogue: 0,0:00:28.46,0:00:29.02,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}Ships aren't
+Dialogue: 0,0:00:29.02,0:00:29.66,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}solid blocks
+Dialogue: 0,0:00:29.66,0:00:30.82,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of steel
+Dialogue: 0,0:00:30.88,0:00:31.44,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}Their hollow
+Dialogue: 0,0:00:31.44,0:00:32.30,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}hulls contain
+Dialogue: 0,0:00:32.30,0:00:33.32,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}enormous amounts
+Dialogue: 0,0:00:33.32,0:00:34.24,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of air
+Dialogue: 0,0:00:34.24,0:00:34.76,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}making their
+Dialogue: 0,0:00:34.76,0:00:35.70,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}overall density
+Dialogue: 0,0:00:35.70,0:00:36.50,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}much lower
+Dialogue: 0,0:00:36.50,0:00:37.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}than solid
+Dialogue: 0,0:00:37.16,0:00:38.18,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}steel
+Dialogue: 0,0:00:38.26,0:00:38.72,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}That's why
+Dialogue: 0,0:00:38.72,0:00:39.24,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}even the
+Dialogue: 0,0:00:39.24,0:00:40.02,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}biggest ships
+Dialogue: 0,0:00:40.02,0:00:40.62,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}can float
+Dialogue: 0,0:00:40.62,0:00:41.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}across the
+Dialogue: 0,0:00:41.16,0:00:42.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ocean
+Dialogue: 0,0:00:42.10,0:00:42.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}And the
+Dialogue: 0,0:00:42.36,0:00:42.98,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}same principle
+Dialogue: 0,0:00:42.98,0:00:43.96,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}allows tiny
+Dialogue: 0,0:00:43.96,0:00:44.80,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}objects and
+Dialogue: 0,0:00:44.80,0:00:45.90,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}enormous aircraft
+Dialogue: 0,0:00:45.90,0:00:46.62,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}carriers to
+Dialogue: 0,0:00:46.62,0:00:47.80,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}stay afloat
+Dialogue: 0,0:00:47.88,0:00:48.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}It's all
+Dialogue: 0,0:00:48.36,0:00:49.76,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}about physics
+Dialogue: 1,0:00:49.80,0:00:52.40,Title,,0,0,0,,{\fad(250,0)\fscx70\fscy70\t(0,350,\fscx100\fscy100)}PHYSICS IS\NINCREDIBLE.
+Dialogue: 1,0:00:50.15,0:00:52.40,Brand,,0,0,0,,{\fad(300,0)}HOWSTUFF
