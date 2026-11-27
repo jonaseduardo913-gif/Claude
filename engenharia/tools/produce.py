@@ -348,6 +348,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                 ev.append(f"Dialogue: 0,{ts_ass(t0)},{ts_ass(t1)},Cap,,0,0,0,,{pop}{txt}")
             n += 1
             srt.append(f"{n}\n{ts_srt(ch[0]['start'])} --> {ts_srt(end_hold)}\n{' '.join(x['w'] for x in ch)}\n")
+    ec = ep.get("end_card")
+    if ec:  # closing title + small channel branding over the last seconds
+        t1 = tl["total_seconds"]; t0 = t1 - ec.get("seconds", 2.5)
+        hdr = hdr.replace("[Events]", "Style: Title,Inter Black,104,&H00FFFFFF,&H00FFFFFF,&H00141414,&H96000000,0,0,0,0,100,100,2,0,1,5,6,5,70,70,0,1\n"
+                          "Style: Brand,Inter ExtraBold,46,&H00FFFFFF,&H00FFFFFF,&H00141414,&H64000000,0,0,0,0,100,100,8,0,1,3,2,2,70,70,330,1\n\n[Events]")
+        title = ec["title"].replace(" IS ", " IS\\N", 1) if len(ec["title"]) > 16 else ec["title"]
+        ev.append(f"Dialogue: 1,{ts_ass(t0)},{ts_ass(t1)},Title,,0,0,0,," + r"{\fad(250,0)\fscx70\fscy70\t(0,350,\fscx100\fscy100)}" + title)
+        if ec.get("brand"):
+            ev.append(f"Dialogue: 1,{ts_ass(t0 + 0.35)},{ts_ass(t1)},Brand,,0,0,0,," + r"{\fad(300,0)}" + ec["brand"])
     (out / "captions.ass").write_text(hdr + "\n".join(ev) + "\n")
     (out / "captions.srt").write_text("\n".join(srt))
     print(f"captions: {n} chunks")

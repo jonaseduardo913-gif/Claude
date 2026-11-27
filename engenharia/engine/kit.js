@@ -5,7 +5,7 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { Line2 } from 'three/addons/lines/Line2.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
-import { Brush, Evaluator, SUBTRACTION, ADDITION } from 'three-bvh-csg';
+import { Brush, Evaluator, SUBTRACTION, ADDITION, INTERSECTION } from 'three-bvh-csg';
 
 // ---------------------------------------------------------------- easing / time
 export const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
@@ -177,11 +177,11 @@ export function brush(geo, { pos = [0, 0, 0], rot = [0, 0, 0] } = {}) {
   b.position.set(...pos); b.rotation.set(...rot); b.updateMatrixWorld();
   return b;
 }
-/** csg(baseBrush, [['-', brush], ['+', brush], ...]) -> BufferGeometry */
+/** csg(baseBrush, [['-', brush], ['+', brush], ['&', brush] ...]) -> BufferGeometry  (- subtract, + union, & intersect) */
 export function csg(base, ops) {
   if (!ops.length) { const g = base.geometry.clone(); g.applyMatrix4(base.matrixWorld); g.computeBoundingSphere(); return g; }
   let r = base;
-  for (const [op, b] of ops) r = evaluator.evaluate(r, b, op === '+' ? ADDITION : SUBTRACTION);
+  for (const [op, b] of ops) r = evaluator.evaluate(r, b, op === '+' ? ADDITION : op === '&' ? INTERSECTION : SUBTRACTION);
   const geo = r.geometry; geo.computeBoundingSphere();
   return geo;
 }

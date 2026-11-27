@@ -1,0 +1,95 @@
+{
+  "id": "submarine",
+  "title": "How Does a Submarine Sink and Rise Again?",
+  "language": "en-US",
+  "format": { "width": 1080, "height": 1920, "fps": 30, "duration_range": [45, 60], "scene_seconds": [3, 13] },
+  "narration_audio": { "file": "narration.mp3", "alignment": "alignment.json", "tempo": 1.0, "voice": "ElevenLabs Nathan (provided by client)" },
+  "captions": { "style": "pop" },
+  "outro_seconds": 2.7,
+  "end_card": { "title": "ENGINEERING IS INCREDIBLE.", "brand": "HOWSTUFF", "seconds": 2.6 },
+  "music": { "bpm": 88, "key": "D", "mood": "deep, mysterious, building to an epic surfacing" },
+  "research": {
+    "summary": "A submarine controls its buoyancy with main ballast tanks (between the outer hull and the pressure hull, fore and aft). On the surface the tanks hold air and the boat floats. To dive, the main vents on top open: seawater floods in through flood ports at the bottom while the air escapes out of the vents, making the boat denser than seawater so it sinks. To surface, the vents are closed and high-pressure air from storage flasks is blown into the tanks, forcing the water out through the flood ports; the boat becomes less dense and buoyancy lifts it. Submerged, the boat is kept close to neutral buoyancy, fine-tuned with small trim tanks, and hydroplanes help steer depth.",
+    "facts_checked": [
+      "Flooding the main ballast tanks increases overall density so the submarine sinks; flood ports at the bottom let water in while air leaves through the main vents (HowStuffWorks, Wikipedia: Vent).",
+      "To surface, vents are closed and high-pressure air is blown into the tanks, pushing the water out through the flood ports; the air must exceed sea pressure at the ports.",
+      "Submerged, the main ballast tanks are flooded to reach approximately neutral buoyancy; trim (depth-control) tanks make fine adjustments (Wikipedia: Ballast tank).",
+      "Hydroplanes (bow/sail and stern planes) adjust depth dynamically; not the main buoyancy mechanism.",
+      "Emergency blow fills the ballast tanks with high-pressure air for a very rapid ascent (used for the dramatic emergence shot)."
+    ],
+    "sources": [
+      "https://science.howstuffworks.com/transport/engines-equipment/submarine1.htm",
+      "https://en.wikipedia.org/wiki/Ballast_tank",
+      "https://en.wikipedia.org/wiki/Vent_(submarine)",
+      "https://en.wikipedia.org/wiki/Diving_plane",
+      "https://www.explainthatstuff.com/submarines.html"
+    ]
+  },
+  "cast": ["otto (submarine officer at the periscope, seen in cutaways)"],
+  "scenes": [
+    {
+      "id": "S01", "starts_with": "How can a",
+      "narration": "How can a massive steel submarine sink deep into the ocean and then return to the surface?",
+      "storyboard": "HOOK. Underwater, looking up at the bright rippling surface with sun rays: a huge dark submarine slides down from the surface, bubbles streaming from its vents, disappearing into the deep blue.",
+      "camera": "low underwater angle looking up, slow drift as the hull passes overhead",
+      "transition": "fade", "music": 1,
+      "sfx": [ { "u": 0.0, "type": "impact" }, { "u": 0.0, "type": "underwater", "dur": 6.0 }, { "u": 0.2, "type": "riser", "dur": 3.0 } ]
+    },
+    {
+      "id": "S02", "starts_with": "The secret is",
+      "narration": "The secret is hidden inside its walls. Submarines have special compartments called ballast tanks.",
+      "storyboard": "A section plane slices the submarine lengthwise: outer hull, pressure hull with decks and crew, and the main ballast tanks between the two hulls at bow and stern glow and get labeled.",
+      "camera": "3/4 orbit while the cutaway reveals the interior, then side view",
+      "transition": "fade", "music": 1,
+      "sfx": [ { "u": 0.05, "type": "cut_reveal" }, { "u": 0.55, "type": "ui_tick" }, { "u": 0.7, "type": "shimmer" } ]
+    },
+    {
+      "id": "S03", "starts_with": "When the submarine",
+      "narration": "When the submarine is on the surface, these tanks contain air, helping it float.",
+      "storyboard": "Section view of the boat floating at the waterline; the ballast tanks are filled with bright transparent blue air. Buoyancy arrow (up) is bigger than weight arrow (down).",
+      "camera": "side section at the waterline, slow push",
+      "transition": "fade", "music": 1,
+      "sfx": [ { "u": 0.0, "type": "ocean", "dur": 4.5 }, { "u": 0.45, "type": "ui_tick" } ]
+    },
+    {
+      "id": "S04", "starts_with": "But when it's",
+      "narration": "But when it's time to dive, valves open, allowing seawater to enter while air escapes.",
+      "storyboard": "Close cutaway of the bow ballast tank: the vent valve on top opens and air jets out as spray; seawater rushes in through the flood ports at the bottom; the water level inside rises; the boat starts to settle lower.",
+      "camera": "close cutaway of the tank, slight tilt following the rising water",
+      "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.05, "type": "clunk" }, { "u": 0.12, "type": "wind", "dur": 3.5 }, { "u": 0.2, "type": "underwater", "dur": 4.0 } ]
+    },
+    {
+      "id": "S05", "starts_with": "This makes the",
+      "narration": "This makes the submarine heavier, causing it to sink.",
+      "storyboard": "Wide underwater shot: the boat descends into darker blue water, bubbles trailing; weight arrow now bigger than buoyancy.",
+      "camera": "dramatic descending follow shot",
+      "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.0, "type": "underwater", "dur": 3.5 }, { "u": 0.1, "type": "rope_creak" } ]
+    },
+    {
+      "id": "S06", "starts_with": "But here's the",
+      "narration": "But here's the incredible part. To rise again, the submarine releases compressed air into the tanks, forcing the water out. Now it's lighter, and buoyancy pushes it back toward the surface.",
+      "storyboard": "Cutaway: vents closed; high-pressure air flows from the air flasks through pipes into the ballast tanks; the water is pushed out through the flood ports at the bottom and the air volume grows. Then a wide shot as the boat rises toward the bright surface with the buoyancy arrow growing.",
+      "camera": "cutaway close-up, then wide rising shot",
+      "transition": "fade", "music": 3,
+      "sfx": [ { "u": 0.12, "type": "hydraulic", "dur": 3.0 }, { "u": 0.3, "type": "wind", "dur": 2.5 }, { "u": 0.6, "type": "riser", "dur": 3.0 } ]
+    },
+    {
+      "id": "S07", "starts_with": "And by carefully",
+      "narration": "And by carefully controlling the amount of water inside, submarines can even hover underwater.",
+      "storyboard": "The submarine hangs motionless in the deep, surrounded by darkness and shafts of blue light; equal buoyancy and weight arrows; small trim tanks pulse; label NEUTRAL BUOYANCY.",
+      "camera": "slow cinematic orbit, wide",
+      "transition": "fade", "music": 1,
+      "sfx": [ { "u": 0.0, "type": "underwater", "dur": 5.0 }, { "u": 0.5, "type": "shimmer" } ]
+    },
+    {
+      "id": "S08", "starts_with": "It's basically a",
+      "narration": "It's basically a giant machine that controls its own ability to float.",
+      "storyboard": "Emergency-blow style surfacing: the bow bursts out of the ocean with water cascading off the hull, spray and sunlight, then the boat settles on the surface. Final title ENGINEERING IS INCREDIBLE. with small HOWSTUFF branding.",
+      "camera": "low epic angle at the waterline, then pull back",
+      "transition": "none", "music": 3,
+      "sfx": [ { "u": 0.02, "type": "riser", "dur": 1.6 }, { "u": 0.3, "type": "impact" }, { "u": 0.32, "type": "ocean", "dur": 4.0 }, { "u": 0.66, "type": "outro" } ]
+    }
+  ]
+}
