@@ -1,0 +1,87 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,96,&H00FFFFFF,&H00FFFFFF,&H00202020,&H96000000,0,0,0,0,100,100,0,0,1,4,5,2,80,80,640,1
+
+Style: Title,Inter Black,104,&H00FFFFFF,&H00FFFFFF,&H00141414,&H96000000,0,0,0,0,100,100,2,0,1,5,6,5,70,70,0,1
+Style: Brand,Inter ExtraBold,46,&H00FFFFFF,&H00FFFFFF,&H00141414,&H64000000,0,0,0,0,100,100,8,0,1,3,2,2,70,70,330,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.44,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}How can
+Dialogue: 0,0:00:00.44,0:00:01.04,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}a massive
+Dialogue: 0,0:00:01.04,0:00:02.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}steel submarine
+Dialogue: 0,0:00:02.10,0:00:02.84,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}sink deep
+Dialogue: 0,0:00:02.84,0:00:03.26,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}into the
+Dialogue: 0,0:00:03.26,0:00:04.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ocean and
+Dialogue: 0,0:00:04.36,0:00:05.02,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}then return
+Dialogue: 0,0:00:05.02,0:00:05.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}to the
+Dialogue: 0,0:00:05.36,0:00:06.42,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}surface?
+Dialogue: 0,0:00:06.54,0:00:07.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}The secret
+Dialogue: 0,0:00:07.16,0:00:07.82,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}is hidden
+Dialogue: 0,0:00:07.82,0:00:08.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}inside its
+Dialogue: 0,0:00:08.60,0:00:09.64,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}walls
+Dialogue: 0,0:00:10.06,0:00:10.68,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}Submarines have
+Dialogue: 0,0:00:10.68,0:00:11.70,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}special compartments
+Dialogue: 0,0:00:11.70,0:00:12.66,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}called ballast
+Dialogue: 0,0:00:12.66,0:00:13.66,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}tanks
+Dialogue: 0,0:00:13.66,0:00:13.94,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}When the
+Dialogue: 0,0:00:13.94,0:00:14.52,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}submarine is
+Dialogue: 0,0:00:14.52,0:00:14.82,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}on the
+Dialogue: 0,0:00:14.82,0:00:15.56,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}surface
+Dialogue: 0,0:00:15.56,0:00:16.20,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}these tanks
+Dialogue: 0,0:00:16.20,0:00:17.42,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}contain air
+Dialogue: 0,0:00:17.42,0:00:17.84,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}helping it
+Dialogue: 0,0:00:17.84,0:00:18.66,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}float
+Dialogue: 0,0:00:18.68,0:00:19.00,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}But when
+Dialogue: 0,0:00:19.00,0:00:19.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}it's time
+Dialogue: 0,0:00:19.36,0:00:20.54,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}to dive
+Dialogue: 0,0:00:20.54,0:00:21.40,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}valves open
+Dialogue: 0,0:00:21.40,0:00:22.34,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}allowing seawater
+Dialogue: 0,0:00:22.34,0:00:22.94,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}to enter
+Dialogue: 0,0:00:22.94,0:00:23.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}while air
+Dialogue: 0,0:00:23.60,0:00:24.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}escapes
+Dialogue: 0,0:00:24.72,0:00:25.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}This makes
+Dialogue: 0,0:00:25.16,0:00:25.82,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the submarine
+Dialogue: 0,0:00:25.82,0:00:26.28,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}heavier
+Dialogue: 0,0:00:26.28,0:00:27.06,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}causing it
+Dialogue: 0,0:00:27.06,0:00:28.08,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}to sink
+Dialogue: 0,0:00:28.20,0:00:28.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}But here's
+Dialogue: 0,0:00:28.60,0:00:29.14,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the incredible
+Dialogue: 0,0:00:29.14,0:00:30.08,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}part
+Dialogue: 0,0:00:30.08,0:00:30.56,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}To rise
+Dialogue: 0,0:00:30.56,0:00:31.34,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}again
+Dialogue: 0,0:00:31.34,0:00:31.82,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the submarine
+Dialogue: 0,0:00:31.82,0:00:32.82,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}releases compressed
+Dialogue: 0,0:00:32.82,0:00:33.50,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}air into
+Dialogue: 0,0:00:33.50,0:00:34.40,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the tanks
+Dialogue: 0,0:00:34.40,0:00:34.98,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}forcing the
+Dialogue: 0,0:00:34.98,0:00:36.14,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}water out
+Dialogue: 0,0:00:36.18,0:00:36.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}Now it's
+Dialogue: 0,0:00:36.60,0:00:37.26,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}lighter
+Dialogue: 0,0:00:37.26,0:00:37.92,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}and buoyancy
+Dialogue: 0,0:00:37.92,0:00:38.56,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}pushes it
+Dialogue: 0,0:00:38.56,0:00:39.04,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}back toward
+Dialogue: 0,0:00:39.04,0:00:40.22,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the surface
+Dialogue: 0,0:00:40.46,0:00:40.72,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}And by
+Dialogue: 0,0:00:40.72,0:00:41.66,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}carefully controlling
+Dialogue: 0,0:00:41.66,0:00:42.18,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the amount
+Dialogue: 0,0:00:42.18,0:00:42.56,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of water
+Dialogue: 0,0:00:42.56,0:00:43.72,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}inside
+Dialogue: 0,0:00:43.72,0:00:44.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}submarines can
+Dialogue: 0,0:00:44.36,0:00:45.04,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}even hover
+Dialogue: 0,0:00:45.04,0:00:46.28,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}underwater
+Dialogue: 0,0:00:46.46,0:00:47.04,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}It's basically
+Dialogue: 0,0:00:47.04,0:00:47.76,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}a giant
+Dialogue: 0,0:00:47.76,0:00:48.52,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}machine that
+Dialogue: 0,0:00:48.52,0:00:49.18,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}controls its
+Dialogue: 0,0:00:49.18,0:00:49.82,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}own ability
+Dialogue: 0,0:00:49.82,0:00:51.04,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}to float
+Dialogue: 1,0:00:50.93,0:00:53.53,Title,,0,0,0,,{\fad(250,0)\fscx70\fscy70\t(0,350,\fscx100\fscy100)}ENGINEERING IS\NINCREDIBLE.
+Dialogue: 1,0:00:51.28,0:00:53.53,Brand,,0,0,0,,{\fad(300,0)}HOWSTUFF
