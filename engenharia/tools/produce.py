@@ -353,7 +353,12 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         t1 = tl["total_seconds"]; t0 = t1 - ec.get("seconds", 2.5)
         hdr = hdr.replace("[Events]", "Style: Title,Inter Black,104,&H00FFFFFF,&H00FFFFFF,&H00141414,&H96000000,0,0,0,0,100,100,2,0,1,5,6,5,70,70,0,1\n"
                           "Style: Brand,Inter ExtraBold,46,&H00FFFFFF,&H00FFFFFF,&H00141414,&H64000000,0,0,0,0,100,100,8,0,1,3,2,2,70,70,330,1\n\n[Events]")
-        title = ec["title"].replace(" IS ", " IS\\N", 1) if len(ec["title"]) > 16 else ec["title"]
+        words = ec["title"].split()
+        if len(ec["title"]) > 16 and len(words) > 1:   # balanced two-line wrap
+            k = min(range(1, len(words)), key=lambda i: max(len(" ".join(words[:i])), len(" ".join(words[i:]))))
+            title = " ".join(words[:k]) + "\\N" + " ".join(words[k:])
+        else:
+            title = ec["title"]
         ev.append(f"Dialogue: 1,{ts_ass(t0)},{ts_ass(t1)},Title,,0,0,0,," + r"{\fad(250,0)\fscx70\fscy70\t(0,350,\fscx100\fscy100)}" + title)
         if ec.get("brand"):
             ev.append(f"Dialogue: 1,{ts_ass(t0 + 0.35)},{ts_ass(t1)},Brand,,0,0,0,," + r"{\fad(300,0)}" + ec["brand"])

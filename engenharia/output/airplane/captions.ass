@@ -1,0 +1,84 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,96,&H00FFFFFF,&H00FFFFFF,&H00202020,&H96000000,0,0,0,0,100,100,0,0,1,4,5,2,80,80,640,1
+
+Style: Title,Inter Black,104,&H00FFFFFF,&H00FFFFFF,&H00141414,&H96000000,0,0,0,0,100,100,2,0,1,5,6,5,70,70,0,1
+Style: Brand,Inter ExtraBold,46,&H00FFFFFF,&H00FFFFFF,&H00141414,&H64000000,0,0,0,0,100,100,8,0,1,3,2,2,70,70,330,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.44,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}How can
+Dialogue: 0,0:00:00.44,0:00:00.98,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}a machine
+Dialogue: 0,0:00:00.98,0:00:01.88,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}weighing hundreds
+Dialogue: 0,0:00:01.88,0:00:02.58,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of tons
+Dialogue: 0,0:00:02.58,0:00:03.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}stay in
+Dialogue: 0,0:00:03.10,0:00:04.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the air?
+Dialogue: 0,0:00:04.32,0:00:04.62,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}The answer
+Dialogue: 0,0:00:04.62,0:00:05.28,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}lies in
+Dialogue: 0,0:00:05.28,0:00:05.64,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the shape
+Dialogue: 0,0:00:05.64,0:00:06.00,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}of its
+Dialogue: 0,0:00:06.00,0:00:07.00,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}wings
+Dialogue: 0,0:00:07.12,0:00:07.38,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}As an
+Dialogue: 0,0:00:07.38,0:00:08.02,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}airplane moves
+Dialogue: 0,0:00:08.02,0:00:09.08,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}forward
+Dialogue: 0,0:00:09.08,0:00:09.48,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}air flows
+Dialogue: 0,0:00:09.48,0:00:10.20,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}around its
+Dialogue: 0,0:00:10.20,0:00:10.84,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}wings
+Dialogue: 0,0:00:10.84,0:00:11.94,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}creating aerodynamic
+Dialogue: 0,0:00:11.94,0:00:13.14,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}forces
+Dialogue: 0,0:00:13.18,0:00:13.58,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}The wings
+Dialogue: 0,0:00:13.58,0:00:14.12,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}are designed
+Dialogue: 0,0:00:14.12,0:00:14.72,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}to generate
+Dialogue: 0,0:00:14.72,0:00:15.52,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}lift
+Dialogue: 0,0:00:15.52,0:00:15.96,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}helping the
+Dialogue: 0,0:00:15.96,0:00:17.02,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}aircraft overcome
+Dialogue: 0,0:00:17.02,0:00:18.20,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}gravity
+Dialogue: 0,0:00:18.22,0:00:18.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}But there's
+Dialogue: 0,0:00:18.60,0:00:19.40,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}another important
+Dialogue: 0,0:00:19.40,0:00:20.40,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}factor
+Dialogue: 0,0:00:20.40,0:00:21.70,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the engines
+Dialogue: 0,0:00:21.72,0:00:22.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}They push
+Dialogue: 0,0:00:22.36,0:00:23.00,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the airplane
+Dialogue: 0,0:00:23.00,0:00:23.90,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}forward
+Dialogue: 0,0:00:23.90,0:00:24.52,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}allowing air
+Dialogue: 0,0:00:24.52,0:00:25.30,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}to continuously
+Dialogue: 0,0:00:25.30,0:00:26.18,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}flow around
+Dialogue: 0,0:00:26.18,0:00:26.68,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the wings
+Dialogue: 0,0:00:26.68,0:00:27.80,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}The faster
+Dialogue: 0,0:00:27.80,0:00:28.34,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the airplane
+Dialogue: 0,0:00:28.34,0:00:29.12,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}moves
+Dialogue: 0,0:00:29.12,0:00:29.56,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the more
+Dialogue: 0,0:00:29.56,0:00:30.12,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}lift its
+Dialogue: 0,0:00:30.12,0:00:30.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}wings can
+Dialogue: 0,0:00:30.60,0:00:31.34,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}generate
+Dialogue: 0,0:00:31.34,0:00:32.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}within operating
+Dialogue: 0,0:00:32.10,0:00:33.14,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}limits
+Dialogue: 0,0:00:33.32,0:00:33.82,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}And here's
+Dialogue: 0,0:00:33.82,0:00:35.46,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}something incredible
+Dialogue: 0,0:00:35.66,0:00:36.10,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}An airplane
+Dialogue: 0,0:00:36.10,0:00:37.02,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}doesn't actually
+Dialogue: 0,0:00:37.02,0:00:37.58,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}need its
+Dialogue: 0,0:00:37.58,0:00:38.24,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}engines to
+Dialogue: 0,0:00:38.24,0:00:39.36,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}keep flying
+Dialogue: 0,0:00:39.36,0:00:39.66,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}If the
+Dialogue: 0,0:00:39.66,0:00:40.74,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}engines stop
+Dialogue: 0,0:00:40.74,0:00:41.02,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}it can
+Dialogue: 0,0:00:41.02,0:00:41.86,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}still glide
+Dialogue: 0,0:00:41.86,0:00:42.28,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}through the
+Dialogue: 0,0:00:42.28,0:00:43.16,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}air
+Dialogue: 0,0:00:43.16,0:00:43.72,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}That's the
+Dialogue: 0,0:00:43.72,0:00:44.34,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}science that
+Dialogue: 0,0:00:44.34,0:00:45.06,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}keeps massive
+Dialogue: 0,0:00:45.06,0:00:46.08,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}aircraft flying
+Dialogue: 0,0:00:46.08,0:00:46.90,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}thousands of
+Dialogue: 0,0:00:46.90,0:00:47.54,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}meters above
+Dialogue: 0,0:00:47.54,0:00:48.64,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}the ground
+Dialogue: 1,0:00:48.53,0:00:51.13,Title,,0,0,0,,{\fad(250,0)\fscx70\fscy70\t(0,350,\fscx100\fscy100)}THE SCIENCE\NOF FLIGHT.
+Dialogue: 1,0:00:48.88,0:00:51.13,Brand,,0,0,0,,{\fad(300,0)}HOWSTUFF
