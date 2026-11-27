@@ -1,0 +1,522 @@
+{
+ "lead": 0.1,
+ "headline": {
+  "lines": [
+   "O DRAGÃO",
+   "AZUL!"
+  ],
+  "until_word": 11
+ },
+ "stamp": null,
+ "epic_word": 106,
+ "music": [
+  {
+   "t": 0,
+   "level": 0.3
+  },
+  {
+   "word": 12,
+   "level": 0.45
+  },
+  {
+   "word": 44,
+   "level": 0.5
+  },
+  {
+   "word": 52,
+   "level": 0.7
+  },
+  {
+   "word": 65,
+   "level": 0.8
+  },
+  {
+   "word": 68,
+   "level": 0.9
+  },
+  {
+   "word": 74,
+   "level": 1.0
+  },
+  {
+   "word": 89,
+   "level": 0.6
+  },
+  {
+   "word": 98,
+   "level": 0.9
+  },
+  {
+   "word": 101,
+   "level": 0.45
+  },
+  {
+   "word": 106,
+   "level": 0.7
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0,
+   "kind": "underwater",
+   "dur": 58
+  },
+  {
+   "t": 0.1,
+   "kind": "sub"
+  },
+  {
+   "word": 26,
+   "kind": "swell"
+  },
+  {
+   "word": 52,
+   "kind": "bubble"
+  },
+  {
+   "word": 74,
+   "kind": "bubble"
+  },
+  {
+   "word": 80,
+   "kind": "bubble"
+  },
+  {
+   "word": 84,
+   "kind": "swell"
+  },
+  {
+   "word": 89,
+   "kind": "rumble"
+  },
+  {
+   "word": 111,
+   "kind": "whooshlong"
+  }
+ ],
+ "shots": [
+  {
+   "at": 0,
+   "src": "img:inat/g12",
+   "cam": {
+    "from": {
+     "cx": 0.47,
+     "cy": 0.5,
+     "z": 1.15
+    },
+    "to": {
+     "cx": 0.47,
+     "cy": 0.5,
+     "z": 1.7
+    }
+   }
+  },
+  {
+   "at": 5,
+   "src": "img:inat/g69",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.55,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.55,
+     "z": 1.3
+    }
+   }
+  },
+  {
+   "at": 12,
+   "src": "img:inat/g00",
+   "trans": "zoomblur",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.25
+    }
+   },
+   "overlays": [
+    {
+     "type": "brand",
+     "word": 13,
+     "dur": 2.4
+    }
+   ]
+  },
+  {
+   "at": 16,
+   "src": "img:inat/g48",
+   "cam": {
+    "from": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.05
+    },
+    "to": {
+     "cx": 0.45,
+     "cy": 0.5,
+     "z": 1.35
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "GLAUCUS|ATLANTICUS",
+     "color": "cyan",
+     "size": 120,
+     "y": 0.22,
+     "word": 18
+    }
+   ]
+  },
+  {
+   "at": 21,
+   "src": "img:inat/g56",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.3
+    }
+   }
+  },
+  {
+   "at": 26,
+   "src": "img:inat/g34",
+   "trans": "xfade",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.42,
+     "z": 1.25
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.42,
+     "z": 1.7
+    }
+   }
+  },
+  {
+   "at": 31,
+   "src": "img:inat/g01",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.5
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.48,
+     "z": 1.9
+    }
+   }
+  },
+  {
+   "at": 33,
+   "src": "img:inat/g26",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.05
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.4
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "PARECE UMA|CRIATURA ALIENÍGENA!",
+     "color": "gold",
+     "size": 110,
+     "y": 0.22,
+     "word": 39
+    }
+   ]
+  },
+  {
+   "at": 44,
+   "src": "img:inat/g55",
+   "trans": "dip",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.1
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.4
+    }
+   }
+  },
+  {
+   "at": 52,
+   "src": "img:inat/p87",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.25
+    }
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Caravela-portuguesa (Physalia physalis)",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "at": 59,
+   "src": "img:inat/p78",
+   "cam": {
+    "from": {
+     "cx": 0.4,
+     "cy": 0.5,
+     "z": 1.05
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.3
+    }
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "Caravela-portuguesa (Physalia physalis)",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "at": 65,
+   "src": "img:inat/g67",
+   "trans": "zoomblur",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.12
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "ELE SE ALIMENTA DE|CARAVELAS-PORTUGUESAS!",
+     "color": "pink",
+     "size": 100,
+     "y": 0.22,
+     "word": 66
+    },
+    {
+     "type": "tag",
+     "text": "Dragão-azul junto a uma caravela",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "at": 68,
+   "src": "img:inat/g32",
+   "trans": "glitch",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.1
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.45
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "ELE ROUBA A DEFESA|DE SUAS PRESAS!",
+     "color": "pink",
+     "size": 110,
+     "y": 0.22,
+     "word": 70,
+     "style": "slam"
+    }
+   ]
+  },
+  {
+   "at": 74,
+   "src": "anim:nemato",
+   "trans": "dip"
+  },
+  {
+   "at": 89,
+   "src": "img:inat/g08",
+   "trans": "dip",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.3
+    }
+   }
+  },
+  {
+   "at": 94,
+   "src": "img:inat/g66",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.45,
+     "z": 1.3
+    }
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "NUNCA TOQUE|NESSE ANIMAL!",
+     "color": "pink",
+     "size": 130,
+     "y": 0.22,
+     "word": 98,
+     "style": "slam"
+    }
+   ],
+   "fx": [
+    "shake"
+   ]
+  },
+  {
+   "at": 101,
+   "src": "img:inat/g29",
+   "trans": "xfade",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    }
+   }
+  },
+  {
+   "at": 106,
+   "src": "img:inat/g33",
+   "cam": {
+    "from": {
+     "cx": 0.55,
+     "cy": 0.5,
+     "z": 1.1
+    },
+    "to": {
+     "cx": 0.55,
+     "cy": 0.5,
+     "z": 1.45
+    }
+   }
+  },
+  {
+   "at": 111,
+   "src": "img:inat/g12",
+   "trans": "xfade",
+   "cam": {
+    "from": {
+     "cx": 0.47,
+     "cy": 0.5,
+     "z": 1.9
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.0
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "A NATUREZA É|INACREDITÁVEL!",
+     "color": "gold",
+     "size": 120,
+     "y": 0.22,
+     "word": 112
+    }
+   ]
+  }
+ ],
+ "end": {
+  "hold": 3.4,
+  "trans": "flash",
+  "fade": 0.8
+ },
+ "keywords": {
+  "cyan": [
+   "OCEANO",
+   "DRAGÃO-AZUL",
+   "AZUL-ELÉTRICO",
+   "PRATEADOS",
+   "PLANETA"
+  ],
+  "pink": [
+   "PERIGOSOS",
+   "CARAVELA-PORTUGUESA",
+   "URTICANTES",
+   "QUEIMADURA",
+   "DOLOROSA",
+   "ASSUSTADORA"
+  ],
+  "gold": [
+   "REAL",
+   "DEFESA",
+   "CENTÍMETROS",
+   "SURPRESAS",
+   "DRAGÃO",
+   "FICÇÃO"
+  ]
+ }
+}

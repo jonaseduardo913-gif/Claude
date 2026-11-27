@@ -63,6 +63,7 @@ async function drawPlate(ctx, shot, t, opt = {}) {
   if (shot.src.type === 'anim' && shot.src.name === 'map') { await drawGeoMap(ctx, shot, t); return null; }
   if ((shot.src.type === 'still' || shot.src.type === 'clip') && shot.fit === 'blurfill') { await drawBlurFill(ctx, shot, t); return null; }
   if (shot.src.type === 'anim' && shot.src.name === 'lifecycle') { const r = shot.src.range || [0, 1]; drawLifecycle(ctx, lerp(r[0], r[1], prog(t, shot.t0, shot.t1)), t); return null; }
+  if (shot.src.type === 'anim' && shot.src.name === 'nemato') { const r = shot.src.range || [0, 1]; drawNemato(ctx, lerp(r[0], r[1], prog(t, shot.t0, shot.t1)), t); return null; }
   if (shot.src.type === 'anim' && shot.src.name === 'cycle') { drawCycle(ctx, prog(t, shot.t0, shot.t1), t); return null; }
   if (shot.src.type === 'anim' && shot.src.name === 'cavitation') { drawCavitation(ctx, t - shot.t0, shot.t1 - shot.t0, shot.src.marks || {}); return null; }
   if (shot.src.type === 'anim' && shot.src.name === 'calcify') { drawCalcify(ctx, t - shot.t0, shot.t1 - shot.t0); return null; }
@@ -554,6 +555,75 @@ function drawLifecycle(ctx, p, t) {
       medusa(ctx, x, y, 0.5 + 0.2 * b, t + i, { tent: 0.6, pulse: 1 }); });
     stageLabel(ctx, p < 0.8 ? '4 · PÓLIPO' : '5 · NOVAS MEDUSAS');
   }
+}
+
+// explainer: Glaucus swallows Physalia stinging cells (nematocysts), carries them intact up a ceras and stores them in the cnidosac at its tip
+function cerasPath(ctx, cx, top, base, wb, wt) {
+  ctx.beginPath(); ctx.moveTo(cx - wb / 2, base);
+  ctx.bezierCurveTo(cx - wb / 2, base - (base - top) * 0.5, cx - wt / 2 - 20, top + wt * 0.9, cx - wt / 2, top + wt / 2);
+  ctx.arc(cx, top + wt / 2, wt / 2, Math.PI, 0);
+  ctx.bezierCurveTo(cx + wt / 2 + 20, top + wt * 0.9, cx + wb / 2, base - (base - top) * 0.5, cx + wb / 2, base);
+  ctx.closePath();
+}
+function capsule(ctx, x, y, a, glow, rot = 0) {
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.globalAlpha *= a;
+  ctx.shadowColor = 'rgba(140,240,255,0.9)'; ctx.shadowBlur = 10 + 18 * glow;
+  ctx.fillStyle = `rgba(${200 + 55 * glow},250,255,0.92)`; ctx.beginPath(); ctx.ellipse(0, 0, 7, 13, 0, 0, Math.PI * 2); ctx.fill();
+  ctx.shadowBlur = 0; ctx.strokeStyle = 'rgba(20,90,140,0.8)'; ctx.lineWidth = 1.4; ctx.beginPath();
+  for (let k = 0; k <= 16; k++) { const yy = -9 + k * 1.1, xx = Math.sin(k * 1.4) * 3.2; k ? ctx.lineTo(xx, yy) : ctx.moveTo(xx, yy); } ctx.stroke();
+  ctx.restore();
+}
+function drawNemato(ctx, p, t) {
+  deepSea(ctx, t);
+  const cx = W / 2, top = H * 0.27, base = H * 0.79, wb = 300, wt = 170, sacY = top + 95, tentY = H * 0.865;
+  // physalia tentacle
+  ctx.save(); ctx.lineCap = 'round';
+  const tent = (w, c) => { ctx.strokeStyle = c; ctx.lineWidth = w; ctx.beginPath(); for (let x = -40; x <= W + 40; x += 20) { const y = tentY + Math.sin(x * 0.012 + t * 1.5) * 16; x < -30 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); } ctx.stroke(); };
+  tent(46, 'rgba(120,70,190,0.35)'); tent(26, 'rgba(170,110,230,0.75)'); tent(8, 'rgba(230,200,255,0.6)');
+  ctx.restore();
+  ctx.save(); ctx.font = font(26, 800); ctx.letterSpacing = '3px'; ctx.textAlign = 'center'; ctx.fillStyle = 'rgba(225,200,255,0.85)'; ctx.fillText('TENTÁCULO DA CARAVELA', W / 2, tentY + 70); ctx.restore();
+  // ceras (finger-like appendage), translucent blue with silver rim
+  ctx.save(); cerasPath(ctx, cx, top, base, wb, wt);
+  const g = ctx.createLinearGradient(cx - wb / 2, 0, cx + wb / 2, 0); g.addColorStop(0, 'rgba(30,110,255,0.55)'); g.addColorStop(0.5, 'rgba(60,150,255,0.28)'); g.addColorStop(1, 'rgba(30,110,255,0.55)');
+  ctx.fillStyle = g; ctx.fill(); ctx.strokeStyle = 'rgba(210,230,255,0.85)'; ctx.lineWidth = 5; ctx.shadowColor = 'rgba(80,170,255,0.9)'; ctx.shadowBlur = 24; ctx.stroke();
+  ctx.restore();
+  // digestive duct + cnidosac
+  ctx.save(); ctx.strokeStyle = 'rgba(150,200,255,0.35)'; ctx.lineWidth = 34; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(cx, base + 10); ctx.lineTo(cx, sacY + 40); ctx.stroke();
+  const fill = clamp((p - 0.5) / 0.3);
+  ctx.fillStyle = `rgba(160,230,255,${0.12 + 0.2 * fill})`; ctx.strokeStyle = 'rgba(200,240,255,0.7)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.ellipse(cx, sacY, 62, 70, 0, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+  ctx.restore();
+  // capsules travelling tentacle -> base -> duct -> sac
+  const N = 26, fire = clamp((p - 0.8) / 0.12);
+  for (let i = 0; i < N; i++) {
+    const st = 0.05 + i * 0.017, u = clamp((p - st) / 0.32);
+    const tx = W * (0.08 + 0.84 * hash(i * 11)), ty = tentY + Math.sin(tx * 0.012 + t * 1.5) * 16;
+    const sx = cx + (hash(i * 5) - 0.5) * 80, sy = sacY + (hash(i * 9) - 0.5) * 90;
+    let x, y, rot = 0;
+    if (u < 0.3) { const k = E.inOutSine(u / 0.3); x = lerp(tx, cx + (hash(i) - 0.5) * 20, k); y = lerp(ty, base, k); }
+    else { const k = E.inOutSine((u - 0.3) / 0.7); x = lerp(cx + (hash(i) - 0.5) * 20, sx, k * k); y = lerp(base, sy, k); rot = Math.sin(t * 3 + i) * 0.3; }
+    if (u <= 0) { x = tx; y = ty; }
+    capsule(ctx, x, y, 1, u > 0 && u < 1 ? 1 : 0.4 + 0.6 * fire, rot);
+  }
+  // defence: stored capsules discharge their threads through the tip pore
+  if (fire > 0) {
+    ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.lineCap = 'round';
+    for (let k = 0; k < 14; k++) {
+      const a = -Math.PI / 2 + (k / 13 - 0.5) * 1.9, L = 60 + 260 * E.outCubic(clamp(fire * 1.3 - hash(k) * 0.3));
+      ctx.strokeStyle = `rgba(160,240,255,${0.75 * (1 - 0.4 * fire)})`; ctx.lineWidth = 3; ctx.shadowColor = '#9FF'; ctx.shadowBlur = 14;
+      ctx.beginPath(); ctx.moveTo(cx, top + 6); for (let s2 = 0; s2 <= 1.0001; s2 += 0.1) ctx.lineTo(cx + Math.cos(a) * L * s2 + Math.sin(s2 * 14 + k) * 6, top + 6 + Math.sin(a) * L * s2); ctx.stroke();
+    }
+    const fl = ctx.createRadialGradient(cx, top, 0, cx, top, 160); fl.addColorStop(0, `rgba(200,250,255,${0.6 * (1 - fire) + 0.15})`); fl.addColorStop(1, 'rgba(200,250,255,0)'); ctx.fillStyle = fl; ctx.fillRect(cx - 160, top - 160, 320, 320);
+    ctx.restore();
+  }
+  // callouts
+  ctx.save(); ctx.font = font(26, 800); ctx.letterSpacing = '2px'; ctx.textBaseline = 'middle';
+  const call = (txt, x0, y0, x1, y1, a) => { if (a <= 0) return; ctx.globalAlpha = a; ctx.strokeStyle = '#FFE28A'; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke(); ctx.fillStyle = '#FFE28A'; ctx.beginPath(); ctx.arc(x0, y0, 6, 0, Math.PI * 2); ctx.fill(); ctx.textAlign = x1 < x0 ? 'right' : 'left'; ctx.fillText(txt, x1 + (x1 < x0 ? -10 : 10), y1); ctx.globalAlpha = 1; };
+  const c0x = W * (0.08 + 0.84 * hash(25 * 11));
+  call('CÉLULA URTICANTE', c0x, tentY + Math.sin(c0x * 0.012 + t * 1.5) * 16 - 14, c0x < W / 2 ? c0x + 80 : c0x - 80, tentY - 110, clamp(p / 0.06) * (1 - clamp((p - 0.3) / 0.05)));
+  call('CNIDOSSACO', cx + 62, sacY, cx + 200, sacY - 90, clamp((p - 0.52) / 0.06));
+  call('APÊNDICE (CERATA)', cx - wb / 2 + 30, H * 0.6, cx - 200, H * 0.54, clamp(p / 0.06) * (1 - clamp((p - 0.5) / 0.05)));
+  ctx.restore();
+  stageLabel(ctx, p < 0.28 ? '1 · ENGOLE AS CÉLULAS URTICANTES' : p < 0.52 ? '2 · TRANSPORTADAS SEM DISPARAR' : p < 0.8 ? '3 · GUARDADAS NAS PONTAS' : '4 · VIRAM ARMA DE DEFESA');
 }
 function drawCycle(ctx, p, t) {
   deepSea(ctx, t);

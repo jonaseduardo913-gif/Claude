@@ -1,0 +1,19 @@
+{
+ "bg": "input/media/inat/g12.jpg",
+ "top": "O DRAGÃO",
+ "big": "AZUL!",
+ "q": "NUNCA TOQUE NELE!",
+ "cropV": {
+  "cx": 0.47,
+  "cy": 0.45,
+  "z": 1.0
+ },
+ "cropH": {
+  "cx": 0.28,
+  "cy": 0.5,
+  "z": 1.15
+ },
+ "circle": null,
+ "filter": "saturate(1.5) contrast(1.15) brightness(1.08)",
+ "textY": 1160
+}
