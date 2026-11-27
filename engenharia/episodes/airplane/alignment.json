@@ -1,0 +1,602 @@
+[
+{
+"w": "How",
+"start": 0.0,
+"end": 0.26
+},
+{
+"w": "can",
+"start": 0.26,
+"end": 0.44
+},
+{
+"w": "a",
+"start": 0.44,
+"end": 0.58
+},
+{
+"w": "machine",
+"start": 0.58,
+"end": 0.98
+},
+{
+"w": "weighing",
+"start": 0.98,
+"end": 1.38
+},
+{
+"w": "hundreds",
+"start": 1.38,
+"end": 1.88
+},
+{
+"w": "of",
+"start": 1.88,
+"end": 2.16
+},
+{
+"w": "tons",
+"start": 2.16,
+"end": 2.58
+},
+{
+"w": "stay",
+"start": 2.58,
+"end": 2.94
+},
+{
+"w": "in",
+"start": 2.94,
+"end": 3.1
+},
+{
+"w": "the",
+"start": 3.1,
+"end": 3.22
+},
+{
+"w": "air?",
+"start": 3.22,
+"end": 3.5
+},
+{
+"w": "The",
+"start": 4.32,
+"end": 4.36
+},
+{
+"w": "answer",
+"start": 4.36,
+"end": 4.62
+},
+{
+"w": "lies",
+"start": 4.62,
+"end": 5.02
+},
+{
+"w": "in",
+"start": 5.02,
+"end": 5.28
+},
+{
+"w": "the",
+"start": 5.28,
+"end": 5.42
+},
+{
+"w": "shape",
+"start": 5.42,
+"end": 5.64
+},
+{
+"w": "of",
+"start": 5.64,
+"end": 5.86
+},
+{
+"w": "its",
+"start": 5.86,
+"end": 6.0
+},
+{
+"w": "wings.",
+"start": 6.0,
+"end": 6.4
+},
+{
+"w": "As",
+"start": 7.12,
+"end": 7.22
+},
+{
+"w": "an",
+"start": 7.22,
+"end": 7.38
+},
+{
+"w": "airplane",
+"start": 7.38,
+"end": 7.7
+},
+{
+"w": "moves",
+"start": 7.7,
+"end": 8.02
+},
+{
+"w": "forward,",
+"start": 8.02,
+"end": 8.58
+},
+{
+"w": "air",
+"start": 9.08,
+"end": 9.18
+},
+{
+"w": "flows",
+"start": 9.18,
+"end": 9.48
+},
+{
+"w": "around",
+"start": 9.48,
+"end": 9.94
+},
+{
+"w": "its",
+"start": 9.94,
+"end": 10.2
+},
+{
+"w": "wings,",
+"start": 10.2,
+"end": 10.58
+},
+{
+"w": "creating",
+"start": 10.84,
+"end": 11.16
+},
+{
+"w": "aerodynamic",
+"start": 11.16,
+"end": 11.94
+},
+{
+"w": "forces.",
+"start": 11.94,
+"end": 12.54
+},
+{
+"w": "The",
+"start": 13.18,
+"end": 13.38
+},
+{
+"w": "wings",
+"start": 13.38,
+"end": 13.58
+},
+{
+"w": "are",
+"start": 13.58,
+"end": 13.76
+},
+{
+"w": "designed",
+"start": 13.76,
+"end": 14.12
+},
+{
+"w": "to",
+"start": 14.12,
+"end": 14.32
+},
+{
+"w": "generate",
+"start": 14.32,
+"end": 14.72
+},
+{
+"w": "lift,",
+"start": 14.72,
+"end": 15.1
+},
+{
+"w": "helping",
+"start": 15.52,
+"end": 15.76
+},
+{
+"w": "the",
+"start": 15.76,
+"end": 15.96
+},
+{
+"w": "aircraft",
+"start": 15.96,
+"end": 16.4
+},
+{
+"w": "overcome",
+"start": 16.4,
+"end": 17.02
+},
+{
+"w": "gravity.",
+"start": 17.02,
+"end": 17.6
+},
+{
+"w": "But",
+"start": 18.22,
+"end": 18.38
+},
+{
+"w": "there's",
+"start": 18.38,
+"end": 18.6
+},
+{
+"w": "another",
+"start": 18.6,
+"end": 18.9
+},
+{
+"w": "important",
+"start": 18.9,
+"end": 19.4
+},
+{
+"w": "factor,",
+"start": 19.4,
+"end": 19.9
+},
+{
+"w": "the",
+"start": 20.4,
+"end": 20.62
+},
+{
+"w": "engines.",
+"start": 20.62,
+"end": 21.1
+},
+{
+"w": "They",
+"start": 21.72,
+"end": 22.02
+},
+{
+"w": "push",
+"start": 22.02,
+"end": 22.36
+},
+{
+"w": "the",
+"start": 22.36,
+"end": 22.62
+},
+{
+"w": "airplane",
+"start": 22.62,
+"end": 23.0
+},
+{
+"w": "forward,",
+"start": 23.0,
+"end": 23.58
+},
+{
+"w": "allowing",
+"start": 23.9,
+"end": 24.2
+},
+{
+"w": "air",
+"start": 24.2,
+"end": 24.52
+},
+{
+"w": "to",
+"start": 24.52,
+"end": 24.7
+},
+{
+"w": "continuously",
+"start": 24.7,
+"end": 25.3
+},
+{
+"w": "flow",
+"start": 25.3,
+"end": 25.86
+},
+{
+"w": "around",
+"start": 25.86,
+"end": 26.18
+},
+{
+"w": "the",
+"start": 26.18,
+"end": 26.36
+},
+{
+"w": "wings.",
+"start": 26.36,
+"end": 26.68
+},
+{
+"w": "The",
+"start": 26.68,
+"end": 27.44
+},
+{
+"w": "faster",
+"start": 27.44,
+"end": 27.8
+},
+{
+"w": "the",
+"start": 27.8,
+"end": 28.02
+},
+{
+"w": "airplane",
+"start": 28.02,
+"end": 28.34
+},
+{
+"w": "moves,",
+"start": 28.34,
+"end": 28.76
+},
+{
+"w": "the",
+"start": 29.12,
+"end": 29.3
+},
+{
+"w": "more",
+"start": 29.3,
+"end": 29.56
+},
+{
+"w": "lift",
+"start": 29.56,
+"end": 29.92
+},
+{
+"w": "its",
+"start": 29.92,
+"end": 30.12
+},
+{
+"w": "wings",
+"start": 30.12,
+"end": 30.34
+},
+{
+"w": "can",
+"start": 30.34,
+"end": 30.6
+},
+{
+"w": "generate,",
+"start": 30.6,
+"end": 31.04
+},
+{
+"w": "within",
+"start": 31.34,
+"end": 31.66
+},
+{
+"w": "operating",
+"start": 31.66,
+"end": 32.1
+},
+{
+"w": "limits.",
+"start": 32.1,
+"end": 32.54
+},
+{
+"w": "And",
+"start": 33.32,
+"end": 33.38
+},
+{
+"w": "here's",
+"start": 33.38,
+"end": 33.82
+},
+{
+"w": "something",
+"start": 33.82,
+"end": 34.14
+},
+{
+"w": "incredible.",
+"start": 34.14,
+"end": 34.86
+},
+{
+"w": "An",
+"start": 35.66,
+"end": 35.72
+},
+{
+"w": "airplane",
+"start": 35.72,
+"end": 36.1
+},
+{
+"w": "doesn't",
+"start": 36.1,
+"end": 36.6
+},
+{
+"w": "actually",
+"start": 36.6,
+"end": 37.02
+},
+{
+"w": "need",
+"start": 37.02,
+"end": 37.36
+},
+{
+"w": "its",
+"start": 37.36,
+"end": 37.58
+},
+{
+"w": "engines",
+"start": 37.58,
+"end": 37.98
+},
+{
+"w": "to",
+"start": 37.98,
+"end": 38.24
+},
+{
+"w": "keep",
+"start": 38.24,
+"end": 38.4
+},
+{
+"w": "flying.",
+"start": 38.4,
+"end": 38.82
+},
+{
+"w": "If",
+"start": 39.36,
+"end": 39.54
+},
+{
+"w": "the",
+"start": 39.54,
+"end": 39.66
+},
+{
+"w": "engines",
+"start": 39.66,
+"end": 39.94
+},
+{
+"w": "stop,",
+"start": 39.94,
+"end": 40.36
+},
+{
+"w": "it",
+"start": 40.74,
+"end": 40.88
+},
+{
+"w": "can",
+"start": 40.88,
+"end": 41.02
+},
+{
+"w": "still",
+"start": 41.02,
+"end": 41.4
+},
+{
+"w": "glide",
+"start": 41.4,
+"end": 41.86
+},
+{
+"w": "through",
+"start": 41.86,
+"end": 42.1
+},
+{
+"w": "the",
+"start": 42.1,
+"end": 42.28
+},
+{
+"w": "air.",
+"start": 42.28,
+"end": 42.56
+},
+{
+"w": "That's",
+"start": 43.16,
+"end": 43.56
+},
+{
+"w": "the",
+"start": 43.56,
+"end": 43.72
+},
+{
+"w": "science",
+"start": 43.72,
+"end": 44.06
+},
+{
+"w": "that",
+"start": 44.06,
+"end": 44.34
+},
+{
+"w": "keeps",
+"start": 44.34,
+"end": 44.56
+},
+{
+"w": "massive",
+"start": 44.56,
+"end": 45.06
+},
+{
+"w": "aircraft",
+"start": 45.06,
+"end": 45.62
+},
+{
+"w": "flying",
+"start": 45.62,
+"end": 46.08
+},
+{
+"w": "thousands",
+"start": 46.08,
+"end": 46.56
+},
+{
+"w": "of",
+"start": 46.56,
+"end": 46.9
+},
+{
+"w": "meters",
+"start": 46.9,
+"end": 47.14
+},
+{
+"w": "above",
+"start": 47.14,
+"end": 47.54
+},
+{
+"w": "the",
+"start": 47.54,
+"end": 47.74
+},
+{
+"w": "ground.",
+"start": 47.74,
+"end": 48.04
+}
+]

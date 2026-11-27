@@ -67,6 +67,8 @@ export async function boot(ep, { width, height }) {
     const fn = show.scenes[sceneId];
     if (!fn) throw new Error('no scene ' + sceneId);
     fn(t, dur);
+    if (ctx.studio.sky) ctx.studio.sky.position.copy(camera.position);
+    ctx.cut.sync();   // sky dome always surrounds the camera
     for (const l of ctx.labels || []) l.update();
     composer.render();
     return renderer.domElement.toDataURL('image/jpeg', 0.94);

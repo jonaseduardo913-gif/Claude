@@ -1,0 +1,91 @@
+{
+ "episode": "skyscraper",
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "total_seconds": 59.533,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "duration": 8.9333,
+   "tail": 0.45,
+   "clip_seconds": 9.383,
+   "frame_offset": 0,
+   "transition": "fade"
+  },
+  {
+   "id": "S02",
+   "start": 8.933333333333334,
+   "duration": 5.2333,
+   "tail": 0.45,
+   "clip_seconds": 5.683,
+   "frame_offset": 281,
+   "transition": "fade"
+  },
+  {
+   "id": "S03",
+   "start": 14.166666666666666,
+   "duration": 4.3667,
+   "tail": 0.45,
+   "clip_seconds": 4.817,
+   "frame_offset": 451,
+   "transition": "fade"
+  },
+  {
+   "id": "S04",
+   "start": 18.533333333333335,
+   "duration": 4.5333,
+   "tail": 0.45,
+   "clip_seconds": 4.983,
+   "frame_offset": 596,
+   "transition": "fade"
+  },
+  {
+   "id": "S05",
+   "start": 23.066666666666666,
+   "duration": 8.0,
+   "tail": 0.45,
+   "clip_seconds": 8.45,
+   "frame_offset": 745,
+   "transition": "fade"
+  },
+  {
+   "id": "S06",
+   "start": 31.066666666666666,
+   "duration": 8.5333,
+   "tail": 0.45,
+   "clip_seconds": 8.983,
+   "frame_offset": 998,
+   "transition": "fade"
+  },
+  {
+   "id": "S07",
+   "start": 39.6,
+   "duration": 6.8,
+   "tail": 0.45,
+   "clip_seconds": 7.25,
+   "frame_offset": 1267,
+   "transition": "fade"
+  },
+  {
+   "id": "S08",
+   "start": 46.4,
+   "duration": 2.5,
+   "tail": 0.45,
+   "clip_seconds": 2.95,
+   "frame_offset": 1485,
+   "transition": "fade"
+  },
+  {
+   "id": "S09",
+   "start": 48.9,
+   "duration": 10.6333,
+   "tail": 0,
+   "clip_seconds": 10.633,
+   "frame_offset": 1573,
+   "transition": "none"
+  }
+ ],
+ "warnings": []
+}

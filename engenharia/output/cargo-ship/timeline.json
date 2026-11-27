@@ -1,0 +1,91 @@
+{
+ "episode": "cargo-ship",
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "total_seconds": 52.4,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "duration": 4.4667,
+   "tail": 0.45,
+   "clip_seconds": 4.917,
+   "frame_offset": 0,
+   "transition": "fade"
+  },
+  {
+   "id": "S02",
+   "start": 4.466666666666667,
+   "duration": 5.1,
+   "tail": 0.45,
+   "clip_seconds": 5.55,
+   "frame_offset": 148,
+   "transition": "fade"
+  },
+  {
+   "id": "S03",
+   "start": 9.566666666666666,
+   "duration": 7.5667,
+   "tail": 0.45,
+   "clip_seconds": 8.017,
+   "frame_offset": 314,
+   "transition": "fade"
+  },
+  {
+   "id": "S04",
+   "start": 17.133333333333333,
+   "duration": 8.8333,
+   "tail": 0.45,
+   "clip_seconds": 9.283,
+   "frame_offset": 555,
+   "transition": "fade"
+  },
+  {
+   "id": "S05",
+   "start": 25.966666666666665,
+   "duration": 4.8,
+   "tail": 0.45,
+   "clip_seconds": 5.25,
+   "frame_offset": 833,
+   "transition": "fade"
+  },
+  {
+   "id": "S06",
+   "start": 30.766666666666666,
+   "duration": 7.3667,
+   "tail": 0.45,
+   "clip_seconds": 7.817,
+   "frame_offset": 991,
+   "transition": "fade"
+  },
+  {
+   "id": "S07",
+   "start": 38.13333333333333,
+   "duration": 3.8333,
+   "tail": 0.45,
+   "clip_seconds": 4.283,
+   "frame_offset": 1226,
+   "transition": "fade"
+  },
+  {
+   "id": "S08",
+   "start": 41.96666666666667,
+   "duration": 5.8,
+   "tail": 0.45,
+   "clip_seconds": 6.25,
+   "frame_offset": 1354,
+   "transition": "fade"
+  },
+  {
+   "id": "S09",
+   "start": 47.766666666666666,
+   "duration": 4.6333,
+   "tail": 0,
+   "clip_seconds": 4.633,
+   "frame_offset": 1542,
+   "transition": "none"
+  }
+ ],
+ "warnings": []
+}

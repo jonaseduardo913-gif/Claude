@@ -135,6 +135,14 @@ export class Cutaway {
   get offset() { return this.plane.constant; }
   /** arbitrary section plane: keeps the side where normal·p + constant >= 0 */
   setPlane(normal, constant) { this.plane.normal.set(...normal).normalize(); this.plane.constant = constant; this._placeCaps(); }
+  /** caps follow the visibility of their mesh (including hidden ancestors); call before each render */
+  sync() {
+    for (const cap of this.caps) {
+      let o = cap.userData.owner, vis = true;
+      while (o) { if (!o.visible) { vis = false; break; } o = o.parent; }
+      cap.visible = vis;
+    }
+  }
   _placeCaps() {
     const n = this.plane.normal, c = this.plane.constant;
     const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 0, 1), n.clone().negate());
@@ -157,7 +165,7 @@ export class Cutaway {
       stencilFail: THREE.ReplaceStencilOp, stencilZFail: THREE.ReplaceStencilOp, stencilZPass: THREE.ReplaceStencilOp });
     const cap = new THREE.Mesh(new THREE.PlaneGeometry(this.capSize || 40, this.capSize || 40), cm);
     cap.renderOrder = order + 1;
-    cap.onBeforeRender = () => { cap.visible = mesh.visible; };
+    cap.userData.owner = mesh;
     this.scene.add(cap);
     this.caps.push(cap);
     this._placeCaps();

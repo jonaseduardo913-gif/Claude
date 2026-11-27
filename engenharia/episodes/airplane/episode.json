@@ -1,0 +1,61 @@
+{
+  "id": "airplane",
+  "title": "How Can a 300-Ton Airplane Stay in the Air?",
+  "language": "en-US",
+  "format": { "width": 1080, "height": 1920, "fps": 30, "duration_range": [45, 60], "scene_seconds": [2.5, 13] },
+  "narration_audio": { "file": "narration.mp3", "alignment": "alignment.json", "tempo": 1.0, "voice": "ElevenLabs Nathan (provided by client)" },
+  "captions": { "style": "pop" },
+  "outro_seconds": 2.7,
+  "end_card": { "title": "THE SCIENCE OF FLIGHT.", "brand": "HOWSTUFF", "seconds": 2.6 },
+  "music": { "bpm": 96, "key": "D", "mood": "soaring, airy, wonder" },
+  "research": {
+    "summary": "A wing produces lift by turning the oncoming airflow downward (downwash); the curved, angled profile makes the air over the top move faster with lower pressure and the air below slower with higher pressure, and the pressure difference over the wing area is the lift. Lift grows with airspeed (roughly with its square) up to structural/aerodynamic limits. Engines provide thrust to overcome drag and keep the airflow over the wings; with engines out an airliner glides, trading altitude for speed, at a glide ratio around 15:1 (e.g. Air Transat 236).",
+    "facts_checked": [
+      "Lift comes from pressure difference created as the wing deflects air downward; the 'equal transit time' explanation is a myth and is not used.",
+      "Lift increases with airspeed, within operating limits (stall and maximum speeds).",
+      "Engines provide thrust against drag; lift is produced by the wings.",
+      "Airliners can glide without engines: Gimli Glider estimated ~12:1, Air Transat 236 ~15:1; typical jetliners ~15-17:1."
+    ],
+    "sources": [
+      "https://www.grc.nasa.gov/www/k-12/airplane/lift1.html",
+      "https://www.grc.nasa.gov/www/k-12/airplane/wrong1.html",
+      "https://wikipedia.com/wiki/Gimli_Glider",
+      "https://samchui.com/2022/09/30/miracle-on-air-transat-236-the-longest-glide-on-commercial-aircraft/"
+    ]
+  },
+  "cast": ["otto (captain, in the cockpit)"],
+  "scenes": [
+    { "id": "S01", "starts_with": "How can a", "narration": "How can a machine weighing hundreds of tons stay in the air?",
+      "storyboard": "HOOK. A big twin-engine airliner cruises high above a sea of clouds in dramatic sunlight; the camera sweeps around it from below the nose.",
+      "camera": "aerial sweep from front-low to side", "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.0, "type": "impact" }, { "u": 0.0, "type": "wind", "dur": 4.3 }, { "u": 0.1, "type": "motor_hum", "dur": 4.0 } ] },
+    { "id": "S02", "starts_with": "The answer lies", "narration": "The answer lies in the shape of its wings.",
+      "storyboard": "Close-up behind the wing root looking out along the wing; white airflow streaks race over and under the wing surface.",
+      "camera": "close tracking over the wing", "transition": "fade", "music": 1,
+      "sfx": [ { "u": 0.0, "type": "wind", "dur": 2.8 } ] },
+    { "id": "S03", "starts_with": "As an airplane", "narration": "As an airplane moves forward, air flows around its wings, creating aerodynamic forces. The wings are designed to generate lift, helping the aircraft overcome gravity.",
+      "storyboard": "A section plane slices the wing, revealing its curved airfoil profile. Streamlines flow around it: rising ahead of the leading edge, faster over the top (low pressure, blue), slower below (high pressure, orange), turned downward behind the trailing edge. A big LIFT arrow grows upward against a WEIGHT arrow.",
+      "camera": "move into the wing section, hold on the airfoil", "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.02, "type": "cut_reveal" }, { "u": 0.1, "type": "wind", "dur": 9.0 }, { "u": 0.45, "type": "ui_tick" }, { "u": 0.6, "type": "ui_tick" }, { "u": 0.75, "type": "riser", "dur": 2.5 } ] },
+    { "id": "S04", "starts_with": "But there's another", "narration": "But there's another important factor, the engines. They push the airplane forward, allowing air to continuously flow around the wings.",
+      "storyboard": "Close-up of a turbofan cut in half: big fan, compressor stages, glowing combustor, turbine. Bypass air (blue) and hot core flow (orange) stream out; a THRUST arrow points forward while air keeps flowing over the wing.",
+      "camera": "orbit the engine section, then pull back to wing + engine", "transition": "fade", "music": 3,
+      "sfx": [ { "u": 0.0, "type": "motor_hum", "dur": 8.4 }, { "u": 0.05, "type": "wind", "dur": 8.0 }, { "u": 0.5, "type": "ui_tick" } ] },
+    { "id": "S05", "starts_with": "The faster the", "narration": "The faster the airplane moves, the more lift its wings can generate, within operating limits.",
+      "storyboard": "On the runway the airliner accelerates; a speed bar and the LIFT arrow grow together; at rotation the nose lifts and the plane takes off, gear retracting.",
+      "camera": "side tracking shot along the runway, then chase as it climbs", "transition": "fade", "music": 3,
+      "sfx": [ { "u": 0.0, "type": "rumble", "dur": 4.5 }, { "u": 0.0, "type": "motor_hum", "dur": 6.5 }, { "u": 0.55, "type": "riser", "dur": 2.0 } ] },
+    { "id": "S06", "starts_with": "And here's something", "narration": "And here's something incredible. An airplane doesn't actually need its engines to keep flying. If the engines stop, it can still glide through the air.",
+      "storyboard": "High above the clouds the engines go quiet (fans only windmilling, no exhaust). The plane keeps flying on a gentle glide path; label: about 15 meters forward for every meter down.",
+      "camera": "smooth side tracking, slight descent", "transition": "fade", "music": 1,
+      "sfx": [ { "u": 0.25, "type": "clunk" }, { "u": 0.3, "type": "wind", "dur": 6.5 }, { "u": 0.6, "type": "ui_tick" } ] },
+    { "id": "S07", "starts_with": "That's the science", "narration": "That's the science that keeps massive aircraft flying",
+      "storyboard": "Wide golden-hour shot: the airliner small above an endless sea of clouds, warm sunlight.",
+      "camera": "slow wide pan", "transition": "fade", "music": 2,
+      "sfx": [ { "u": 0.0, "type": "shimmer" } ] },
+    { "id": "S08", "starts_with": "thousands of meters", "narration": "thousands of meters above the ground.",
+      "storyboard": "Close behind the aircraft as it flies away into the golden horizon. Final title THE SCIENCE OF FLIGHT. with small HOWSTUFF branding.",
+      "camera": "follow from behind, the plane pulls away toward the sun", "transition": "none", "music": 2,
+      "sfx": [ { "u": 0.0, "type": "wind", "dur": 4.5 }, { "u": 0.3, "type": "outro" } ] }
+  ]
+}

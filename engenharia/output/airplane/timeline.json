@@ -1,0 +1,82 @@
+{
+ "episode": "airplane",
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "total_seconds": 51.133,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "duration": 4.2,
+   "tail": 0.45,
+   "clip_seconds": 4.65,
+   "frame_offset": 0,
+   "transition": "fade"
+  },
+  {
+   "id": "S02",
+   "start": 4.2,
+   "duration": 2.8,
+   "tail": 0.45,
+   "clip_seconds": 3.25,
+   "frame_offset": 140,
+   "transition": "fade"
+  },
+  {
+   "id": "S03",
+   "start": 7.0,
+   "duration": 11.1,
+   "tail": 0.45,
+   "clip_seconds": 11.55,
+   "frame_offset": 238,
+   "transition": "fade"
+  },
+  {
+   "id": "S04",
+   "start": 18.1,
+   "duration": 8.4667,
+   "tail": 0.45,
+   "clip_seconds": 8.917,
+   "frame_offset": 584,
+   "transition": "fade"
+  },
+  {
+   "id": "S05",
+   "start": 26.566666666666666,
+   "duration": 6.6333,
+   "tail": 0.45,
+   "clip_seconds": 7.083,
+   "frame_offset": 852,
+   "transition": "fade"
+  },
+  {
+   "id": "S06",
+   "start": 33.2,
+   "duration": 9.8333,
+   "tail": 0.45,
+   "clip_seconds": 10.283,
+   "frame_offset": 1064,
+   "transition": "fade"
+  },
+  {
+   "id": "S07",
+   "start": 43.03333333333333,
+   "duration": 2.9333,
+   "tail": 0.45,
+   "clip_seconds": 3.383,
+   "frame_offset": 1372,
+   "transition": "fade"
+  },
+  {
+   "id": "S08",
+   "start": 45.96666666666667,
+   "duration": 5.1667,
+   "tail": 0,
+   "clip_seconds": 5.167,
+   "frame_offset": 1473,
+   "transition": "none"
+  }
+ ],
+ "warnings": []
+}
