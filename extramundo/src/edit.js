@@ -4,9 +4,9 @@
 //  with colour code, location chips, arrows, rings, transitions, end card.
 //  Every frame is a pure function of build/timeline.json and the frame index.
 // =====================================================================
-const W = 1080, H = 1920;
+let W = 1080, H = 1920, LAND = false;
 // EXTRAMUNDO palette (caption colour keys kept: cyan=places, gold=time/numbers, pink=fire/danger)
-const C = { white: '#FFFFFF', cyan: '#22D3C5', gold: '#FFC23D', pink: '#FF5A1F', orange: '#FF5A1F', red: '#E8202A', ink: '#07060B' };
+const C = { yellow: '#FFD60A', white: '#FFFFFF', cyan: '#22D3C5', gold: '#FFC23D', pink: '#FF5A1F', orange: '#FF5A1F', red: '#E8202A', ink: '#07060B' };
 const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
 const lerp = (a, b, t) => a + (b - a) * t;
 const prog = (t, a, b) => clamp((t - a) / (b - a));
@@ -52,7 +52,7 @@ function camRect(shot, t) {
   const p = (E[cam.ease] || E.inOutSine)(prog(t, shot.t0, shot.t0 + dur));
   const cx = lerp(cam.from.cx, cam.to.cx, p), cy = lerp(cam.from.cy, cam.to.cy, p);
   const z = Math.exp(lerp(Math.log(cam.from.z), Math.log(cam.to.z), p));
-  const vh = Math.min(srcH, srcW * 16 / 9) / z, vw = vh * 9 / 16;
+  const AR = W / H; const vh = Math.min(srcH, srcW / AR) / z, vw = vh * AR;
   let x0 = clamp(cx * srcW - vw / 2, 0, srcW - vw), y0 = clamp(cy * srcH - vh / 2, 0, srcH - vh);
   if (s.type === 'clip') x0 = clamp(x0, s.bx0, s.bx0 + s.w - vw);
   return { x0, y0, vw, vh, srcW, srcH, bx: s.type === 'clip' ? s.bx0 : 0 };
@@ -100,6 +100,7 @@ function outlinedText(ctx, text, x, y, { size, color = C.white, stroke = 12, ita
 // caption card: words share a line, each with its own colour
 function drawCard(ctx, card, t) {
   if (t < card.t0 || t >= card.t1) return;
+  if (LAND) return drawLine(ctx, card, t);
   let size = 104;
   ctx.font = font(size);
   const sp = size * 0.28;
@@ -116,6 +117,50 @@ function drawCard(ctx, card, t) {
     x += ws[i] + size * 0.28;
   });
   ctx.restore();
+}
+
+// landscape documentary caption: one line, white, keywords yellow
+function drawLine(ctx, card, t) {
+  let size = 58; ctx.font = font(size, 800);
+  const sp = size * 0.27, ws = () => card.words.map((w) => ctx.measureText(w.text).width);
+  let wl = ws(), total = wl.reduce((a, b) => a + b, 0) + sp * (wl.length - 1);
+  if (total > W * 0.8) { size = Math.floor(size * W * 0.8 / total); ctx.font = font(size, 800); wl = ws(); total = wl.reduce((a, b) => a + b, 0) + size * 0.27 * (wl.length - 1); }
+  const a = Math.min(prog(t, card.t0, card.t0 + 3 / FPS), 1);
+  ctx.save(); ctx.globalAlpha = a; ctx.translate(W / 2, H * 0.885);
+  let x = -total / 2;
+  card.words.forEach((w, i) => { outlinedText(ctx, w.text, x + wl[i] / 2, 0, { size, color: w.color ? C.yellow : C.white, stroke: Math.round(size * 0.1), weight: 800 }); x += wl[i] + size * 0.27; });
+  ctx.restore();
+}
+// chapter card: big numeral + place + country
+function drawChapter(ctx, o, t, shot) {
+  const lt = t - o.t; if (lt < 0) return; const end = o.dur ? o.t + o.dur : shot.t1;
+  const a = Math.min(E.outCubic(prog(lt, 0, 0.5)), clamp((end - t) / 0.5)); if (a <= 0) return;
+  ctx.save(); ctx.globalAlpha = a;
+  const g = ctx.createLinearGradient(0, 0, W * 0.75, 0); g.addColorStop(0, 'rgba(0,0,0,0.72)'); g.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  const x0 = W * 0.075, cy = H * 0.5, sl = lerp(-60, 0, E.outExpo(prog(lt, 0, 0.6)));
+  ctx.translate(sl, 0); ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  ctx.font = font(330, 900); const gg = ctx.createLinearGradient(0, cy - 170, 0, cy + 170); gg.addColorStop(0, '#FFF1B8'); gg.addColorStop(0.5, '#FFC21A'); gg.addColorStop(1, '#C77700');
+  ctx.shadowColor = 'rgba(255,190,40,0.55)'; ctx.shadowBlur = 50; ctx.fillStyle = gg; ctx.fillText(o.num, x0, cy + 10); const nw = ctx.measureText(o.num).width; ctx.shadowBlur = 0;
+  ctx.font = font(30, 800); ctx.letterSpacing = '8px'; ctx.fillStyle = 'rgba(255,226,138,0.9)'; ctx.fillText('NÚMERO', x0 + 8, cy - 175);
+  const tx = x0 + nw + 50; ctx.fillStyle = '#FFC21A'; ctx.fillRect(tx - 24, cy - 95, 8, 190);
+  ctx.letterSpacing = '0px'; let ts = 104; ctx.font = font(ts, 900); const tw = ctx.measureText(o.text).width; if (tw > W * 0.82 - tx) { ts = Math.floor(ts * (W * 0.82 - tx) / tw); ctx.font = font(ts, 900); }
+  outlinedText(ctx, o.text, tx, cy - 30, { size: ts, color: '#FFFFFF', stroke: 8, align: 'left' });
+  ctx.font = font(44, 800); ctx.letterSpacing = '10px'; ctx.fillStyle = '#FFD60A'; ctx.shadowColor = 'rgba(0,0,0,0.8)'; ctx.shadowBlur = 12; ctx.fillText(o.sub || '', tx + 4, cy + 62);
+  ctx.restore();
+}
+// lower-third title (top-left), gold bar
+function drawLower(ctx, o, t, shot) {
+  const lt = t - o.t; if (lt < 0) return; const end = o.dur ? o.t + o.dur : shot.t1;
+  const a = Math.min(E.outCubic(prog(lt, 0, 0.4)), clamp((end - t) / 0.4)); if (a <= 0) return;
+  ctx.save(); ctx.globalAlpha = a; const [l1, l2] = o.text.split('|'); const x = W * 0.055, y = H * 0.1;
+  const wipe = E.outExpo(prog(lt, 0, 0.7));
+  ctx.font = font(64, 900); const w1 = ctx.measureText(l1).width; ctx.font = font(34, 800); ctx.letterSpacing = '5px'; const w2 = l2 ? ctx.measureText(l2).width : 0; ctx.letterSpacing = '0px';
+  const bw = (Math.max(w1, w2) + 70) * wipe;
+  ctx.fillStyle = 'rgba(0,0,0,0.55)'; ctx.fillRect(x, y - 52, bw, l2 ? 150 : 104); ctx.fillStyle = '#FFC21A'; ctx.fillRect(x, y - 52, 10, l2 ? 150 : 104);
+  ctx.save(); ctx.beginPath(); ctx.rect(x, y - 60, bw, 170); ctx.clip();
+  outlinedText(ctx, l1, x + 36, y, { size: 64, color: '#FFFFFF', stroke: 6, align: 'left' });
+  if (l2) { ctx.font = font(34, 800); ctx.letterSpacing = '5px'; ctx.fillStyle = '#FFD60A'; ctx.textBaseline = 'middle'; ctx.textAlign = 'left'; ctx.fillText(l2, x + 38, y + 62); }
+  ctx.restore(); ctx.restore();
 }
 
 // ---------------- brand: AUREN sun emblem ----------------
@@ -230,7 +275,7 @@ function drawBigText(ctx, o, t) {
   else s = lerp(1.25, 1, E.outCubic(prog(lt, 0, 4 / FPS)));
   const lines = o.text.split('|');
   ctx.save(); ctx.translate(W / 2, y); ctx.rotate(rot); ctx.scale(s, s);
-  ctx.font = font(size); const maxW = Math.max(...lines.map((l) => ctx.measureText(l).width)); const k = Math.min(1, 940 / maxW);
+  ctx.font = font(size); const maxW = Math.max(...lines.map((l) => ctx.measureText(l).width)); const k = Math.min(1, W * 0.87 / maxW);
   ctx.scale(k, k);
   if (o.style === 'slam') { ctx.shadowColor = 'rgba(255,90,31,0.9)'; ctx.shadowBlur = 60; }
   lines.forEach((l, i) => outlinedText(ctx, l, 0, (i - (lines.length - 1) / 2) * size * 1.02, { size, color: C[o.color] || C.white, stroke: Math.round(size * 0.09) }));
@@ -276,6 +321,8 @@ function drawOverlays(ctx, shot, r, t) {
     if (o.type === 'speedo') drawSpeedo(ctx, o, t);
     if (o.type === 'scale') drawScale(ctx, o, t);
     if (o.type === 'tag') drawTag(ctx, o, t, shot);
+    if (o.type === 'chapter') drawChapter(ctx, o, t, shot);
+    if (o.type === 'lower') drawLower(ctx, o, t, shot);
     if (o.type === 'brand') drawBrandMark(ctx, o, t, shot);
     if (o.type === 'bigtext') drawBigText(ctx, o, t);
     if (o.type === 'pin' && r) drawPin(ctx, o, r, t);
@@ -931,10 +978,11 @@ async function renderFrame(f) {
     }
     if (next && next.trans === 'dip' && fOut <= 4) { b.fillStyle = `rgba(0,0,0,${(5 - fOut) / 5})`; b.fillRect(0, 0, W, H); }
     if (shot.trans === 'dip' && fIn < 8) { b.fillStyle = `rgba(0,0,0,${1 - fIn / 8})`; b.fillRect(0, 0, W, H); }
-    if (shot.trans === 'xfade' && fIn < 10 && prev) {
+    const XF = shot.trans === 'dissolve' ? 20 : 10;
+    if ((shot.trans === 'xfade' || shot.trans === 'dissolve') && fIn < XF && prev) {
       const p = prevBuf.getContext('2d'); p.filter = 'none';
       const pr = await drawPlate(p, prev, t); drawOverlays(p, prev, pr, t);
-      b.save(); b.globalAlpha = 1 - fIn / 10; b.drawImage(prevBuf, 0, 0); b.restore();
+      b.save(); b.globalAlpha = 1 - fIn / XF; b.drawImage(prevBuf, 0, 0); b.restore();
     }
     if (TL.end.trans === 'flash' && !next) { const fl = prog(t, TL.end.t0 - 4 / FPS, TL.end.t0); if (fl > 0) { b.fillStyle = `rgba(255,255,255,${fl})`; b.fillRect(0, 0, W, H); } }
     // brand + hook + captions on top
@@ -955,7 +1003,8 @@ async function renderFrame(f) {
 window.__ready = (async () => {
   await Promise.all([document.fonts.load('900 100px "Montserrat"'), document.fonts.load('italic 900 100px "Montserrat"'), document.fonts.load('800 100px "Montserrat"')]);
   TL = await (await fetch('build/timeline.json')).json(); FPS = TL.fps;
-  try { COVER = await loadImg('output/capa-shorts-1080x1920.jpg'); } catch (err) { COVER = null; }
+  if (TL.width) { W = TL.width; H = TL.height; LAND = W > H; for (const c of [out, buf, prevBuf, tmp]) { c.width = W; c.height = H; } }
+  try { COVER = await loadImg(LAND ? 'output/capa-1280x720.jpg' : 'output/capa-shorts-1080x1920.jpg'); } catch (err) { COVER = null; }
   window.FRAMES = Math.round(TL.duration * FPS);
   window.renderFrame = async (f, q = 0.93) => { await renderFrame(f); return out.toDataURL('image/jpeg', q); };
   return true;

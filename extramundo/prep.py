@@ -33,7 +33,8 @@ def img_size(path):
 shots = SB['shots']
 END_T0 = snap(VO_DUR + 0.12)
 TOTAL = snap(END_T0 + SB['end']['hold'])
-timeline = {'fps': FPS, 'duration': TOTAL, 'voDuration': VO_DUR, 'shots': [], 'cards': [], 'sfx': []}
+LAND = SB.get('format') == 'landscape'; FW, FH = (1920, 1080) if LAND else (1080, 1920)
+timeline = {'width': FW, 'height': FH, 'fps': FPS, 'duration': TOTAL, 'voDuration': VO_DUR, 'shots': [], 'cards': [], 'sfx': []}
 
 # ---------------- shots ----------------
 os.makedirs('build/plates', exist_ok=True)
@@ -55,7 +56,7 @@ for k, s in enumerate(shots):
         w, h = img_size(path)
         sh['src'] = {'type': 'still', 'path': path, 'w': w, 'h': h}
     elif src.startswith('anim:'):
-        sh['src'] = {'type': 'anim', 'name': src[5:], 'w': 1080, 'h': 1920}
+        sh['src'] = {'type': 'anim', 'name': src[5:], 'w': FW, 'h': FH}
         if 'map' in s: sh['src']['map'] = s['map']
         if 'range' in s: sh['src']['range'] = s['range']
         if 'marks' in s: sh['src']['marks'] = {k: (wstart(v) - t0) / (t1 - t0) for k, v in s['marks'].items()}
@@ -66,10 +67,10 @@ for k, s in enumerate(shots):
             sub, key = k.rsplit('/', 1) if '/' in k else ('', k); base = f'{MEDIA}/{sub}'.rstrip('/')
             return next((f'{base}/{f}' for f in sorted(os.listdir(base)) if os.path.splitext(f)[0] == key), f'{MEDIA}/night.jpg')
         pa, pb = _res(a), _res(b)
-        sh['src'] = {'type': 'compare', 'a': pa, 'b': pb, 'la': s.get('labels', ['', ''])[0], 'lb': s.get('labels', ['', ''])[1], 'w': 1080, 'h': 1920}
+        sh['src'] = {'type': 'compare', 'a': pa, 'b': pb, 'la': s.get('labels', ['', ''])[0], 'lb': s.get('labels', ['', ''])[1], 'w': FW, 'h': FH}
     else:  # video clip "name:seconds" -> vertical band of frames
         name, start = src.rsplit(':', 1); start = float(start); speed = s.get('speed', 1.0)
-        vpath, SRC_W, SRC_H = video_info(name); BAND_W = SRC_W if s.get('fit') == 'blurfill' else min(SRC_W, int(SRC_H * BAND_FRAC) // 2 * 2)
+        vpath, SRC_W, SRC_H = video_info(name); BAND_W = SRC_W if (LAND or s.get('fit') == 'blurfill') else min(SRC_W, int(SRC_H * BAND_FRAC) // 2 * 2)
         dur = (t1 - t0 + 0.25) * speed
         cxs = [s['cam']['from']['cx'], s['cam']['to']['cx']]
         bx0 = int(min(max(sum(cxs) / 2 * SRC_W - BAND_W / 2, 0), SRC_W - BAND_W)) // 2 * 2
@@ -104,7 +105,7 @@ for k, s in enumerate(shots):
         if o['type'] == 'loc': timeline['sfx'].append({'t': o['t'] + 0.05, 'kind': 'blip'})
 
 # ---------------- headline + stamp ----------------
-hl = SB['headline']
+hl = SB.get('headline') or {'lines': [], 'until_word': 0}
 timeline['headline'] = {'lines': hl['lines'], 't0': snap(LEAD), 't1': snap(words[hl['until_word']]['e'] + 0.1)}
 timeline['stamp'] = {'t': SB['stamp']['t']} if SB.get('stamp') else None
 if SB.get('stamp'): timeline['sfx'].append({'t': SB['stamp']['t'], 'kind': 'stamp'})
@@ -131,8 +132,17 @@ while i < len(words):
     toks.append({'text': txt, 's': w['s'], 'e': w['e'], 'stop': end_sentence or comma, 'color': color}); i += 1
 
 cards = []
+if LAND:   # documentary line captions: natural case, up to ~7 words / 44 chars, break at punctuation
+    raw = re.compile(r"^[^\w]+|[^\w'’!?-]+$")
+    grp = []
+    for i, w in enumerate(words):
+        txt = raw.sub('', w['w'].replace('…', ''))
+        grp.append({'text': txt, 'color': toks[i]['color'] if i < len(toks) else None, 's': w['s'], 'e': w['e'], 'stop': toks[i]['stop'] if i < len(toks) else False})
+        n = sum(len(g['text']) + 1 for g in grp)
+        if grp[-1]['stop'] or len(grp) >= 7 or n >= 40 or i == len(words) - 1:
+            cards.append({'words': [{'text': g['text'], 'color': g['color']} for g in grp], 's': grp[0]['s'], 'e': grp[-1]['e'], 'stop': True}); grp = []
 SHORT = {'O', 'E', 'DE', 'DO', 'DA', 'NO', 'NA', 'UM', 'UMA', 'QUE', 'SE', 'EM', 'HÁ', 'POR', 'AS', 'OS', 'À', 'AO', 'DOS', 'DAS', 'SUA', 'SUAS', 'MAS', 'ESSE', 'ESSES', 'MAIS', 'NOS', 'É', 'ONDE', 'COMO', 'PARA', 'A', 'THE', 'OF', 'TO', 'IS', 'ON', 'BY', 'AND', 'BUT', 'IT', 'ITS', "IT'S", 'SO', 'AT', 'YOU', 'SEE', 'JUST', 'THAT', 'THEIR', 'MUCH', 'WHAT', 'EVEN', 'WHEN', 'FEEL', 'SEEM'}
-j = 0
+j = len(toks) if LAND else 0
 while j < len(toks):
     t = toks[j]; grp = [t]
     if (t['text'] in SHORT and not t['stop'] and j + 1 < len(toks)
@@ -143,8 +153,8 @@ while j < len(toks):
 for k, c in enumerate(cards):
     t0 = snap(max(0, c['s'] - 1 / FPS))
     nxt = snap(cards[k + 1]['s'] - 1 / FPS) if k + 1 < len(cards) else snap(c['e'] + 0.35)
-    t1 = nxt if nxt - c['e'] < 0.45 else snap(c['e'] + 0.3)
-    colored = any(w['color'] for w in c['words'])
+    t1 = nxt if nxt - c['e'] < (0.8 if LAND else 0.45) else snap(c['e'] + 0.3)
+    colored = any(w['color'] for w in c['words']) and not LAND
     timeline['cards'].append({'t0': t0, 't1': min(t1, END_T0), 'words': c['words'], 'pop': colored})
     if colored: timeline['sfx'].append({'t': t0, 'kind': 'pop'})
 
