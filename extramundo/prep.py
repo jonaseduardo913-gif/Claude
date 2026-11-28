@@ -101,7 +101,7 @@ for k, s in enumerate(shots):
     if s.get('cam') and s['cam']['from']['z'] > s['cam']['to']['z'] * 1.6: timeline['sfx'].append({'t': t0, 'kind': 'whooshlong'})
     for o in sh['overlays']:
         if o['type'] in ('arrow', 'ring'): timeline['sfx'].append({'t': o['t'], 'kind': 'tick'})
-        if o['type'] in ('bigtag', 'pause', 'bigtext', 'pin'): timeline['sfx'].append({'t': o['t'], 'kind': 'impact' if o.get('style') == 'slam' else 'hit'})
+        if o['type'] in ('bigtag', 'pause', 'bigtext', 'pin'): timeline['sfx'].append({'t': o['t'], 'kind': 'impact' if o.get('style') == 'slam' else ('swell' if o.get('style') == 'fade' else 'hit')})
         if o['type'] == 'loc': timeline['sfx'].append({'t': o['t'] + 0.05, 'kind': 'blip'})
 
 # ---------------- headline + stamp ----------------
@@ -112,7 +112,7 @@ if SB.get('stamp'): timeline['sfx'].append({'t': SB['stamp']['t'], 'kind': 'stam
 timeline['lead'] = LEAD
 timeline['music'] = [{'t': (wstart(m['word']) if 'word' in m else m['t']), 'level': m['level']} for m in SB.get('music', [])]
 for e in SB.get('sfx', []): timeline['sfx'].append({'t': wstart(e['word']) if 'word' in e else e['t'], 'kind': e['kind'], **({'dur': e['dur']} if 'dur' in e else {})})
-timeline['end'] = {'t0': END_T0, 'trans': SB['end']['trans'], 'fade': SB['end'].get('fade', 0)}
+timeline['end'] = {'t0': END_T0, 'trans': SB['end']['trans'], 'fade': SB['end'].get('fade', 0), **({'tagline': SB['end']['tagline']} if 'tagline' in SB['end'] else {})}
 timeline['epic'] = wstart(SB['epic_word']) if 'epic_word' in SB else None
 timeline['sfx'].append({'t': END_T0 - 0.05, 'kind': 'endhit'})
 

@@ -1,0 +1,2326 @@
+{
+ "format": "landscape",
+ "lead": 0.1,
+ "headline": null,
+ "stamp": null,
+ "epic_word": 1050,
+ "music": [
+  {
+   "t": 0,
+   "level": 0.32
+  },
+  {
+   "word": 74,
+   "level": 0.45
+  },
+  {
+   "word": 89,
+   "level": 0.5
+  },
+  {
+   "word": 95,
+   "level": 0.36
+  },
+  {
+   "word": 221,
+   "level": 0.5
+  },
+  {
+   "word": 227,
+   "level": 0.36
+  },
+  {
+   "word": 343,
+   "level": 0.5
+  },
+  {
+   "word": 349,
+   "level": 0.36
+  },
+  {
+   "word": 482,
+   "level": 0.5
+  },
+  {
+   "word": 488,
+   "level": 0.36
+  },
+  {
+   "word": 592,
+   "level": 0.5
+  },
+  {
+   "word": 598,
+   "level": 0.36
+  },
+  {
+   "word": 701,
+   "level": 0.5
+  },
+  {
+   "word": 707,
+   "level": 0.36
+  },
+  {
+   "word": 832,
+   "level": 0.5
+  },
+  {
+   "word": 838,
+   "level": 0.36
+  },
+  {
+   "word": 962,
+   "level": 0.45
+  },
+  {
+   "word": 1050,
+   "level": 0.55
+  }
+ ],
+ "sfx": [
+  {
+   "word": 89,
+   "kind": "swell"
+  },
+  {
+   "word": 221,
+   "kind": "swell"
+  },
+  {
+   "word": 343,
+   "kind": "swell"
+  },
+  {
+   "word": 482,
+   "kind": "swell"
+  },
+  {
+   "word": 592,
+   "kind": "swell"
+  },
+  {
+   "word": 701,
+   "kind": "swell"
+  },
+  {
+   "word": 832,
+   "kind": "swell"
+  },
+  {
+   "word": 90,
+   "kind": "sub"
+  },
+  {
+   "word": 222,
+   "kind": "sub"
+  },
+  {
+   "word": 344,
+   "kind": "sub"
+  },
+  {
+   "word": 483,
+   "kind": "sub"
+  },
+  {
+   "word": 593,
+   "kind": "sub"
+  },
+  {
+   "word": 702,
+   "kind": "sub"
+  },
+  {
+   "word": 833,
+   "kind": "sub"
+  }
+ ],
+ "shots": [
+  {
+   "at": 0,
+   "src": "img:socotra/socotra03",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 5,
+   "src": "img:inat/dr01",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 18,
+   "src": "img:ov/ov_tinto03",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   },
+   "fit": "blurfill"
+  },
+  {
+   "at": 25,
+   "src": "img:ov/ov_zhangyefl00",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 32,
+   "src": "img:darvaza/night",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 41,
+   "src": "img:dallol/dallol19",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 49,
+   "src": "earth4k:300",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.08
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 58,
+   "src": "img:uyuni/uyuni06",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 66,
+   "src": "img:inat/gw09",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 74,
+   "src": "earth4k:1300",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "7 LUGARES DA TERRA|QUE PARECEM DE|OUTRO PLANETA",
+     "style": "fade",
+     "size": 120,
+     "y": 0.45,
+     "color": "gold",
+     "word": 74,
+     "until": 89
+    }
+   ]
+  },
+  {
+   "at": 89,
+   "src": "img:socotra/socotra00",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.12
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "chapter",
+     "num": "7",
+     "text": "ILHA DE SOCOTRA",
+     "sub": "IÊMEN",
+     "word": 89,
+     "until": 94
+    }
+   ]
+  },
+  {
+   "at": 94,
+   "src": "img:socotra/socotra15",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "lower",
+     "text": "SOCOTRA|A ILHA ALIENÍGENA",
+     "word": 94,
+     "dur": 5.5
+    }
+   ]
+  },
+  {
+   "at": 110,
+   "src": "img:socotra/socotra13",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 119,
+   "src": "img:nasa/socotra_iss",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "FOTO: NASA / ISS",
+     "word": 119
+    }
+   ]
+  },
+  {
+   "at": 138,
+   "src": "img:inat/dr02",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 146,
+   "src": "img:inat/dr03",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "DRACAENA CINNABARI",
+     "word": 146
+    }
+   ]
+  },
+  {
+   "at": 161,
+   "src": "img:socotra/socotra06",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 173,
+   "src": "img:socotra/socotra11",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 185,
+   "src": "img:socotra/socotra17",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 198,
+   "src": "img:socotra/socotra18",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 215,
+   "src": "img:socotra/socotra05",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 221,
+   "src": "img:dallol/dallol04",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.12
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "chapter",
+     "num": "6",
+     "text": "DALLOL",
+     "sub": "ETIÓPIA",
+     "word": 221,
+     "until": 226
+    }
+   ]
+  },
+  {
+   "at": 226,
+   "src": "img:dallol/dallol01",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "lower",
+     "text": "DALLOL|A PAISAGEM MAIS ALIENÍGENA DA TERRA",
+     "word": 226,
+     "dur": 5.5
+    }
+   ]
+  },
+  {
+   "at": 241,
+   "src": "img:nasa/danakil_afrera",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "DEPRESSÃO DE DANAKIL · NASA",
+     "word": 241
+    }
+   ]
+  },
+  {
+   "at": 250,
+   "src": "img:dallol/dallol03",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 262,
+   "src": "img:ov/ov_dallol07",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 270,
+   "src": "img:dallol/dallol19",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 287,
+   "src": "img:dallol/dallol05",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 306,
+   "src": "img:ov/ov_dallol03",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 320,
+   "src": "img:dallol/dallol15",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 325,
+   "src": "img:dallol/dallol17",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 343,
+   "src": "img:uyuni/uyuni12",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.12
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "chapter",
+     "num": "5",
+     "text": "SALAR DE UYUNI",
+     "sub": "BOLÍVIA",
+     "word": 343,
+     "until": 348
+    }
+   ]
+  },
+  {
+   "at": 348,
+   "src": "img:uyuni/uyuni13",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "lower",
+     "text": "SALAR DE UYUNI|O ESPELHO DO CÉU",
+     "word": 348,
+     "dur": 5.5
+    }
+   ]
+  },
+  {
+   "at": 349,
+   "src": "img:uyuni/uyuni03",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 361,
+   "src": "img:uyuni/uyuni01",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 378,
+   "src": "img:uyuni/uyuni08",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 386,
+   "src": "img:nasa/uyuni_iss",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "VISTO DO ESPAÇO · NASA",
+     "word": 386
+    }
+   ]
+  },
+  {
+   "at": 403,
+   "src": "img:uyuni/uyuni09",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 415,
+   "src": "img:uyuni/uyuni11",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 427,
+   "src": "img:uyuni/uyuni05",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 439,
+   "src": "img:uyuni/uyuni07",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 449,
+   "src": "img:nasa/uyuni_lithium",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "PISCINAS DE LÍTIO · NASA",
+     "word": 449
+    }
+   ]
+  },
+  {
+   "at": 456,
+   "src": "img:uyuni/uyuni00",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 469,
+   "src": "img:uyuni/uyuni02",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 482,
+   "src": "img:ov/ov_zhangyefl00",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.12
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "chapter",
+     "num": "4",
+     "text": "ZHANGYE",
+     "sub": "CHINA",
+     "word": 482,
+     "until": 487
+    }
+   ]
+  },
+  {
+   "at": 487,
+   "src": "img:ov/ov_zhangyefl06",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "lower",
+     "text": "ZHANGYE|AS MONTANHAS DE ARCO-ÍRIS",
+     "word": 487,
+     "dur": 5.5
+    }
+   ]
+  },
+  {
+   "at": 489,
+   "src": "img:ov/ov_zhangyefl07",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 501,
+   "src": "img:ov/ov_zhangyefl15",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 511,
+   "src": "img:ov/ov_zhangyefl02",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 522,
+   "src": "img:ov/ov_zhangyefl04",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 529,
+   "src": "img:ov/ov_zhangyefl08",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 548,
+   "src": "img:ov/ov_zhangyefl10",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 562,
+   "src": "img:ov/ov_zhangyefl03",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 571,
+   "src": "img:ov/ov_zhangyefl12",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 587,
+   "src": "img:ov/ov_zhangyefl09",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 592,
+   "src": "img:inat/gw09",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.12
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "chapter",
+     "num": "3",
+     "text": "WAITOMO",
+     "sub": "NOVA ZELÂNDIA",
+     "word": 592,
+     "until": 597
+    }
+   ]
+  },
+  {
+   "at": 597,
+   "src": "img:inat/gw30",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "lower",
+     "text": "WAITOMO|O CÉU ESTRELADO SUBTERRÂNEO",
+     "word": 597,
+     "dur": 5.5
+    }
+   ]
+  },
+  {
+   "at": 599,
+   "src": "img:inat/gw35",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 620,
+   "src": "img:inat/gw18",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "LARVAS DE ARACHNOCAMPA",
+     "word": 620
+    }
+   ]
+  },
+  {
+   "at": 623,
+   "src": "img:inat/gw15",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 633,
+   "src": "img:inat/gw30",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 644,
+   "src": "img:inat/gw27",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "FIOS DE SEDA DAS LARVAS",
+     "word": 644
+    }
+   ]
+  },
+  {
+   "at": 658,
+   "src": "img:inat/gw11",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 671,
+   "src": "img:inat/gw31",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 686,
+   "src": "img:inat/gw15",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 701,
+   "src": "img:darvaza/night",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.12
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "chapter",
+     "num": "2",
+     "text": "DARVAZA",
+     "sub": "TURCOMENISTÃO",
+     "word": 701,
+     "until": 706
+    }
+   ],
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 706,
+   "src": "img:darvaza/glow",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "lower",
+     "text": "DARVAZA|A PORTA DO INFERNO",
+     "word": 706,
+     "dur": 5.5
+    }
+   ],
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 708,
+   "src": "img:darvaza/goetz_dawn",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 720,
+   "src": "img:darvaza/pav1",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 728,
+   "src": "img:darvaza/inside",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 738,
+   "src": "img:darvaza/pav2",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 748,
+   "src": "img:darvaza/goetz_day",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 763,
+   "src": "img:darvaza/pav3",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 777,
+   "src": "img:darvaza/pav_day",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 790,
+   "src": "img:darvaza/pav4",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 797,
+   "src": "img:darvaza/night",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 805,
+   "src": "img:darvaza/glow",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 815,
+   "src": "img:darvaza/panorama",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 826,
+   "src": "img:darvaza/pav5",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat",
+    "embers"
+   ]
+  },
+  {
+   "at": 832,
+   "src": "img:ov/ov_tinto01",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.12
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "chapter",
+     "num": "1",
+     "text": "RIO TINTO",
+     "sub": "ESPANHA",
+     "word": 832,
+     "until": 837
+    }
+   ]
+  },
+  {
+   "at": 837,
+   "src": "img:ov/ov_tinto03",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "lower",
+     "text": "RIO TINTO|O RIO VERMELHO",
+     "word": 837,
+     "dur": 5.5
+    }
+   ]
+  },
+  {
+   "at": 856,
+   "src": "img:nasa/tinto_aster",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "tag",
+     "text": "RIO TINTO VISTO DO ESPAÇO · NASA",
+     "word": 856
+    }
+   ]
+  },
+  {
+   "at": 865,
+   "src": "img:ov/ov_tinto02",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 877,
+   "src": "img:ov/ov_tinto15",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 889,
+   "src": "img:ov/ov_tinto13",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 904,
+   "src": "img:ov/ov_tinto04",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 918,
+   "src": "img:ov/ov_tinto09",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 930,
+   "src": "img:ov/ov_tinto16",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 942,
+   "src": "img:ov/ov_tinto05",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 952,
+   "src": "img:ov/ov_tinto03",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 962,
+   "src": "img:socotra/socotra10",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 971,
+   "src": "img:ov/ov_tinto03",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 981,
+   "src": "earth4k:800",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 990,
+   "src": "img:dallol/dallol19",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 996,
+   "src": "earth4k:1100",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 1011,
+   "src": "img:socotra/socotra03",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 1014,
+   "src": "img:dallol/dallol07",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 1016,
+   "src": "img:uyuni/uyuni06",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 1019,
+   "src": "img:ov/ov_zhangyefl06",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.2
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 1021,
+   "src": "img:inat/gw09",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 1024,
+   "src": "img:darvaza/night",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.48,
+     "z": 1.24
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.52,
+     "z": 1.06
+    },
+    "ease": "inOutSine"
+   },
+   "fx": [
+    "heat"
+   ]
+  },
+  {
+   "at": 1026,
+   "src": "img:ov/ov_tinto14",
+   "trans": "cut",
+   "cam": {
+    "from": {
+     "cx": 0.58,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "to": {
+     "cx": 0.42,
+     "cy": 0.5,
+     "z": 1.18
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 1032,
+   "src": "earth4k:900",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.1
+    },
+    "ease": "inOutSine"
+   }
+  },
+  {
+   "at": 1050,
+   "src": "earth4k:1400",
+   "trans": "dissolve",
+   "cam": {
+    "from": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.04
+    },
+    "to": {
+     "cx": 0.5,
+     "cy": 0.5,
+     "z": 1.1
+    },
+    "ease": "inOutSine"
+   },
+   "overlays": [
+    {
+     "type": "bigtext",
+     "text": "A TERRA É MAIS SURPREENDENTE|DO QUE VOCÊ IMAGINA.",
+     "style": "fade",
+     "size": 104,
+     "y": 0.42,
+     "color": "white",
+     "word": 1050
+    }
+   ]
+  }
+ ],
+ "end": {
+  "hold": 5.0,
+  "trans": "fade",
+  "fade": 1.0,
+  "tagline": [
+   "INSCREVA-SE PARA DESCOBRIR",
+   "O EXTRAORDINÁRIO"
+  ]
+ },
+ "keywords": {
+  "gold": [
+   "SOCOTRA",
+   "DALLOL",
+   "UYUNI",
+   "ZHANGYE",
+   "WAITOMO",
+   "DARVAZA",
+   "TINTO",
+   "ÁRVORE-SANGUE-DE-DRAGÃO",
+   "LÍTIO",
+   "GLOWWORMS",
+   "VERMELHO",
+   "SANGUE",
+   "ARCO-ÍRIS",
+   "INFERNO",
+   "PLANETA",
+   "PLANETAS",
+   "TERRA",
+   "ALIENÍGENA",
+   "ALIENÍGENAS",
+   "MARTE",
+   "SETE",
+   "CÉU",
+   "REFLEXO",
+   "ESTRELADO",
+   "CHAMAS",
+   "VIVOS",
+   "ÁCIDAS",
+   "EXTRAORDINÁRIAS",
+   "INACREDITÁVEIS",
+   "EXTRAMUNDO",
+   "IMPOSSÍVEIS",
+   "SURPREENDENTE",
+   "CORES",
+   "COLORIDAS",
+   "VULCÂNICA",
+   "SAL",
+   "MINERAIS",
+   "MICRORGANISMOS",
+   "LUZES"
+  ]
+ }
+}

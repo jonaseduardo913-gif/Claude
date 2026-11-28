@@ -272,9 +272,10 @@ function drawBigText(ctx, o, t) {
   const size = o.size || 150, y = H * (o.y ?? 0.27);
   let s = 1, rot = 0;
   if (o.style === 'slam') { s = lt < 3 / FPS ? lerp(2.6, 1, E.outCubic(lt * FPS / 3)) : 1 + 0.03 * Math.sin(lt * 6); rot = -0.04; }
+  else if (o.style === 'fade') s = lerp(1.06, 1, E.outCubic(prog(lt, 0, 1.2)));
   else s = lerp(1.25, 1, E.outCubic(prog(lt, 0, 4 / FPS)));
   const lines = o.text.split('|');
-  ctx.save(); ctx.translate(W / 2, y); ctx.rotate(rot); ctx.scale(s, s);
+  ctx.save(); if (o.style === 'fade') ctx.globalAlpha = Math.min(prog(lt, 0, 0.7), o.t1 ? clamp((o.t1 - t) / 0.5) : 1); ctx.translate(W / 2, y); ctx.rotate(rot); ctx.scale(s, s);
   ctx.font = font(size); const maxW = Math.max(...lines.map((l) => ctx.measureText(l).width)); const k = Math.min(1, W * 0.87 / maxW);
   ctx.scale(k, k);
   if (o.style === 'slam') { ctx.shadowColor = 'rgba(255,90,31,0.9)'; ctx.shadowBlur = 60; }
@@ -698,9 +699,9 @@ function drawCycle(ctx, p, t) {
 function drawTag(ctx, o, t, shot) {
   const lt = t - o.t; if (lt < 0) return; const a = Math.min(E.outCubic(prog(lt, 0, 0.35)), clamp((shot.t1 - t) / 0.25));
   ctx.save(); ctx.globalAlpha = a * 0.92; ctx.font = font(30, 700, true); ctx.letterSpacing = '1px';
-  const w = ctx.measureText(o.text).width + 48, y = H * (o.y || 0.855);
-  ctx.fillStyle = 'rgba(0,0,0,0.5)'; roundRect(ctx, (W - w) / 2, y - 26, w, 52, 26); ctx.fill();
-  ctx.fillStyle = '#E8F7FF'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(o.text, W / 2, y + 1);
+  const w = ctx.measureText(o.text).width + 48, y = H * (o.y || (LAND ? 0.075 : 0.855)), cx = LAND ? W * 0.955 - w / 2 : W / 2;
+  ctx.fillStyle = 'rgba(0,0,0,0.5)'; roundRect(ctx, cx - w / 2, y - 26, w, 52, 26); ctx.fill();
+  ctx.fillStyle = '#E8F7FF'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(o.text, cx, y + 1);
   ctx.restore();
 }
 // small eclipse + wordmark, fades in and out
@@ -921,12 +922,12 @@ function drawEnd(ctx, t) {
     ng.addColorStop(0, 'rgba(200,140,20,0.10)'); ng.addColorStop(1, 'rgba(200,140,20,0)'); ctx.globalAlpha = 1; ctx.fillStyle = ng; ctx.fillRect(nx - 320, ny - 320, 640, 640); }
   ctx.restore();
   const on = prog(lt, 0.05, 1.0);
-  const r = 250 * (1 + 0.03 * Math.sin(lt * 1.2));
-  eclipse(ctx, W / 2, H * 0.4, r, on, t);
+  const r = (LAND ? 190 : 250) * (1 + 0.03 * Math.sin(lt * 1.2));
+  eclipse(ctx, W / 2, H * (LAND ? 0.34 : 0.4), r, on, t);
   // wordmark in gold
   const word = 'EXTRAMUNDO'; const size = 112; ctx.font = font(size);
   const ws = [...word].map((c) => ctx.measureText(c).width); const tr = 4; const tot = ws.reduce((a, b) => a + b, 0) + tr * (ws.length - 1);
-  let x = W / 2 - tot / 2; const y = H * 0.66;
+  let x = W / 2 - tot / 2; const y = H * (LAND ? 0.66 : 0.66);
   const grad = ctx.createLinearGradient(0, y - size * 0.5, 0, y + size * 0.45); grad.addColorStop(0, GOLD.hi); grad.addColorStop(0.5, GOLD.mid); grad.addColorStop(1, GOLD.deep);
   [...word].forEach((c, i) => {
     const p = spring(lt - 0.6 - i * 0.04, 2.2, 6);
@@ -937,7 +938,8 @@ function drawEnd(ctx, t) {
   });
   const tg = prog(lt, 1.2, 1.7);
   ctx.save(); ctx.globalAlpha = tg; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = '#F5DC9A'; ctx.font = font(38, 800); ctx.letterSpacing = '6px';
-  ctx.fillText('O EXTRAORDINÁRIO ESTÁ MAIS PERTO', W / 2, y + 130); ctx.fillText('DO QUE VOCÊ IMAGINA', W / 2, y + 184);
+  const tag = TL.end.tagline || ['O EXTRAORDINÁRIO ESTÁ MAIS PERTO', 'DO QUE VOCÊ IMAGINA'];
+  tag.forEach((l, i) => ctx.fillText(l, W / 2, y + (LAND ? 115 : 130) + i * 54));
   ctx.restore();
 }
 
@@ -952,8 +954,8 @@ async function renderFrame(f) {
   else if (t < TL.shots[0].t0) { b.fillStyle = '#000'; b.fillRect(0, 0, W, H); }
   else if (t >= TL.end.t0) {
     drawEnd(b, t);
-    const fl = 1 - prog(t, TL.end.t0, TL.end.t0 + 6 / FPS);
-    if (fl > 0) { b.fillStyle = `rgba(255,255,255,${fl})`; b.fillRect(0, 0, W, H); }
+    const fl = 1 - prog(t, TL.end.t0, TL.end.t0 + (TL.end.trans === 'flash' ? 6 / FPS : 1.0));
+    if (fl > 0) { b.fillStyle = TL.end.trans === 'flash' ? `rgba(255,255,255,${fl})` : `rgba(0,0,0,${fl})`; b.fillRect(0, 0, W, H); }
   } else {
     const k = shotAt(t), shot = TL.shots[k], next = TL.shots[k + 1], prev = TL.shots[k - 1];
     const fIn = Math.round((t - shot.t0) * FPS), fOut = next ? Math.round((next.t0 - t) * FPS) : 99;
@@ -985,10 +987,12 @@ async function renderFrame(f) {
       b.save(); b.globalAlpha = 1 - fIn / XF; b.drawImage(prevBuf, 0, 0); b.restore();
     }
     if (TL.end.trans === 'flash' && !next) { const fl = prog(t, TL.end.t0 - 4 / FPS, TL.end.t0); if (fl > 0) { b.fillStyle = `rgba(255,255,255,${fl})`; b.fillRect(0, 0, W, H); } }
+    if (TL.end.trans === 'fade' && !next) { const fl = prog(t, TL.end.t0 - 0.8, TL.end.t0); if (fl > 0) { b.fillStyle = `rgba(0,0,0,${fl})`; b.fillRect(0, 0, W, H); } }
     // brand + hook + captions on top
     drawHeadline(b, t);
     drawStamp(b, t);
-    for (const c of TL.cards) drawCard(b, c, t);
+    const chOn = LAND && TL.shots.some((s) => s.overlays.some((o) => o.type === 'chapter' && t >= o.t - 0.1 && t < (o.t1 || s.t1)));
+    if (!chOn) for (const c of TL.cards) drawCard(b, c, t);
   }
   if (TL.end.fade && t > TL.duration - TL.end.fade) { b.fillStyle = `rgba(0,0,0,${clamp((t - (TL.duration - TL.end.fade)) / TL.end.fade)})`; b.fillRect(0, 0, W, H); }
   // post: vignette + light grain
