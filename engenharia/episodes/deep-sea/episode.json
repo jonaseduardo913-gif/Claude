@@ -15,10 +15,6 @@
       13
     ]
   },
-  "voice": {
-    "model": "en_US-ryan-high",
-    "length_scale": 1.0
-  },
   "captions": {
     "style": "pop"
   },
@@ -56,7 +52,7 @@
   "scenes": [
     {
       "id": "S01",
-      "narration": "You're now ten thousand meters beneath the ocean. You're sitting inside a tiny submersible.",
+      "narration": "You're now 10,000 meters beneath the ocean. You're sitting inside a tiny submersible.",
       "min_seconds": 7,
       "storyboard": "HOOK. First-person inside the sphere: hands at the glowing control panel, depth readout ticking to 10,000 m, circular front window, the water outside darkening, marine snow rising past.",
       "camera": "first-person, slow forward drift, subtle vibration",
@@ -85,7 +81,8 @@
           "u": 0.7,
           "type": "ui_tick"
         }
-      ]
+      ],
+      "starts_with": "You're now"
     },
     {
       "id": "S02",
@@ -109,7 +106,8 @@
           "u": 0.7,
           "type": "shimmer"
         }
-      ]
+      ],
+      "starts_with": "Outside your"
     },
     {
       "id": "S03",
@@ -138,7 +136,8 @@
           "u": 0.85,
           "type": "clunk"
         }
-      ]
+      ],
+      "starts_with": "The pressure"
     },
     {
       "id": "S04",
@@ -166,11 +165,12 @@
           "type": "hydraulic",
           "dur": 1.5
         }
-      ]
+      ],
+      "starts_with": "But somehow"
     },
     {
       "id": "S05",
-      "narration": "And as you look into the darkness\u2026 You realize something terrifying.",
+      "narration": "And as you look into the darkness, you realize something terrifying.",
       "min_seconds": 9,
       "storyboard": "First-person: a translucent glowing jellyfish drifts past the window; far away, a mysterious lure-light of a deep-sea fish bobs in the dark.",
       "camera": "first-person, follow the creature",
@@ -191,7 +191,8 @@
           "type": "riser",
           "dur": 3.0
         }
-      ]
+      ],
+      "starts_with": "And as"
     },
     {
       "id": "S06",
@@ -216,7 +217,22 @@
           "u": 0.62,
           "type": "outro"
         }
-      ]
+      ],
+      "starts_with": "You're exploring"
     }
-  ]
+  ],
+  "narration_audio": {
+    "file": "narration.m4a",
+    "alignment": "alignment.json",
+    "tempo": 1.0,
+    "voice": "ElevenLabs Nathan (provided by client)",
+    "scene_at": {
+      "S02": 7.0,
+      "S03": 14.0,
+      "S04": 21.0,
+      "S05": 30.0,
+      "S06": 39.0
+    }
+  },
+  "outro_seconds": 8.0
 }

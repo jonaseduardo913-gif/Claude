@@ -85,6 +85,31 @@ def external_narration(ep, out):
         words = [{"w": w["w"], "start": w["start"] - shift[i], "end": w["end"] - shift[i]} for i, w in enumerate(words)]
         print(f"pauses shortened: removed {removed:.2f}s")
         a = out_a
+    sa = na.get("scene_at")
+    if sa:  # insert silence before scenes so each one starts at its requested time (voice untouched)
+        ws = [norm_word(w["w"]) for w in words]
+        lo, ins = 0, []
+        for sc in ep["scenes"]:
+            key = [norm_word(x) for x in sc["starts_with"].split()]
+            idx = next((j for j in range(lo, len(ws)) if ws[j:j + len(key)] == key), None)
+            if idx is None:
+                raise SystemExit(f"{sc['id']}: starts_with '{sc['starts_with']}' not found in alignment")
+            lo = idx + 1
+            if sc["id"] in sa and idx > 0:
+                ins.append((idx, sa[sc["id"]]))
+        added = 0.0
+        for idx, target in ins:
+            cur = words[idx]["start"] - 0.12
+            pad = target - cur
+            if pad <= 0:
+                continue
+            cut_t = (words[idx - 1]["end"] + words[idx]["start"]) / 2
+            c = int(cut_t * 48000)
+            a = np.concatenate([a[:c], np.zeros(int(pad * 48000), np.float32), a[c:]])
+            for j in range(idx, len(words)):
+                words[j] = {"w": words[j]["w"], "start": words[j]["start"] + pad, "end": words[j]["end"] + pad}
+            added += pad
+        print(f"scene pauses inserted: +{added:.2f}s")
     tmp = nd / "trimmed.wav"
     with wave.open(str(tmp), "wb") as wf:
         wf.setnchannels(1); wf.setsampwidth(2); wf.setframerate(48000)

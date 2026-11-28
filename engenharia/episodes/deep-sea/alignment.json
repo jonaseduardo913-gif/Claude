@@ -1,0 +1,422 @@
+[
+ {
+  "w": "You're",
+  "start": 0.0,
+  "end": 0.38
+ },
+ {
+  "w": "now",
+  "start": 0.38,
+  "end": 0.54
+ },
+ {
+  "w": "10,000",
+  "start": 0.54,
+  "end": 1.32
+ },
+ {
+  "w": "meters",
+  "start": 1.32,
+  "end": 1.56
+ },
+ {
+  "w": "beneath",
+  "start": 1.56,
+  "end": 2.04
+ },
+ {
+  "w": "the",
+  "start": 2.04,
+  "end": 2.3
+ },
+ {
+  "w": "ocean.",
+  "start": 2.3,
+  "end": 2.62
+ },
+ {
+  "w": "You're",
+  "start": 3.0,
+  "end": 3.1
+ },
+ {
+  "w": "sitting",
+  "start": 3.1,
+  "end": 3.34
+ },
+ {
+  "w": "inside",
+  "start": 3.34,
+  "end": 3.8
+ },
+ {
+  "w": "a",
+  "start": 3.8,
+  "end": 4.02
+ },
+ {
+  "w": "tiny",
+  "start": 4.02,
+  "end": 4.34
+ },
+ {
+  "w": "submersible.",
+  "start": 4.34,
+  "end": 5.08
+ },
+ {
+  "w": "Outside",
+  "start": 5.32,
+  "end": 5.56
+ },
+ {
+  "w": "your",
+  "start": 5.56,
+  "end": 6.0
+ },
+ {
+  "w": "window,",
+  "start": 6.0,
+  "end": 6.36
+ },
+ {
+  "w": "there's",
+  "start": 6.66,
+  "end": 7.0
+ },
+ {
+  "w": "complete",
+  "start": 7.0,
+  "end": 7.4
+ },
+ {
+  "w": "darkness.",
+  "start": 7.4,
+  "end": 7.86
+ },
+ {
+  "w": "The",
+  "start": 8.16,
+  "end": 8.28
+ },
+ {
+  "w": "pressure",
+  "start": 8.28,
+  "end": 8.56
+ },
+ {
+  "w": "surrounding",
+  "start": 8.56,
+  "end": 8.98
+ },
+ {
+  "w": "you",
+  "start": 8.98,
+  "end": 9.34
+ },
+ {
+  "w": "is",
+  "start": 9.34,
+  "end": 9.5
+ },
+ {
+  "w": "over",
+  "start": 9.5,
+  "end": 9.74
+ },
+ {
+  "w": "a",
+  "start": 9.74,
+  "end": 9.9
+ },
+ {
+  "w": "thousand",
+  "start": 9.9,
+  "end": 10.2
+ },
+ {
+  "w": "times",
+  "start": 10.2,
+  "end": 10.66
+ },
+ {
+  "w": "greater",
+  "start": 10.66,
+  "end": 10.92
+ },
+ {
+  "w": "than",
+  "start": 10.92,
+  "end": 11.22
+ },
+ {
+  "w": "at",
+  "start": 11.22,
+  "end": 11.36
+ },
+ {
+  "w": "the",
+  "start": 11.36,
+  "end": 11.48
+ },
+ {
+  "w": "surface.",
+  "start": 11.48,
+  "end": 11.8
+ },
+ {
+  "w": "A",
+  "start": 12.22,
+  "end": 12.32
+ },
+ {
+  "w": "single",
+  "start": 12.32,
+  "end": 12.64
+ },
+ {
+  "w": "structural",
+  "start": 12.64,
+  "end": 13.06
+ },
+ {
+  "w": "failure",
+  "start": 13.06,
+  "end": 13.6
+ },
+ {
+  "w": "could",
+  "start": 13.6,
+  "end": 13.96
+ },
+ {
+  "w": "be",
+  "start": 13.96,
+  "end": 14.32
+ },
+ {
+  "w": "catastrophic.",
+  "start": 14.32,
+  "end": 14.94
+ },
+ {
+  "w": "But",
+  "start": 15.46,
+  "end": 15.66
+ },
+ {
+  "w": "somehow,",
+  "start": 15.66,
+  "end": 16.02
+ },
+ {
+  "w": "you're",
+  "start": 16.28,
+  "end": 16.44
+ },
+ {
+  "w": "still",
+  "start": 16.44,
+  "end": 16.58
+ },
+ {
+  "w": "alive.",
+  "start": 16.58,
+  "end": 16.92
+ },
+ {
+  "w": "Your",
+  "start": 17.34,
+  "end": 17.52
+ },
+ {
+  "w": "submarine",
+  "start": 17.52,
+  "end": 17.98
+ },
+ {
+  "w": "is",
+  "start": 17.98,
+  "end": 18.24
+ },
+ {
+  "w": "protected",
+  "start": 18.24,
+  "end": 18.6
+ },
+ {
+  "w": "by",
+  "start": 18.6,
+  "end": 18.92
+ },
+ {
+  "w": "a",
+  "start": 18.92,
+  "end": 19.08
+ },
+ {
+  "w": "specially",
+  "start": 19.08,
+  "end": 19.5
+ },
+ {
+  "w": "engineered,",
+  "start": 19.5,
+  "end": 20.08
+ },
+ {
+  "w": "pressure-resistant",
+  "start": 20.3,
+  "end": 20.88
+ },
+ {
+  "w": "hull.",
+  "start": 20.88,
+  "end": 21.26
+ },
+ {
+  "w": "Its",
+  "start": 21.68,
+  "end": 21.84
+ },
+ {
+  "w": "thick",
+  "start": 21.84,
+  "end": 22.12
+ },
+ {
+  "w": "walls",
+  "start": 22.12,
+  "end": 22.46
+ },
+ {
+  "w": "keep",
+  "start": 22.46,
+  "end": 22.78
+ },
+ {
+  "w": "the",
+  "start": 22.78,
+  "end": 22.98
+ },
+ {
+  "w": "crushing",
+  "start": 22.98,
+  "end": 23.34
+ },
+ {
+  "w": "ocean",
+  "start": 23.34,
+  "end": 23.72
+ },
+ {
+  "w": "pressure",
+  "start": 23.72,
+  "end": 24.1
+ },
+ {
+  "w": "outside.",
+  "start": 24.1,
+  "end": 24.62
+ },
+ {
+  "w": "And",
+  "start": 25.08,
+  "end": 25.24
+ },
+ {
+  "w": "as",
+  "start": 25.24,
+  "end": 25.44
+ },
+ {
+  "w": "you",
+  "start": 25.44,
+  "end": 25.6
+ },
+ {
+  "w": "look",
+  "start": 25.6,
+  "end": 25.86
+ },
+ {
+  "w": "into",
+  "start": 25.86,
+  "end": 26.1
+ },
+ {
+  "w": "the",
+  "start": 26.1,
+  "end": 26.3
+ },
+ {
+  "w": "darkness,",
+  "start": 26.3,
+  "end": 26.68
+ },
+ {
+  "w": "you",
+  "start": 27.0,
+  "end": 27.2
+ },
+ {
+  "w": "realize",
+  "start": 27.2,
+  "end": 27.7
+ },
+ {
+  "w": "something",
+  "start": 27.7,
+  "end": 28.06
+ },
+ {
+  "w": "terrifying.",
+  "start": 28.06,
+  "end": 28.68
+ },
+ {
+  "w": "You're",
+  "start": 28.68,
+  "end": 29.24
+ },
+ {
+  "w": "exploring",
+  "start": 29.24,
+  "end": 29.64
+ },
+ {
+  "w": "a",
+  "start": 29.64,
+  "end": 29.86
+ },
+ {
+  "w": "world",
+  "start": 29.86,
+  "end": 30.08
+ },
+ {
+  "w": "where",
+  "start": 30.08,
+  "end": 30.38
+ },
+ {
+  "w": "sunlight",
+  "start": 30.38,
+  "end": 30.78
+ },
+ {
+  "w": "has",
+  "start": 30.78,
+  "end": 31.1
+ },
+ {
+  "w": "never",
+  "start": 31.1,
+  "end": 31.38
+ },
+ {
+  "w": "reached.",
+  "start": 31.38,
+  "end": 31.66
+ }
+]
