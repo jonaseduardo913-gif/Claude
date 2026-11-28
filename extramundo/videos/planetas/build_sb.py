@@ -98,7 +98,8 @@ def chapter(k, img, lower_at, pool, tags=None, special=None):
 i_rio = find('Ou observar um rio'); i_mont = find('montanhas com todas'); i_crat = find('e uma cratera')
 i_pode = find('Pode parecer'); i_mas = find('Mas todos esses'); i_nosso = find('Nosso planeta esconde')
 i_hoje = find('E hoje você'); i_prep = find('Prepare-se')
-Z = have('zhangye', 'zhangye'); WT = have('waitomo', 'waitomo'); TT = have('tinto', 'tinto')
+Z = ['zhangye' + k for k in ['15', '01', '14', '03', '17', '00', '21', '04', '16', '20', '09', '05', '08', '13', '18', '12', '19', '02']]
+WT = ['waitomo' + k for k in ['06', '07', '20', '10', '21', '12', '14', '00']]; TT = have('tinto', 'tinto')
 zh = media('zhangye', Z) + media('ov', ['ov_zhangyefl' + k for k in ['00', '06', '07', '15', '02', '04', '08', '10', '03', '12', '09', '11', '13', '01']])
 wt = (media('waitomo', WT) or [])
 ti = (media('tinto', TT) or [])
@@ -136,7 +137,7 @@ chapter(2, 'img:uyuni/uyuni12', None, UY,
         tags={'img:nasa/uyuni_iss': [{'type': 'tag', 'text': 'VISTO DO ESPAÇO · NASA'}], 'img:nasa/uyuni_lithium': [{'type': 'tag', 'text': 'PISCINAS DE LÍTIO · NASA'}]})
 
 # ---------------- 4 Zhangye ----------------
-chapter(3, zh[0], None, zh[1:] + zh[:1])
+chapter(3, zh[0], None, [x for p in zip(zh[1:18], zh[18:] + zh[1:18]) for x in p][:30])
 
 # ---------------- 3 Waitomo ----------------
 GW = media('inat', ['gw09', 'gw30', 'gw35', 'gw11', 'gw31', 'gw15'])
