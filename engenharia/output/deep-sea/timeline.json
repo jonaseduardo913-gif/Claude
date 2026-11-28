@@ -1,0 +1,64 @@
+{
+ "episode": "deep-sea",
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "total_seconds": 51.133,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "duration": 7.0,
+   "tail": 0.45,
+   "clip_seconds": 7.45,
+   "frame_offset": 0,
+   "transition": "fade"
+  },
+  {
+   "id": "S02",
+   "start": 7.0,
+   "duration": 7.0,
+   "tail": 0.45,
+   "clip_seconds": 7.45,
+   "frame_offset": 224,
+   "transition": "fade"
+  },
+  {
+   "id": "S03",
+   "start": 14.0,
+   "duration": 7.233333333333333,
+   "tail": 0.45,
+   "clip_seconds": 7.683,
+   "frame_offset": 448,
+   "transition": "fade"
+  },
+  {
+   "id": "S04",
+   "start": 21.233,
+   "duration": 9.9,
+   "tail": 0.45,
+   "clip_seconds": 10.35,
+   "frame_offset": 678,
+   "transition": "fade"
+  },
+  {
+   "id": "S05",
+   "start": 31.133,
+   "duration": 9.0,
+   "tail": 0.45,
+   "clip_seconds": 9.45,
+   "frame_offset": 988,
+   "transition": "fade"
+  },
+  {
+   "id": "S06",
+   "start": 40.133,
+   "duration": 11.0,
+   "tail": 0,
+   "clip_seconds": 11.0,
+   "frame_offset": 1272,
+   "transition": "none"
+  }
+ ],
+ "warnings": []
+}
