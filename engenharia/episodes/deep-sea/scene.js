@@ -88,7 +88,7 @@ export async function build(ctx) {
     for (let i = 0; i < 3; i++) { const b = add(new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.22, 0.03), clipM(0x9aa3ad)), pr); b.geometry.translate(0, 0.11, 0); b.rotation.z = i / 3 * Math.PI * 2; }
   });
   // lamp bar with LED lamps above and beside the viewport
-  const lampMat = new THREE.MeshBasicMaterial({ color: 0xfff4dc, fog: false, toneMapped: false });
+  const lampMat = new THREE.MeshBasicMaterial({ color: 0xfff4dc, fog: false, toneMapped: false, clippingPlanes: cut.planes });
   const lampPos = [[-0.62, 0.62, 1.05], [0.62, 0.62, 1.05], [-0.75, -0.55, 0.85], [0.75, -0.55, 0.85]];
   const lampHeads = lampPos.map(p => {
     const h = add(new THREE.Mesh(Z(new THREE.CylinderGeometry(0.09, 0.11, 0.14, 12)), clipM(0x262b31)), body); h.position.set(...p);
