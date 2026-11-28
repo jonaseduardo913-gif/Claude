@@ -19,6 +19,7 @@ Sistema em `engenharia/` (leia `engenharia/README.md`). Episódio-modelo complet
 
 ### 1b. Estilo, idioma e narração
 - Estilo `studio` (documentário escuro) ou `lowpoly` (3D facetado colorido com personagens originais Otto/Nova/crew — referência: canais tipo "Desmontando o Mundo"). Pergunte se não estiver claro; se o usuário mandar referências, siga-as.
+- **Voz padrão do canal HOWSTUFF: ElevenLabs "Nathan" em TODOS os vídeos.** Nunca entregue um vídeo final com a voz Piper: ela serve só como rascunho para prévia/timeline. Se o usuário não mandar o MP3, peça a narração em Nathan (texto exato por cena) antes de renderizar o vídeo completo.
 - Se o usuário fornecer narração (MP3/WAV): copie para `episodes/<slug>/narration.mp3`, configure `narration_audio` e rode `python3 tools/align.py <slug>`; use `starts_with` em cada cena; ajuste `max_pause`/`tempo` para caber na duração pedida (`format.duration_range`).
 
 ### 2. Esqueleto
@@ -71,4 +72,4 @@ Não rode mais de 2 workers ao mesmo tempo na máquina (CPU compartilhada).
 ## Regras do canal
 - Nunca imagens estáticas no lugar de animação; toda cena tem câmera e/ou mecanismo em movimento.
 - Nunca sacrificar precisão por estética; nunca inventar processos.
-- Sem música/voz de terceiros: trilha e SFX são sintetizados (`tools/audio.py`), voz Piper local.
+- Sem música/voz de terceiros: trilha e SFX são sintetizados (`tools/audio.py`), voz final sempre ElevenLabs Nathan (Piper local só para rascunho).
