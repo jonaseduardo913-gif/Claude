@@ -1,0 +1,222 @@
+{
+  "id": "deep-sea",
+  "title": "You Are 10,000 Meters Under the Ocean",
+  "language": "en-US",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_range": [
+      45,
+      60
+    ],
+    "scene_seconds": [
+      3,
+      13
+    ]
+  },
+  "voice": {
+    "model": "en_US-ryan-high",
+    "length_scale": 1.0
+  },
+  "captions": {
+    "style": "pop"
+  },
+  "end_card": {
+    "title": "THE DEEPEST PART OF OUR PLANET.",
+    "brand": "HOWSTUFF",
+    "seconds": 3.2
+  },
+  "music": {
+    "bpm": 70,
+    "key": "D",
+    "mood": "dark ambient, deep-sea tension, slow pulse"
+  },
+  "research": {
+    "summary": "Full-ocean-depth crewed submersibles such as DSV Limiting Factor protect their occupants inside a titanium pressure sphere (Ti-6Al-4V, about 1.5 m inside diameter, 90 mm wall), rated by DNV to 11,000 m (design pressure about 1,127 bar). Pressure grows about 1 atmosphere every 10 m of seawater, so at 10,000 m it is roughly 1,000 times surface pressure. Viewports are thick conical acrylic windows. Sunlight fades out by about 1,000 m (start of the aphotic zone); below that the only light is from bioluminescent animals and the vehicle's own lamps. The deepest known point, Challenger Deep, is about 10,935 m deep.",
+    "facts_checked": [
+      "Pressure sphere: titanium, ~1.5 m inside diameter, 90 mm wall (Limiting Factor).",
+      "Rated to 11,000 m; design pressure 1,127 bar (DNV).",
+      "~1 atm per 10 m of seawater -> ~1,000x surface pressure at 10 km.",
+      "Viewports are acrylic, the hull itself is titanium.",
+      "Aphotic zone: essentially no sunlight below ~1,000 m; bioluminescence is the main light source.",
+      "Challenger Deep ~10,925-10,935 m."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/DSV_Limiting_Factor",
+      "https://www.dnv.com/expert-story/maritime-impact/Dive-to-the-ultimate-abyss/",
+      "https://www.imeche.org/news/news-article/feature-the-incredible-engineering-behind-the-submarine-that-plumbed-the-deepest-depths",
+      "https://oceanservice.noaa.gov/facts/light_travel.html",
+      "https://oceanexplorer.noaa.gov/facts/bioluminescence.html"
+    ]
+  },
+  "cast": [
+    "otto (submersible pilot, seen in the cutaway; first-person 'you')"
+  ],
+  "scenes": [
+    {
+      "id": "S01",
+      "narration": "You're now ten thousand meters beneath the ocean. You're sitting inside a tiny submersible.",
+      "min_seconds": 7,
+      "storyboard": "HOOK. First-person inside the sphere: hands at the glowing control panel, depth readout ticking to 10,000 m, circular front window, the water outside darkening, marine snow rising past.",
+      "camera": "first-person, slow forward drift, subtle vibration",
+      "transition": "fade",
+      "music": 1,
+      "sfx": [
+        {
+          "u": 0.0,
+          "type": "impact"
+        },
+        {
+          "u": 0.0,
+          "type": "underwater",
+          "dur": 7.0
+        },
+        {
+          "u": 0.05,
+          "type": "motor_hum",
+          "dur": 6.5
+        },
+        {
+          "u": 0.3,
+          "type": "ui_tick"
+        },
+        {
+          "u": 0.7,
+          "type": "ui_tick"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "narration": "Outside your window, there's complete darkness.",
+      "min_seconds": 7,
+      "storyboard": "Close to the thick conical acrylic window: endless black water, tiny bioluminescent specks blinking, warm cabin lights reflected on the glass.",
+      "camera": "approach the window, look slightly left and right",
+      "transition": "fade",
+      "music": 1,
+      "sfx": [
+        {
+          "u": 0.0,
+          "type": "underwater",
+          "dur": 7.0
+        },
+        {
+          "u": 0.3,
+          "type": "shimmer"
+        },
+        {
+          "u": 0.7,
+          "type": "shimmer"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "narration": "The pressure surrounding you is over a thousand times greater than at the surface. A single structural failure could be catastrophic.",
+      "min_seconds": 7,
+      "storyboard": "Exterior: the small submersible inside an enormous dark water column. Pressure arrows squeeze it from every side; a depth gauge rises to the far-away surface: 0 m, sunlight ends ~1,000 m, you at 10,000 m.",
+      "camera": "slow orbit, pull back and tilt up the column",
+      "transition": "fade",
+      "music": 2,
+      "sfx": [
+        {
+          "u": 0.0,
+          "type": "rumble",
+          "dur": 6.0
+        },
+        {
+          "u": 0.2,
+          "type": "ui_tick"
+        },
+        {
+          "u": 0.5,
+          "type": "riser",
+          "dur": 2.5
+        },
+        {
+          "u": 0.85,
+          "type": "clunk"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "narration": "But somehow, you're still alive. Your submarine is protected by a specially engineered pressure-resistant hull. Its thick walls keep the crushing ocean pressure outside.",
+      "min_seconds": 9,
+      "storyboard": "Exterior into a cutaway: the foam body and the titanium sphere are sectioned to show the 9 cm wall and the pilot inside with cabin lights; pressure arrows stop at the hull.",
+      "camera": "exterior, cutaway, then slow rotation around the hull",
+      "transition": "fade",
+      "music": 2,
+      "sfx": [
+        {
+          "u": 0.05,
+          "type": "cut_reveal"
+        },
+        {
+          "u": 0.3,
+          "type": "ui_tick"
+        },
+        {
+          "u": 0.55,
+          "type": "ui_tick"
+        },
+        {
+          "u": 0.7,
+          "type": "hydraulic",
+          "dur": 1.5
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "narration": "And as you look into the darkness\u2026 You realize something terrifying.",
+      "min_seconds": 9,
+      "storyboard": "First-person: a translucent glowing jellyfish drifts past the window; far away, a mysterious lure-light of a deep-sea fish bobs in the dark.",
+      "camera": "first-person, follow the creature",
+      "transition": "fade",
+      "music": 1,
+      "sfx": [
+        {
+          "u": 0.0,
+          "type": "underwater",
+          "dur": 9.0
+        },
+        {
+          "u": 0.15,
+          "type": "shimmer"
+        },
+        {
+          "u": 0.55,
+          "type": "riser",
+          "dur": 3.0
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "narration": "You're exploring a world where sunlight has never reached.",
+      "min_seconds": 11,
+      "storyboard": "The tiny submersible's lamps light a small patch of the trench floor; the camera pulls back until it is a speck of light in endless darkness; title; fade to black.",
+      "camera": "slow pull-back",
+      "transition": "none",
+      "music": 1,
+      "sfx": [
+        {
+          "u": 0.0,
+          "type": "underwater",
+          "dur": 10.0
+        },
+        {
+          "u": 0.1,
+          "type": "rumble",
+          "dur": 4.0
+        },
+        {
+          "u": 0.62,
+          "type": "outro"
+        }
+      ]
+    }
+  ]
+}

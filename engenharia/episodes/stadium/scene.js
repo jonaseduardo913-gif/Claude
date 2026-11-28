@@ -274,7 +274,7 @@ export async function build(ctx) {
       const u = t / d;
       constructionSite(); pitch.visible = false; soils.forEach(m => (m.visible = true)); rig.visible = true;
       cut.setPlane([0, 0, -1], lerp(200, HW + 24, seg(u, 0.35, 0.55)));
-      const n = Math.floor(piles.length * seg(u, 0.05, 0.95, x => x));
+      const n = Math.floor(piles.length * seg(u, 0.05, 0.95, x => clamp(x)));
       piles.forEach((p, i) => { p.visible = i < n; p.scale.y = i === n - 1 ? 0.3 + 0.7 * ((u * piles.length * 1.1) % 1) : 1; });
       const cur = piles[Math.max(0, n - 1)];
       rig.position.set(cur.position.x - 3, 0, cur.position.z + 0.01); auger.rotation.y = t * 12; auger.position.y = 8 - 6 * ((t * 1.3) % 1);
@@ -301,7 +301,7 @@ export async function build(ctx) {
     S04(t, d) {
       const u = t / d;
       constructionSite(); rakers.visible = true; units.visible = true; crane.visible = true;
-      const total = unitList.length, placed = Math.floor(total * seg(u, 0.05, 0.98, x => x));
+      const total = unitList.length, placed = Math.floor(total * seg(u, 0.05, 0.98, x => clamp(x)));
       for (let i = 0; i < total; i++) { const [x, y, z] = unitList[i]; M4.makeTranslation(x, i < placed ? y : -999, z); units.setMatrixAt(i, M4); }
       units.count = total; units.instanceMatrix.needsUpdate = true;
       const nxt = unitList[Math.min(total - 1, placed)], f = (u * total * 1.05) % 1;
@@ -334,7 +334,7 @@ export async function build(ctx) {
     S06(t, d) {
       const u = t / d;
       crowdStable(t, 0, 0); bodyM.visible = headM.visible = false;
-      const visibleTrusses = Math.floor(trusses.length * seg(u, 0.0, 0.55, x => x));
+      const visibleTrusses = Math.floor(trusses.length * seg(u, 0.0, 0.55, x => clamp(x)));
       trusses.forEach((tr, i) => { tr.g.visible = i < visibleTrusses; tr.g.position.y = 0; });
       roofPanels.forEach((p, i) => (p.m.visible = u > 0.55 + i * 0.03));
       if (u > 0.6) cut.setPlane([-1, 0, 0], 5.5);
@@ -381,7 +381,7 @@ export async function build(ctx) {
       const u = t / d;
       goldenHour(ctx, 0.75); ctx.studio.sun.intensity = 1.3;
       const on = seg(u, 0.05, 0.3); floods.material.emissiveIntensity = 2.5 * on; pitchLight.intensity = 500 * on;
-      crowdStable(t, seg(u, 0.1, 0.6, x => x), seg(u, 0.7, 0.8));
+      crowdStable(t, seg(u, 0.1, 0.6, x => clamp(x)), seg(u, 0.7, 0.8));
       players.forEach((p, i) => { p.visible = u > 0.5; p.position.set(-6 + (i % 3) * 6, 0, -6 + Math.floor(i / 3) * 10); p.rotation.y = i < 2 ? -Math.PI / 2 : Math.PI / 2; p.pose({ walk: t * 7 + i, mouth: 'grin' }); });
       ball.visible = u > 0.5; ball.position.set(0, 0.11, 0);
       set(path([[0, P([0, 2, 22], [0, 20, -40], 44)], [0.45 * d, P([20, 18, 60], [0, 5, 0], 40)], [d, P([-150, 140, 300], [0, 0, 0], 40)]], t));
