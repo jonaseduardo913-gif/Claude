@@ -1,0 +1,281 @@
+{
+  "id": "stadium",
+  "title": "How Do They Build a Soccer Stadium?",
+  "language": "en-US",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_range": [
+      45,
+      60
+    ],
+    "scene_seconds": [
+      3,
+      13
+    ]
+  },
+  "voice": {
+    "model": "en_US-ryan-high",
+    "length_scale": 0.85
+  },
+  "captions": {
+    "style": "pop"
+  },
+  "end_card": {
+    "title": "ENGINEERING FOR THE BEAUTIFUL GAME.",
+    "brand": "HOWSTUFF",
+    "seconds": 2.6
+  },
+  "inspiration": "Topic idea from 'Como se constrói um estádio de futebol?' (Desmontando o Mundo). Original script, models, characters and audio.",
+  "music": {
+    "bpm": 104,
+    "key": "D",
+    "mood": "big-match energy, construction rhythm, crowd euphoria"
+  },
+  "research": {
+    "summary": "Stadium construction starts with excavation and foundations; on soft ground deep piles carry the load down to firm strata (Wembley used about 4,000 piles, the deepest about 35 m). The bowl is built from raker beams supported on columns, with precast concrete terrace (seating) units crane-set on the rakers; each row rises so spectators see over the row in front (sightlines). Roofs are often cantilevered steel trusses anchored at the back so no columns block the view, and are usually the last major structure. The pitch is an engineered profile: a sand-based rootzone about 300 mm deep over a gravel drainage layer with pipe drains (600-800 mm deep), irrigation, and often undersoil heating or sub-air systems; many elite pitches are hybrids, natural grass reinforced with millions of synthetic fibres.",
+    "facts_checked": [
+      "Excavation provides space for foundations and routes for drainage/services (FIFA Football Stadiums Guidelines).",
+      "Deep piles are used depending on soil; Wembley had about 4,000 piles, deepest ~35 m.",
+      "Seating: raker beams with precast terrace units crane-set into position.",
+      "Pitch: combined rootzone ~300 mm, drainage 600-800 mm deep, irrigation in the gravel raft (FIFA turf and pitch design).",
+      "Hybrid pitches reinforce natural grass with synthetic fibres; heating via pipes or sub-air systems.",
+      "Cantilever roofs avoid columns in front of spectators (roofs are usually the last major structure)."
+    ],
+    "sources": [
+      "https://publications.fifa.com/es/football-stadiums-guidelines/general-process-guidelines/construction/construction-process/",
+      "https://publications.fifa.com/de/football-stadiums-guidelines/general-process-guidelines/design/turf-and-pitch-design",
+      "https://www.worldconstructionnetwork.com/projects/wembley",
+      "https://istructe.org/journal/volumes/volume-98-(2020)/issue-11/tottenham-hotspur-stadium-value-of-engineering",
+      "https://stadiumdb.com/news/2025/05/tutorial_how_to_build_a_stadium_in_4_steps"
+    ]
+  },
+  "cast": [
+    "otto (site engineer)",
+    "nova (fan in the stands)",
+    "players (original kits)"
+  ],
+  "scenes": [
+    {
+      "id": "S01",
+      "narration": "Seventy thousand fans, all screaming at once. But how do you build a place that can hold them all?",
+      "min_seconds": 4.5,
+      "storyboard": "HOOK. Pitch-level: a striker hits the ball into the net, the packed stands explode; the camera cranes up and out to reveal the whole stadium bowl.",
+      "camera": "low pitch-level, then crane up and out",
+      "transition": "fade",
+      "music": 3,
+      "sfx": [
+        {
+          "u": 0.0,
+          "type": "impact"
+        },
+        {
+          "u": 0.12,
+          "type": "clunk"
+        },
+        {
+          "u": 0.2,
+          "type": "riser",
+          "dur": 2.0
+        },
+        {
+          "u": 0.25,
+          "type": "wind",
+          "dur": 4.0
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "narration": "It starts below ground. Crews drill hundreds of deep concrete piles, sometimes more than thirty meters long, down to solid ground.",
+      "min_seconds": 5,
+      "storyboard": "Empty construction site; section through the ground shows soil layers. A piling rig drills while a grid of concrete piles appears deep in the ground; Otto supervises.",
+      "camera": "site overview, then section view of the ground",
+      "transition": "fade",
+      "music": 2,
+      "sfx": [
+        {
+          "u": 0.0,
+          "type": "rumble",
+          "dur": 6.0
+        },
+        {
+          "u": 0.3,
+          "type": "hydraulic",
+          "dur": 2.0
+        },
+        {
+          "u": 0.6,
+          "type": "clunk"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "narration": "Those piles carry the weight of the entire stadium and spread it safely into the earth.",
+      "min_seconds": 4,
+      "storyboard": "Ghosted stadium above; load arrows run down every pile and fan out into the soil.",
+      "camera": "underground section, slow push",
+      "transition": "fade",
+      "music": 2,
+      "sfx": [
+        {
+          "u": 0.1,
+          "type": "ui_tick"
+        },
+        {
+          "u": 0.4,
+          "type": "rumble",
+          "dur": 2.0
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "narration": "Next come the stands. Giant sloped concrete beams called rakers go up first, and precast seating units are stacked on top, like steps.",
+      "min_seconds": 5,
+      "storyboard": "Columns and sloped raker beams rise; a tower crane lowers precast terrace units one by one onto the rakers, building the stand like a staircase.",
+      "camera": "orbit around the stand under construction",
+      "transition": "fade",
+      "music": 2,
+      "sfx": [
+        {
+          "u": 0.1,
+          "type": "hydraulic",
+          "dur": 2.0
+        },
+        {
+          "u": 0.4,
+          "type": "clunk"
+        },
+        {
+          "u": 0.6,
+          "type": "clunk"
+        },
+        {
+          "u": 0.8,
+          "type": "clunk"
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "narration": "Each row sits a little higher than the one in front, so every fan can see over the person ahead.",
+      "min_seconds": 4,
+      "storyboard": "Section through a finished stand: seated fans in rows; glowing sightlines from each fan's eyes pass over the head in front to the pitch.",
+      "camera": "side section of the stand",
+      "transition": "fade",
+      "music": 2,
+      "sfx": [
+        {
+          "u": 0.15,
+          "type": "laser_draw"
+        },
+        {
+          "u": 0.5,
+          "type": "laser_draw"
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "narration": "Then comes the roof. Huge steel trusses reach out over the seats, anchored only at the back, so no columns block the view.",
+      "min_seconds": 5,
+      "storyboard": "Cantilever roof trusses are lifted and fixed at the back of the stand; a section highlights the back anchor and the tip hanging free over the seats; no columns in front of the fans.",
+      "camera": "from the pitch looking up at the roof, then side section",
+      "transition": "fade",
+      "music": 3,
+      "sfx": [
+        {
+          "u": 0.1,
+          "type": "hydraulic",
+          "dur": 2.0
+        },
+        {
+          "u": 0.4,
+          "type": "clunk"
+        },
+        {
+          "u": 0.7,
+          "type": "ui_tick"
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "narration": "The pitch is engineered too. Under the grass are layers of sand and gravel, with pipes that drain away the rain, and in cold places, pipes that heat the soil.",
+      "min_seconds": 5,
+      "storyboard": "Section through the pitch: grass, sand rootzone, gravel drainage layer, subsoil; rain falls and soaks down into drainage pipes; warm heating pipes glow in the rootzone.",
+      "camera": "macro section at the edge of the pitch",
+      "transition": "fade",
+      "music": 2,
+      "sfx": [
+        {
+          "u": 0.05,
+          "type": "cut_reveal"
+        },
+        {
+          "u": 0.3,
+          "type": "underwater",
+          "dur": 3.0
+        },
+        {
+          "u": 0.7,
+          "type": "ui_tick"
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "narration": "Many top pitches even mix real grass with millions of synthetic fibers for extra strength.",
+      "min_seconds": 4,
+      "storyboard": "Macro: natural grass blades and white synthetic fibers stitched deep into the sand; a player's boot lands and the turf holds.",
+      "camera": "macro push into the turf",
+      "transition": "fade",
+      "music": 2,
+      "sfx": [
+        {
+          "u": 0.4,
+          "type": "blocked"
+        },
+        {
+          "u": 0.45,
+          "type": "shimmer"
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "narration": "Then the lights switch on, the gates open, and seventy thousand people walk in.",
+      "min_seconds": 6,
+      "storyboard": "Evening: floodlights switch on one bank at a time, the stands fill with fans, kickoff; wide aerial of the glowing stadium. Final title ENGINEERING FOR THE BEAUTIFUL GAME. with small HOWSTUFF branding.",
+      "camera": "pitch level, then wide aerial pull-back",
+      "transition": "none",
+      "music": 3,
+      "sfx": [
+        {
+          "u": 0.05,
+          "type": "clunk"
+        },
+        {
+          "u": 0.15,
+          "type": "clunk"
+        },
+        {
+          "u": 0.25,
+          "type": "clunk"
+        },
+        {
+          "u": 0.4,
+          "type": "riser",
+          "dur": 2.0
+        },
+        {
+          "u": 0.7,
+          "type": "outro"
+        }
+      ]
+    }
+  ]
+}

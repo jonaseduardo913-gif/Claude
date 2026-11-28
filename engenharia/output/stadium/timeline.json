@@ -1,0 +1,91 @@
+{
+ "episode": "stadium",
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "total_seconds": 58.0,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "duration": 5.5,
+   "tail": 0.45,
+   "clip_seconds": 5.95,
+   "frame_offset": 0,
+   "transition": "fade"
+  },
+  {
+   "id": "S02",
+   "start": 5.5,
+   "duration": 7.166666666666667,
+   "tail": 0.45,
+   "clip_seconds": 7.617,
+   "frame_offset": 178,
+   "transition": "fade"
+  },
+  {
+   "id": "S03",
+   "start": 12.667,
+   "duration": 4.8,
+   "tail": 0.45,
+   "clip_seconds": 5.25,
+   "frame_offset": 406,
+   "transition": "fade"
+  },
+  {
+   "id": "S04",
+   "start": 17.467,
+   "duration": 8.133333333333333,
+   "tail": 0.45,
+   "clip_seconds": 8.583,
+   "frame_offset": 564,
+   "transition": "fade"
+  },
+  {
+   "id": "S05",
+   "start": 25.6,
+   "duration": 5.066666666666666,
+   "tail": 0.45,
+   "clip_seconds": 5.517,
+   "frame_offset": 821,
+   "transition": "fade"
+  },
+  {
+   "id": "S06",
+   "start": 30.667,
+   "duration": 6.633333333333334,
+   "tail": 0.45,
+   "clip_seconds": 7.083,
+   "frame_offset": 987,
+   "transition": "fade"
+  },
+  {
+   "id": "S07",
+   "start": 37.3,
+   "duration": 8.266666666666667,
+   "tail": 0.45,
+   "clip_seconds": 8.717,
+   "frame_offset": 1200,
+   "transition": "fade"
+  },
+  {
+   "id": "S08",
+   "start": 45.567,
+   "duration": 5.233333333333333,
+   "tail": 0.45,
+   "clip_seconds": 5.683,
+   "frame_offset": 1462,
+   "transition": "fade"
+  },
+  {
+   "id": "S09",
+   "start": 50.8,
+   "duration": 7.2,
+   "tail": 0,
+   "clip_seconds": 7.2,
+   "frame_offset": 1632,
+   "transition": "none"
+  }
+ ],
+ "warnings": []
+}

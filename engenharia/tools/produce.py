@@ -198,11 +198,14 @@ def timeline(ep, out):
         print(f"timeline: {len(scenes)} scenes, {total:.2f}s  " + " ".join(f"{x['id']}={x['duration']:.1f}" for x in scenes))
         return tl
     t, frames, scenes, warn = 0.0, 0, [], []
+    smax = f.get("scene_seconds", [MIN_SCENE, MAX_SCENE])[1]
     for i, sc in enumerate(ep["scenes"]):
         need = nar[sc["id"]]["seconds"] + LEAD_IN + 0.42
+        if i == len(ep["scenes"]) - 1:
+            need += ep.get("end_card", {}).get("seconds", 0)   # room for the closing title after the last line
         dur = max(sc.get("min_seconds", MIN_SCENE), need, MIN_SCENE)
-        if dur > MAX_SCENE:
-            warn.append(f"{sc['id']} needs {dur:.2f}s (> {MAX_SCENE}s): shorten narration or split scene")
+        if dur > smax + (ep.get("end_card", {}).get("seconds", 0) if i == len(ep["scenes"]) - 1 else 0):
+            warn.append(f"{sc['id']} needs {dur:.2f}s (> {smax}s): shorten narration or split scene")
         dur = round(dur * f["fps"]) / f["fps"]
         last = i == len(ep["scenes"]) - 1
         tail = 0 if last or XFADE.get(sc.get("transition", "fade")) is None else TAIL

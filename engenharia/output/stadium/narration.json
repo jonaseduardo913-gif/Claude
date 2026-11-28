@@ -1,0 +1,961 @@
+{
+ "S01": {
+  "file": "output/stadium/narration/S01.wav",
+  "seconds": 4.885,
+  "words": [
+   {
+    "w": "Seventy",
+    "start": 0.0,
+    "end": 0.447
+   },
+   {
+    "w": "thousand",
+    "start": 0.447,
+    "end": 0.958
+   },
+   {
+    "w": "fans,",
+    "start": 0.958,
+    "end": 1.358
+   },
+   {
+    "w": "all",
+    "start": 1.358,
+    "end": 1.55
+   },
+   {
+    "w": "screaming",
+    "start": 1.55,
+    "end": 2.125
+   },
+   {
+    "w": "at",
+    "start": 2.125,
+    "end": 2.252
+   },
+   {
+    "w": "once.",
+    "start": 2.252,
+    "end": 2.508
+   },
+   {
+    "w": "But",
+    "start": 2.668,
+    "end": 2.851
+   },
+   {
+    "w": "how",
+    "start": 2.851,
+    "end": 3.034
+   },
+   {
+    "w": "do",
+    "start": 3.034,
+    "end": 3.216
+   },
+   {
+    "w": "you",
+    "start": 3.216,
+    "end": 3.354
+   },
+   {
+    "w": "build",
+    "start": 3.354,
+    "end": 3.582
+   },
+   {
+    "w": "a",
+    "start": 3.582,
+    "end": 3.651
+   },
+   {
+    "w": "place",
+    "start": 3.651,
+    "end": 3.925
+   },
+   {
+    "w": "that",
+    "start": 3.925,
+    "end": 4.062
+   },
+   {
+    "w": "can",
+    "start": 4.062,
+    "end": 4.199
+   },
+   {
+    "w": "hold",
+    "start": 4.199,
+    "end": 4.474
+   },
+   {
+    "w": "them",
+    "start": 4.474,
+    "end": 4.657
+   },
+   {
+    "w": "all?",
+    "start": 4.657,
+    "end": 4.885
+   }
+  ]
+ },
+ "S02": {
+  "file": "output/stadium/narration/S02.wav",
+  "seconds": 6.58,
+  "words": [
+   {
+    "w": "It",
+    "start": 0.0,
+    "end": 0.094
+   },
+   {
+    "w": "starts",
+    "start": 0.094,
+    "end": 0.469
+   },
+   {
+    "w": "below",
+    "start": 0.469,
+    "end": 0.751
+   },
+   {
+    "w": "ground.",
+    "start": 0.751,
+    "end": 1.126
+   },
+   {
+    "w": "Crews",
+    "start": 1.286,
+    "end": 1.586
+   },
+   {
+    "w": "drill",
+    "start": 1.586,
+    "end": 1.836
+   },
+   {
+    "w": "hundreds",
+    "start": 1.836,
+    "end": 2.285
+   },
+   {
+    "w": "of",
+    "start": 2.285,
+    "end": 2.385
+   },
+   {
+    "w": "deep",
+    "start": 2.385,
+    "end": 2.635
+   },
+   {
+    "w": "concrete",
+    "start": 2.635,
+    "end": 3.134
+   },
+   {
+    "w": "piles,",
+    "start": 3.134,
+    "end": 3.609
+   },
+   {
+    "w": "sometimes",
+    "start": 3.609,
+    "end": 4.058
+   },
+   {
+    "w": "more",
+    "start": 4.058,
+    "end": 4.308
+   },
+   {
+    "w": "than",
+    "start": 4.308,
+    "end": 4.458
+   },
+   {
+    "w": "thirty",
+    "start": 4.458,
+    "end": 4.757
+   },
+   {
+    "w": "meters",
+    "start": 4.757,
+    "end": 5.107
+   },
+   {
+    "w": "long,",
+    "start": 5.107,
+    "end": 5.482
+   },
+   {
+    "w": "down",
+    "start": 5.482,
+    "end": 5.731
+   },
+   {
+    "w": "to",
+    "start": 5.731,
+    "end": 5.831
+   },
+   {
+    "w": "solid",
+    "start": 5.831,
+    "end": 6.181
+   },
+   {
+    "w": "ground.",
+    "start": 6.181,
+    "end": 6.58
+   }
+  ]
+ },
+ "S03": {
+  "file": "output/stadium/narration/S03.wav",
+  "seconds": 4.214,
+  "words": [
+   {
+    "w": "Those",
+    "start": 0.0,
+    "end": 0.297
+   },
+   {
+    "w": "piles",
+    "start": 0.297,
+    "end": 0.594
+   },
+   {
+    "w": "carry",
+    "start": 0.594,
+    "end": 0.89
+   },
+   {
+    "w": "the",
+    "start": 0.89,
+    "end": 1.068
+   },
+   {
+    "w": "weight",
+    "start": 1.068,
+    "end": 1.425
+   },
+   {
+    "w": "of",
+    "start": 1.425,
+    "end": 1.543
+   },
+   {
+    "w": "the",
+    "start": 1.543,
+    "end": 1.721
+   },
+   {
+    "w": "entire",
+    "start": 1.721,
+    "end": 2.078
+   },
+   {
+    "w": "stadium",
+    "start": 2.078,
+    "end": 2.493
+   },
+   {
+    "w": "and",
+    "start": 2.493,
+    "end": 2.671
+   },
+   {
+    "w": "spread",
+    "start": 2.671,
+    "end": 3.027
+   },
+   {
+    "w": "it",
+    "start": 3.027,
+    "end": 3.146
+   },
+   {
+    "w": "safely",
+    "start": 3.146,
+    "end": 3.502
+   },
+   {
+    "w": "into",
+    "start": 3.502,
+    "end": 3.74
+   },
+   {
+    "w": "the",
+    "start": 3.74,
+    "end": 3.918
+   },
+   {
+    "w": "earth.",
+    "start": 3.918,
+    "end": 4.214
+   }
+  ]
+ },
+ "S04": {
+  "file": "output/stadium/narration/S04.wav",
+  "seconds": 7.532,
+  "words": [
+   {
+    "w": "Next",
+    "start": 0.0,
+    "end": 0.296
+   },
+   {
+    "w": "come",
+    "start": 0.296,
+    "end": 0.493
+   },
+   {
+    "w": "the",
+    "start": 0.493,
+    "end": 0.592
+   },
+   {
+    "w": "stands.",
+    "start": 0.592,
+    "end": 0.987
+   },
+   {
+    "w": "Giant",
+    "start": 1.147,
+    "end": 1.576
+   },
+   {
+    "w": "sloped",
+    "start": 1.576,
+    "end": 1.952
+   },
+   {
+    "w": "concrete",
+    "start": 1.952,
+    "end": 2.488
+   },
+   {
+    "w": "beams",
+    "start": 2.488,
+    "end": 2.81
+   },
+   {
+    "w": "called",
+    "start": 2.81,
+    "end": 3.132
+   },
+   {
+    "w": "rakers",
+    "start": 3.132,
+    "end": 3.508
+   },
+   {
+    "w": "go",
+    "start": 3.508,
+    "end": 3.723
+   },
+   {
+    "w": "up",
+    "start": 3.723,
+    "end": 3.883
+   },
+   {
+    "w": "first,",
+    "start": 3.883,
+    "end": 4.393
+   },
+   {
+    "w": "and",
+    "start": 4.393,
+    "end": 4.554
+   },
+   {
+    "w": "precast",
+    "start": 4.554,
+    "end": 4.984
+   },
+   {
+    "w": "seating",
+    "start": 4.984,
+    "end": 5.359
+   },
+   {
+    "w": "units",
+    "start": 5.359,
+    "end": 5.788
+   },
+   {
+    "w": "are",
+    "start": 5.788,
+    "end": 5.949
+   },
+   {
+    "w": "stacked",
+    "start": 5.949,
+    "end": 6.271
+   },
+   {
+    "w": "on",
+    "start": 6.271,
+    "end": 6.432
+   },
+   {
+    "w": "top,",
+    "start": 6.432,
+    "end": 6.888
+   },
+   {
+    "w": "like",
+    "start": 6.888,
+    "end": 7.157
+   },
+   {
+    "w": "steps.",
+    "start": 7.157,
+    "end": 7.532
+   }
+  ]
+ },
+ "S05": {
+  "file": "output/stadium/narration/S05.wav",
+  "seconds": 4.458,
+  "words": [
+   {
+    "w": "Each",
+    "start": 0.0,
+    "end": 0.253
+   },
+   {
+    "w": "row",
+    "start": 0.253,
+    "end": 0.456
+   },
+   {
+    "w": "sits",
+    "start": 0.456,
+    "end": 0.709
+   },
+   {
+    "w": "a",
+    "start": 0.709,
+    "end": 0.785
+   },
+   {
+    "w": "little",
+    "start": 0.785,
+    "end": 1.089
+   },
+   {
+    "w": "higher",
+    "start": 1.089,
+    "end": 1.343
+   },
+   {
+    "w": "than",
+    "start": 1.343,
+    "end": 1.495
+   },
+   {
+    "w": "the",
+    "start": 1.495,
+    "end": 1.596
+   },
+   {
+    "w": "one",
+    "start": 1.596,
+    "end": 1.798
+   },
+   {
+    "w": "in",
+    "start": 1.798,
+    "end": 1.9
+   },
+   {
+    "w": "front,",
+    "start": 1.9,
+    "end": 2.381
+   },
+   {
+    "w": "so",
+    "start": 2.381,
+    "end": 2.584
+   },
+   {
+    "w": "every",
+    "start": 2.584,
+    "end": 2.837
+   },
+   {
+    "w": "fan",
+    "start": 2.837,
+    "end": 3.04
+   },
+   {
+    "w": "can",
+    "start": 3.04,
+    "end": 3.192
+   },
+   {
+    "w": "see",
+    "start": 3.192,
+    "end": 3.445
+   },
+   {
+    "w": "over",
+    "start": 3.445,
+    "end": 3.698
+   },
+   {
+    "w": "the",
+    "start": 3.698,
+    "end": 3.8
+   },
+   {
+    "w": "person",
+    "start": 3.8,
+    "end": 4.154
+   },
+   {
+    "w": "ahead.",
+    "start": 4.154,
+    "end": 4.458
+   }
+  ]
+ },
+ "S06": {
+  "file": "output/stadium/narration/S06.wav",
+  "seconds": 6.049,
+  "words": [
+   {
+    "w": "Then",
+    "start": 0.0,
+    "end": 0.219
+   },
+   {
+    "w": "comes",
+    "start": 0.219,
+    "end": 0.493
+   },
+   {
+    "w": "the",
+    "start": 0.493,
+    "end": 0.603
+   },
+   {
+    "w": "roof.",
+    "start": 0.603,
+    "end": 0.932
+   },
+   {
+    "w": "Huge",
+    "start": 1.092,
+    "end": 1.435
+   },
+   {
+    "w": "steel",
+    "start": 1.435,
+    "end": 1.73
+   },
+   {
+    "w": "trusses",
+    "start": 1.73,
+    "end": 2.073
+   },
+   {
+    "w": "reach",
+    "start": 2.073,
+    "end": 2.368
+   },
+   {
+    "w": "out",
+    "start": 2.368,
+    "end": 2.564
+   },
+   {
+    "w": "over",
+    "start": 2.564,
+    "end": 2.81
+   },
+   {
+    "w": "the",
+    "start": 2.81,
+    "end": 2.908
+   },
+   {
+    "w": "seats,",
+    "start": 2.908,
+    "end": 3.374
+   },
+   {
+    "w": "anchored",
+    "start": 3.374,
+    "end": 3.669
+   },
+   {
+    "w": "only",
+    "start": 3.669,
+    "end": 4.012
+   },
+   {
+    "w": "at",
+    "start": 4.012,
+    "end": 4.11
+   },
+   {
+    "w": "the",
+    "start": 4.11,
+    "end": 4.208
+   },
+   {
+    "w": "back,",
+    "start": 4.208,
+    "end": 4.577
+   },
+   {
+    "w": "so",
+    "start": 4.577,
+    "end": 4.773
+   },
+   {
+    "w": "no",
+    "start": 4.773,
+    "end": 4.969
+   },
+   {
+    "w": "columns",
+    "start": 4.969,
+    "end": 5.362
+   },
+   {
+    "w": "block",
+    "start": 5.362,
+    "end": 5.656
+   },
+   {
+    "w": "the",
+    "start": 5.656,
+    "end": 5.755
+   },
+   {
+    "w": "view.",
+    "start": 5.755,
+    "end": 6.049
+   }
+  ]
+ },
+ "S07": {
+  "file": "output/stadium/narration/S07.wav",
+  "seconds": 7.66,
+  "words": [
+   {
+    "w": "The",
+    "start": 0.0,
+    "end": 0.106
+   },
+   {
+    "w": "pitch",
+    "start": 0.106,
+    "end": 0.371
+   },
+   {
+    "w": "is",
+    "start": 0.371,
+    "end": 0.476
+   },
+   {
+    "w": "engineered",
+    "start": 0.476,
+    "end": 1.059
+   },
+   {
+    "w": "too.",
+    "start": 1.059,
+    "end": 1.324
+   },
+   {
+    "w": "Under",
+    "start": 1.484,
+    "end": 1.742
+   },
+   {
+    "w": "the",
+    "start": 1.742,
+    "end": 1.845
+   },
+   {
+    "w": "grass",
+    "start": 1.845,
+    "end": 2.104
+   },
+   {
+    "w": "are",
+    "start": 2.104,
+    "end": 2.259
+   },
+   {
+    "w": "layers",
+    "start": 2.259,
+    "end": 2.569
+   },
+   {
+    "w": "of",
+    "start": 2.569,
+    "end": 2.672
+   },
+   {
+    "w": "sand",
+    "start": 2.672,
+    "end": 2.931
+   },
+   {
+    "w": "and",
+    "start": 2.931,
+    "end": 3.086
+   },
+   {
+    "w": "gravel,",
+    "start": 3.086,
+    "end": 3.629
+   },
+   {
+    "w": "with",
+    "start": 3.629,
+    "end": 3.784
+   },
+   {
+    "w": "pipes",
+    "start": 3.784,
+    "end": 4.094
+   },
+   {
+    "w": "that",
+    "start": 4.094,
+    "end": 4.249
+   },
+   {
+    "w": "drain",
+    "start": 4.249,
+    "end": 4.559
+   },
+   {
+    "w": "away",
+    "start": 4.559,
+    "end": 4.817
+   },
+   {
+    "w": "the",
+    "start": 4.817,
+    "end": 4.921
+   },
+   {
+    "w": "rain,",
+    "start": 4.921,
+    "end": 5.36
+   },
+   {
+    "w": "and",
+    "start": 5.36,
+    "end": 5.515
+   },
+   {
+    "w": "in",
+    "start": 5.515,
+    "end": 5.618
+   },
+   {
+    "w": "cold",
+    "start": 5.618,
+    "end": 5.929
+   },
+   {
+    "w": "places,",
+    "start": 5.929,
+    "end": 6.523
+   },
+   {
+    "w": "pipes",
+    "start": 6.523,
+    "end": 6.833
+   },
+   {
+    "w": "that",
+    "start": 6.833,
+    "end": 6.988
+   },
+   {
+    "w": "heat",
+    "start": 6.988,
+    "end": 7.247
+   },
+   {
+    "w": "the",
+    "start": 7.247,
+    "end": 7.35
+   },
+   {
+    "w": "soil.",
+    "start": 7.35,
+    "end": 7.66
+   }
+  ]
+ },
+ "S08": {
+  "file": "output/stadium/narration/S08.wav",
+  "seconds": 4.632,
+  "words": [
+   {
+    "w": "Many",
+    "start": 0.0,
+    "end": 0.263
+   },
+   {
+    "w": "top",
+    "start": 0.263,
+    "end": 0.526
+   },
+   {
+    "w": "pitches",
+    "start": 0.526,
+    "end": 0.895
+   },
+   {
+    "w": "even",
+    "start": 0.895,
+    "end": 1.211
+   },
+   {
+    "w": "mix",
+    "start": 1.211,
+    "end": 1.474
+   },
+   {
+    "w": "real",
+    "start": 1.474,
+    "end": 1.842
+   },
+   {
+    "w": "grass",
+    "start": 1.842,
+    "end": 2.106
+   },
+   {
+    "w": "with",
+    "start": 2.106,
+    "end": 2.264
+   },
+   {
+    "w": "millions",
+    "start": 2.264,
+    "end": 2.685
+   },
+   {
+    "w": "of",
+    "start": 2.685,
+    "end": 2.79
+   },
+   {
+    "w": "synthetic",
+    "start": 2.79,
+    "end": 3.264
+   },
+   {
+    "w": "fibers",
+    "start": 3.264,
+    "end": 3.632
+   },
+   {
+    "w": "for",
+    "start": 3.632,
+    "end": 3.843
+   },
+   {
+    "w": "extra",
+    "start": 3.843,
+    "end": 4.211
+   },
+   {
+    "w": "strength.",
+    "start": 4.211,
+    "end": 4.632
+   }
+  ]
+ },
+ "S09": {
+  "file": "output/stadium/narration/S09.wav",
+  "seconds": 3.994,
+  "words": [
+   {
+    "w": "Then",
+    "start": 0.0,
+    "end": 0.207
+   },
+   {
+    "w": "the",
+    "start": 0.207,
+    "end": 0.311
+   },
+   {
+    "w": "lights",
+    "start": 0.311,
+    "end": 0.622
+   },
+   {
+    "w": "switch",
+    "start": 0.622,
+    "end": 0.934
+   },
+   {
+    "w": "on,",
+    "start": 0.934,
+    "end": 1.271
+   },
+   {
+    "w": "the",
+    "start": 1.271,
+    "end": 1.375
+   },
+   {
+    "w": "gates",
+    "start": 1.375,
+    "end": 1.686
+   },
+   {
+    "w": "open,",
+    "start": 1.686,
+    "end": 2.178
+   },
+   {
+    "w": "and",
+    "start": 2.178,
+    "end": 2.334
+   },
+   {
+    "w": "seventy",
+    "start": 2.334,
+    "end": 2.749
+   },
+   {
+    "w": "thousand",
+    "start": 2.749,
+    "end": 3.164
+   },
+   {
+    "w": "people",
+    "start": 3.164,
+    "end": 3.527
+   },
+   {
+    "w": "walk",
+    "start": 3.527,
+    "end": 3.786
+   },
+   {
+    "w": "in.",
+    "start": 3.786,
+    "end": 3.994
+   }
+  ]
+ }
+}
